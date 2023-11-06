@@ -1,0 +1,119 @@
+# The Danetian calendar
+
+The Danetian calendar is a lunisolar calendar used by the Danetian people.
+Each month starts and ends at roughly the new moon.
+
+The synodic period of the Moon is around 29.530 588 days. Therefore, the
+months of the calendar alternate between 29 and 30 days in order to keep them in
+sync with the phases of the Moon. If a month has 29 days, it's called a hollow
+month; if it has 30, it's called a full month.
+
+Grouping months into years presents a challenge: If a year is defined to be
+12 months, that results in 354 days, which is too short. If we instead define a
+year as 13 months, the result is roughly 383 days, which is too long. To get
+around this, some years are set to have 12 months, while others have 13, so that
+the average year length ends up being around 365.2421 days. Essentially, an
+entire leap month is inserted every two or three years in order to keep the
+calendar in sync with the seasons.
+
+
+
+## Month names
+
+The twelve months are named according to a modified version of the Chinese
+zodiac:
+1. Rat
+2. Ox
+3. Wolf (Tiger in the Chinese zodiac)
+4. Rabbit
+5. Eagle (Dragon in the Chinese zodiac)
+6. Snake
+7. Horse
+8. Goat
+9. Hedgehog (Monkey in the Chinese zodiac)
+10. Rooster
+11. Dog
+12. Pig
+13. Epagomenal (only in leap years)
+
+The Danetians use these month names because they lived alongside Turkic
+tribes for several centuries. It was common for these Turkic tribes to use a
+modified version of the Chinese zodiac, with some animals replaced by local
+fauna.
+
+
+
+## Mathematical rules for months
+
+Months alternate between full (30 days) and hollow (29 days) in a specified
+pattern in order to keep the average month length equal to 29.530&nbsp;588 days.
+By writing this number as a continued fraction, we can see that two rational
+approximants arise: 1447/49 and 25&nbsp;101/850. That is to say, we can
+approximate the synodic period of the Moon by arranging 1447 days into 49
+months, or 25&nbsp;101 days into 850 months for an even better approximation.
+
+In order to accomplish this, certain months are recognized as "metallic
+months". These are always full months, and are characterized by the "metallic
+month festivals": the Iron Month Festival, the Silver Month Festival, and the
+Golden Month Festival. Certain rules are in place:
+1. After a hollow month always comes a full month, and vice-versa.
+2. After counting 17 months, the next month is recognized as an iron
+month. Iron months are always full months, superseding rule #1.
+3. After counting 49 months, the next month is recognized as a silver
+month. Silver months are always full months, superseding rule #1. Moreover,
+they reset the iron month count, superseding rule #2.
+4. After counting 850 months, the next month is recognized as a golden
+month. Golden months are always full months, superseding rule #1.
+Moreover, they reset both the iron month count and the
+silver month count, thereby superseding rules #2 and #3.
+
+
+
+## Mathematical rules for years
+
+Years can either be short (12 months) or long (13 months; also called leap
+years). The average length of the month is 25&nbsp;101/850 = 29.530 588. Thus,
+in order to remain in step with the tropical year of 365.2421 days, the most
+appropriate rational approximants to use are 235/19 and 4131/334.
+
+The fraction 235/19 represents the Metonic cycle, which was already known in
+antiquity; it arranges 235 months into 19 years.
+
+The calendar uses a system similar to that of metallic months, celebrating
+the Silver Year Festival and the Golden Year Festival. The following rules are
+in place:
+1. Within a cycle of 19 years, the following years are leap
+years: #2, #5, #7, #10, #13, #15, #18.
+2. After counting 19 years, the next year is known as a silver year,
+and it marks the beginning of a new Metonic cycle.
+3. After counting 334 years, the next year is known as a golden year.
+This resets the silver year count, superseding rule #2.
+
+
+
+## Sexagenary cycle
+
+Another tradition inherited from the Chinese calendar is the sexagenary
+cycle. The twelve animals of the zodiac are combined with the five elements
+(wood, fire, earth, metal, water) in order to give a cycle of 60 years:
+1. wood rat
+2. wood ox
+3. fire wolf
+4. fire rabbit
+5. earth eagle
+6. earth snake
+7. metal horse
+8. metal goat
+9. water hedgehog
+10. water rooster
+11. wood dog
+12. wood pig
+13. fire rat
+14. fire ox
+15. earth wolf
+16. earth rabbit
+17. ...
+
+
+The current sexagenary cycle began in the year 3310, or 1984 in our
+calendar.
