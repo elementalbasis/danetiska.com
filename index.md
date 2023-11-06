@@ -38,7 +38,7 @@ describes the current state of the language.
 
 Feel free to browse the [dictionary](/dictionary.pdf)
 and check out the
-[lunisolar calendar](/calendar.pdf)
+[lunisolar calendar](/calendar.html)
 used by the Danetians.
 
 	
