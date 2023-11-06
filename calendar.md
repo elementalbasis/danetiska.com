@@ -49,7 +49,8 @@ fauna.
 Months alternate between full (30 days) and hollow (29 days) in a specified
 pattern in order to keep the average month length equal to 29.530&nbsp;588 days.
 By writing this number as a continued fraction, we can see that two rational
-approximants arise: 1447/49 and 25&nbsp;101/850. That is to say, we can
+approximants arise: 1447&nbsp;/&nbsp;49 and 25&nbsp;101&nbsp;/&nbsp;850.
+That is to say, we can
 approximate the synodic period of the Moon by arranging 1447 days into 49
 months, or 25&nbsp;101 days into 850 months for an even better approximation.
 
@@ -74,11 +75,14 @@ silver month count, thereby superseding rules #2 and #3.
 ## Mathematical rules for years
 
 Years can either be short (12 months) or long (13 months; also called leap
-years). The average length of the month is 25&nbsp;101/850 = 29.530 588. Thus,
+years). The average length of the
+month is 25&nbsp;101&nbsp;/&nbsp;850 = 29.530&nbsp;588. Thus,
 in order to remain in step with the tropical year of 365.2421 days, the most
-appropriate rational approximants to use are 235/19 and 4131/334.
+appropriate rational approximants to use are 235&nbsp;/&nbsp;19
+and 4131&nbsp;/&nbsp;334.
 
-The fraction 235/19 represents the Metonic cycle, which was already known in
+The fraction 235&nbsp;/&nbsp;19 represents the Metonic cycle,
+which was already known in
 antiquity; it arranges 235 months into 19 years.
 
 The calendar uses a system similar to that of metallic months, celebrating
