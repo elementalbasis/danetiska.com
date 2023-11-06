@@ -22,6 +22,7 @@ calendar in sync with the seasons.
 
 The twelve months are named according to a modified version of the Chinese
 zodiac:
+
 1. Rat
 2. Ox
 3. Wolf (Tiger in the Chinese zodiac)
@@ -56,6 +57,7 @@ In order to accomplish this, certain months are recognized as "metallic
 months". These are always full months, and are characterized by the "metallic
 month festivals": the Iron Month Festival, the Silver Month Festival, and the
 Golden Month Festival. Certain rules are in place:
+
 1. After a hollow month always comes a full month, and vice-versa.
 2. After counting 17 months, the next month is recognized as an iron
 month. Iron months are always full months, superseding rule #1.
@@ -82,6 +84,7 @@ antiquity; it arranges 235 months into 19 years.
 The calendar uses a system similar to that of metallic months, celebrating
 the Silver Year Festival and the Golden Year Festival. The following rules are
 in place:
+
 1. Within a cycle of 19 years, the following years are leap
 years: #2, #5, #7, #10, #13, #15, #18.
 2. After counting 19 years, the next year is known as a silver year,
@@ -96,6 +99,7 @@ This resets the silver year count, superseding rule #2.
 Another tradition inherited from the Chinese calendar is the sexagenary
 cycle. The twelve animals of the zodiac are combined with the five elements
 (wood, fire, earth, metal, water) in order to give a cycle of 60 years:
+
 1. wood rat
 2. wood ox
 3. fire wolf
