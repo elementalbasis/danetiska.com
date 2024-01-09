@@ -164,3 +164,4 @@ Holy God, Holy Mighty, Holy Immortal, have mercy on us.
 3. [Edit the Text](https://tikolu.net/edit/.info)
 4. [Novegradian language](https://veche.net/novegradian)
 5. [Kala language](https://footballbatsandmore.wordpress.com/about/document-library)
+6. [Star Chart](https://www.planetarium.sfasu.edu/SFAStarCharts/SFAStarChartsPro.pdf)
