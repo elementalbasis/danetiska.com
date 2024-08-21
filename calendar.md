@@ -22,7 +22,7 @@ calendar in sync with the seasons.
     <label for="input_year">Enter date:</label>
     <input type="text" id="input_date" placeholder="YYYY-MM-DD" required>
 
-    <label for="select_calendar">Calendar:</label>
+    <label for="select_calendar">Interpret as:</label>
     <select id="select_calendar" required>
         <option value="g">Gregorian</option>
         <option value="j">Julian</option>
