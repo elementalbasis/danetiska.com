@@ -19,20 +19,8 @@ calendar in sync with the seasons.
 ## Calendar Calculator
 
 <form id="form_calendar_calculator">
-    <div class="date-inputs">
-        <label for="input_year">Y:</label>
-        <input type="number" id="input_year" required>
-
-        <span>-</span>
-
-        <label for="input_month">M:</label>
-        <input type="number" id="input_month" min="1" max="13" required>
-
-        <span>-</span>
-
-        <label for="input_day">D:</label>
-        <input type="number" id="input_day" min="1" max="31" required>
-    </div>
+    <label for="input_year">Enter date:</label>
+    <input type="text" id="input_date" placeholder="YYYY-MM-DD" required>
 
     <label for="select_calendar">Calendar:</label>
     <select id="select_calendar" required>

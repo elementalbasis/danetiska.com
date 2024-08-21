@@ -31,29 +31,13 @@ inserted every two or three years in order to keep the calendar in sync
 with the seasons.</p>
 <h2 id="calendar-calculator">Calendar Calculator</h2>
 <form id="form_calendar_calculator">
-<div class="date-inputs">
-<pre><code>    &lt;label for=&quot;input_year&quot;&gt;Y:&lt;/label&gt;
-    &lt;input type=&quot;number&quot; id=&quot;input_year&quot; required&gt;
-
-    &lt;span&gt;-&lt;/span&gt;
-
-    &lt;label for=&quot;input_month&quot;&gt;M:&lt;/label&gt;
-    &lt;input type=&quot;number&quot; id=&quot;input_month&quot; min=&quot;1&quot; max=&quot;13&quot; required&gt;
-
-    &lt;span&gt;-&lt;/span&gt;
-
-    &lt;label for=&quot;input_day&quot;&gt;D:&lt;/label&gt;
-    &lt;input type=&quot;number&quot; id=&quot;input_day&quot; min=&quot;1&quot; max=&quot;31&quot; required&gt;
-&lt;/div&gt;
-
-&lt;label for=&quot;select_calendar&quot;&gt;Calendar:&lt;/label&gt;
-&lt;select id=&quot;select_calendar&quot; required&gt;
-    &lt;option value=&quot;g&quot;&gt;Gregorian&lt;/option&gt;
-    &lt;option value=&quot;j&quot;&gt;Julian&lt;/option&gt;
-    &lt;option value=&quot;d&quot;&gt;Danetian&lt;/option&gt;
-&lt;/select&gt;
-
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
+<p><label for="input_year">Enter date:</label>
+<input type="text" id="input_date" placeholder="YYYY-MM-DD" required></p>
+<p><label for="select_calendar">Calendar:</label>
+<select id="select_calendar" required>
+<option value="g">Gregorian</option> <option value="j">Julian</option>
+<option value="d">Danetian</option> </select></p>
+<input type="submit" value="Submit">
 </form>
 <h2 id="month-names">Month names</h2>
 <p>The twelve months are named according to a modified version of the
