@@ -370,10 +370,10 @@ window.onload = function() {
 }
 
 document.getElementById('form_calendar_calculator').addEventListener('submit', function(event) {
-	event.preventDefault();
+	//event.preventDefault();
 
-	const date_string = document.getElementById('input_date').value
-	const calendar_type = document.getElementById('select_calendar').value
+	var date_string = document.getElementById('input_date').value
+	var calendar_type = document.getElementById('select_calendar').value
 
 	var y, m, d = interpret_date_string(date_string)
 
