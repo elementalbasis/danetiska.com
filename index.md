@@ -11,7 +11,7 @@ with a rich inflectional morphology, and a healthy dose of
 irregular forms.
 
 The Danetian people, much like their
-[Indo-European ancestors]("https://en.wikipedia.org/wiki/Proto-Indo-Europeans),
+[Indo-European ancestors](https://en.wikipedia.org/wiki/Proto-Indo-Europeans),
 were horse nomads roaming the Eurasian steppe. They originally settled around
 [Lake Baikal](https://en.wikipedia.org/wiki/Lake_Baikal)
 and the
