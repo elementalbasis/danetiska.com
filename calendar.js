@@ -1,5 +1,3 @@
-#!/bin
-
 const g_month_lengths = [31,28,31,30,31,30,31,31,30,31,30,31]
 const g_leap_year_month_lengths = [31,29,31,30,31,30,31,31,30,31,30,31]
 const g_metonic_cycle = [12,13,12,12,13,12,13,12,12,13,12,12,13,12,13,12,12,13,12]
@@ -399,4 +397,5 @@ document.getElementById('form_calendar_calculator').addEventListener('submit', f
 
 	document.getElementById('result_gregorian').innerText = 'Gregorian: ${date_g}'
 	document.getElementById('result_julian').innerText = 'Julian: ${date_j}'
-	document.getElementById('result_danetian').innerText = 'Danetian: ${date_)
+	document.getElementById('result_danetian').innerText = 'Danetian: ${date_d}'
+})
