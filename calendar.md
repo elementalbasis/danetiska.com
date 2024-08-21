@@ -18,6 +18,11 @@ calendar in sync with the seasons.
 
 ## Calendar Calculator
 
+<p id="result_gregorian">Gregorian:</p>
+<p id="result_julian">Julian:</p>
+<p id="result_danetian">Danetian:</p>
+<script src="calendar.js></script>
+
 <form id="form_calendar_calculator">
     <label for="input_year">Enter date:</label>
     <input type="text" id="input_date" placeholder="YYYY-MM-DD" required>

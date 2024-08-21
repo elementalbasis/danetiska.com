@@ -343,11 +343,19 @@ function zero_padding(y, n) {
 }
 
 function iso_format(y, m, d) {
-	ys = zero_padding(y, 4)
-	ms = zero_padding(m, 2)
-	ds = zero_padding(d, 2)
+	var ys = zero_padding(y, 4)
+	var ms = zero_padding(m, 2)
+	var ds = zero_padding(d, 2)
 
 	return ys + "-" + ms + "-" + ds
+}
+
+function interpret_date_string(s) {
+	var n = s.length
+	var d = s.splice(n-2,n)*1
+	var m = s.splice(n-5,n-3)*1
+	var y = s.splice(0,n-6)*1
+	return [y, m, d]
 }
 
 function danetian_today_string() {
@@ -362,3 +370,33 @@ window.onload = function() {
 	let p = danetian_today_string()
 	document.getElementById("danetian_date_today").textContent = p
 }
+
+document.getElementById('form_calendar_calculator').addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	const date_string = document.getElementById('input_date').value
+	const calendar_type = document.getElementById('select_calendar').value
+
+	var y, m, d = interpret_date_string(date_string)
+
+	var n = 0
+	if (calendar_type == "g") {
+		n = gregorian_to_julian_day(y, m, d)
+	} else if (calendar_type == "j") {
+		n = julian_to_julian_day(y, m, d)
+	} else if (calendar_type == "d") {
+		n = danetian_to_julian_day(y, m, d)
+	} else {
+		n = 0
+	}
+
+	var yg, mg, dg = gregorian_from_julian_day(n)
+	var yj, mj, dj = julian_from_julian_day(n)
+	var yd, md, dd = danetian_from_julian_day(n)
+	var date_g = iso_format(yg, mg, dg)
+	var date_j = iso_format(yj, mj, dj)
+	var date_d = iso_format(yd, md, dd)
+
+	document.getElementById('result_gregorian').innerText = 'Gregorian: ${date_g}'
+	document.getElementById('result_julian').innerText = 'Julian: ${date_j}'
+	document.getElementById('result_danetian').innerText = 'Danetian: ${date_)
