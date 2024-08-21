@@ -21,7 +21,7 @@ calendar in sync with the seasons.
 <p id="result_gregorian">Gregorian:</p>
 <p id="result_julian">Julian:</p>
 <p id="result_danetian">Danetian:</p>
-<script src="calendar.js></script>
+<script src="calendar.js"></script>
 
 <form id="form_calendar_calculator">
     <label for="input_date">Enter date:</label>
