@@ -24,7 +24,7 @@ calendar in sync with the seasons.
 <script src="calendar.js></script>
 
 <form id="form_calendar_calculator">
-    <label for="input_year">Enter date:</label>
+    <label for="input_date">Enter date:</label>
     <input type="text" id="input_date" placeholder="YYYY-MM-DD" required>
 
     <label for="select_calendar">Interpret as:</label>
