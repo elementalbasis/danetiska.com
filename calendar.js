@@ -350,9 +350,9 @@ function iso_format(y, m, d) {
 
 function interpret_date_string(s) {
 	var n = s.length
-	var d = s.splice(n-2,n)*1
-	var m = s.splice(n-5,n-3)*1
-	var y = s.splice(0,n-6)*1
+	var d = s.slice(n-2,n)*1
+	var m = s.slice(n-5,n-3)*1
+	var y = s.slice(0,n-6)*1
 	return [y, m, d]
 }
 
@@ -391,11 +391,12 @@ document.getElementById('form_calendar_calculator').addEventListener('submit', f
 	var [yg, mg, dg] = gregorian_from_julian_day(n)
 	var [yj, mj, dj] = julian_from_julian_day(n)
 	var [yd, md, dd] = danetian_from_julian_day(n)
-	var date_g = iso_format(yg, mg, dg)
-	var date_j = iso_format(yj, mj, dj)
-	var date_d = iso_format(yd, md, dd)
+	var date_g = iso_format(yg, mg, dg) + calendar_type
+	var date_j = iso_format(yj, mj, dj) + calendar_type
+	var date_d = iso_format(yd, md, dd) + calendar_type
 
 	document.getElementById('result_gregorian').innerText = `Gregorian: ${date_g}`
 	document.getElementById('result_julian').innerText = `Julian: ${date_j}`
 	document.getElementById('result_danetian').innerText = `Danetian: ${date_d}`
 })
+
