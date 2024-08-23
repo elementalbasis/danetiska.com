@@ -395,7 +395,7 @@ document.getElementById('form_calendar_calculator').addEventListener('submit', f
 	var date_j = iso_format(yj, mj, dj) + calendar_type
 	var date_d = iso_format(yd, md, dd) + calendar_type
 
-	document.getElementById('result_gregorian').innerText = `Gregorian: ${date_g}`
+	document.getElementById('result_gregorian').innerText = `Gregorian: ${date_g}` + calendar_type
 	document.getElementById('result_julian').innerText = `Julian: ${date_j}`
 	document.getElementById('result_danetian').innerText = `Danetian: ${date_d}`
 })
