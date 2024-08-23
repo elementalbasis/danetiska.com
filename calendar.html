@@ -12,6 +12,7 @@
 <h2>Today's date is:
 <span id="danetian_date_today"></span>
 </h2>
+<script src="today.js"></script>
 
 
 <h1 id="the-danetian-calendar">The Danetian calendar</h1>
@@ -30,25 +31,22 @@ being around 365.2421 days. Essentially, an entire leap month is
 inserted every two or three years in order to keep the calendar in sync
 with the seasons.</p>
 <h2 id="calendar-calculator">Calendar Calculator</h2>
-<p id="result_gregorian">
-Gregorian:
-</p>
-<p id="result_julian">
-Julian:
-</p>
-<p id="result_danetian">
-Danetian:
-</p>
-<script src="calendar.js"></script>
 <form id="form_calendar_calculator">
-<p><label for="input_date">Enter date:</label>
-<input type="text" id="input_date" placeholder="YYYY-MM-DD" required></p>
-<p><label for="select_calendar">Interpret as:</label>
+<label for="input_date">Enter date:</label>
+<input type="text" id="input_date" placeholder="YYYY-MM-DD" required>
+<label for="select_calendar">Interpret as:</label>
 <select id="select_calendar" required>
 <option value="g">Gregorian</option> <option value="j">Julian</option>
-<option value="d">Danetian</option> </select></p>
+<option value="d">Danetian</option> </select>
 <input type="submit" value="Submit">
 </form>
+<p id="result_gregorian">
+</p>
+<p id="result_julian">
+</p>
+<p id="result_danetian">
+</p>
+<script src="calculator.js"></script>
 <h2 id="month-names">Month names</h2>
 <p>The twelve months are named according to a modified version of the
 Chinese zodiac:</p>
