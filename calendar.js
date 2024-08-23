@@ -103,7 +103,7 @@ function danetian_month_length(y, m) {
 		return 29
 	}
 }
-
+/*
 function danetian_to_julian_day(y, m, d) {
 	var n = danetian_month_ordinal(y, m)
 	var H = Math.floor((n - 1) / 850)
@@ -117,6 +117,7 @@ function danetian_to_julian_day(y, m, d) {
 	var offset = 1237193
 	return 25101*H + 1447*K + 502*L + 59*M + 30*(MR-1) + offset + d
 }
+*/
 /*
 function julian_to_julian_day(y, m, d) {
 	offset = 1721423
@@ -147,18 +148,15 @@ function julian_is_valid(y, m, d) {
 }
 
 function danetian_date_shift(y, m, d, n) {
-	var yn = y
-	var mn = m
-	var dn = d
 	if (n == 0) {
 	} else if (0 < n) {
-		dn += n
-		while (!danetian_is_valid(yn, mn, dn)) {
-			dn -= danetian_month_length(yn, mn)
-			mn += 1
-			if (danetian_year_length(yn) < mn) {
-				yn += 1
-				mn = 1
+		d += n
+		while (!danetian_is_valid(y, m, d)) {
+			d -= danetian_month_length(y, m)
+			m += 1
+			if (danetian_year_length(y) < m) {
+				y += 1
+				m = 1
 			}
 		}
 	} else if (n < 0) {
@@ -172,7 +170,7 @@ function danetian_date_shift(y, m, d, n) {
 			d += danetian_month_length(y, m)
 		}
 	}
-	return [yn, mn, dn]
+	return [y, m, d]
 }
 
 function gregorian_date_shift(y, m, d, n) {
@@ -280,7 +278,7 @@ function julian_to_julian_day(y, m, d) {
 	}
 	return s
 }
-/*
+
 function danetian_to_julian_day(y, m, d) {
 	var [yi, mi, di] = [-3387, 9, 21]
 	var [yf, mf, df] = [y, m, d]
@@ -302,7 +300,7 @@ function danetian_to_julian_day(y, m, d) {
 	}
 	return s
 }
-*/
+
 function julian_from_julian_day(n) {
 	var [yi, mi, di] = [-4712, 1, 1]
 	return julian_date_shift(yi, mi, di, n)
@@ -363,3 +361,8 @@ function danetian_today_string() {
 	var s = iso_format(yn, mn, dn)
 	return s
 }
+
+
+var n = gregorian_to_julian_day(-200000,1,1)
+var [y,m,d] = danetian_from_julian_day(n)
+console.log(y,m,d)
