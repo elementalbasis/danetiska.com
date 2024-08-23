@@ -103,7 +103,7 @@ function danetian_month_length(y, m) {
 		return 29
 	}
 }
-
+/*
 function danetian_to_julian_day(y, m, d) {
 	var n = danetian_month_ordinal(y, m)
 	var H = Math.floor((n - 1) / 850)
@@ -117,6 +117,7 @@ function danetian_to_julian_day(y, m, d) {
 	var offset = 1237193
 	return 25101*H + 1447*K + 502*L + 59*M + 30*(MR-1) + offset + d
 }
+*/
 /*
 function julian_to_julian_day(y, m, d) {
 	offset = 1721423
@@ -147,18 +148,15 @@ function julian_is_valid(y, m, d) {
 }
 
 function danetian_date_shift(y, m, d, n) {
-	var yn = y
-	var mn = m
-	var dn = d
 	if (n == 0) {
 	} else if (0 < n) {
-		dn += n
-		while (!danetian_is_valid(yn, mn, dn)) {
-			dn -= danetian_month_length(yn, mn)
-			mn += 1
-			if (danetian_year_length(yn) < mn) {
-				yn += 1
-				mn = 1
+		d += n
+		while (!danetian_is_valid(y, m, d)) {
+			d -= danetian_month_length(y, m)
+			m += 1
+			if (danetian_year_length(y) < m) {
+				y += 1
+				m = 1
 			}
 		}
 	} else if (n < 0) {
@@ -172,7 +170,7 @@ function danetian_date_shift(y, m, d, n) {
 			d += danetian_month_length(y, m)
 		}
 	}
-	return [yn, mn, dn]
+	return [y, m, d]
 }
 
 function gregorian_date_shift(y, m, d, n) {
@@ -280,7 +278,7 @@ function julian_to_julian_day(y, m, d) {
 	}
 	return s
 }
-/*
+
 function danetian_to_julian_day(y, m, d) {
 	var [yi, mi, di] = [-3387, 9, 21]
 	var [yf, mf, df] = [y, m, d]
@@ -302,7 +300,7 @@ function danetian_to_julian_day(y, m, d) {
 	}
 	return s
 }
-*/
+
 function julian_from_julian_day(n) {
 	var [yi, mi, di] = [-4712, 1, 1]
 	return julian_date_shift(yi, mi, di, n)
@@ -350,9 +348,9 @@ function iso_format(y, m, d) {
 
 function interpret_date_string(s) {
 	var n = s.length
-	var d = s.splice(n-2,n)*1
-	var m = s.splice(n-5,n-3)*1
-	var y = s.splice(0,n-6)*1
+	var d = s.slice(n-2,n)*1
+	var m = s.slice(n-5,n-3)*1
+	var y = s.slice(0,n-6)*1
 	return [y, m, d]
 }
 
@@ -364,38 +362,7 @@ function danetian_today_string() {
 	return s
 }
 
-window.onload = function() {
-	let p = danetian_today_string()
-	document.getElementById("danetian_date_today").textContent = p
-}
 
-document.getElementById('form_calendar_calculator').addEventListener('submit', function(event) {
-	event.preventDefault();
-
-	const date_string = document.getElementById('input_date').value
-	const calendar_type = document.getElementById('select_calendar').value
-
-	var y, m, d = interpret_date_string(date_string)
-
-	var n = 0
-	if (calendar_type == "g") {
-		n = gregorian_to_julian_day(y, m, d)
-	} else if (calendar_type == "j") {
-		n = julian_to_julian_day(y, m, d)
-	} else if (calendar_type == "d") {
-		n = danetian_to_julian_day(y, m, d)
-	} else {
-		n = 0
-	}
-
-	var yg, mg, dg = gregorian_from_julian_day(n)
-	var yj, mj, dj = julian_from_julian_day(n)
-	var yd, md, dd = danetian_from_julian_day(n)
-	var date_g = iso_format(yg, mg, dg)
-	var date_j = iso_format(yj, mj, dj)
-	var date_d = iso_format(yd, md, dd)
-
-	document.getElementById('result_gregorian').innerText = 'Gregorian: ${date_g}'
-	document.getElementById('result_julian').innerText = 'Julian: ${date_j}'
-	document.getElementById('result_danetian').innerText = 'Danetian: ${date_d}'
-})
+var n = gregorian_to_julian_day(-200000,1,1)
+var [y,m,d] = danetian_from_julian_day(n)
+console.log(y,m,d)
