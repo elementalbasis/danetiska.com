@@ -1,6 +1,23 @@
 const g_month_lengths = [31,28,31,30,31,30,31,31,30,31,30,31]
 const g_leap_year_month_lengths = [31,29,31,30,31,30,31,31,30,31,30,31]
 const g_metonic_cycle = [12,13,12,12,13,12,13,12,12,13,12,12,13,12,13,12,12,13,12]
+const g_month_names = [
+	"Aries",
+	"Taurus",
+	"Gemini",
+	"Cancer",
+	"Leo",
+	"Virgo",
+	"Libra",
+	"Scorpius",
+	"Sagittarius",
+	"Capricornus",
+	"Aquarius",
+	"Pisces",
+	"Terra"
+]
+const g_month_abbreviations = ["Ari", "Tau", "Gem", "Can", "Leo", "Vir",
+	"Lib", "Sco", "Sag", "Cap", "Aqu", "Pis", "Ter"]
 
 function mod(n, d) {
 	return ((n % d) + d) % d
@@ -346,6 +363,14 @@ function iso_format(y, m, d) {
 	return ys + "-" + ms + "-" + ds
 }
 
+function verbose_format(y, m, d) {
+	var ys = zero_padding(y, 4)
+	var ms = g_month_names[m - 1]
+	var ds = zero_padding(d, 2)
+
+	return ds + " " + ms + " " + ys
+}
+
 function interpret_date_string(s) {
 	var n = s.length
 	var d = s.slice(n-2,n)*1
@@ -358,7 +383,8 @@ function danetian_today_string() {
 	var [y, m, d] = get_current_date()
 	var n = gregorian_to_julian_day(y, m, d)
 	var [yn, mn, dn] = danetian_from_julian_day(n)
-	var s = iso_format(yn, mn, dn)
+	//var s = iso_format(yn, mn, dn)
+	var s = verbose_format(yn, mn, dn)
 	return s
 }
 
