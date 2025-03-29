@@ -18,7 +18,7 @@ and the
 [Yenisei River](https://en.wikipedia.org/wiki/Yenisey)
 in modern-day Russia. However, due to
 a series of military conflicts with neighboring Turkic tribes, they were
-forced to migrate westward around the year 1100 CE. After an arduous
+forced to migrate westward in the eighth century CE. After an arduous
 journey characterized by more military conflicts, they eventually
 settled in the coastal plains of modern-day Romania and Bulgaria, in a
 region called
@@ -29,7 +29,7 @@ Proto-Indo-European. However, since the Danetian people were in contact
 with neighboring Turkic tribes for several centuries, the language has
 borrowed many words from the Turkic languages; these are mainly military
 words, and words relating to the nomadic way of life. Danetian has also
-borrowed extensively from Latin and Greek.
+borrowed extensively from Latin, Greek, Arabic, and Persian.
 
 Since the inception of this project in 2016, the language
 has undergone a myriad of revisions and rewritings. This site is
