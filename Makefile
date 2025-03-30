@@ -7,7 +7,10 @@ ASSETS = css fonts scripts calendar assets
 MD_FILES := $(shell find $(CONTENT_DIR) -type f -name '*.md')
 HTML_FILES := $(patsubst $(CONTENT_DIR)/%.md,$(OUTPUT_DIR)/%.html,$(MD_FILES))
 
-all: assets $(HTML_FILES)
+all: assets $(HTML_FILES) nojekyll
+
+nojekyll:
+	touch $(OUTPUT_DIR)/.nojekyll
 
 $(OUTPUT_DIR)/%.html: $(CONTENT_DIR)/%.md ${TEMPLATE}
 	@mkdir -p $(dir $@)
