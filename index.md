@@ -1,6 +1,6 @@
 # The Danetian Language
 
-Danetian is an artifially constructed
+Danetian is an artificially constructed
 [Indo-European](https://en.wikipedia.org/wiki/Indo-European_languages)
 language. It was
 created by applying a series of regular sound changes to
