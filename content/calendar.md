@@ -32,7 +32,7 @@ calendar in sync with the seasons.
 <p id="result_gregorian"></p>
 <p id="result_julian"></p>
 <p id="result_danetian"></p>
-<script src="scripts/calculator.js" defer></script>
+<script src="/scripts/calculator.js" defer></script>
 
 
 ## Month names
