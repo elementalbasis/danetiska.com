@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Measure the Height of a Satellite
-author: Javier Castro
+author: Simon Petrosio Sabatier
 tags: [calendar, festivals]
 ---
 
