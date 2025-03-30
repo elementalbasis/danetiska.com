@@ -169,3 +169,11 @@ p {
 	margin-bottom: 1.5rem;
 	text-align: right;
 }
+
+
+.centered-img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 50%;
+  height: auto;
+}
