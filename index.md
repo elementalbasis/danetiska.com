@@ -1,4 +1,4 @@
-# The Danetian Language
+## The Danetian Language
 
 Danetian is an artifially constructed
 [Indo-European](https://en.wikipedia.org/wiki/Indo-European_languages)
@@ -36,9 +36,9 @@ has undergone a myriad of revisions and rewritings. This site is
 intended to be a living and ever-changing reference document that
 describes the current state of the language.
 
-Feel free to browse the [dictionary](/dictionary.pdf)
+Feel free to browse the [dictionary](dictionary.pdf)
 and check out the
-[lunisolar calendar](/calendar.html)
+[lunisolar calendar](calendar.html)
 used by the Danetians.
 
 	

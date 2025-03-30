@@ -1,14 +1,46 @@
+@font-face {
+	font-family: 'C059';
+	src: url('fonts/C059-Bold.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header {
+	padding: 2rem 1rem;
+	text-align: center;
+	border-bottom: 2px solid #ccc;
+}
+
+.academy-logo {
+	font-family: 'C059', serif;
+	font-size: 3rem;
+	font-variant: small-caps;
+	color: #2e2e2e;
+	margin: 0;
+	letter-spacing: 0.05em;
+}
+
+.header-date {
+	font-family: 'C059', serif;
+	font-size: 1rem;
+	color: #555;
+	margin-top: 0.25rem;
+	text-align: center;
+	font-style: italic;
+}
+
 body {
 	margin: 40px auto;
 	max-width: 800px;
 	line-height: 1.6;
 	font-size: 20px;
-	color: #444;
+	color: #2e2e2e;
 	padding: 0 10px;
-	background-color: #eeeeee;
+	background-color: #f2f2f2;
 }
 
 h1, h2, h3 {
+	font-family: 'C059', serif;
 	line-height: 1.2;
 }
 
