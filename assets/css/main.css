@@ -1,0 +1,171 @@
+/* Load the fonts */
+/*
+@font-face {
+	font-family: 'C059';
+	src: url('fonts/C059-Roman.woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+*/
+/*
+@font-face {
+	font-family: 'C059';
+	src: url('fonts/C059-Bold.woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+*/
+/*
+@font-face {
+	font-family: 'C059';
+	src: url('fonts/C059-Italic.woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'C059';
+	src: url('fonts/C059-BoldItalic.woff2');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+*/
+/*
+@font-face {
+	font-family: 'AdwaitaSans';
+	src: url('fonts/AdwaitaSans-Regular.woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+*/
+
+
+/* Set a general style for the whole document */
+
+body {
+	margin: 40px auto;
+	max-width: 800px;
+	line-height: 1.6;
+	font-size: 1rem;
+	font-family: /*'AdwaitaSans',*/ sans-serif;
+	color: #2e2e2e;
+	padding: 0 10px;
+	background-color: #f2f2f2;
+}
+
+a {
+	color: #2c2c2c;
+	text-decoration: underline;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: #c9a300; /* Gold highlight on hover */
+}
+
+
+/* Style the header and footer */
+
+header {
+	padding: 2rem 1rem;
+	text-align: center;
+	border-bottom: 2px solid #ccc;
+}
+
+.academy-logo {
+	font-family: /*'C059',*/ serif;
+	font-size: 3rem;
+	font-variant: small-caps;
+	color: #2e2e2e;
+	margin: 0;
+	letter-spacing: 0.05em;
+}
+
+.academy-logo a {	
+	text-decoration: none;
+	cursor: default;
+	color: inherit;
+}
+
+.header-date {
+	font-family: /*'C059',*/ serif;
+	font-size: 1rem;
+	color: #555;
+	margin-top: 0.25rem;
+	text-align: center;
+	font-style: italic;
+}
+
+footer {
+	padding: 2rem 1rem;
+	text-align: center;
+	border-top: 2px solid #ccc;
+	font-family: /*'C059',*/ serif;
+	font-size: 0.9rem;
+	color: #555;
+	margin-top: 3rem;
+}
+
+
+
+/* Style the navigtion bar */
+
+.site-nav {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #ccc;
+  font-family: /*'AdwaitaSans',*/ sans-serif;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.site-nav li {
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: #c9a300; /* Danetian gold hover */
+}
+
+
+
+/* Style the rest of the document */
+
+
+h1, h2, h3 {
+	font-family: /*'C059',*/ serif;
+	line-height: 1.2;
+}
+
+p {
+	text-indent: 2em;
+}
+
+
+
+/* Style the blog posts */
+.byline {
+	font-style: italic;
+	font-size: 0.95rem;
+	color: #555;
+	margin-bottom: 1.5rem;
+	text-align: right;
+}

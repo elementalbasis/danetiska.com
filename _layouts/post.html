@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post">
+<h1>{{ page.title }}</h1>
+<p class="byline">{{ page.author }} &mdash; {{ page.date | date: "%d %B %Y" }} &mdash; <span id="danetian-date"></span></p>
+<div class="content"
+     {{ content }}
+</div>
+</article>
+
+<script src="/assets/scripts/calendar.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+	  const [yg, mg, dg] = "{{ page.date | date: '%Y-%m-%d' }}".split("-").map(Number);
+	  //var yg = gDate.getFullYear(); //u.slice(0,4)*1
+	  //var mg = gDate.getMonth() + 1; //u.slice(5,7)*1
+	  //var dg = gDate.getDate(); //u.slice(8,10)*1
+	  var n = gregorian_to_julian_day(yg, mg, dg)
+	  var [yd, md, dd] = danetian_from_julian_day(n)
+	  var s = verbose_format(yd, md, dd)
+	
+    document.getElementById("danetian-date").textContent = s;
+  });
+</script>
