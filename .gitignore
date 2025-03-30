@@ -1,0 +1,26 @@
+# Site output
+_site/
+docs/
+
+# Jekyll caches
+.jekyll-cache/
+.jekyll-metadata
+
+# Optional: If you're using Bundler
+vendor/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Ruby environment files (if using Ruby/Bundler)
+*.gem
+.bundle/
+Gemfile.lock
+
+# Node.js stuff (if using any npm tooling)
+node_modules/
+package-lock.json
