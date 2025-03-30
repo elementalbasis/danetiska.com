@@ -253,9 +253,11 @@ function compare_dates(y1, m1, d1, y2, m2, d2) {
 }
 
 function gregorian_to_julian_day(y, m, d) {
-	var [yi, mi, di] = [-4713, 11, 24]
+	//var [yi, mi, di] = [-4713, 11, 24]
+	//var [yi, mi, di, ni] = [-4713, 11, 24, 0]
+	var [yi, mi, di, ni] = [2025, 3, 29, 2460764]
 	var [yf, mf, df] = [y, m, d]
-	var s = 0
+	var s = ni
 	var sign = compare_dates(yi, mi, di, y, m, d)
 	var delta = 1 * sign
 	while (sign != 0) {
@@ -275,9 +277,11 @@ function gregorian_to_julian_day(y, m, d) {
 }
 
 function julian_to_julian_day(y, m, d) {
-	var [yi, mi, di] = [-4712, 1, 1]
+	//var [yi, mi, di] = [-4712, 1, 1]
+	//var [yi, mi, di, ni] = [-4712, 1, 1, 0]
+	var [yi, mi, di, ni] = [2025, 3, 16, 2460764]
 	var [yf, mf, df] = [y, m, d]
-	var s = 0
+	var s = ni
 	var sign = compare_dates(yi, mi, di, y, m, d)
 	var delta = 1 * sign
 	while (sign != 0) {
@@ -297,9 +301,11 @@ function julian_to_julian_day(y, m, d) {
 }
 
 function danetian_to_julian_day(y, m, d) {
-	var [yi, mi, di] = [-3387, 9, 21]
+	//var [yi, mi, di] = [-3387, 9, 21]
+	//var [yi, mi, di, ni] = [-3387, 9, 21, 0]
+	var [yi, mi, di, ni] = [3351, 1, 1, 2460764]
 	var [yf, mf, df] = [y, m, d]
-	var s = 0
+	var s = ni
 	var sign = compare_dates(yi, mi, di, y, m, d)
 	var delta = 1 * sign
 	while (sign != 0) {
@@ -319,18 +325,24 @@ function danetian_to_julian_day(y, m, d) {
 }
 
 function julian_from_julian_day(n) {
-	var [yi, mi, di] = [-4712, 1, 1]
-	return julian_date_shift(yi, mi, di, n)
+	//var [yi, mi, di] = [-4712, 1, 1]
+	//var [yi, mi, di, ni] = [-4712, 1, 1, 0]
+	var [yi, mi, di, ni] = [2025, 3, 16, 2460764]
+	return julian_date_shift(yi, mi, di, n - ni)
 }
 
 function gregorian_from_julian_day(n) {
-	var [yi, mi, di] = [-4713, 11, 24]
-	return gregorian_date_shift(yi, mi, di, n)
+	//var [yi, mi, di] = [-4713, 11, 24]
+	//var [yi, mi, di, ni] = [-4713, 11, 24, 0]
+	var [yi, mi, di, ni] = [2025, 3, 29, 2460764]
+	return gregorian_date_shift(yi, mi, di, n - ni)
 }
 
 function danetian_from_julian_day(n) {
-	var [yi, mi, di] = [-3387, 9, 21]
-	return danetian_date_shift(yi, mi, di, n)
+	//var [yi, mi, di] = [-3387, 9, 21]
+	//var [yi, mi, di, ni] = [-3387, 9, 21, 0]
+	var [yi, mi, di, ni] = [3351, 1, 1, 2460764]
+	return danetian_date_shift(yi, mi, di, n - ni)
 }
 
 function get_current_date() {
@@ -389,6 +401,6 @@ function danetian_today_string() {
 }
 
 
-var n = gregorian_to_julian_day(-200000,1,1)
-var [y,m,d] = danetian_from_julian_day(n)
-console.log(y,m,d)
+//var n = gregorian_to_julian_day(-200000,1,1)
+//var [y,m,d] = danetian_from_julian_day(n)
+//console.log(y,m,d)
