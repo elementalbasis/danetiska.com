@@ -8,6 +8,7 @@
 	font-display: swap;
 }
 */
+/*
 @font-face {
 	font-family: 'C059';
 	src: url('fonts/C059-Bold.woff2');
@@ -15,6 +16,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+*/
 /*
 @font-face {
 	font-family: 'C059';
@@ -31,7 +33,7 @@
 	font-display: swap;
 }
 */
-
+/*
 @font-face {
 	font-family: 'AdwaitaSans';
 	src: url('fonts/AdwaitaSans-Regular.woff2');
@@ -39,7 +41,7 @@
 	font-style: normal;
 	font-display: swap;
 }
-
+*/
 
 
 /* Set a general style for the whole document */
@@ -49,7 +51,7 @@ body {
 	max-width: 800px;
 	line-height: 1.6;
 	font-size: 1rem;
-	font-family: 'AdwaitaSans', sans-serif;
+	font-family: /*'AdwaitaSans',*/ sans-serif;
 	color: #2e2e2e;
 	padding: 0 10px;
 	background-color: #f2f2f2;
@@ -75,7 +77,7 @@ header {
 }
 
 .academy-logo {
-	font-family: 'C059', serif;
+	font-family: /*'C059',*/ serif;
 	font-size: 3rem;
 	font-variant: small-caps;
 	color: #2e2e2e;
@@ -90,7 +92,7 @@ header {
 }
 
 .header-date {
-	font-family: 'C059', serif;
+	font-family: /*'C059',*/ serif;
 	font-size: 1rem;
 	color: #555;
 	margin-top: 0.25rem;
@@ -102,7 +104,7 @@ footer {
 	padding: 2rem 1rem;
 	text-align: center;
 	border-top: 2px solid #ccc;
-	font-family: 'C059', serif;
+	font-family: /*'C059',*/ serif;
 	font-size: 0.9rem;
 	color: #555;
 	margin-top: 3rem;
@@ -115,7 +117,7 @@ footer {
 .site-nav {
   background-color: #f0f0f0;
   border-bottom: 2px solid #ccc;
-  font-family: 'AdwaitaSans', sans-serif;
+  font-family: /*'AdwaitaSans',*/ sans-serif;
 }
 
 .site-nav ul {
@@ -149,7 +151,7 @@ footer {
 
 
 h1, h2, h3 {
-	font-family: 'C059', serif;
+	font-family: /*'C059',*/ serif;
 	line-height: 1.2;
 }
 
