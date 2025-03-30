@@ -2,7 +2,7 @@ PANDOC = pandoc
 TEMPLATE = templates/base.html
 CONTENT_DIR = content
 OUTPUT_DIR = docs
-ASSETS = css fonts scripts calendar assets
+ASSETS = css fonts scripts calendar assets CNAME
 
 MD_FILES := $(shell find $(CONTENT_DIR) -type f -name '*.md')
 HTML_FILES := $(patsubst $(CONTENT_DIR)/%.md,$(OUTPUT_DIR)/%.html,$(MD_FILES))
