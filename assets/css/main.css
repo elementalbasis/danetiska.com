@@ -177,3 +177,30 @@ p {
   max-width: 65%;
   height: auto;
 }
+
+
+
+
+/* Style figures */
+
+figure {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+figure img {
+  max-width: 65%;
+  height: auto;
+  border: 1px solid #ccc; /* optional */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
