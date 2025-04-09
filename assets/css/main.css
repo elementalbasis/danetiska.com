@@ -204,3 +204,12 @@ figcaption {
   font-style: italic;
 }
 
+
+/* Style the flag icon */
+
+.flag-icon {
+  height: 1.25em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
