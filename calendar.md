@@ -151,6 +151,9 @@ calendar.
 
 ## Calendar files
 
+You may perform calendrical calculations with the help of
+[this document](/assets/docs/modular-tables-for-calendrical-calculations.pdf).
+
 [Here](/assets/calendar/3351.pdf) is the calendar for the current year. You may also
 browse any of the calendar files for other years:
 
