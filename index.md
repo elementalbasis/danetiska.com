@@ -55,3 +55,4 @@ used by the Danetians.
 4. [Novegradian language](https://veche.net/novegradian)
 5. [Kala language](https://footballbatsandmore.wordpress.com/about/document-library)
 6. [Star Chart](https://www.planetarium.sfasu.edu/SFAStarCharts/SFAStarChartsPro.pdf)
+7. [File Encrypter](https://webbrowsertools.com/file-encryptor/)
