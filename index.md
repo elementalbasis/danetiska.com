@@ -46,7 +46,6 @@ and check out the
 used by the Danetians.
 
 
-
 ### Some Random Websites
 
 1. [Library Genesis](http://libgen.rs)
@@ -57,3 +56,4 @@ used by the Danetians.
 6. [Star Chart](https://www.planetarium.sfasu.edu/SFAStarCharts/SFAStarChartsPro.pdf)
 7. [File Encrypter](https://webbrowsertools.com/file-encryptor/)
 8. [Marc Ten Bosch](https://marctenbosch.com/)
+9. [Correct Horse Battery Staple](https://correcthorse.pw/)
