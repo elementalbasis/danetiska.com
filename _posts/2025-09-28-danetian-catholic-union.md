@@ -5,8 +5,8 @@ author: Javier Castro
 tags: [calendar, christianity, catholicism, orthodoxy]
 ---
 
-When the Danetians settled in the land of
-[Dobrudja](https://en.wikipedia.org/wiki/Dobruja), they were converted to
+When the Danetians originally settled in the land of
+[Dobrudja](https://en.wikipedia.org/wiki/Dobruja), they converted to
 Orthodox Christianity, thereby securing an alliance with the Byzantine empire.
 
 However, by the early 15th century, the Byzantine empire was in steep decline.
@@ -16,11 +16,12 @@ in the
 [Bull of Union with the Greeks](https://en.wikipedia.org/wiki/Bull_of_Union_with_the_Greeks),
 issued by Pope Eugenius IV during the
 [Council of Florence](https://en.wikipedia.org/wiki/Council_of_Florence)
-in 1439. This led to the Danetians entering into communion with Rome.
+in 1439. Being under Byzantine jurisdiction, the Danetians therefore entered into
+communion with Rome.
 
-When the Greek union with Rome fell apart a few years later, the Danetian
-church remained loyal to Rome. As a result, Pope Sixtus IV issued the following
-decree in 1476, confirming the fidelity of the Danetians.
+When this union with Rome was rejected by the Greek laity a few years later,
+the Danetian church decided to remain loyal to Rome. As a result, Pope Sixtus IV
+issued the following decree in 1476, confirming the fidelity of the Danetians.
 
 ## Decretus pro Danetis
  
