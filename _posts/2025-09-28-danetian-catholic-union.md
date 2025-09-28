@@ -19,7 +19,7 @@ issued by Pope Eugenius IV during the
 in 1439. Being under Byzantine jurisdiction, the Danetians therefore entered into
 communion with Rome.
 
-When this union with Rome was rejected by the Greek laity a few years later,
+When this union with Rome was rejected by the Orthodox laity a few years later,
 the Danetian church decided to remain loyal to Rome. As a result, Pope Sixtus IV
 issued the following decree in 1476, confirming the fidelity of the Danetians.
 
