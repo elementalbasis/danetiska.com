@@ -42,26 +42,27 @@ calendar in sync with the seasons.
 ## Month names
 
 The twelve months are named according to a modified version of the Chinese
-zodiac:
+zodiac, or according to their respective constellations:
 
-1. Rat
-2. Ox
-3. Wolf (Tiger in the Chinese zodiac)
-4. Rabbit
-5. Eagle (Dragon in the Chinese zodiac)
-6. Snake
-7. Horse
-8. Goat
-9. Hedgehog (Monkey in the Chinese zodiac)
-10. Rooster
-11. Dog
-12. Pig
-13. Epagomenal (only in leap years)
+1. Aries, Rat
+2. Taurus, Ox
+3. Gemini, Wolf (Tiger in the Chinese zodiac)
+4. Cancer, Rabbit
+5. Leo, Eagle (Dragon in the Chinese zodiac)
+6. Virgo, Snake
+7. Libra, Horse
+8. Scorpius, Goat
+9. Sagittarius, Hedgehog (Monkey in the Chinese zodiac)
+10. Capricornus, Rooster
+11. Aquarius, Dog
+12. Pisces, Pig
+13. Terra, Epagomenal (only in leap years)
 
-The Danetians use these month names because they lived alongside Turkic
-tribes for several centuries. It was common for these Turkic tribes to use a
-modified version of the Chinese zodiac, with some animals replaced by local
-fauna.
+The Danetians use the traditional month names because they lived alongside
+Turkic tribes for several centuries. It was common for these Turkic tribes to
+use a modified version of the Chinese zodiac, with some animals replaced by
+local fauna. The constellation names are used as month names in more modern
+contexts.
 
 
 
