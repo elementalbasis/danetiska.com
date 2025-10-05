@@ -6,11 +6,8 @@ layout: default
 
 The Danetian Academy is dedicated to preserving and promoting the Danetian
 language and culture, as well as other fields of knowledge, such as history,
-literature, science, and philosophy. It was founded on the idea that a people's
-language and memory are inseparable from their pursuit of knowledge.
-Danetia's heritage can only thrive when placed in dialogue with the broader
-world of human thought. The Academy publishes dictionaries, essays, critical
-studies, and creative works to share the Danetian heritage with the world.
+literature, science, and philosophy. The Academy publishes dictionaries, essays,
+critical studies, and creative works to bring the Danetian heritage to life.
 
 
 
@@ -28,7 +25,8 @@ irregular forms.
 
 The Danetian people, much like their
 [Indo-European ancestors](https://en.wikipedia.org/wiki/Proto-Indo-Europeans),
-were horse nomads roaming the Eurasian steppe. They originally settled around
+were horse nomads roaming the Eurasian steppe. They originally inhabited
+the area around
 [Lake Baikal](https://en.wikipedia.org/wiki/Lake_Baikal)
 and the
 [Yenisei River](https://en.wikipedia.org/wiki/Yenisey)
@@ -36,8 +34,8 @@ in modern-day Russia. However, due to
 a series of military conflicts with neighboring Turkic tribes, they were
 forced to migrate westward in the eighth century CE. After an arduous
 journey characterized by more military conflicts, they eventually
-settled in the coastal plains of modern-day Romania and Bulgaria, in a
-region called
+settled in the coastal plains of modern-day Romania and Bulgaria, in the
+region of
 [Dobrudja](https://en.wikipedia.org/wiki/Dobruja).
 
 The core vocabulary of Danetian is inherited from
@@ -50,7 +48,7 @@ borrowed extensively from Latin, Greek, Arabic, and Persian.
 Since the inception of this project in 2016, the language
 has undergone a myriad of revisions and rewritings. This site is
 intended to be a living and ever-changing reference document that
-describes the current state of the language.
+describes the current state of the language and cultural project.
 
 <!--Feel free to browse the [dictionary](/assets/docs/dictionary.pdf)
 and check out the
