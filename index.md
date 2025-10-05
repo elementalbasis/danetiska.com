@@ -1,8 +1,20 @@
 ---
-title: The Danetian Language
+title: Danetian Academy
 layout: default
 ---
 # {{ page.title }}
+
+The Danetian Academy is dedicated to preserving and promoting the Danetian
+language and culture, as well as other fields of knowledge, such as history,
+literature, science, and philosophy. It was founded on the idea that a people's
+language and memory are inseparable from their pursuit of knowledge.
+Danetia's heritage can only thrive when placed in dialogue with the broader
+world of human thought. The Academy publishes dictionaries, essays, critical
+studies, and creative works to share the Danetian heritage with the world.
+
+
+
+## The Danetian Language
 
 Danetian is an artificially constructed
 [Indo-European](https://en.wikipedia.org/wiki/Indo-European_languages)
@@ -40,13 +52,13 @@ has undergone a myriad of revisions and rewritings. This site is
 intended to be a living and ever-changing reference document that
 describes the current state of the language.
 
-Feel free to browse the [dictionary](/assets/docs/dictionary.pdf)
+<!--Feel free to browse the [dictionary](/assets/docs/dictionary.pdf)
 and check out the
 [lunisolar calendar](/calendar.html)
-used by the Danetians.
+used by the Danetians.-->
 
 
-### Some Random Websites
+## Other Interesting Websites
 
 1. [Library Genesis](http://libgen.rs)
 2. [Sci-Hub](https://www.sci-hub.st)
@@ -57,3 +69,8 @@ used by the Danetians.
 7. [File Encrypter](https://webbrowsertools.com/file-encryptor/)
 8. [Marc Ten Bosch](https://marctenbosch.com/)
 9. [Correct Horse Battery Staple](https://correcthorse.pw/)
+10. [Temp Mail](https://temp-mail.org/en/)
+11. [Base 64 Encode](https://www.base64encode.org/)
+12. [Measuring Worth](https://www.measuringworth.com/index.php)
+13. [Autotracer](https://www.autotracer.org/)
+14. [USPaperMoney.Info](https://www.uspapermoney.info/)
