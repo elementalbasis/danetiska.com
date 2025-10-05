@@ -2,7 +2,7 @@
 layout: post
 title: How to Measure the Height of a Satellite
 author: Javier Castro
-tags: [calendar, festivals]
+tags: [science, physics]
 ---
 
 If you go outside to observe the night sky during right after sunset or right
