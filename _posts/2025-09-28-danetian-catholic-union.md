@@ -2,7 +2,8 @@
 layout: post
 title: Danetian union with the Catholic Church
 author: Javier Castro
-tags: [calendar, christianity, catholicism, orthodoxy]
+tags: [worldbuilding, calendar]
+cover: /assets/images/st-peters-basilica.jpg
 ---
 
 When the Danetians originally settled in the land of

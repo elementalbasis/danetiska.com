@@ -3,9 +3,10 @@ layout: post
 title: What is the shape of a hanging cable?
 author: Javier Castro
 tags: [math, physics]
+cover: /assets/images/catenary_curve.jpg
 ---
 
-What shape does a hanging cable make? Initially, one may
+What shape does a hanging chain or cable make? Initially, one may
 guess that it is a simple parabola. But this is not the case; the answer is much
 more fascinating. So let us calculate that shape, called a
 [catenary](https://en.wikipedia.org/wiki/Catenary).

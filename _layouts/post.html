@@ -8,7 +8,14 @@ layout: default
 	<br>{{ page.date | date: "%d %B %Y" }}
 	<br><span id="danetian-date"></span>
 </p>
-<div class="content"
+
+{% if page.cover %}
+<div class="post-cover">
+	<img src="{{ page.cover }}" alt="Cover image for {{ page.title }}">
+</div>
+{% endif %}
+
+<div class="content">
      {{ content }}
 </div>
 </article>
