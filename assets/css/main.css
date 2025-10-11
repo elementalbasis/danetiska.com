@@ -122,8 +122,8 @@ footer {
 .site-nav {
   background-color: #f0f0f0;
   border-bottom: 2px solid #ccc;
-  font-family: /*'AdwaitaSans',*/ serif;
-  font-variant: small-caps;
+  /*font-family: small-caps;*/
+  /*font-size: 1.5rem;*/
 }
 
 .site-nav ul {
@@ -142,7 +142,9 @@ footer {
 .site-nav a {
   text-decoration: none;
   color: #2c2c2c;
-  font-weight: 500;
+  font-family: serif;
+  font-variant: small-caps;
+  font-weight: 600;
   font-size: 1.5rem;
   transition: color 0.2s ease;
 }
