@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Danetian Independence
+title: Danetian independence
 author: Javier Castro
 tags: [history]
 ---

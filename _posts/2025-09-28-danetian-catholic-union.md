@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Danetian Union with the Catholic Church
+title: Danetian union with the Catholic Church
 author: Javier Castro
 tags: [calendar, christianity, catholicism, orthodoxy]
 ---
