@@ -7,7 +7,8 @@ layout: default
 The Danetian Republic is a small
 [republic of letters](https://en.wikipedia.org/wiki/Republic_of_Letters), a
 blog where I publish my thoughts on mathematics, physics, and the fictional
-world of Danetia: its language, history, and culture. Every reader is a citizen.
+world of Danetia: its language, history, and culture. Every reader is welcome
+as a citizen, and is invited to deepen their curiosity and love of learning.
 
 
 
