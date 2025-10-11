@@ -1,13 +1,13 @@
 ---
-title: Danetian Academy
+title: Danetian Republic
 layout: default
 ---
 # {{ page.title }}
 
-The Danetian Academy is dedicated to preserving and promoting the Danetian
-language and culture, as well as other fields of knowledge, such as history,
-literature, science, and philosophy. The Academy publishes dictionaries, essays,
-critical studies, and creative works to bring the Danetian heritage to life.
+The Danetian Republic is a small
+[republic of letters](https://en.wikipedia.org/wiki/Republic_of_Letters), a
+place where I collect my thoughts on mathematics, physics, and my
+[conlang](https://en.wikipedia.org/wiki/Constructed_language), Danetian.
 
 
 
