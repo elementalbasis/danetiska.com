@@ -1,7 +1,7 @@
-const g_month_lengths = [31,28,31,30,31,30,31,31,30,31,30,31]
-const g_leap_year_month_lengths = [31,29,31,30,31,30,31,31,30,31,30,31]
+const g_gregorian_month_lengths = [31,28,31,30,31,30,31,31,30,31,30,31]
+const g_gregorian_leap_year_month_lengths = [31,29,31,30,31,30,31,31,30,31,30,31]
 const g_metonic_cycle = [12,13,12,12,13,12,13,12,12,13,12,12,13,12,13,12,12,13,12]
-const g_month_names = [
+const g_danetian_month_names = [
 	"Aries",
 	"Taurus",
 	"Gemini",
@@ -16,17 +16,32 @@ const g_month_names = [
 	"Pisces",
 	"Terra"
 ]
-const g_month_abbreviations = ["Ari", "Tau", "Gem", "Can", "Leo", "Vir",
+const g_danetian_month_abbreviations = ["Ari", "Tau", "Gem", "Can", "Leo", "Vir",
 	"Lib", "Sco", "Sag", "Cap", "Aqu", "Pis", "Ter"]
+
+const g_gregorian_month_names = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+]
 
 function mod(n, d) {
 	return ((n % d) + d) % d
 }
 
 function gregorian_month_length(y, m) {
-	var month_lengths = g_month_lengths
+	var month_lengths = g_gregorian_month_lengths
 	if (gregorian_is_leap_year(y)) {
-		month_lengths = g_leap_year_month_lengths
+		month_lengths = g_gregorian_leap_year_month_lengths
 	}
 	return month_lengths[m-1]
 }
@@ -52,9 +67,9 @@ function julian_year_length(y) {
 }
 
 function julian_month_length(y, m) {
-	var month_lengths = g_month_lengths
+	var month_lengths = g_gregorian_month_lengths
 	if (julian_is_leap_year(y)) {
-		month_lengths = g_leap_year_month_lengths
+		month_lengths = g_gregorian_leap_year_month_lengths
 	}
 	return month_lengths[m-1]
 }
@@ -375,9 +390,9 @@ function iso_format(y, m, d) {
 	return ys + "-" + ms + "-" + ds
 }
 
-function verbose_format(y, m, d) {
+function verbose_format(y, m, d, month_names) {
 	var ys = zero_padding(y, 4)
-	var ms = g_month_names[m - 1]
+	var ms = month_names[m - 1]
 	var ds = zero_padding(d, 2)
 
 	return ds + " " + ms + " " + ys
@@ -396,7 +411,13 @@ function danetian_today_string() {
 	var n = gregorian_to_julian_day(y, m, d)
 	var [yn, mn, dn] = danetian_from_julian_day(n)
 	//var s = iso_format(yn, mn, dn)
-	var s = verbose_format(yn, mn, dn)
+	var s = verbose_format(yn, mn, dn, g_danetian_month_names)
+	return s
+}
+
+function gregorian_today_string() {
+	var [y, m, d] = get_current_date()
+	var s = verbose_format(y, m, d, g_gregorian_month_names)
 	return s
 }
 
