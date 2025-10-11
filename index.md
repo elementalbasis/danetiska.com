@@ -72,3 +72,4 @@ used by the Danetians.-->
 12. [Measuring Worth](https://www.measuringworth.com/index.php)
 13. [Autotracer](https://www.autotracer.org/)
 14. [USPaperMoney.Info](https://www.uspapermoney.info/)
+15. [Astrodienst Ephemeris](https://www.astro.com/swisseph/swepha_e.htm)
