@@ -91,6 +91,11 @@ header {
 	color: inherit;
 }
 
+.main-logo {
+	width: 15em;
+	margin: -3em;
+}
+
 .header-date {
 	font-family: /*'C059',*/ serif;
 	font-size: 1rem;
