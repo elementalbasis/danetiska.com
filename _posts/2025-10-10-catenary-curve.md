@@ -39,13 +39,14 @@ function of arclength $$s$$. We have conveniently chosen the constant of
 integration $$T_0 \, \mathbf{e}_x$$ so that $$s=0$$ corresponds to the minimum
 point of the curve, making the tension force fully horizontal there.
 
-This vector function $$\mathbf{T}$$ not only tells us the magnitude of the
-tension of the cable, but also its direction. Thus, we can use it to give us
+This vector function $$\mathbf{T}$$ tells us both the magnitude and direction
+of the force of tension all along the cable. Thus, we can use it to give us
 information about the slope of the curve.
 
 <img src="/assets/images/asy/differential_triangle.svg" class="centered-img" alt="Differential triangle.">
 
-We can recover the slope of the function as follows:
+We can recover the slope of the curve from the components of
+$$\mathbf{T}$$ as follows:
 
 $$ \frac{\mathrm{d}y}{\mathrm{d}x} = \tan(\theta) = \frac{\rho_\lambda \, g \, s}{T_0} $$
 
