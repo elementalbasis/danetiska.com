@@ -2,7 +2,7 @@
 layout: post
 title: How to measure the height of a satellite
 author: Javier Castro
-tags: [science, physics]
+tags: [physics]
 cover: /assets/images/satellite.jpg
 ---
 

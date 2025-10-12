@@ -2,7 +2,7 @@
 layout: post
 title: Danetian independence
 author: Javier Castro
-tags: [history]
+tags: [worldbuilding]
 ---
 
 After the Russo-Turkish War, the great powers of Europe met in the
