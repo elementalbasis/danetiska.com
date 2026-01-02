@@ -9,14 +9,15 @@ cover: https://eclipse.gsfc.nasa.gov/5MCSEmap/-1399--1300/-1325-04-03.gif
 <script src="/assets/scripts/calendar.js" defer></script>
 <script src="/assets/scripts/today.js" defer></script>
 
-One of my proudest creations is the Danetian calendar. This is a
-[lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar), where
-each month starts at the
+The Danetian calendar is the traditional 
+[lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar) used by
+the Danetian people. Each month starts at the
 [new moon](https://en.wikipedia.org/wiki/New_moon), and each year starts at the
 new moon closest to the
 [vernal equinox](https://en.wikipedia.org/wiki/March_equinox). In order to
-accomplish this, a series of calculations are made to determine the current
-position along the lunar and solar cycles.
+accomplish this, a series of algorithms were formalized by
+[Myron Dorostolite](/blog/myron-dorostolite.html) in the 14th century to
+perform calendrical calculations.
 
 
 
@@ -147,26 +148,15 @@ count on rule 1.
 
 ## Calendar epoch
 
-All of these rules assume that we start counting months and years from a
-particular date, which is called the
-[calendar epoch](https://en.wikipedia.org/wiki/Epoch). We must look throughout
-history and choose which date is the most convenient to serve as an epoch in
-order to ensure that the calendar remains aligned with the phases of the moon
-and the seasons of the year. This date must be a new moon, and preferrably
-coincide with the vernal equinox.
-
-By browsing through NASA's
-[Five millenium catalog of solar eclipses](https://eclipse.gsfc.nasa.gov/SEcat5/SEcatalog.html),
-and cross checking each date with
-[Swiss ephemerides](https://www.astro.com/swisseph/swepha_e.htm),
-I decided that the most elegant epoch was 03&nbsp;Apr&nbsp;-1325, because on
-this date the vernal equinox coincided with a solar eclipse.
+[Myron](/blog/myron-dorostolite.html) took 03&nbsp;Apr&nbsp;-1325 as the epoch
+for his calendar. This is fascinating because on this date, the vernal equinox
+coincided with a solar eclipse.
 
 
 
 ## Manual calculations
 
-I have created
+We have created
 [this document](/assets/docs/modular-tables-for-calendrical-calculations.pdf)
 to aid in converting Gregorian or Julian dates their corresponding Danetian
 date.
