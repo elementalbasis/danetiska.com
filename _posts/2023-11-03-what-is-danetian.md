@@ -3,6 +3,7 @@ layout: post
 title: What is the Danetian language?
 author: Javier Castro
 tags: [conlang, worldbuilding]
+cover: https://upload.wikimedia.org/wikipedia/commons/f/f9/Conlangflag.svg
 ---
 
 Danetian is an artificially constructed
