@@ -1,10 +1,7 @@
 ---
-title: Danetian Republic
+title: Danetian Academy
 layout: home
 ---
 # {{ page.title }}
 
-A modern
-[republic of letters](https://en.wikipedia.org/wiki/Republic_of_Letters),
-exploring ideas in mathematics, physics, and the fictional
-world of Danetia.
+A website for showcasing my Indo-European conlang, Danetian.
