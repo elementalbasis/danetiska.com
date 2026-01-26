@@ -1,49 +1,3 @@
-/* Load the fonts */
-/*
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-Roman.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-*/
-/*
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-Bold.woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-*/
-/*
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-Italic.woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-BoldItalic.woff2');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-*/
-/*
-@font-face {
-	font-family: 'AdwaitaSans';
-	src: url('fonts/AdwaitaSans-Regular.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-*/
-
-
 /* Set a general style for the whole document */
 
 body {
@@ -76,24 +30,12 @@ header {
 	border-bottom: 2px solid #ccc;
 }
 
-.academy-logo {
-	font-family: /*'C059',*/ serif;
-	font-size: 3rem;
-	font-variant: small-caps;
-	color: #2e2e2e;
-	margin: 30px;
-	letter-spacing: 0.05em;
-}
-
-.academy-logo a {	
-	text-decoration: none;
-	cursor: default;
-	color: inherit;
-}
-
 .main-logo {
-	width: 15em;
-	/*margin: -3em;*/
+	display: block;
+	width: 75%;
+	max-width: 25em;
+	height: auto;
+	margin: 0 auto;
 }
 
 .header-date {
