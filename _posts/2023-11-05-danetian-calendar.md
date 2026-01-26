@@ -30,6 +30,11 @@ Danetian dates. (NOTE: All dates must be input in YYYY-MM-DD format, and years
 must use
 [astronomical numbering](https://en.wikipedia.org/wiki/Astronomical_year_numbering)).
 
+Today's date is:
+
+<div class="header-date" id="gregorian_date_today"></div>
+<div class="header-date" id="danetian_date_today"></div>
+
 <form id="form_calendar_calculator">
     <label for="input_date">Enter date:</label>
     <input type="text" id="input_date" placeholder="YYYY-MM-DD" required>
