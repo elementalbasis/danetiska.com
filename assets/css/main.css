@@ -36,6 +36,9 @@ main, footer {
 .masthead {
   border-bottom: 1px solid #ccc;
   background: #f7f7f7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .site-nav {
