@@ -1,0 +1,87 @@
+:root {
+  --maxw: 900px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.35;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.header { margin-bottom: 1rem; }
+.muted { color: #666; }
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .75rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.search input[type="search"] {
+  width: 100%;
+  padding: .75rem;
+  font-size: 1rem;
+}
+
+.search button {
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.row {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: #333;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #f6f6f6;
+  padding: 1rem;
+  border-radius: .5rem;
+  overflow-x: auto;
+}
+
+
+.codebox {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background: #0f172a;           /* deep slate / navy */
+  color: #e5e7eb;                /* soft light gray */
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-height: 60vh;              /* don’t let it run away */
+  overflow: auto;                /* scroll if many matches */
+  white-space: pre-wrap;         /* wrap long lines */
+}
+
+/* Optional: subtle focus highlight when updated */
+.codebox:focus-within {
+  border-color: #38bdf8;
+}
+
+/* Optional: scrollbar polish (webkit browsers) */
+.codebox::-webkit-scrollbar {
+  width: 8px;
+}
+.codebox::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+

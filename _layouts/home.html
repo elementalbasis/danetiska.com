@@ -2,6 +2,29 @@
 layout: default
 ---
 
+<section class="dict-hero" aria-label="Dictionary search">
+  <div class="dict-hero__inner">
+    <h2 class="dict-hero__title">Dictionary</h2>
+    <p class="dict-hero__subtitle">Search the lexicon</p>
+
+    <form class="dict-hero__form" id="homeDictForm">
+      <input
+        class="dict-hero__input"
+        id="homeDictQuery"
+        type="search"
+        placeholder="Search a word…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button class="dict-hero__btn" type="submit" aria-label="Search">
+        Search
+      </button>
+    </form>
+  </div>
+</section>
+
+<script src="/assets/scripts/home-dict-search.js"></script>
+
 <div class="content">
      {{ content }}
 </div>
