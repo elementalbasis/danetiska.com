@@ -3,9 +3,6 @@ layout: standalone
 title: The Danetian calendar
 ---
 
-<script src="/assets/scripts/calendar.js" defer></script>
-<script src="/assets/scripts/today.js" defer></script>
-
 The Danetian calendar is the traditional 
 [lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar) used by
 the Danetian people. Each month starts at the
