@@ -325,13 +325,13 @@ figcaption {
 }
 
 .footer-title {
-  font-family: serif;
+  /*font-family: serif;*/
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .footer-meta {
-  font-family: serif;
+  /*font-family: serif;*/
   font-size: 0.9rem;
   color: #666;
   line-height: 1.35;
@@ -350,7 +350,7 @@ figcaption {
 }
 
 .footer-legal a {
-  font-family: serif;
+  /*font-family: serif;*/
   font-size: 0.9rem;
   text-decoration: none;
   color: #2c2c2c;
