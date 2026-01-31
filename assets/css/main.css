@@ -44,6 +44,16 @@ main, footer {
   display: block;
 }
 
+/* Hamburger button */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-family: serif;
+}
+
 /* Links */
 .nav-links {
   list-style: none;
@@ -52,6 +62,26 @@ main, footer {
   display: flex;
   align-items: baseline;
   gap: 2rem;
+}
+
+/* Mobile hamburger behavior */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
 }
 
 .nav-links a {
@@ -67,13 +97,6 @@ main, footer {
 .nav-links a:hover {
   color: #c9a300;
 }
-
-/* Mobile: stack brand above links */
-@media (max-width: 700px) {
-  :contentReference[oaicite:9]{index=9}direction: column;
-    align-items: center;
-}
-
 
 
 /* Style the rest of the document */
