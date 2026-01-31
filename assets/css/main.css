@@ -1,4 +1,6 @@
 @import "/assets/css/date_today.css";
+@import "/assets/css/dictionary.css";
+@import "/assets/css/home-dict-search.css";
 
 /* Layout spine: body shouldn't be the centered container */
 body {

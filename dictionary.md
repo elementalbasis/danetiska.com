@@ -1,5 +1,5 @@
 ---
-title: Danetian Dictionary
+title: Dictionary of the Danetian language
 layout: standalone
 ---
 
