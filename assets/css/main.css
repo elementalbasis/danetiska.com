@@ -3,7 +3,7 @@ body {
   margin: 0;
   line-height: 1.6;
   font-size: 1.2rem;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Sergoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #2e2e2e;
   background-color: #ffffff;
 }
@@ -87,11 +87,11 @@ main, footer {
 .nav-links a {
   text-decoration: none;
   color: #2c2c2c;
-  font-family: serif;
-  font-variant: small-caps;
+  font-family: inherit;
+  /*font-variant: small-caps;*/
   font-weight: 500;
-  font-size: 1.1rem;
-  letter-spacing: 0.03em;
+  /*font-size: 1.1rem;*/
+  letter-spacing: 0.02em;
 }
 
 .nav-links a:hover {
@@ -103,8 +103,10 @@ main, footer {
 
 
 h1, h2, h3 {
-	font-family: /*'C059',*/ serif;
-	line-height: 1.2;
+	/*font-family: serif;*/
+	/*line-height: 1.2;*/
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 p {
