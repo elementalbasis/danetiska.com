@@ -1,0 +1,54 @@
+.dict-date {
+  margin: 2.5rem 0 1.25rem;
+  padding: 1.25rem 1rem;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  background: #f9fafb;
+}
+
+.dict-date__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.dict-date__item {
+  text-align: center;
+}
+
+.dict-date__label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.dict-date__value {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.dict-date__sep {
+  font-size: 1.25rem;
+  color: #777;
+}
+
+/* Mobile: stack cleanly */
+@media (max-width: 600px) {
+  .dict-date__inner {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .dict-date__sep {
+    display: none;
+  }
+}
+
