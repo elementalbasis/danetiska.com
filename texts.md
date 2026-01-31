@@ -1,8 +1,7 @@
 ---
 title: Sample Texts
-layout: default
+layout: standalone
 ---
-# {{ page.title }}
 
 ## The North Wind and the Sun
 

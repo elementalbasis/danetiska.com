@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: standalone
 title: Blog Posts
 ---
-# {{ page.title }}
 
 <ul>
   {% for post in site.posts %}
