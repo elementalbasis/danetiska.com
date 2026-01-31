@@ -1,11 +1,11 @@
 ---
-title: Other interesting websites
-layout: default
+title: External Resources
+layout: standalone
 ---
 
-1. [Library Genesis](http://libgen.rs)
-2. [Sci-Hub](https://www.sci-hub.st)
-3. [Edit the Text](https://tikolu.net/edit/.info)
+1. [Elemental Basis](https://elementalbasis.com)
+2. [Library Genesis](https://libgenis.net/)
+3. [Sci-Hub](https://www.sci-hub.st)
 4. [Novegradian language](https://veche.net/novegradian)
 5. [Kala language](https://footballbatsandmore.wordpress.com/about/document-library)
 6. [Star Chart](https://www.planetarium.sfasu.edu/SFAStarCharts/SFAStarChartsPro.pdf)
@@ -18,3 +18,8 @@ layout: default
 13. [Autotracer](https://www.autotracer.org/)
 14. [USPaperMoney.Info](https://www.uspapermoney.info/)
 15. [Astrodienst Ephemeris](https://www.astro.com/swisseph/swepha_e.htm)
+16. [Edit the Text](https://tikolu.net/edit/.info)
+17. [One Time Secret](https://onetimesecret.com/)
+18. [Royal Spanish Academy](https://rae.es)
+19. [Institute of Catalan Studies](https://iec.cat)
+20. [Galician Academy](https://academia.gal)
