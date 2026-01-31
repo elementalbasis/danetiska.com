@@ -1,9 +1,6 @@
 ---
-layout: post
-title: What is the Danetian language?
-author: Javier Castro
-tags: [conlang, worldbuilding]
-cover: https://upload.wikimedia.org/wikipedia/commons/f/f9/Conlangflag.svg
+layout: standalone
+title: The Danetian language
 ---
 
 Danetian is an artificially constructed
@@ -20,13 +17,10 @@ The Danetian people, much like their
 [Indo-European ancestors](https://en.wikipedia.org/wiki/Proto-Indo-Europeans),
 were horse nomads roaming the Eurasian steppe. They originally inhabited
 the area around
-[Lake Baikal](https://en.wikipedia.org/wiki/Lake_Baikal)
-and the
-[Yenisei River](https://en.wikipedia.org/wiki/Yenisey)
+the [Don River](https://en.wikipedia.org/wiki/Don_(river))
 in modern-day Russia. However, due to
 a series of military conflicts with neighboring Turkic tribes, they were
-forced to migrate westward in the eighth century CE. After an arduous
-journey characterized by more military conflicts, they eventually
+forced to migrate westward around 1100 CE. They eventually
 settled in the coastal plains of modern-day Romania and Bulgaria, in the
 region of
 [Dobrudja](https://en.wikipedia.org/wiki/Dobruja).
@@ -37,3 +31,7 @@ with neighboring Turkic tribes for several centuries, the language has
 borrowed many words from the Turkic languages; these are mainly military
 words, and words relating to the nomadic way of life. Danetian has also
 borrowed extensively from Latin, Greek, Arabic, and Persian.
+
+This language project has been in development since 2016. After countless
+revisions, it has finally reached a stable form. The Danetian Academy is
+dedicated to promoting the Danetian language.
