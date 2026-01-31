@@ -6,7 +6,7 @@ layout: standalone
 <main class="wrap">
 
   <section class="search">
-    <input id="q" type="search" placeholder="Dictionary search" autocomplete="off" />
+    <input id="q" type="search" placeholder="Search the dictionary" autocomplete="off" />
     <button id="go" type="button">Search</button>
   </section>
 
