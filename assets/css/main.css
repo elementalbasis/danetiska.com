@@ -1,98 +1,77 @@
-/* Set a general style for the whole document */
-
+/* Layout spine: body shouldn't be the centered container */
 body {
-	margin: 40px auto;
-	max-width: 800px;
-	line-height: 1.6;
-	font-size: 1rem;
-	font-family: /*'AdwaitaSans',*/ sans-serif;
-	color: #2e2e2e;
-	padding: 0 10px;
-	background-color: #ffffff;/*#f2f2f2;*/
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #2e2e2e;
+  background-color: #ffffff;
 }
 
-a {
-	color: #2c2c2c;
-	text-decoration: underline;
-	transition: color 0.2s ease;
+/* Keep your content max-width without breaking the masthead */
+main, footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-a:hover {
-	color: #c9a300; /* Gold highlight on hover */
+/* Masthead: logo + nav in one region */
+.masthead {
+  border-bottom: 1px solid #ccc;
+  background: #f7f7f7;
 }
-
-
-/* Style the header and footer */
-
-header {
-	padding: 2rem 1rem;
-	text-align: center;
-	border-bottom: 2px solid #ccc;
-}
-
-.main-logo {
-	display: block;
-	width: 75%;
-	max-width: 25em;
-	height: auto;
-	margin: 0 auto;
-}
-
-.header-date {
-	font-family: /*'C059',*/ serif;
-	font-size: 1rem;
-	color: #555;
-	margin-top: 0.25rem;
-	text-align: center;
-	font-style: italic;
-}
-
-footer {
-	padding: 2rem 1rem;
-	text-align: center;
-	border-top: 2px solid #ccc;
-	font-family: /*'C059',*/ serif;
-	font-size: 0.9rem;
-	color: #555;
-	margin-top: 3rem;
-}
-
-
-
-/* Style the navigtion bar */
 
 .site-nav {
-  background-color: #f0f0f0;
-  border-bottom: 2px solid #ccc;
-  /*font-family: small-caps;*/
-  /*font-size: 1.5rem;*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
 }
 
-.site-nav ul {
+/* Brand inside nav */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* Links */
+.nav-links {
   list-style: none;
   margin: 0;
-  padding: 0.75rem 1rem;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  align-items: baseline;
   gap: 2rem;
 }
 
-.site-nav li {
-  margin: 0;
-}
-
-.site-nav a {
+.nav-links a {
   text-decoration: none;
   color: #2c2c2c;
   font-family: serif;
   font-variant: small-caps;
-  font-weight: 600;
-  font-size: 1.3rem;
-  transition: color 0.2s ease;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
 }
 
-.site-nav a:hover {
-  color: #c9a300; /* Danetian gold hover */
+.nav-links a:hover {
+  color: #c9a300;
+}
+
+/* Mobile: stack brand above links */
+@media (max-width: 700px) {
+  :contentReference[oaicite:9]{index=9}direction: column;
+    align-items: center;
 }
 
 
@@ -106,7 +85,8 @@ h1, h2, h3 {
 }
 
 p {
-	text-indent: 2em;
+  text-indent: 0;
+  margin: 0.8rem 0 1.1rem;
 }
 
 
@@ -262,5 +242,81 @@ figcaption {
 
 .post-nav a:hover {
   text-decoration: underline;
+}
+
+
+
+
+/* Style the footer */
+
+.site-footer {
+  border-top: 1px solid #ccc;
+  background: #f7f7f7;
+  margin-top: 3rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 16rem;
+}
+
+.footer-title {
+  font-family: serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.footer-meta {
+  font-family: serif;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.35;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.footer-legal a {
+  font-family: serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+  color: #c9a300;
+}
+
+@media (max-width: 700px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-legal {
+    justify-content: flex-start;
+    text-align: left;
+  }
 }
 
