@@ -8,6 +8,23 @@ body {
   background-color: #ffffff;
 }
 
+:root {
+  --link-color: #2e2e2e;
+  --link-hover: #c9a300;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+
 /* Keep your content max-width without breaking the masthead */
 main, footer {
   max-width: 880px;
