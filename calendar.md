@@ -3,6 +3,20 @@ layout: standalone
 title: The Danetian calendar
 ---
 
+<section class="dict-date" aria-label="Today’s date">
+  <div class="dict-date__inner">
+    <div class="dict-date__item">
+      <span class="dict-date__value" id="gregorian_date_today">
+      </span>
+    </div>
+    <div class="dict-date__sep">•</div>
+    <div class="dict-date__item">
+      <span class="dict-date__value" id="danetian_date_today">
+      </span>
+    </div>
+  </div>
+</section>
+
 The Danetian calendar is the traditional 
 [lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar) used by
 the Danetian people. Each month starts at the
@@ -23,11 +37,6 @@ The calculator below allows for the conversion between
 Danetian dates. (NOTE: All dates must be input in YYYY-MM-DD format, and years
 must use
 [astronomical numbering](https://en.wikipedia.org/wiki/Astronomical_year_numbering)).
-
-Today's date is:
-
-<div class="header-date" id="gregorian_date_today"></div>
-<div class="header-date" id="danetian_date_today"></div>
 
 <form id="form_calendar_calculator">
     <label for="input_date">Enter date:</label>

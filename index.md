@@ -3,24 +3,6 @@ title: Danetian Academy
 layout: default
 ---
 
-<!--
-<section class="dict-date" aria-label="Today’s date">
-  <div class="dict-date__inner">
-    <div class="dict-date__item">
-      <span class="dict-date__value" id="gregorian_date_today">
-      </span>
-    </div>
-
-    <div class="dict-date__sep" aria-hidden="true">•</div>
-
-    <div class="dict-date__item">
-      <span class="dict-date__value" id="danetian_date_today">
-      </span>
-    </div>
-  </div>
-</section>
--->
-
 <form class="search" id="homeDictForm">
   <input
     id="homeDictQuery"
