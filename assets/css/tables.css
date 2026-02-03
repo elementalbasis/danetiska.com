@@ -2,6 +2,8 @@ table {
   border-collapse: collapse;
   margin: 1.5rem auto;
   font-size: 0.95rem;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 th, td {
@@ -13,4 +15,3 @@ th, td:first-child {
   background: #f0f0f0;
   font-weight: 600;
 }
-
