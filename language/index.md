@@ -1,5 +1,5 @@
 ---
-layout: standalone
+layout: language
 title: The Danetian language
 ---
 

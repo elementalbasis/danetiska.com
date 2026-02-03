@@ -8,7 +8,7 @@ cover: /assets/images/myron-dorostolite.png
 
 Myron Dorostolite was a 14th century Danetian polymath monk, best known for
 developing the algorithms used in the
-[Danetian calendar](/blog/danetian-calendar.html).
+[Danetian calendar](/blog/danetian-calendar).
 
 He was born in a Danetian settlement near Silistra to a family of minor nobility
 in 1316. From an early age, he had a fascination with astronomy.

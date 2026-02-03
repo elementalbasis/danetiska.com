@@ -8,7 +8,7 @@ cover: /assets/images/alexios-i-komnenos.jpg
 
 The name "Danetia" is used today to describe the small country at the mouth of
 the Danube. The people that inhabit that country are called "Danetians", and
-their [language](/language.html)
+their [language](/language)
 is similarly named. Yet the origin of this name is not native in
 the strict sense. Rather, it appears to be an
 [exonym](https://en.wikipedia.org/wiki/Endonym_and_exonym),
