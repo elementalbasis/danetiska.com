@@ -22,6 +22,8 @@
 }
 
 .search button {
+  -webkit-appearance: none;
+  appearance: none;
   padding: 0.65rem 1rem;
   font: inherit;
   border: 1px solid #cfcfcf;
