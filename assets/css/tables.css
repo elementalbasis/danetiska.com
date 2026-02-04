@@ -4,6 +4,8 @@ table {
   font-size: 0.95rem;
   overflow-x: auto;
   max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  display: block;
 }
 
 th, td {

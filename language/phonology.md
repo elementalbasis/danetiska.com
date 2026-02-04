@@ -5,12 +5,7 @@ layout: language
 
 ## Sound inventory
 
-Danetian has nineteen consonant phonemes:
-* six plosives
-* six fricatives
-* two affricates
-* five sonorants
-
+Danetian has 22 consonant phonemes, shown below.
 
 | | Labial | Dental | Palatal | Velar |
 |:---|:---:|:---:|:---:|:---:|
@@ -21,7 +16,7 @@ Danetian has nineteen consonant phonemes:
 | Trill | | r | | |
 | Approximant | w | l | j | |
 
-Moreover, there are six vowels, shown below.
+Moreover, there are 6 vowels, shown below.
 
 
 | | Front | Central | Back |
