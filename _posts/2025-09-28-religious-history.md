@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Danetian union with the Catholic Church
+title: Religious history of Danetia
 author: Javier Castro
 tags: [worldbuilding]
 cover: /assets/images/st-peters-basilica.jpg

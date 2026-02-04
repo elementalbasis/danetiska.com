@@ -23,3 +23,4 @@ layout: standalone
 18. [Royal Spanish Academy](https://rae.es)
 19. [Institute of Catalan Studies](https://iec.cat)
 20. [Galician Academy](https://academia.gal)
+21. [Ephemeris Latin Newspaper](https://ephemerisnuntii.eu/)
