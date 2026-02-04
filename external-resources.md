@@ -24,3 +24,4 @@ layout: standalone
 19. [Institute of Catalan Studies](https://iec.cat)
 20. [Galician Academy](https://academia.gal)
 21. [Ephemeris Latin Newspaper](https://ephemerisnuntii.eu/)
+22. [Free Republic of Verdis](https://verdisgov.org/)

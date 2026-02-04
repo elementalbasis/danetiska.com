@@ -22,13 +22,12 @@
 }
 
 .search button {
-  -webkit-appearance: none;
-  appearance: none;
   padding: 0.65rem 1rem;
   font: inherit;
   border: 1px solid #cfcfcf;
   border-radius: 6px;
-  background: #f2f2f2;
+  background: #1040a0;
+  color: white;
   cursor: pointer;
 }
 
