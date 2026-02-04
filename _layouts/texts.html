@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% capture toc_md %}{% include texts_toc.md %}{% endcapture %}
+
+<main class="content">
+  <div class="language-toc">
+    {{ toc_md | markdownify }}
+  </div>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</main>

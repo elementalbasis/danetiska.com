@@ -1,5 +1,6 @@
 name: Danetian Academy
 permalink: /blog/:title
-permalink: /language/:title
+permalink: /:collection/:title
 collections:
   - language
+  - texts
