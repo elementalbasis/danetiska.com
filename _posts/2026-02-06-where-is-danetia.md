@@ -77,7 +77,10 @@ In the modern era, Danetia's survival as an independent state can be understood
 largely through its geography: small enough to require external guarantees for
 its defense, and strategically important enough to merit them. Its location made
 it a natural candidate for international oversight and neutrality agreements,
-particularly during periods of great-power rivalry.
+particularly during periods of great-power rivalry. As a riverain state, Danetia
+has belonged to the various
+[Danube River Commissions](https://en.wikipedia.org/wiki/Commissions_of_the_Danube_River)
+throughout its history.
 
 Geography has also shaped Danetia's cultural character. Positioned between
 Slavic, Balkan, Turkic, and Pontic worlds, the country developed a layered
