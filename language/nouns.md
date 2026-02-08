@@ -86,10 +86,10 @@ nominative and accusative cases; all other cases are identical.
 | nom. | viros | viroi || donom | dona |
 | acc. | virom | virons || donom | dona |
 | gen. | virosio | virom || donosio | donom |
-| abl. | virod | viromos || donod | donomos |
+| abl. | virad, virod | viromos || donad, donod | donomos |
 | dat. | viroi | viromos || donoi | donomos |
-| loc. | viri | viroisu || doni | donoisu |
-| ins. | vire | virois || done | donois |
+| loc. | viri | viroisu, virosu || doni | donoisu, donosu |
+| ins. | vire | virois, virobi || done | donois, donobi |
 
 
 
@@ -118,7 +118,7 @@ Some examples of i-stem nouns are:
 
 | | sg. | pl. || sg. | pl. |
 |---|
-| nom. | mentis | menteies || mori | moria |
+| nom. | mentis | menties || mori | moria |
 | acc. | mentim | mentins || mori | moria |
 | gen. | mynties | myntiom || myries | myriom |
 | abl. | myntied | myntimos || myries | myrimos |
@@ -145,10 +145,53 @@ Some examples of u-stem nouns are:
 
 | | sg. | pl. || sg. | pl. |
 |---|
-| nom. | lokus | lokeves || dasjtru | dasjtrua |
+| nom. | lokus | lokues || dasjtru | dasjtrua |
 | acc. | lokum | lokuns || dasjtru | dasjtrua |
 | gen. | lykues | lykuom || dysjtrues | dysjtruom |
 | abl. | lykued | lykumos || dysjtrues | dysjtrumos |
 | dat. | lykuei | lykumos || dysjtruei | dysjtrumos |
 | loc. | lykui | lykusu || dysjtrui | dysjtrubi |
 | ins. | lykue | lykubi || dysjtrue | dysjtrube |
+
+
+
+## Third declension: s-stem nouns
+
+| | sg. | pl. |
+|---|
+| nom. | nebos | nebesa |
+| acc. | nebos | nebesa |
+| gen. | nebesos | nebesom |
+| abl. | nebesed | nebesmos |
+| dat. | nebesei | nebesmos |
+| loc. | nebesi | nebesu |
+| ins. | nebese | nebesbi |
+
+
+
+## Third declension: n-stem nouns
+
+| | sg. | pl. |
+|---|
+| nom. | nomyn | nomyna |
+| acc. | nomyn | nomyna |
+| gen. | nymens | nymenom |
+| abl. | nymened | nymenmos |
+| dat. | nymenei | nymenmos |
+| loc. | nymeni | nymensu |
+| ins. | nymene | nymenbi |
+
+
+
+## Third declension: e-stem nouns
+
+| | sg. | pl. |
+|---|
+| nom. | series | seriei |
+| acc. | seriem | seriens |
+| gen. | seriesio | seriom |
+| abl. | seried | seriemos |
+| dat. | seriei | seriemos |
+| loc. | serii | seriesu |
+| ins. | serie | seriebi |
+
