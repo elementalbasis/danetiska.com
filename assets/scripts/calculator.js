@@ -27,5 +27,6 @@ document.getElementById('form_calendar_calculator').addEventListener('submit', f
 	document.getElementById('result_gregorian').innerText = `${date_g}`
 	document.getElementById('result_julian').innerText = `${date_j}`
 	document.getElementById('result_danetian').innerText = `${date_d}`
+	document.getElementById('result_danetian_linear_count').innerText = `${n - 1237193}`
 })
 

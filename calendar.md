@@ -52,6 +52,7 @@ must use
 <p id="result_gregorian"></p>
 <p id="result_julian"></p>
 <p id="result_danetian"></p>
+<p id="result_danetian_linear_count"></p>
 <script src="/assets/scripts/calculator.js" defer></script>
 
 
