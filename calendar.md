@@ -24,7 +24,8 @@ the Danetian people. Each month starts at the
 new moon closest to the
 [vernal equinox](https://en.wikipedia.org/wiki/March_equinox). In order to
 accomplish this, a series of algorithms were formalized by
-[Myron Dorostolite](/blog/myron-dorostolite.html) in the 14th century to
+[Myron Dorostolite](/blog/myron-dorostolite.html) in his 14th century work,
+*On the Reckoning of the Luminaries*, to
 perform calendrical calculations.
 
 
@@ -159,7 +160,17 @@ count on rule 1.
 
 [Myron](/blog/myron-dorostolite.html) took 03&nbsp;Apr&nbsp;-1325 as the epoch
 for his calendar. This is fascinating because on this date, the vernal equinox
-coincided with a solar eclipse.
+coincided with a solar eclipse. Myron writes:
+
+> From the conjunction of the sun and moon near the lunar node, I carried
+> backward the mean motions according to the tables before me, seeking the
+> return of the three principal cycles together.
+>
+> I found a certain day in which the lunar conjunction, the passage of the lunar
+> node, and the vernal equinox are brought again into closest accord. Therefore,
+> let that day be established as the root of the reckoning.
+>
+> **Myron Dorostolite, On the Reckoning of the Luminaries, 1349**
 
 
 

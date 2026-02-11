@@ -7,7 +7,8 @@ cover: /assets/images/myron-dorostolite.png
 ---
 
 Myron Dorostolite was a 14th century Danetian polymath monk, best known for
-developing the algorithms used in the
+his 14th century work, *On the Reckoning of the Luminaries*, where he
+developed the algorithms used in the
 [Danetian calendar](/blog/danetian-calendar).
 
 He was born in a Danetian settlement near Silistra to a family of minor nobility
@@ -27,7 +28,8 @@ astronomical data from
 
 Notably, he discovered the significance of the fraction $\frac{25\,101}{850}$
 for approximating the lunar month, and $\frac{4131}{334}$ for approximating the
-tropical year. In 1349, he published his algorithms for the Danetian calendar
+tropical year. In 1349, he published *On the Reckoning of the Luminaries*, where
+he lays out his algorithms for the Danetian calendar
 based on these ratios, along with precomputed tables for subsequent years. It is
 worth noting that the date of Easter is always predictable in his calendar.
 
