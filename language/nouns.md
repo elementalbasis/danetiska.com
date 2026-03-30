@@ -3,15 +3,20 @@ title: Nouns
 layout: language
 ---
 
-Danetian nouns inflect for three genders (masculine, feminine, neuter), two
-numbers (singular, plural), and seven cases (nominative, accusative,
+Danetian nouns inflect for three
+[genders](https://en.wikipedia.org/wiki/Grammatical_gender)
+(masculine, feminine, neuter), two
+[numbers](https://en.wikipedia.org/wiki/Grammatical_number)
+(singular, plural), and eight
+[cases](https://en.wikipedia.org/wiki/Grammatical_case)
+(nominative, vocative, accusative,
 genitive, ablative, dative, locative, instrumental). Traditionally, nouns are
 categorized into three broad inflection classes: first declension, second
 declension, and third declension.
 
 The inflection of Danetian nouns can be decomposed into the following elements:
-1. root: carries the lexical meaning of the noun
-2. thematic vowel: a vowel appended at the end of a root
+1. [root](https://en.wikipedia.org/wiki/Root_(linguistics)): carries the lexical meaning of the noun
+2. [thematic vowel](https://en.wikipedia.org/wiki/Thematic_vowel): a vowel appended at the end of a root
 3. ending: carries information about case and number
 
 | Noun | Root | Theme | Ending |
