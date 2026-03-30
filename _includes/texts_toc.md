@@ -6,5 +6,3 @@
 * [Universal Declaration of Human Rights](/texts/universal-declaration-of-human-rights)
 * [Christian prayers](/texts/christian-prayers)
 * [Nicene Creed](/texts/nicene-creed)
-* [Genesis 1](/texts/genesis-1)
-* [Mark 1](/texts/mark-1)
