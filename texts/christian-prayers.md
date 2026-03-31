@@ -70,3 +70,39 @@ Thy kingdom come; Thy will be done on earth as it is in heaven;
 Give us this day our daily bread; and forgive us our debts as we
 forgive our debtors; and lead us not into temptation, but deliver
 us from the evil one.
+
+Esj supnod udbontes, prisjadomos anti Teve, Dybre, ide angeliskam kantim
+udkyntiomos Tebio, Myktie: Sjuntos, Sjuntos, Sjuntos esi, Dive; Divodjenitze,
+mileioste nos.
+
+> Having risen from sleep, we fall down before Thee, O Good One, and the
+angelical hymn we cry aloud to Thee, O Mighty One: Holy, Holy, Holy art Thou,
+O God; through the Theotokos, have mercy on us.
+
+Sjlevos Pytrei, i Sunuei, i Sjuntoi Prumenei.
+
+> Glory to the Father, and to the Son, and to the Holy Spirit.
+
+Esj lektrod i supnod udkis me, Poti; menos moiom enlukeie i sjerd, ide osna moia
+apokrude, jod kyntioim Tebio, Sjuntu Troiku: Sjuntos, Sjuntos, Sjuntos esi,
+Dive; Divodjenitze, mileioste nos.
+
+> From bed and sleep hast Thou raised me up, O Lord: enlighten my mind and
+heart, and open my lips that I may hymn Thee, O Holy Trinity: Holy, Holy, Holy
+art Thou, O God; through the Theotokos, have mercy on us.
+
+I nuni, i jevi, i en oiva oivom. Amen.
+
+> Both now and ever, and unto the ages of ages. Amen.
+
+Reponte djystre Kritor priiti, i visjoinosio masjties aponobeiontor; nu sjom
+andjese vopomos en medinypti: Sjuntos, Sjuntos, Sjuntos esi, Dive; Divodjenitze,
+mileioste nos.
+
+> Suddenly, the Judge shall come, and the deeds of each shall be laid bare; but
+with fear do we cry at midnight: Holy, Holy, Holy art Thou, O God; through the
+Theotokos, have mercy on us.
+
+Poti, mileioste. (Dvidesjym plysje).
+
+> Lord, have mercy. (Twelve-fold).
