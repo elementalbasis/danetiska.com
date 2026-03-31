@@ -6,7 +6,8 @@ tags: [worldbuilding]
 cover: /assets/images/charta-europas.png
 ---
 
-Danetia is located in the western
+Danetia (officially *Danetiska Respublica* "Danetian Republic")
+is located in the western
 [Black Sea](https://en.wikipedia.org/wiki/Black_Sea)
 region, occupying the historic territory traditionally known as
 [Dobrudja](https://en.wikipedia.org/wiki/Dobruja). The country extends from
