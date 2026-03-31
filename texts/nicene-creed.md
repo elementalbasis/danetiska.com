@@ -5,94 +5,76 @@ layout: texts
 
 ## Danetiska
 
-Sjtresdo en oinom Divom,
+Sjtresdo en oinom Divom, Patrym Visjomektrym,
 
-Pateram visjomokteram,
+> I believe in one God, the Father Almighty,
 
-Masjteram dives i djames,
+Masjtrym diuves i djymes, vistom visjom i nevistom;
 
-Vistosio nevistosio pe,
+> Maker of heaven and earth, and of all things visible and invisible;
 
-Da en oinom Potim,
+Ide en oinom Potim, Jesum Christom, Sunum Divosio,
 
-Jesum Christom,
+> And in one Lord, Jesus Christ, the Son of God,
 
-Sunum Divosio,
+Inodjenostom, esj Pytred djenostom anti visjom oivom,
 
-Oinodjanatom,
+> The Only-Begotten, begotten of the Father before all ages,
 
-Esj Patres djanamanom
+Lukom esj Lukod, Divom verom esj Divod verod,
 
-Anti visjom oivom,
+> Light of Light, true God of true God,
 
-Lukom esj Lukad,
+Djenostom, ne mysjtom, somosontiom Pytrei, Josme visja mysjynto,
 
-Divom verom esj Divad verad,
+> Begotten, not made, of one essence with the Father, by Whom all things were made,
 
-Djanamanom, ne masjmanom,
+Rodi nysom sjmonyns i rodi nosjas spysjties nidbontym apo diumos,
 
-Somosontam Patrei,
+> Who for us men and for our salvation came down from the heavens,
 
-Tros Jom visja masjanto,
+Ide enmynseiostom esj Prumened Sjventod i Mariad Junsjad, ide ensjmyneiostom,
 
-Pro ansmos djamanmos
+> And was incarnate of the Holy Spirit and the Virgin Mary, and became man,
 
-I pro nosjoi pasmenei
+Ide staureiostom rodi nysom upo Pontzii Pilati,
 
-Upobamontam apo diumos,
+> And was crucified for us under Pontius Pilate,
 
-Da ensmendreiesmanom
+Ide upoberostom, i upodjymeiostom, i etistontym ana triti dini seponts Pisjmyna,
 
-Esj Prumens Sjventad i Marias Junsjas,
+> And suffered, and was buried, and arose again on the third day according to
+the Scriptures,
 
-Da endjamneiesmanom,
+Ide udbontym en diuns, i sisdontym desjni Pytres,
 
-Da staureiesmanom pro ansmos
+> And ascended into the heavaens, and sitteth at the right hand of the Father,
 
-Upo Pontii Pilati,
+Ide neve opijontym sjom sjlevese krineni bivomos i myrtomos, Josio Rysjmenei ne
+iti sont termyn,
 
-Da upoklamamom,
+> And shall come again with glory to judge the living and the dead, Whose
+kingdom shall have no end;
 
-Da upodjameiesmanom,
+Ide en Prumyn Sjuntom, Potim bivodykontym, Jos esj Pytres esjjontym,
 
-Da etistontam ana triti dini
+> And in the Holy Spirit, the Lord, the Giver of Live, Who proceedeth from the
+Father,
 
-Apo Pisjmenmos,
+Jom sjom Pytre i Sunue sjoprosjlinumynom i sjosjleveiomnom, upsontym
+prodisjtrybi;
 
-Da udbamontam en diuns,
+> Who with the Father and the Son is worshipped and glorified, Who spoke by the
+prophets;
 
-Da sisdontam desjnam Patres,
+En oinam Sjuntam, Sjolodjiskam, i Apostoliskam Ecclesiam;
 
-Da neve opiiontam sjom sjlevese,
+> In one Holy, Catholic, and Apostolic Church;
 
-Domodidoni bivomos martomos pe,
+Somovepmi oinom baptismam en apoikti skyltiom;
 
-Josjoi Rasjmenei ne iti sont terman,
+> I confess one baptism in the remission of sins;
 
-Da en Pruman Sjventom,
+Prospesjo etistatim myrtom i bivam prijontes oivosio. Amen.
 
-Potim bivodakontam,
-
-Jo esj Patres esjiontam,
-
-Jo sjom Patre i Sunue
-
-Sjomprosjlinumanom
-
-I sjomsjleveseiomnom,
-
-Ukontam tros prodisjterans,
-
-En Oinam, Sjventam, Sjolodjiskam,
-
-I Apostoliskam Ecclesiam,
-
-Somomenteio oinam baptisman
-
-En apoliptim skaltiom,
-
-Prospasjnumi etistatei martom,
-
-I bivai opiiontes oivosio.
-
-Amen.
+> I look for the resurrection of the dead and the life of the age to come. Amen.
