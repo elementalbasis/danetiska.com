@@ -44,7 +44,7 @@ stress shifts between the stem and the ending in different case forms.
 
 
 
-## Writing system
+## Letter-to-sound correspondence
 
 Danetian is written using the standard 26 letters of the
 [standard Latin alphabet](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet).
@@ -88,3 +88,13 @@ The table below summarizes the sound-to-spelling correspondence.
 | y | | /ɨ/ |
 | z | | /z/ |
 | zj | | /ʒ/ |
+
+
+
+## Non-letter symbols
+
+The apostrophe (') is used to prevent the formation of a digraph in some
+compound words, as in *ud'jenti* "they arise".
+
+Danetian also uses the standard symbols in European orthographies, such as
+the period (.), the comma (,), the colon (:), the semicolon (;), etc.
