@@ -12,14 +12,14 @@ The Danetian Republic (*Danetiska Respublica*) is a
 whereby the Prime Minister of Danetia
 (*Prymos Ministros Danetzias*) is the
 [head of government](https://en.wikipedia.org/wiki/Head_of_government) under
-a [muli-party system](https://en.wikipedia.org/wiki/Multi-party_system).
+a [multi-party system](https://en.wikipedia.org/wiki/Multi-party_system).
 The [head of state](https://en.wikipedia.org/wiki/Head_of_state) is the
 President of the Republic (*Presidents Respublicas*), and serves a mostly
 ceremonial role.
 [Legislative power](https://en.wikipedia.org/wiki/Legislature) is vested in
 the National Assembly (*Natzional Sjolodjos*).
 [Executive power](https://en.wikipedia.org/wiki/Executive_(government)) is
-exercised by the government, which is led by the prime minister.
+exercised by the government, which is led by the Prime Minister.
 The [judiciary](https://en.wikipedia.org/wiki/Judiciary) is independent of the
 executive and the legislature.
 
@@ -30,7 +30,7 @@ executive and the legislature.
 The President is the
 [head of state](https://en.wikipedia.org/wiki/Head_of_state). His role is as a
 ceremonial guardian of the Republic. The President does not govern; rather, he
-ensures that governance proceeds according to the constitution. The
+ensures that governance proceeds according to the Constitution. The
 responsibilities of the office include:
 * promulgating laws;
 * appointing the Prime Minister;
@@ -85,7 +85,8 @@ The Supreme Court (*Nai Brysjta Corts*) is the highest authority in matters of
 ordinary law. It ensures the consistent interpretation of civil, criminal, and
 administrative law across the Republic. It serves as the final court of appeal.
 
-The Constitutional Court, on the other hand, safeguards the Constitution itself.
+The Constitutional Court (*Constitutzional Corts*),
+on the other hand, safeguards the Constitution itself.
 Its responsibilities include:
 * reviewing the constitutionality of laws;
 * resolving disputes between state institutions;
