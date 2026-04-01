@@ -31,6 +31,7 @@ meaning of the preposition.
 | pri | gen. | near |
 | pro | acc. | for, towards |
 | proti | acc. | against |
+| rodi | gen. | for the sake of |
 | seponts | acc. | according to |
 | sjom | ins. | with |
 | tros | acc. | through |
