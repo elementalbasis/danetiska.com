@@ -8,15 +8,15 @@ The basic
 of the Danetian language are organized in the
 following table:
 
-| | pronoun | out of two | location | time | 
+| | pronoun | out of two | location | time | magnitude |
 |:-|
-| interrogative | pos | poteros | podi | poda |
-| relative | jos | joteros | jodi | joda |
-| proximal | sjos | sjoteros | sjodi | sjoda |
-| distal | tos | toteros | todi | toda |
-| existential | inopos | --- | inopodi | inopoda |
-| universal | visjos | --- | visjodi | visjoda |
-| negatory | nipos | nipoteros | nipodi | nipoda |
+| interrogative | pos | poteros | podi | poda | potios |
+| relative | jos | joteros | jodi | joda | jotios |
+| proximal | sjos | sjoteros | sjodi | sjoda | --- |
+| distal | tos | toteros | todi | toda | --- |
+| existential | inopos | --- | inopodi | inopoda | --- |
+| universal | visjos | --- | visjodi | visjoda | --- |
+| negatory | nipos | nipoteros | nipodi | nipoda | nipotios |
 
 The interrogative pronoun *pos* is used to form other constructions, such as
 *pro pod* "why"; or in the instrumental case, *pasme djystre* or simply
@@ -33,7 +33,7 @@ The inflection of the pronoun *pos* is as follows:
 | abl. | posmod | pasmad | posmod | poimos | pamos | poimos |
 | dat. | posmoi | pasmai | posmoi | poimos | pamos | poimos |
 | loc. | posmi | pasmi | posmi | poisu | pasu | poisu |
-| ins. | posme | pasme | posme | poibi | pabi | poibi |
+| ins. | posme | pasme | posme | pois | pabi | pois |
 
 The pronouns *jos*, *sjos*, etc. inflect similarly. The pronouns *poteros*,
 *joteros*, etc. inflect like adjectives.
