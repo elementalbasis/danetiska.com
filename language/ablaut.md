@@ -26,7 +26,19 @@ Roots in Danetian can be cast in one of three grades:
 | to do, to make | do- | dy- | do- |
 | to leave | lip- | lip- | loip- |
 | to gather, to build | stru- | stru- | stru- |
+| to speak | vep- | up- | vop- |
+| to throw | jek- | ik- | jok- |
+| door | dver- | dur- | dvor- |
+| water | ved- | ud- | vod- |
+| liver | jep- | ip- | jop- |
+| thought | men- | myn- | mon- |
 
-As the examples above show, the vowels *a, e, o* reduce to *y* in grade 2, and
-mutate to *o* in grade 3. The vowel *i* stays the same in grades 1 and 2 but
-mutates to *oi* in grade 3. The vowel *u* stays the same in all three grades.
+
+From the examples above, we can draw the following generalities:
+* If grade 1 has vowels *a, e, o*, they reduce to *y* in grade 2, and mutate
+to *o* in grade 3.
+* If grade 1 has vowel *i*, then it stays the same in grade 2, but mutates
+to *oi* in grade 3.
+* If grade 1 has vowel *u*, then it stays the same in all grades.
+* If grade 1 has *j, v* plus a vowel, then the vowel will disappear in
+grade 2, and the *j, v* will vocalize into *i, u*.
