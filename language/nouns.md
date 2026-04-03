@@ -270,7 +270,7 @@ include:
 ## Third declension: n-stem nouns
 
 All n-stem nouns are athematic and neuter. The roots undergo
-[ablaut changes](/language/ablaut): grade 1 is used for the nominative,
+[ablaut changes](/language/ablaut): grade 1 or 3 is used for the nominative,
 vocative, and accusative; grade 2 is used for all other cases. Some examples
 in this class include:
 * *blemyn, blymens* (n): soul
