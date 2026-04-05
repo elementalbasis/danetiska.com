@@ -42,5 +42,24 @@
   .search button {
     width: 100%;
   }
+  .search select {
+    width: 100%;
+  }
 }
 
+.search select {
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+  min-width: 12rem;
+  flex: 0 0 auto;
+  font-size: 1rem;
+}
+
+.search select:focus {
+  border-color: #777;
+  outline: none;
+}
