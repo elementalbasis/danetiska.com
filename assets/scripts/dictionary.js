@@ -208,9 +208,9 @@ function runGeneralSearch(records, query) {
 
   if (!q) {
     return {
-      kind: "all",
-      matches: records,
-      message: `Loaded ${records.length} entries.`,
+      kind: "empty",
+      matches: [],
+      message: "",
     };
   }
 
@@ -244,7 +244,7 @@ function runGeneralSearch(records, query) {
     return {
       kind: "none",
       matches: [],
-      message: `No match for “${query}”.`,
+      message: `Sorry, no “${query}”.`,
     };
   }
 
@@ -252,7 +252,7 @@ function runGeneralSearch(records, query) {
     kind: "suggest",
     matches: suggestions,
     message:
-      `No match for “${query}”. ` +
+      `Sorry, no “${query}”. ` +
       `Maybe these are what you're looking for?`,
   };
 }
@@ -287,9 +287,9 @@ function runModeSearch(records, query, mode) {
 
   if (!query.trim() && mode !== "random") {
     return {
-      kind: "all",
-      matches: records,
-      message: `Showing all ${records.length} entries.`,
+      kind: "empty",
+      matches: [],
+      message: "",
     };
   }
 
@@ -317,6 +317,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const modeSelect = form?.querySelector('select[name="mode"]');
   const out = document.getElementById("out");
   const results = document.getElementById("results");
+  const wotd = document.querySelector(".word-card");
 
   if (!form || !input || !modeSelect || !out || !results) return;
 
@@ -339,6 +340,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     setSearchStateInUrl(query, mode);
 
     const result = runModeSearch(records, query, mode);
+
+    if (wotd) {
+      wotd.style.display = result.kind === "empty" ? "" : "none";
+    }
+
+    if (result.kind === "empty") {
+      out.textContent = "";
+      results.innerHTML = "";
+      return;
+    }
+
     out.innerHTML = escapeHtml(result.message);
     renderEntryList(result.matches, results);
   }

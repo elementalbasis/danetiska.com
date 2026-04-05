@@ -6,6 +6,7 @@ layout: standalone
 <main class="wrap">
 
   {% include dictionary_search.html %}
+  {% include word_of_the_day.html %}
 
   <section class="results">
     <p id="out"></p>
