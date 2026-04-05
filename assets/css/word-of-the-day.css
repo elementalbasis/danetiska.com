@@ -12,7 +12,7 @@
   font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #666;
+  /*color: #666;*/
   margin-bottom: 0.35rem;
 }
 
@@ -20,7 +20,7 @@
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #666;
+  /*color: #666;*/
   margin-bottom: 0.35rem;
 }
 
@@ -36,4 +36,14 @@
   color: #555;
   font-size: 1rem;
   line-height: 1.4;
+}
+
+.word-card__word a {
+  color: #1040a0;
+  text-decoration: none;
+}
+
+.word-card__word a:hover {
+  text-decoration: underline;
+  color: #c9a300;
 }
