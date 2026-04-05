@@ -83,7 +83,7 @@ Sjlevos Pytrei, i Sunuei, i Sjuntoi Prumenei.
 
 > Glory to the Father, and to the Son, and to the Holy Spirit.
 
-Esj lektrod i supnod udkis me, Poti; menos moiom enlukeie i sjerd, ide osna moia
+Esj lektrod i supnod udkinostes me, Poti; menos moiom enlukeie i sjerd, ide osna moia
 apokrude, jod kyntioim Tebio, Sjuntu Troiku: Sjuntos, Sjuntos, Sjuntos esi,
 Dive; Divodjenitze, mileioste nos.
 
