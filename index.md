@@ -3,17 +3,7 @@ title: Danetian Academy
 layout: default
 ---
 
-<form class="search" id="homeDictForm">
-  <input
-    id="homeDictQuery"
-    type="search"
-    name="q"
-    placeholder="Search the dictionary"
-    autocomplete="off"
-  />
-  <button type="submit">Search</button>
-</form>
-<script src="/assets/scripts/home-dict-search.js"></script>
+{% include dictionary_search.html %}
 
 
 {%- comment -%}

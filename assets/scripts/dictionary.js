@@ -21,12 +21,14 @@ function getQueryFromUrl() {
 
 function setQueryInUrl(query) {
   const url = new URL(window.location.href);
+
   if (query && query.trim()) {
     url.searchParams.set("q", query.trim());
   } else {
     url.searchParams.delete("q");
   }
-  window.history.replaceState({}, "", url);
+
+  history.replaceState({}, "", url);
 }
 
 function parseEntries(htmlText) {
@@ -35,37 +37,24 @@ function parseEntries(htmlText) {
   return Array.from(doc.querySelectorAll(".entry"));
 }
 
+function getLemma(entry) {
+  return normalize(entry.querySelector(".lemma")?.textContent || "");
+}
+
+function getGlosses(entry) {
+  return Array.from(entry.querySelectorAll(".gloss"))
+    .map(el => normalize(el.textContent))
+    .filter(Boolean);
+}
+
 function entryMatches(entry, query) {
   const q = normalize(query);
   if (!q) return true;
 
-  const lemma = normalize(entry.querySelector(".lemma")?.textContent || "");
-  const glosses = normalize(
-    Array.from(entry.querySelectorAll(".gloss"))
-      .map(el => el.textContent)
-      .join(" ")
-  );
+  const lemma = getLemma(entry);
+  const glosses = getGlosses(entry);
 
-  return lemma.includes(q) || glosses.includes(q);
-}
-
-function updateStatus(out, count, query) {
-  if (!query.trim()) {
-    out.textContent = `Showing all ${count} entries.`;
-    return;
-  }
-
-  if (count === 0) {
-    out.textContent = `No matches for "${query}".`;
-    return;
-  }
-
-  if (count === 1) {
-    out.textContent = `1 match for "${query}".`;
-    return;
-  }
-
-  out.textContent = `${count} matches for "${query}".`;
+  return lemma.includes(q) || glosses.some(g => g.includes(q));
 }
 
 function renderMatches(entries, query, resultsEl, outEl) {
@@ -77,16 +66,24 @@ function renderMatches(entries, query, resultsEl, outEl) {
     resultsEl.appendChild(entry.cloneNode(true));
   }
 
-  updateStatus(outEl, matches.length, query);
+  if (!query.trim()) {
+    outEl.textContent = `Showing all ${matches.length} entries.`;
+  } else if (matches.length === 0) {
+    outEl.textContent = `No matches for "${query}".`;
+  } else if (matches.length === 1) {
+    outEl.textContent = `1 match for "${query}".`;
+  } else {
+    outEl.textContent = `${matches.length} matches for "${query}".`;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const input = document.getElementById("q");
-  const button = document.getElementById("go");
+  const form = document.querySelector(".search");
+  const input = form?.querySelector('input[name="q"]');
   const out = document.getElementById("out");
   const results = document.getElementById("results");
 
-  if (!input || !button || !out || !results) return;
+  if (!form || !input || !out || !results) return;
 
   let entries = [];
 
@@ -99,27 +96,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  function runSearch() {
-    const query = input.value || "";
-    setQueryInUrl(query);
-    renderMatches(entries, query, results, out);
+  function runSearch(query) {
+    const q = (query ?? input.value ?? "").trim();
+    input.value = q;
+    setQueryInUrl(q);
+    renderMatches(entries, q, results, out);
   }
 
-  button.addEventListener("click", runSearch);
-
-  input.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      runSearch();
-    }
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    runSearch(input.value);
   });
 
-  input.addEventListener("input", runSearch);
-
   const initialQuery = getQueryFromUrl();
-  if (initialQuery) {
-    input.value = initialQuery;
-  }
-
-  renderMatches(entries, input.value || "", results, out);
+  runSearch(initialQuery);
 });
