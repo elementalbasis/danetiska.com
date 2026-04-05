@@ -66,11 +66,19 @@ function replace_twoarg(s, macro, label, raw, tmp, parts, arg1, arg2, repl, pat,
   return s
 }
 
+function ensure_final_period(s) {
+  sub(/[[:space:]]+$/, "", s)
+  if (s !~ /[.!?:;]$/) {
+    s = s "."
+  }
+  return s
+}
+
 function expand_inline(s, raw, inner, repl, start, len) {
 
   gsub(/\\cf/,  "cf.",  s)
   gsub(/\\etc/, "etc.", s)
-  gsub(/\\ono/, "onom.", s)
+  gsub(/\\ono/, "Onom.", s)
 
   s = replace_onearg(s, "pie", "PIE", 1)
   s = replace_onearg(s, "lat", "Lat.", 0)
@@ -170,6 +178,7 @@ BEGIN {
 
     else if (token ~ /^@ety\(/) {
       ety = expand_inline(arg_of(token))
+      ety = ensure_final_period(ety)
       print "  <p class=\"etymology\">" ety "</p>"
     }
 
