@@ -1,0 +1,21 @@
+<form class="search" action="/dictionary" method="get">
+  <input
+    name="q"
+    type="search"
+    placeholder="Search the dictionary"
+    autocomplete="off"
+  />
+  <select name="mode" id="mode">
+    <option value="general">General search</option>
+    <option value="lemma-exact">Lemma: exact</option>
+    <option value="lemma-prefix">Lemma: begins with</option>
+    <option value="lemma-contains">Lemma: contains</option>
+    <option value="lemma-suffix">Lemma: ends with</option>
+    <option value="gloss-exact">Gloss: exact</option>
+    <option value="gloss-prefix">Gloss: begins with</option>
+    <option value="gloss-contains">Gloss: contains</option>
+    <option value="gloss-suffix">Gloss: ends with</option>
+    <option value="random">Random</option>
+  </select>
+  <button type="submit">Search</button>
+</form>

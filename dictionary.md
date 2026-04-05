@@ -5,10 +5,7 @@ layout: standalone
 
 <main class="wrap">
 
-  <section class="search">
-    <input id="q" type="search" placeholder="Search the dictionary" autocomplete="off" />
-    <button id="go" type="button">Search</button>
-  </section>
+  {% include dictionary_search.html %}
 
   <section class="results">
     <p id="out"></p>
