@@ -477,7 +477,7 @@
 @key(plusis) @ety(\pie{plúsis}; \cf \lat{pulex}, \grc{ψύλλα}{psŭ́llă}, \rus{блоха}{bloxá}, \eng{flea}) @typ(f) @def($flea)
 @key(poina) @ety(\pie{kʷoynéh₂}; \cf \grc{ποινή}{poinḗ}) @typ(f) @def(${blood money}, $ransom, $wergeld; $fine, $ransom, $penalty; $compensation)
 @key(petyn, pytens) @ety(\pie{péth₂r̥}; \cf \lat{penna}, \grc{πτερόν}{pterón}, \rus{перо}{peró}, \eng{feather}) @typ(n) @def($wing; $feather)
-@key(peto) @ety(\pie{péth₂eti}; \cf \lat{peto}, \grc{πέτομαι}{pétomai}) @typ(c) @def(to $fly) @def(to $dart, to $rush; to make $haste)
+@key(peto) @ety(\pie{péth₂eti}; \cf \lat{peto}, \grc{πέτομαι}{pétomai}) @typ(conj) @def(to $fly) @def(to $dart, to $rush; to make $haste)
 @key(lekso) @ety(\pie{h₂lékseti}; \cf \grc{ἀλέξω}{aléxō}) @typ(v) @def(to $protect, to $guard, to $defend)
 @key(djaro) @ety(\pie{ǵeh₂r-}; \cf \lat{garrio}, \grc{γῆρυς}{gêrŭs}, \eng{care}) @typ(v) @def(to $shout, to $yell, to $scream)
 @key(geran, grynes) @ety(\pie{gerh₂ḗn}; \cf \lat{grus}, \grc{γέρανος}{gérănos}, \eng{crane}) @typ(m) @def($crane, $heron)

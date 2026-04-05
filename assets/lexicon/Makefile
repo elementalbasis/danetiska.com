@@ -8,6 +8,7 @@ HTML = lexicon.html
 # Scripts
 CHECK = check_matching_brackets.awk
 SYMBOLS = print_symbols.awk
+TYPES = print_types.awk
 SORT = alphabetize.awk
 TRANSFORM = transform_to_html.awk
 
@@ -19,10 +20,12 @@ check:
 	@echo "Checking brackets..."
 	@awk -f $(CHECK) $(SRC)
 
-# Step 2 — print symbols (NO FAIL)
+# Step 2 — print symbols and types (NO FAIL)
 symbols:
 	@echo "Printing symbols..."
 	@awk -f $(SYMBOLS) $(SRC) | sort -u
+	@echo "Printing types..."
+	@awk -f $(TYPES) $(SRC) | sort -u
 
 # Step 3 — clean comments and empty lines
 $(CLEAN): $(SRC)
