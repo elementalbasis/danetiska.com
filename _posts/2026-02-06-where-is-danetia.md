@@ -14,7 +14,12 @@ region, occupying the historic territory traditionally known as
 the lower stretch of the
 [Danube river](https://en.wikipedia.org/wiki/Danube) to the
 Black Sea, encompassing both fertile riverine lowlands and the elevated
-[Dobrudjan Plateau](https://en.wikipedia.org/wiki/Dobruja_Plateau).
+[Dobrudjan Plateau](https://en.wikipedia.org/wiki/Dobruja_Plateau). It is
+composed of four provinces:
+* [Tulcja](https://en.wikipedia.org/wiki/Tulcea_County)
+* [Kustendja](https://en.wikipedia.org/wiki/Tulcea_County)
+* [Silistra](https://en.wikipedia.org/wiki/Silistra_Province)
+* [Dobricj](https://en.wikipedia.org/wiki/Dobrich_Province)
 
 Danetia lies at a natural crossroads between southeastern Europe and the
 [Pontic-Caspian steppe](https://en.wikipedia.org/wiki/Pontic%E2%80%93Caspian_steppe).
