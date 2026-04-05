@@ -5,6 +5,15 @@ layout: default
 
 {% include dictionary_search.html %}
 
+<div class="word-card">
+  <div class="word-card__label">Word of the day</div>
+  <div class="word-card__date">
+    <span id="gregorian_date_today"></span> || <span id="danetian_date_today"></span>
+  </div>
+  <div class="word-card__word">austra</div>
+  <!--<div class="word-card__gloss">dawn, east, Venus</div>-->
+</div>
+
 
 {%- comment -%}
 Pick the featured post: first with `featured: true`, else latest
