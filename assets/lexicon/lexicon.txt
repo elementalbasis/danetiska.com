@@ -527,7 +527,7 @@
 @key(spes, spyses) @ety(\pie{spéh₁s}; \cf \lat{spes}) @typ(f) @def($prosperity, $success)
 @key(udyn, udens) @ety(\pie{h₁ówHdʰr̥}; \cf \lat{uber}, \grc{οὖθαρ}{oûthăr}, \rus{вымя}{výmja}, \eng{udder}) @typ(n) @def($udder)
 @key(vistos) @ety(\pie{widtós}) @typ(adj) @def($seen, $visible)
-@key(nevistós) @ety(From \dnt{ne} + \dnt{vistós}) @typ(adj) @def($unseen, $invisible)
+@key(nevistos) @ety(From \dnt{ne} + \dnt{vistos}) @typ(adj) @def($unseen, $invisible)
 @key(pe) @ety(\pie{-kʷe}; \cf \lat{-que}, \grc{τε}{te}) @typ(conj) @def($and)
 @key(i) @ety(\pie{éy}; \cf \grc{εἰ}{ei}, \rus{и}{i}) @typ(conj) @def($and \par{weaker than \dnt{pe}})
 @key(ide) @ety(\dnt{i} + \pie{de}; \cf \rus{да}{da}) @typ(conj) @def($and \par{weaker than both \dnt{pe}, \dnt{i}})

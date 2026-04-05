@@ -11,8 +11,8 @@ layout: standalone
   </section>
 
   <section class="results">
-    <h2>Matches</h2>
-    <pre class="codebox"><code id="out"></code></pre>
+    <p id="out"></p>
+    <div id="results"></div>
   </section>
 
 </main>

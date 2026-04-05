@@ -1,80 +1,125 @@
-// dictionary.js
-// Simple substring search over raw lexicon.txt.
-// - loads ./data/lexicon.txt
-// - returns ALL lines containing the query (case-insensitive)
-// - supports dictionary.html?q=... (autofill + autorun)
-
-let LINES = [];
-
-function getQueryParam(name) {
-  const params = new URLSearchParams(window.location.search);
-  const v = params.get(name);
-  return v ? v.trim() : "";
-}
-
 async function loadLexicon() {
-  const out = document.getElementById("out");
-
-  try {
-    const resp = await fetch("/assets/data/lexicon.txt", { cache: "no-store" });
-    if (!resp.ok) {
-      throw new Error(`fetch lexicon.txt failed: HTTP ${resp.status} ${resp.statusText}`);
-    }
-
-    const text = await resp.text();
-
-    LINES = text
-      .split(/\r?\n/)
-      .map(l => l.trim())
-      .filter(l => l.length > 0 && !l.startsWith("%"));
-
-    out.textContent = `Loaded ${LINES.length} lines.`;
-    return true;
-  } catch (err) {
-    console.error(err);
-    out.textContent = `Failed to load lexicon.txt: ${err}`;
-    return false;
+  const response = await fetch("/assets/lexicon/lexicon.html", { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load lexicon: ${response.status}`);
   }
+  return await response.text();
 }
 
-function runSearch() {
-  const qEl = document.getElementById("q");
-  const out = document.getElementById("out");
+function normalize(text) {
+  return (text || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
 
-  const q = (qEl.value || "").trim().toLowerCase();
-  if (!q) {
-    out.textContent = "(enter a search term)";
+function getQueryFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("q") || "";
+}
+
+function setQueryInUrl(query) {
+  const url = new URL(window.location.href);
+  if (query && query.trim()) {
+    url.searchParams.set("q", query.trim());
+  } else {
+    url.searchParams.delete("q");
+  }
+  window.history.replaceState({}, "", url);
+}
+
+function parseEntries(htmlText) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlText, "text/html");
+  return Array.from(doc.querySelectorAll(".entry"));
+}
+
+function entryMatches(entry, query) {
+  const q = normalize(query);
+  if (!q) return true;
+
+  const lemma = normalize(entry.querySelector(".lemma")?.textContent || "");
+  const glosses = normalize(
+    Array.from(entry.querySelectorAll(".gloss"))
+      .map(el => el.textContent)
+      .join(" ")
+  );
+
+  return lemma.includes(q) || glosses.includes(q);
+}
+
+function updateStatus(out, count, query) {
+  if (!query.trim()) {
+    out.textContent = `Showing all ${count} entries.`;
     return;
   }
 
-  const matches = [];
-  for (const line of LINES) {
-    if (line.toLowerCase().includes(q)) {
-      matches.push(line);
-    }
+  if (count === 0) {
+    out.textContent = `No matches for "${query}".`;
+    return;
   }
 
-  out.textContent = matches.length ? matches.join("\n") : "(no match)";
+  if (count === 1) {
+    out.textContent = `1 match for "${query}".`;
+    return;
+  }
+
+  out.textContent = `${count} matches for "${query}".`;
+}
+
+function renderMatches(entries, query, resultsEl, outEl) {
+  resultsEl.innerHTML = "";
+
+  const matches = entries.filter(entry => entryMatches(entry, query));
+
+  for (const entry of matches) {
+    resultsEl.appendChild(entry.cloneNode(true));
+  }
+
+  updateStatus(outEl, matches.length, query);
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const ok = await loadLexicon();
+  const input = document.getElementById("q");
+  const button = document.getElementById("go");
+  const out = document.getElementById("out");
+  const results = document.getElementById("results");
 
-  const go = document.getElementById("go");
-  const q = document.getElementById("q");
+  if (!input || !button || !out || !results) return;
 
-  if (go) go.addEventListener("click", runSearch);
-  if (q) {
-    q.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") runSearch();
-    });
+  let entries = [];
+
+  try {
+    const lexiconHtml = await loadLexicon();
+    entries = parseEntries(lexiconHtml);
+  } catch (err) {
+    out.textContent = "Could not load the dictionary.";
+    console.error(err);
+    return;
   }
 
-  // Autofill + autorun from URL param
-  const initial = getQueryParam("q");
-  if (ok && q && initial) {
-    q.value = initial;
-    runSearch();
+  function runSearch() {
+    const query = input.value || "";
+    setQueryInUrl(query);
+    renderMatches(entries, query, results, out);
   }
+
+  button.addEventListener("click", runSearch);
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      runSearch();
+    }
+  });
+
+  input.addEventListener("input", runSearch);
+
+  const initialQuery = getQueryFromUrl();
+  if (initialQuery) {
+    input.value = initialQuery;
+  }
+
+  renderMatches(entries, input.value || "", results, out);
 });
-

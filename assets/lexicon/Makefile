@@ -3,7 +3,7 @@ SRC = lexicon.txt
 TMP = build
 CLEAN = $(TMP)/clean.txt
 SORTED = $(TMP)/sorted.txt
-HTML = _lexicon.html
+HTML = lexicon.html
 
 # Scripts
 CHECK = check_matching_brackets.awk
