@@ -244,7 +244,7 @@ function runGeneralSearch(records, query) {
     return {
       kind: "none",
       matches: [],
-      message: `Sorry, no “${query}”.`,
+      message: `No match for “${query}”.`,
     };
   }
 
@@ -252,7 +252,7 @@ function runGeneralSearch(records, query) {
     kind: "suggest",
     matches: suggestions,
     message:
-      `Sorry, no “${query}”. ` +
+      `No match for “${query}”. ` +
       `Maybe these are what you're looking for?`,
   };
 }
