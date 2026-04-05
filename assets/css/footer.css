@@ -4,7 +4,6 @@
   border-top: 1px solid #ccc;
   background: #333; /*#f7f7f7;*/
   margin-top: 3rem;
-
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
@@ -12,13 +11,13 @@
 
 .site-footer a {
   color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
-.footer-logo {
-  height: 44px;
-  width: auto;
-  display: block;
-  margin: 0.3rem;
+.site-footer a:hover {
+  color: var(--link-hover);
 }
 
 .footer-inner {
@@ -26,51 +25,43 @@
   margin: 0 auto;
   padding: 1.25rem 1rem;
   display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 0;
+  align-items: center;
+  text-align: center;
+  /*justify-content: space-between;*/
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .footer-brand {
+  /*
   display: flex;
   align-items: center;
   gap: 0.75rem;
   min-width: 16rem;
-}
-
-.footer-title {
-  /*font-family: serif;*/
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.footer-meta {
-  /*font-family: serif;*/
-  font-size: 0.9rem;
-  /*color: #666;*/
-  line-height: 1.35;
-}
-
-.footer-contact {
-  text-align: left;
+  */
+  width: 13rem;
+  display: block;
+  margin: 0.5rem;
 }
 
 .footer-legal {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: flex-end;
-  text-align: right;
+  justify-content: center;
+  text-align: center;
 }
 
+/*
 @media (max-width: 700px) {
   .footer-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
   .footer-legal {
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
   }
 }
-
+*/
