@@ -26,3 +26,7 @@ Gemfile.lock
 # Node.js stuff (if using any npm tooling)
 node_modules/
 package-lock.json
+
+# Lexicon parsing
+assets/lexicon/build
+assets/lexicon/tmp

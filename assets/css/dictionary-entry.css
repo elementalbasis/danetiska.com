@@ -1,0 +1,51 @@
+
+
+/* Entry container */
+.entry {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Lemma (big word at top) */
+.lemma {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
+  color: #1040a0;
+}
+
+/* Etymology */
+.etymology {
+  color: #008000;
+  margin-bottom: 1.2rem;
+}
+
+/*
+.etymology i {
+  font-style: italic;
+}
+*/
+
+/* Part of speech label */
+.pos {
+  font-style: italic;
+  color: #1040a0;
+  margin-right: 0.5rem;
+}
+
+/* Numbered definitions */
+/*
+.sense-block ol {
+  margin: 0.4rem 0 0 1.4rem;
+}
+*/
+
+.sense-block li {
+  margin-bottom: 0.25rem;
+  padding-left: 1.5rem;
+}
+
+.qualifier {
+  font-style: italic;
+}
