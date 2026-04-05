@@ -24,7 +24,7 @@ the Danetian people. Each month starts at the
 new moon closest to the
 [vernal equinox](https://en.wikipedia.org/wiki/March_equinox). In order to
 accomplish this, a series of algorithms were formalized by
-[Myron Dorostolite](/blog/myron-dorostolite.html) in his 14th century work,
+[Myron Dorostolite](/posts/myron-dorostolite.html) in his 14th century work,
 *On the Reckoning of the Luminaries*, to
 perform calendrical calculations.
 
