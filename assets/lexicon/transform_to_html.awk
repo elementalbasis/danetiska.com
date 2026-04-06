@@ -83,8 +83,12 @@ function expand_inline(s, raw, inner, repl, start, len) {
   s = replace_onearg(s, "pie", "PIE", 1)
   s = replace_onearg(s, "lat", "Lat.", 0)
   s = replace_onearg(s, "eng", "Eng.", 0)
-  s = replace_onearg(s, "dnt", "Dan.", 0)
+  s = replace_onearg(s, "dnt", "Dnt.", 0)
   s = replace_onearg(s, "protrk", "Proto-Turk.", 0)
+  s = replace_onearg(s, "dan", "Dan.", 0)
+  s = replace_onearg(s, "fra", "Fr.", 0)
+  s = replace_onearg(s, "ger", "Ger.", 0)
+  s = replace_onearg(s, "ita", "It.", 0)
 
   s = replace_twoarg(s, "grc", "Grc.")
   s = replace_twoarg(s, "rus", "Rus.")
