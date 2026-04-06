@@ -704,3 +704,27 @@
 @key(livermoriom) @ety(\eng{Livermore}) @typ(n) @def($livermorium, \chem{116})
 @key(tennessos) @ety(\eng{Tennessee}) @typ(m) @def($tennessine, \chem{117})
 @key(oganesson) @ety(\rus{Оганесян}{Oganesján}) @typ(m) @def($oganesson, \chem{118})
+
+
+
+
+
+
+% More ordinals
+
+@key(svesjtos) @ety(\pie{swéḱstos}; \cf \lat{sixtus}, \grc{ἕκτος}{héktos}, \rus{шестой}{šestój}, \eng{sixth}) @typ(adj) @def($sixth)
+@key(septymos) @ety(\pie{septm̥mós}; \cf \lat{septimus}, \grc{ἕβδομος}{hébdomos}, \rus{седьмой}{sedʹmój}, \eng{seventh}) @typ(adj) @def($seventh)
+@key(osjtovos) @ety(\pie{oḱtowós}; \cf \lat{octavus}, \grc{ὄγδοος}{ógdoos}) @typ(adj) @def($eighth)
+@key(nunos) @ety(\pie{h₁newn̥nós}; \cf \lat{nonus}) @typ(adj) @def($ninth)
+@key(desjyntos) @ety(\pie{deḱm̥tós}; \cf \lat{decimus}) @typ(adj) @def($tenth)
+@key(vidsjyntos) @ety(\pie{widḱm̥tós}; \cf \grc{εἰκοστός}{eikostós}) @typ(adj) @def($twentieth)
+@key(tridsjyntos) @ety(\pie{tridḱm̥tós}; \cf \grc{τριακοστός}{trĭākostós}) @typ(adj) @def($thirtieth)
+@key(peturdsjyntos) @ety(\pie{kʷetwr̥dḱm̥tós}; \cf \grc{τεσσαρακοστός}{tessărăkostós}) @typ(adj) @def($fortieth)
+@key(pempedsjyntos) @ety(\pie{penkʷedḱm̥tós}; \cf \grc{πεντηκοστός}{pentēkostós}) @typ(adj) @def($fiftieth)
+@key(svesjdsjyntos) @ety(\pie{sweḱsdḱm̥tós}; \cf \grc{ἑξηκοστός}{hexēkostós}) @typ(adj) @def($sixtieth)
+@key(septyndsjyntos) @ety(\pie{septm̥dḱm̥tós}; \cf \grc{ἑβδομηκοστός}{hebdomēkostós}) @typ(adj) @def($seventieth)
+@key(osjtodsjyntos) @ety(\pie{oḱtodḱm̥tós}; \cf \grc{ὀγδοηκοστός}{ogdoēkostós}) @typ(adj) @def($eightieth)
+@key(nundsjyntos) @ety(\pie{h₁newn̥dḱm̥tós}; \cf \grc{ἐνενηκοστός}{enenēkostós}) @typ(adj) @def($ninetieth)
+@key(sjyntomos) @ety(\pie{ḱm̥tom-mós}) @typ(adj) @def($hundredth)
+@key(tusontios) @ety(\pie{tuHsont-}) @typ(adj) @def($thousandth)
+@key(timenios) @ety(\dnt{timen}) @typ(adj) @def($myriadth, ${ten thousandth})
