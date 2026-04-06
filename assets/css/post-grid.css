@@ -1,0 +1,121 @@
+/* === MINIMAL CUBICLE STYLES === */
+
+/* Featured post */
+.featured {
+  margin-bottom: 2rem;
+}
+.featured img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.featured h1 {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.featured p {
+  color: #555;
+}
+
+/* Grid of posts */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.post-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.post-card h2 {
+  font-size: 1.1rem;
+  margin: 0.6rem 0.8rem 0.4rem;
+}
+
+.post-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0.8rem 0.8rem;
+}
+
+
+
+
+/* In the posts page, ensure that the propering filtering of posts according
+ * to tags is performed. */
+
+.archive-item {
+  display: contents;
+}
+
+.archive-item[hidden] {
+  display: none !important;
+}
+
+
+/* Style the "View all posts" button */
+
+.all-posts-link {
+  margin: 2.5rem 0 1rem 0;
+  text-align: center;
+}
+
+.all-posts-link a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
+  border: 1px solid #ccc;
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.all-posts-link a:hover {
+  background: #f5f5f5;
+  border-color: #888;
+}
+
+
+
+
+/* Style the posts themselves */
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.post-nav a {
+  text-decoration: none;
+  /*color: #0077cc;*/
+}
+
+.post-nav a:hover {
+  text-decoration: underline;
+}

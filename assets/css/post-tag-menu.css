@@ -1,0 +1,64 @@
+/* =========================
+   TAG MENU (POST FILTER)
+   ========================= */
+
+.tag-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+/* Base button */
+.tag-menu button {
+  font: inherit;
+  padding: 0.4rem 0.75rem;
+
+  border: 1px solid #ccc;
+  background: transparent;
+  color: inherit;
+
+  cursor: pointer;
+  border-radius: 999px; /* pill */
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+/* Hover */
+.tag-menu button:hover {
+  border-color: #888;
+  background: #f5f5f5;
+}
+
+/* Active (selected filter) */
+.tag-menu button.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Optional: emphasize "All" */
+.tag-menu button[data-tag="all"] {
+  font-weight: 600;
+}
+
+/* Focus (keyboard navigation) */
+.tag-menu button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile refinement */
+@media (max-width: 600px) {
+  .tag-menu {
+    gap: 0.4rem;
+  }
+
+  .tag-menu button {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}

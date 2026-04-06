@@ -6,39 +6,50 @@ layout: default
 {% include dictionary_search.html %}
 {% include word_of_the_day.html %}
 
-{%- comment -%}
-Pick the featured post: first with `featured: true`, else latest
-{%- endcomment -%}
-{% assign featured = site.posts | where_exp: "p","p.featured" | first %}
-{% if featured == nil %}
-  {% assign featured = site.posts.first %}
-{% endif %}
 
-{% include featured.html post=featured %}
+{% assign featured_post = site.posts.first %}
 
-<section class="post-grid">
-  {%- comment -%}
-  Show the rest as cards (respect pagination if enabled)
-  {%- endcomment -%}
-  {% if paginator %}
-    {% assign posts = paginator.posts | where_exp:"p","p.url != featured.url" %}
-  {% else %}
-    {% assign posts = site.posts | where_exp:"p","p.url != featured.url" %}
-  {% endif %}
+{% assign danetian_posts = site.posts | where_exp: "post", "post.tags contains 'worldbuilding' or post.tags contains 'calendar' or post.tags contains 'conlang'" %}
+{% assign science_posts = site.posts | where_exp: "post", "post.tags contains 'math' or post.tags contains 'physics' or post.tags contains 'computing'" %}
 
-  {% for post in posts %}
-    {% include post-card.html post=post %}
-  {% endfor %}
+<section class="home-featured">
+  {% include featured.html post=featured_post %}
 </section>
 
-{% if paginator %}
-<nav class="pager">
-  {% if paginator.previous_page %}
-    <a class="prev" href="{{ paginator.previous_page_path }}">&larr; Newer</a>
-  {% endif %}
-  <span class="page-num">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="next" href="{{ paginator.next_page_path }}">Older &rarr;</a>
-  {% endif %}
-</nav>
-{% endif %}
+<p class="all-posts-link">
+  <a href="/posts/">Browse all posts →</a>
+</p>
+
+<section class="home-section">
+  <h2>Danetian Language and Worldbuilding</h2>
+  <div class="post-grid">
+    {% assign shown = 0 %}
+    {% for post in danetian_posts %}
+      {% if post.url != featured_post.url and shown < 3 %}
+        {% include post-card.html post=post %}
+        {% assign shown = shown | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<p class="all-posts-link">
+  <a href="/posts/">Browse all posts →</a>
+</p>
+
+<section class="home-section">
+  <h2>Mathematics, Physics, and Computing</h2>
+  <div class="post-grid">
+    {% assign shown = 0 %}
+    {% for post in science_posts %}
+      {% if post.url != featured_post.url and shown < 3 %}
+        {% include post-card.html post=post %}
+        {% assign shown = shown | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<p class="all-posts-link">
+  <a href="/posts/">Browse all posts →</a>
+</p>
