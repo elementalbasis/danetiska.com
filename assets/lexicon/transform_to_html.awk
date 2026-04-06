@@ -80,6 +80,9 @@ function expand_inline(s, raw, inner, repl, start, len) {
   gsub(/\\etc/, "etc.", s)
   gsub(/\\ono/, "Onomatopoeic", s)
   gsub(/\\chem\{/, "\\par{chemical element with atomic number ", s)
+  gsub(/\\unknown/, "Unknown", s)
+  gsub(/\\field/, "\\par", s)
+  gsub(/\\reg/, "\\par", s)
 
   s = replace_onearg(s, "pie", "Proto-Indo-European", 1)
   s = replace_onearg(s, "lat", "Latin", 0)
@@ -91,6 +94,7 @@ function expand_inline(s, raw, inner, repl, start, len) {
   s = replace_onearg(s, "fra", "French", 0)
   s = replace_onearg(s, "ger", "German", 0)
   s = replace_onearg(s, "ita", "Italian", 0)
+  s = replace_onearg(s, "cat", "Catalan")
 
   s = replace_twoarg(s, "grc", "Ancient Greek")
   s = replace_twoarg(s, "rus", "Russian")
