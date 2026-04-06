@@ -3,8 +3,13 @@ title: About the Danetian Academy
 layout: standalone
 ---
 
+<div class="post-cover">
+	<img src="/assets/images/danetiska_academia_logo.svg" alt="Danetiska Academia">
+</div>
+
 The **Danetian Academy** is an independent scholarly and cultural project
-dedicated to the study, development, and presentation of the Danetian language
+dedicated to the study, development, and presentation of the
+[Danetian language](/language)
 and its associated cultural framework.
 
 The Academy serves as a central place for materials related to Danetian
