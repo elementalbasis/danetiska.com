@@ -2,7 +2,7 @@
 layout: post
 title: Etymology of "Danetia"
 author: Javier Castro
-tags: [worldbuilding]
+tags: [worldbuilding, conlang]
 cover: /assets/images/alexios-i-komnenos.jpg
 ---
 
