@@ -158,7 +158,8 @@ count on rule 1.
 
 ## Calendar epoch
 
-[Myron](/blog/myron-dorostolite.html) took 03&nbsp;Apr&nbsp;-1325 as the epoch
+[Myron Dorostolite](/posts/myron-dorostolite.html)
+took 03&nbsp;Apr&nbsp;-1325 as the epoch
 for his calendar. This is fascinating because on this date, the vernal equinox
 coincided with a solar eclipse. Myron writes:
 
