@@ -1,0 +1,14 @@
+% Expressions %
+
+@expr(dybram dinam) @link(dybros, dina) @def($good $morning, $good $day, \par{formal greeting used while the sun is up})
+@expr(dybrom veksperom) @link(dybros, veksperos) @def($good $evening, \par{formal greeting used after sunset})
+@expr(dybram noptym) @link(dybros, nopts) @def($good $night, \par{formal or informal greeting used right before going to sleep})
+@expr(megti esni) @link(megmi, esmi) @def($maybe, $perhaps, ${could be})
+@expr(jodi siet) @link(jodi, esmi) @def($wherever, $anywhere)
+@expr(joda siet) @link(joda, esmi) @def($whenever, $anytime)
+@expr(tasme dybre) @link(tos, dybros) @def($too, $also; $moreover, $additionally)
+@expr(pasme) @link(pos) @def($how, \par{interrogative})
+@expr(jasme) @link(jos) @def($how, \par{relative})
+@expr(tasme) @link(tos) @def($like $that)
+@expr(sjasme) @link(sjos) @def($like $this)
+@expr(inopasme) @link(inopos) @def($somehow)

@@ -1,4 +1,5 @@
 # Files
+RAW = raw
 SRC = lexicon.txt
 TMP = build
 CLEAN = $(TMP)/clean.txt
@@ -17,6 +18,7 @@ all: $(HTML)
 
 # Step 1 — bracket check (FAIL HARD)
 check:
+	@cat $(RAW)/* > $(SRC)
 	@echo "Checking brackets..."
 	@awk -f $(CHECK) $(SRC)
 
@@ -45,4 +47,4 @@ $(HTML): check symbols $(SORTED)
 
 # Clean build artifacts
 clean:
-	rm -rf $(TMP)
+	rm -rf $(TMP) $(SRC)

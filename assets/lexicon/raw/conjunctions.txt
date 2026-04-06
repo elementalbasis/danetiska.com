@@ -1,0 +1,11 @@
+% Prepositions %
+
+@key(javot) @ety(\pie{yós}; \cf \grc{ἕως}{héōs}) @typ(conj) @def($while)
+@key(toda) @ety(\pie{to-deh₂}) @typ(adv) @def($then, at $that time) @typ(conj) @def($then \par{used in conditional constructions})
+@key(peto) @ety(\pie{péth₂eti}; \cf \lat{peto}, \grc{πέτομαι}{pétomai}) @typ(conj) @def(to $fly) @def(to $dart, to $rush; to make $haste)
+@key(pe) @ety(\pie{-kʷe}; \cf \lat{-que}, \grc{τε}{te}) @typ(conj) @def($and, \par{used for closely related pairs of elements})
+@key(i) @ety(\pie{éy}; \cf \grc{εἰ}{ei}, \rus{и}{i}) @typ(conj) @def($and)
+@key(ide) @ety(\dnt{i} + \pie{de}; \cf \rus{да}{da}) @typ(conj) @def($and, \par{used when introducing a new clause})
+@key(ive) @ety(From \dnt{i} + \dnt{-ve}) @typ(conj) @def($or)
+@key(je) @ety(\pie{ís} or \pie{yós}) @typ(conj) @def($if)
+@key(nu) @ety(\pie{nu}; \cf \lat{nunc}, \grc{νῦν}{nûn}, \rus{ныне}{nýne}, \eng{now}) @typ(conj) @def($but)
