@@ -6,11 +6,7 @@ layout: default
 {% include dictionary_search.html %}
 {% include word_of_the_day.html %}
 
-
 {% assign featured_post = site.posts.first %}
-
-{% assign danetian_posts = site.posts | where_exp: "post", "post.tags contains 'worldbuilding' or post.tags contains 'calendar' or post.tags contains 'conlang'" %}
-{% assign science_posts = site.posts | where_exp: "post", "post.tags contains 'math' or post.tags contains 'physics' or post.tags contains 'computing'" %}
 
 <section class="home-featured">
   {% include featured.html post=featured_post %}
@@ -24,10 +20,12 @@ layout: default
   <h2>Danetian Language and Worldbuilding</h2>
   <div class="post-grid">
     {% assign shown = 0 %}
-    {% for post in danetian_posts %}
+    {% for post in site.posts %}
       {% if post.url != featured_post.url and shown < 3 %}
-        {% include post-card.html post=post %}
-        {% assign shown = shown | plus: 1 %}
+        {% if post.tags contains "worldbuilding" or post.tags contains "calendar" or post.tags contains "conlang" %}
+          {% include post-card.html post=post %}
+          {% assign shown = shown | plus: 1 %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>
@@ -41,10 +39,12 @@ layout: default
   <h2>Mathematics, Physics, and Computing</h2>
   <div class="post-grid">
     {% assign shown = 0 %}
-    {% for post in science_posts %}
+    {% for post in site.posts %}
       {% if post.url != featured_post.url and shown < 3 %}
-        {% include post-card.html post=post %}
-        {% assign shown = shown | plus: 1 %}
+        {% if post.tags contains "math" or post.tags contains "physics" or post.tags contains "computing" %}
+          {% include post-card.html post=post %}
+          {% assign shown = shown | plus: 1 %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>
