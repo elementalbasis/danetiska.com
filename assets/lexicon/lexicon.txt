@@ -698,3 +698,5 @@
 @key(livermoriom) @ety(\eng{Livermore}) @typ(n) @def($livermorium)
 @key(tennessos) @ety(\eng{Tennessee}) @typ(m) @def($tennessine)
 @key(oganesson) @ety(\rus{Оганесян}{Oganesján}) @typ(m) @def($oganesson)
+
+@key(cetos) @ety(\lat{cetus}) @typ(m) @def(\par{any large sea animal, such as a} $whale, $shark, $seal, $dogfish, $dolphin, $tuna)
