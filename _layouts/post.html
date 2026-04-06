@@ -24,17 +24,17 @@ layout: default
 
 {% include post-nav.html %}
 
-<script src="/assets/scripts/calendar.js"></script>
+<!--<script src="/assets/scripts/calendar.js"></script>-->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
 	  const [yg, mg, dg] = "{{ page.date | date: '%Y-%m-%d' }}".split("-").map(Number);
 	  //var yg = gDate.getFullYear(); //u.slice(0,4)*1
 	  //var mg = gDate.getMonth() + 1; //u.slice(5,7)*1
 	  //var dg = gDate.getDate(); //u.slice(8,10)*1
-	  var n = gregorian_to_julian_day(yg, mg, dg)
-	  var [yd, md, dd] = danetian_from_julian_day(n)
-	  var s = verbose_format(yd, md, dd)
-	
+	  var n = gregorian_to_julian_day(yg, mg, dg);
+	  var [yd, md, dd] = danetian_from_julian_day(n);
+	  var s = verbose_format(yd, md, dd, g_danetian_month_names);
+
     document.getElementById("danetian-date").textContent = s;
   });
 </script>
