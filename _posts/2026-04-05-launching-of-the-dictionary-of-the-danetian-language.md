@@ -2,7 +2,7 @@
 layout: post
 title: The Academy launches the Dictionary of the Danetian Language
 author: Javier Castro
-tags: [worldbuilding, conlang]
+tags: [conlang]
 cover: /assets/images/dictionary_of_the_danetian_language_logo.svg
 ---
 
