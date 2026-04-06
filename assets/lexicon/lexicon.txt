@@ -728,3 +728,24 @@
 @key(sjyntomos) @ety(\pie{ḱm̥tom-mós}) @typ(adj) @def($hundredth)
 @key(tusontios) @ety(\pie{tuHsont-}) @typ(adj) @def($thousandth)
 @key(timenios) @ety(\dnt{timen}) @typ(adj) @def($myriadth, ${ten thousandth})
+
+
+
+% New words
+
+@key(da) @ety(\bg{да}{da}) @typ(intj) @def($yes)
+@key(bukva) @ety(\bg{буква}{búkva}) @typ(f) @def($letter, $character \par{of the alphabet}) @def($key \par{of a keyboard, typewriter, \etc}) @def(\par{printing} $type, $lettering) @def($font)
+@key(importants) @ety(\lat{importans}) @typ(adj) @def($important)
+@key(zdrasti) @ety(\bg{здрасти}{zdrásti}) @typ(intj) @def($hi, $hello, \par{informal greeting})
+@key(munduka) @ety(\protung{mundukān}) @typ(m) @def($hare, $rabbit)
+@key(sedjo) @ety(\pie{séǵʰeti}; \cf \grc{ἔχω}{ékhō}) @typ(v) @def(to $win)
+@key(interessants) @ety(\fra{intéressant}) @typ(adj) @def($interesting)
+@key(interesse) @ety(\lat{interesse}) @typ(n) @def($interest, \par{great attention and concern from someone}) @def(\par{finance} $interest) @def($benefit, $advantage, $stake)
+@key(kiresj) @ety(\protrk{küreš-}; \cf \kyr{күрөш}{küröş}) @typ(m) @def($battle)
+@key(kiresjo) @ety(\dnt{kiresj}) @typ(v) @def(to $fight, to $battle)
+@key(sjahar) @ety(\per{شهر}{šahr}) @typ(m) @def($city)
+@key(sjaharkos) @ety(\dnt{sjahar}) @typ(mf) @def($citizen)
+@key(sjaharnos) @ety(\dnt{sjahar}) @typ(adj) @def($civil)
+@key(kitab) @ety(\ara{كتاب}{kitāb}) @typ(m) @def($book)
+@key(daulat) @ety(\per{دولت}{dawlat}) @typ(m) @def($state, sovereign $polity)
+@key(iskra) @ety(\bg{искра}{ískra}) @typ(f) @def($spark)

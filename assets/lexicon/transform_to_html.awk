@@ -86,6 +86,7 @@ function expand_inline(s, raw, inner, repl, start, len) {
   s = replace_onearg(s, "eng", "English", 0)
   s = replace_onearg(s, "dnt", "Danetian", 0)
   s = replace_onearg(s, "protrk", "Proto-Turkic", 0)
+  s = replace_onearg(s, "protung", "Proto-Tungusic", 0)
   s = replace_onearg(s, "dan", "Danish", 0)
   s = replace_onearg(s, "fra", "French", 0)
   s = replace_onearg(s, "ger", "German", 0)
@@ -96,6 +97,7 @@ function expand_inline(s, raw, inner, repl, start, len) {
   s = replace_twoarg(s, "ara", "Arabic")
   s = replace_twoarg(s, "per", "Persian")
   s = replace_twoarg(s, "kyr", "Kyrgyz")
+  s = replace_twoarg(s, "bg", "Bulgarian")
 
   while (match(s, /\\par\{[^{}]*\}/)) {
     start = RSTART
