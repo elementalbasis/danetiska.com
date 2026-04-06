@@ -29,7 +29,11 @@ async function loadWordOfTheDay() {
     }
 
     const today = new Date();
-    const isoToday = today.toISOString().slice(0, 10);
+
+    const isoToday =
+      today.getFullYear() + "-" +
+      String(today.getMonth() + 1).padStart(2, "0") + "-" +
+      String(today.getDate()).padStart(2, "0");
 
     const lemma = table.get(isoToday);
 
