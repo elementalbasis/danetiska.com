@@ -79,6 +79,7 @@ function expand_inline(s, raw, inner, repl, start, len) {
   gsub(/\\cf/,  "cf.",  s)
   gsub(/\\etc/, "etc.", s)
   gsub(/\\ono/, "Onom.", s)
+  gsub(/\\chem\{/, "\\par{chemical element with atomic number ", s)
 
   s = replace_onearg(s, "pie", "PIE", 1)
   s = replace_onearg(s, "lat", "Lat.", 0)
