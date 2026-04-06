@@ -15,6 +15,23 @@
   color: #1040a0;
 }
 
+.inline-lemma {
+  /*font-size: 2.4rem;*/
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
+  color: #1040a0;
+}
+
+.inline-lemma a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inline-lemma a:hover {
+  color: #c9a300;
+}
+
 /* Etymology */
 .etymology {
   color: #008000;
@@ -28,7 +45,7 @@
 */
 
 /* Part of speech label */
-.pos {
+.pos, .linguistic-register, .field-of-usage {
   font-style: italic;
   color: #1040a0;
   margin-right: 0.5rem;
@@ -49,4 +66,8 @@
 .qualifier {
   font-style: italic;
   color: #777;
+}
+
+.silent-gloss{
+  visibility: hidden;
 }

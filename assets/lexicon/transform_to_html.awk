@@ -18,7 +18,7 @@ function open_sense_block() {
   }
 }
 
-function arg_of(token,    s) {
+function arg_of(token, s) {
   s = token
   sub(/^@[a-z]+\(/, "", s)
   sub(/\)$/, "", s)
@@ -76,13 +76,15 @@ function ensure_final_period(s) {
 
 function expand_inline(s, raw, inner, repl, start, len) {
 
+  # Expand simple macros
+
   gsub(/\\cf/,  "cf.",  s)
   gsub(/\\etc/, "etc.", s)
   gsub(/\\ono/, "Onomatopoeic", s)
   gsub(/\\chem\{/, "\\par{chemical element with atomic number ", s)
   gsub(/\\unknown/, "Unknown", s)
-  gsub(/\\field/, "\\par", s)
-  gsub(/\\reg/, "\\par", s)
+  #gsub(/\\field/, "\\par", s)
+  #gsub(/\\reg/, "\\par", s)
 
   s = replace_onearg(s, "pie", "Proto-Indo-European", 1)
   s = replace_onearg(s, "lat", "Latin", 0)
@@ -103,6 +105,10 @@ function expand_inline(s, raw, inner, repl, start, len) {
   s = replace_twoarg(s, "kyr", "Kyrgyz")
   s = replace_twoarg(s, "bg", "Bulgarian")
 
+
+
+  # Expand macros like \par{}, \reg{}, \field{}
+
   while (match(s, /\\par\{[^{}]*\}/)) {
     start = RSTART
     len   = RLENGTH
@@ -116,29 +122,37 @@ function expand_inline(s, raw, inner, repl, start, len) {
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
-  while (match(s, /\$\{[^{}]*\}/)) {
+  while (match(s, /\\field\{[^{}]*\}/)) {
     start = RSTART
     len   = RLENGTH
     raw   = substr(s, start, len)
 
     inner = raw
-    sub(/^\$\{/, "", inner)
+    sub(/^\\field\{/, "", inner)
     sub(/\}$/, "", inner)
+    inner = ensure_final_period(inner)
 
-    #repl = "<i>" inner "</i>"
-    repl = inner
+    repl = "<span class=\"field-of-usage\">" inner "</span>"
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
-#  while (match(s, /\$[[:alnum:]_.:-]+/)) {
-#    start = RSTART
-#    len   = RLENGTH
-#    raw   = substr(s, start, len)
-#
-#    inner = substr(raw, 2)
-#    repl = "<i>" inner "</i>"
-#    s = substr(s, 1, start - 1) repl substr(s, start + len)
-#  }
+  while (match(s, /\\reg\{[^{}]*\}/)) {
+    start = RSTART
+    len   = RLENGTH
+    raw   = substr(s, start, len)
+
+    inner = raw
+    sub(/^\\reg\{/, "", inner)
+    sub(/\}$/, "", inner)
+    inner = ensure_final_period(inner)
+
+    repl = "<span class=\"linguistic-register\">" inner "</span>"
+    s = substr(s, 1, start - 1) repl substr(s, start + len)
+  }
+
+
+
+  # Handle tags like $this or ${like this}
 
   while (match(s, /\$\{[^{}]*\}/)) {
     start = RSTART
@@ -163,7 +177,63 @@ function expand_inline(s, raw, inner, repl, start, len) {
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
+
+
+  # Handle silent tags like &this or &{like this}
+
+  while (match(s, /&[[:alnum:]_.:-]+/)) {
+    start = RSTART
+    len   = RLENGTH
+    raw   = substr(s, start, len)
+
+    inner = substr(raw, 2)
+    repl = "<span class=\"silent-gloss\">" inner "</span>"
+    s = substr(s, 1, start - 1) repl substr(s, start + len)
+  }
+
+  while (match(s, /&\{[^{}]*\}/)) {
+    start = RSTART
+    len   = RLENGTH
+    raw   = substr(s, start, len)
+
+    inner = raw
+    sub(/^&\{/, "", inner)
+    sub(/\}$/, "", inner)
+
+    repl = "<span class=\"silent-gloss>" inner "</span>"
+    s = substr(s, 1, start - 1) repl substr(s, start + len)
+  }
+
+  # TODO: delete any empty spaces that may remain once the silent glosses are taken care of
+
   return s
+}
+
+function trim(s) {
+  sub(/^[ \t\r\n]+/, "", s)
+  sub(/[ \t\r\n]+$/, "", s)
+  return s
+}
+
+function render_expression(i,    out, lines, n, k) {
+  out = "    <li><span class=\"expr\">" expr_text[i] "</span>"
+
+  n = split(expr_defs[i], lines, /\n/)
+  if (n > 0) {
+    out = out " — " lines[1]
+    for (k = 2; k <= n; k++) {
+      out = out "; " lines[k]
+    }
+  }
+
+  out = out "</li>\n"
+  return out
+}
+
+function lemma_head_of(key,    parts, s) {
+  split(key, parts, /[;,]/)
+  s = parts[1]
+  return trim(s)
 }
 
 BEGIN {
@@ -173,7 +243,7 @@ BEGIN {
 }
 
 {
-  while (match($0, /@(key|ety|typ|def)\([^()]*\)/)) {
+  while (match($0, /@(key|ety|typ|def|see)\([^()]*\)/)) {
     start = RSTART
     len   = RLENGTH
     token = substr($0, start, len)
@@ -201,6 +271,11 @@ BEGIN {
       def = expand_inline(arg_of(token))
       open_sense_block()
       print "      <li><span class=\"pos\">" current_typ ".</span> " def "</li>"
+    }
+
+    else if (token ~ /^@see\(/) {
+      ref = arg_of(token)
+      print "&rarr; <span class=\"inline-lemma\"><a href=\"/dictionary?q=" ref "&mode=lemma-exact\">" ref "</a></span>"
     }
 
     $0 = substr($0, start + len)
