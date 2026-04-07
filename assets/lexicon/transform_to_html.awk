@@ -135,10 +135,7 @@ function read_tag(line, start, i, ch, depth, out) {
   return out
 }
 
-function expand_inline(s, raw, inner, repl, start, len) {
-
-  # Expand simple macros
-
+function expand_simple_macros(s) {
   gsub(/\\cf/,  "cf.",  s)
   gsub(/\\etc/, "etc.", s)
   gsub(/\\ono/, "Onomatopoeic", s)
@@ -166,9 +163,11 @@ function expand_inline(s, raw, inner, repl, start, len) {
   s = replace_twoarg(s, "kyr", "Kyrgyz")
   s = replace_twoarg(s, "bg", "Bulgarian")
 
+  return s
+}
 
-
-  # Expand macros like \par{}, \reg{}, \field{}
+# Expand macros like \par{}, \field{}, and \reg{}
+function expand_lexical_information_macros(s) {
 
   while (match(s, /\\par\{[^{}]*\}/)) {
     start = RSTART
@@ -211,10 +210,12 @@ function expand_inline(s, raw, inner, repl, start, len) {
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
+  return s
+}
 
+function handle_gloss_tags(s) {
 
   # Handle tags like $this or ${like this}
-
   while (match(s, /\$\{[^{}]*\}/)) {
     start = RSTART
     len   = RLENGTH
@@ -227,7 +228,6 @@ function expand_inline(s, raw, inner, repl, start, len) {
     repl = "<span class=\"gloss\">" inner "</span>"
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
-
   while (match(s, /\$[[:alnum:]_.:-]+/)) {
     start = RSTART
     len   = RLENGTH
@@ -238,10 +238,7 @@ function expand_inline(s, raw, inner, repl, start, len) {
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
-
-
   # Handle silent tags like &this or &{like this}
-
   while (match(s, /&[[:alnum:]_.:-]+/)) {
     start = RSTART
     len   = RLENGTH
@@ -251,7 +248,6 @@ function expand_inline(s, raw, inner, repl, start, len) {
     repl = "<span class=\"silent-gloss\">" inner "</span>"
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
-
   while (match(s, /&\{[^{}]*\}/)) {
     start = RSTART
     len   = RLENGTH
@@ -265,7 +261,24 @@ function expand_inline(s, raw, inner, repl, start, len) {
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
+  # Fix an issue that comes about when `&silent` tags are processed, any
+  # preceding spaces are left intact; those preceding spaces should be removed.
   s = fix_silent_spacing(s)
+
+  return s
+}
+
+function expand_inline(s, raw, inner, repl, start, len) {
+
+  # Expand macros, like `\lat{}`, `\grc{}{}`, etc.
+  s = expand_simple_macros(s)
+
+  # Expand macros like \par{}, \reg{}, \field{}
+  s = expand_lexical_information_macros(s)
+
+  # Handle gloss tags like `$this`, `${and this}`, and `&this`, `&{and this}`.
+  s = handle_gloss_tags(s)
+
   return s
 }
 
@@ -275,7 +288,7 @@ function trim(s) {
   return s
 }
 
-function render_expression(i,    out, lines, n, k) {
+function render_expression(i, out, lines, n, k) {
   out = "<li><span class=\"expr\">" expr_text[i] "</span>"
 
   n = split(expr_defs[i], lines, /\n/)
@@ -290,7 +303,7 @@ function render_expression(i,    out, lines, n, k) {
   return out
 }
 
-function lemma_head_of(key,    parts, s) {
+function lemma_head_of(key, parts, s) {
   split(key, parts, /[;,]/)
   s = parts[1]
   return trim(s)
