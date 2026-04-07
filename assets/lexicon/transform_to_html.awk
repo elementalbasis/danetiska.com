@@ -1,30 +1,30 @@
 function open_sense_block() {
   if (!in_sense_block) {
-    print "  <section class=\"sense-block\">"
-    print "    <ol>"
+    print "<section class=\"sense-block\">"
+    print "<ol>"
     in_sense_block = 1
   }
 }
 
 function close_sense_block() {
   if (in_sense_block) {
-    print "    </ol>"
-    print "  </section>"
+    print "</ol>"
+    print "</section>"
     in_sense_block = 0
   }
 }
 
 function open_expr_block(expr_text) {
-  print "  <section class=\"expr-block\">"
-  print "    <h3 class=\"expr-head\">" expand_inline(expr_text) "</h3>"
-  print "    <ol>"
+  print "<section class=\"expr-block\">"
+  print "<h3 class=\"expr-head\">" expand_inline(expr_text) "</h3>"
+  print "<ol>"
   in_expr_block = 1
 }
 
 function close_expr_block() {
   if (in_expr_block) {
-    print "    </ol>"
-    print "  </section>"
+    print "</ol>"
+    print "</section>"
     in_expr_block = 0
   }
 }
@@ -34,8 +34,8 @@ function close_entry() {
   close_expr_block()
   if (in_entry) {
     if (in_sense_block) {
-      print "    </ol>"
-      print "  </section>"
+      print "</ol>"
+      print "</section>"
       in_sense_block = 0
     }
     print "</article>"
@@ -253,7 +253,7 @@ function trim(s) {
 }
 
 function render_expression(i,    out, lines, n, k) {
-  out = "    <li><span class=\"expr\">" expr_text[i] "</span>"
+  out = "<li><span class=\"expr\">" expr_text[i] "</span>"
 
   n = split(expr_defs[i], lines, /\n/)
   if (n > 0) {
@@ -295,7 +295,7 @@ BEGIN {
       close_entry()
       key = arg_of(token)
       print "<article class=\"entry\">"
-      print "  <h1 class=\"lemma\">" key "</h1>"
+      print "<h1 class=\"lemma\">" key "</h1>"
       in_entry = 1
       current_typ = ""
     }
@@ -303,7 +303,7 @@ BEGIN {
     else if (token ~ /^@ety\(/) {
       ety = expand_inline(arg_of(token))
       ety = ensure_final_period(ety)
-      print "  <p class=\"etymology\">" ety "</p>"
+      print "<p class=\"etymology\">" ety "</p>"
     }
 
     else if (token ~ /^@typ\(/) {
@@ -315,7 +315,7 @@ BEGIN {
       if (!in_sense_block && !in_expr_block) {
         open_sense_block()
       }
-      print "      <li><span class=\"pos\">" format_typ(current_typ) "</span> " def "</li>"
+      print "<li><span class=\"pos\">" format_typ(current_typ) "</span> " def "</li>"
     }
 
     else if (token ~ /^@see\(/) {
