@@ -102,7 +102,7 @@ function ensure_final_period(s) {
 
 function fix_silent_spacing(s) {
   gsub(/[ \t\r\n]+<span class="silent-gloss"/, "<span class=\"silent-gloss\"", s)
-  gsub(/<\/span>[ \t\r\n]+/, "</span>", s)
+  #gsub(/<\/span>[ \t\r\n]+/, "</span>", s)
   return s
 }
 
