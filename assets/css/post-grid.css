@@ -2,7 +2,7 @@
 
 /* Featured post */
 .featured {
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .featured img {
   width: 100%;
@@ -25,15 +25,16 @@
   gap: 1.25rem;
 }
 
-.post-card {
+.post-card, .featured {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  padding: 1rem;
 }
 
-.post-card:hover {
+.post-card:hover, .featured:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
@@ -53,6 +54,10 @@
   font-size: 0.9rem;
   color: #555;
   margin: 0 0.8rem 0.8rem;
+}
+
+.post-card a, .featured a {
+  text-decoration: none;
 }
 
 
