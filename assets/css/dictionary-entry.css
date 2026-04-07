@@ -66,7 +66,7 @@
 }
 */
 
-.sense-block li {
+.sense-block li, .expr-block li {
   margin-bottom: 0.25rem;
   padding-left: 1.5rem;
 }
