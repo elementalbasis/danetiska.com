@@ -1,22 +1,48 @@
+function open_sense_block() {
+  if (!in_sense_block) {
+    print "  <section class=\"sense-block\">"
+    print "    <ol>"
+    in_sense_block = 1
+  }
+}
+
+function close_sense_block() {
+  if (in_sense_block) {
+    print "    </ol>"
+    print "  </section>"
+    in_sense_block = 0
+  }
+}
+
+function open_expr_block(expr_text) {
+  print "  <section class=\"expr-block\">"
+  print "    <h3 class=\"expr-head\">" expand_inline(expr_text) "</h3>"
+  print "    <ol>"
+  in_expr_block = 1
+}
+
+function close_expr_block() {
+  if (in_expr_block) {
+    print "    </ol>"
+    print "  </section>"
+    in_expr_block = 0
+  }
+}
+
 function close_entry() {
+  close_sense_block()
+  close_expr_block()
   if (in_entry) {
-    if (in_block) {
+    if (in_sense_block) {
       print "    </ol>"
       print "  </section>"
-      in_block = 0
+      in_sense_block = 0
     }
     print "</article>"
     in_entry = 0
   }
 }
 
-function open_sense_block() {
-  if (!in_block) {
-    print "  <section class=\"sense-block\">"
-    print "    <ol>"
-    in_block = 1
-  }
-}
 
 function arg_of(token, s) {
   s = token
@@ -238,12 +264,18 @@ function lemma_head_of(key,    parts, s) {
 
 BEGIN {
   in_entry = 0
-  in_block = 0
+  in_sense_block = 0
+  in_expr_block = 0
   current_typ = ""
 }
 
+# Ignore any lines that begin with @expr
+#/^[[:space:]]*@expr\(/ {
+#  next
+#}
+
 {
-  while (match($0, /@(key|ety|typ|def|see)\([^()]*\)/)) {
+  while (match($0, /@(key|ety|typ|def|see|expr)\([^()]*\)/)) {
     start = RSTART
     len   = RLENGTH
     token = substr($0, start, len)
@@ -269,13 +301,23 @@ BEGIN {
 
     else if (token ~ /^@def\(/) {
       def = expand_inline(arg_of(token))
-      open_sense_block()
+      if (!in_sense_block && !in_expr_block) {
+        open_sense_block()
+      }
       print "      <li><span class=\"pos\">" current_typ ".</span> " def "</li>"
     }
 
     else if (token ~ /^@see\(/) {
       ref = arg_of(token)
       print "&rarr; <span class=\"inline-lemma\"><a href=\"/dictionary?q=" ref "&mode=lemma-exact\">" ref "</a></span>"
+    }
+
+    else if (token ~ /^@expr\(/) {
+      close_sense_block()
+      close_expr_block()
+
+      current_typ = "phr"
+      open_expr_block(arg_of(token))
     }
 
     $0 = substr($0, start + len)

@@ -15,6 +15,14 @@
   color: #1040a0;
 }
 
+.expr-head {
+  /*font-size: 2.4rem;*/
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
+  color: #c04000;
+}
+
 .inline-lemma {
   /*font-size: 2.4rem;*/
   font-weight: 700;

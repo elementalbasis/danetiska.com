@@ -30,6 +30,7 @@ package-lock.json
 # Lexicon parsing
 assets/lexicon/build
 assets/lexicon/tmp
+assets/lexicon/lexicon.txt
 
 # Ignore all files with the .old extension
 *.old

@@ -2,6 +2,9 @@
 RAW = raw
 SRC = lexicon.txt
 TMP = build
+PREPENDED = $(TMP)/prepended.txt
+EXPR_ATTACHED = $(TMP)/expr_attached.txt
+MACROS_DELETED = $(TMP)/macros_deleted.txt
 CLEAN = $(TMP)/clean.txt
 SORTED = $(TMP)/sorted.txt
 HTML = lexicon.html
@@ -10,7 +13,10 @@ HTML = lexicon.html
 CHECK = check_matching_brackets.awk
 SYMBOLS = print_symbols.awk
 TYPES = print_types.awk
+PREPEND_LEMMA = prepend_lemma.awk
 SORT = alphabetize.awk
+ATTACH_EXPR = attach_expr.awk
+DELETE_MACROS = delete_macros.awk
 TRANSFORM = transform_to_html.awk
 
 # Default target
@@ -38,12 +44,16 @@ $(CLEAN): $(SRC)
 # Step 4 — alphabetize entries
 $(SORTED): $(CLEAN)
 	@echo "Sorting entries..."
-	@awk -f $(SORT) $(CLEAN) | sort -k1 | cut -f2- > $(SORTED)
+	@awk -f $(PREPEND_LEMMA) $(CLEAN) > $(PREPENDED)
+	#@awk -f $(SORT) $(PREPENDED) | sort -k1 | cut -f2- > $(SORTED)
+	@sort $(PREPENDED) > $(CLEAN)
 
 # Step 5 — transform to HTML
 $(HTML): check symbols $(SORTED)
 	@echo "Transforming to HTML..."
-	@awk -f $(TRANSFORM) $(SORTED) > $(HTML)
+	@awk -f $(ATTACH_EXPR) $(CLEAN) > $(EXPR_ATTACHED)
+	@awk -f $(DELETE_MACROS) $(EXPR_ATTACHED) > $(MACROS_DELETED)
+	@awk -f $(TRANSFORM) $(MACROS_DELETED) > $(HTML)
 
 # Clean build artifacts
 clean:
