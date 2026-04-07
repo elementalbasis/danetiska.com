@@ -509,6 +509,8 @@
 @key(bukva) @ety(\bg{буква}{búkva}) @typ(f) @def($letter, $character \par{of the alphabet}) @def($key \par{of a keyboard, typewriter, \etc}) @def(\field{printing} $type, $lettering) @def($font)
 @key(importants) @ety(\lat{importans}) @typ(adj) @def($important)
 @key(zdrasti) @ety(\bg{здрасти}{zdrásti}) @typ(intj) @def($hi, $hello, \par{informal greeting})
+@key(cjau) @ety(\it{ciao}) @typ(intj) @def($bye, $goodbye, \par{informal term used when parting from someone})
+@key(sjodive) @ety(\dnt{sjom} + \dnt{Dive}) @typ(intj) @def($adieu, $farewell, \par{formal term used when parting from someone when not expecting to see them again})
 @key(munduka) @ety(\protung{mundukān}) @typ(m) @def($hare, $rabbit)
 @key(sedjo) @ety(\pie{séǵʰeti}; \cf \grc{ἔχω}{ékhō}) @typ(v) @def(to $win, to $earn)
 @key(interessants) @ety(\fra{intéressant}) @typ(adj) @def($interesting)

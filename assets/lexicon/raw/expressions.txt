@@ -1,7 +1,7 @@
 % Expressions %
 
-@expr(dybram dinam) @link(dybros, dina) @def($good $morning, $good $day, \par{formal greeting used while the sun is up})
-@expr(dybrom veksperom) @link(dybros, veksperos) @def($good $evening, \par{formal greeting used after sunset})
+@expr(dybram dinam) @link(dybros, dina) @def($hello, $good $morning, $good $day, \par{formal greeting used while the sun is up})
+@expr(dybrom veksperom) @link(dybros, veksperos) @def($hello, $good $evening, \par{formal greeting used after sunset})
 @expr(dybram noptym) @link(dybros, nopts) @def($good $night, \par{formal or informal greeting used right before going to sleep})
 @expr(megti esni) @link(megmi, esmi) @def($maybe, $perhaps, ${could be})
 @expr(jodi siet) @link(jodi, esmi) @def($wherever, $anywhere)
@@ -12,3 +12,8 @@
 @expr(tasme) @link(tos) @def($like $that)
 @expr(sjasme) @link(sjos) @def($like $this)
 @expr(inopasme) @link(inopos) @def($somehow)
+@expr(do visties) @link(do, vistis) @def(${so long}, $goodbye, ${see you later}, ${until next time}, \par{formal term used when parting from someone when expecting to see them again})
+@expr(pro pod) @link(pro, pos) @def($why?)
+@expr(pro jod) @link(pro, jos) @def($because)
+@expr(apo tosmod) @link(apo, tos) @def($therefore, $thus, $hence, $because of that, $consequently)
+@expr(pro tod) @link(pro, tos) @def($therefore, $thus, $hence, $because of that, $consequently)
