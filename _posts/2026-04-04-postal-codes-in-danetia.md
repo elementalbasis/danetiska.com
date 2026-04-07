@@ -10,7 +10,7 @@ Postal codes were introduced in Danetia in 1975 as part of a broader
 modernization effort of the postal system. The codes consist of four digits, and
 are used to facilitate the sorting and delivery of mail across the country.
 
-As our [editorial note](/editorial-note) discloses, Danetia is part of a
+As mentioned in our [editorial note](/editorial-note), Danetia is part of a
 [worldbuilding](https://en.wikipedia.org/wiki/Worldbuilding) project.
 As such, the Danetian system is derived from the postal codes of
 [Romania](https://en.wikipedia.org/wiki/Postal_codes_in_Romania) and
