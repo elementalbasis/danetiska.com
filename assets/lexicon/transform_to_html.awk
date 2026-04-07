@@ -106,6 +106,12 @@ function fix_silent_spacing(s) {
   return s
 }
 
+function format_typ(t, m) {
+  if (t == "mf") return "m. or f."
+  if (match(t, /^prep\+(.+)$/, m)) return "prep. w. " m[1] "."
+  return t "."
+}
+
 function expand_inline(s, raw, inner, repl, start, len) {
 
   # Expand simple macros
@@ -309,7 +315,7 @@ BEGIN {
       if (!in_sense_block && !in_expr_block) {
         open_sense_block()
       }
-      print "      <li><span class=\"pos\">" current_typ ".</span> " def "</li>"
+      print "      <li><span class=\"pos\">" format_typ(current_typ) "</span> " def "</li>"
     }
 
     else if (token ~ /^@see\(/) {
