@@ -2,7 +2,7 @@
 
 @expr(dybram dinam) @link(dybros, dina) @def($hello, $good $morning, $good $day, \par{formal greeting used while the sun is up})
 @expr(dybrom veksperom) @link(dybros, veksperos) @def($hello, $good $evening, \par{formal greeting used after sunset})
-@expr(dybram noptym) @link(dybros, nopts) @def($good $night, \par{formal or informal greeting used right before going to sleep})
+@expr(dybram noptym) @link(dybros, nopts) @def($good $night, \par{formal or informal term used right before going to sleep})
 @expr(megti esni) @link(megmi, esmi) @def($maybe, $perhaps, ${could be})
 @expr(jodi siet) @link(jodi, esmi) @def($wherever, $anywhere)
 @expr(joda siet) @link(joda, esmi) @def($whenever, $anytime)
