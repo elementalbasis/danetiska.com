@@ -45,7 +45,6 @@ $(CLEAN): $(SRC)
 $(SORTED): $(CLEAN)
 	@echo "Sorting entries..."
 	@awk -f $(PREPEND_LEMMA) $(CLEAN) > $(PREPENDED)
-	#@awk -f $(SORT) $(PREPENDED) | sort -k1 | cut -f2- > $(SORTED)
 	@sort $(PREPENDED) > $(CLEAN)
 
 # Step 5 — transform to HTML

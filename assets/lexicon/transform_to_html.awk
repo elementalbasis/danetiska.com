@@ -100,6 +100,12 @@ function ensure_final_period(s) {
   return s
 }
 
+function fix_silent_spacing(s) {
+  gsub(/[ \t\r\n]+<span class="silent-gloss"/, "<span class=\"silent-gloss\"", s)
+  gsub(/<\/span>[ \t\r\n]+/, "</span>", s)
+  return s
+}
+
 function expand_inline(s, raw, inner, repl, start, len) {
 
   # Expand simple macros
@@ -230,8 +236,7 @@ function expand_inline(s, raw, inner, repl, start, len) {
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
 
-  # TODO: delete any empty spaces that may remain once the silent glosses are taken care of
-
+  s = fix_silent_spacing(s)
   return s
 }
 
