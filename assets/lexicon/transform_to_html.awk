@@ -112,6 +112,29 @@ function format_typ(t, m) {
   return t "."
 }
 
+# Parse nested parentheses, because some @ety entries may have them, such as
+# with PIE mobile s.
+function read_tag(line, start, i, ch, depth, out) {
+  out = ""
+  depth = 0
+
+  for (i = start; i <= length(line); i++) {
+    ch = substr(line, i, 1)
+    out = out ch
+
+    if (ch == "(") {
+      depth++
+    } else if (ch == ")") {
+      depth--
+      if (depth == 0) {
+        break
+      }
+    }
+  }
+
+  return out
+}
+
 function expand_inline(s, raw, inner, repl, start, len) {
 
   # Expand simple macros
@@ -286,10 +309,15 @@ BEGIN {
 #}
 
 {
-  while (match($0, /@(key|ety|typ|def|see|expr)\([^()]*\)/)) {
+  pos = 1
+  line = $0
+  #while (match($0, /@(key|ety|typ|def|see|expr)\([^()]*\)/)) {
+  while (match(substr(line, pos), /@(key|ety|typ|def|expr|see)\(/)) {
     start = RSTART
     len   = RLENGTH
-    token = substr($0, start, len)
+    tagstart = pos + RSTART - 1
+    #token = substr($0, start, len)
+    token = read_tag(line, tagstart)
 
     if (token ~ /^@key\(/) {
       close_entry()
@@ -332,6 +360,7 @@ BEGIN {
     }
 
     $0 = substr($0, start + len)
+    pos = tagstart + length(token)
   }
 }
 
