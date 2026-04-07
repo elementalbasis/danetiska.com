@@ -17,3 +17,6 @@
 @expr(pro jod) @link(pro, jos) @def($because)
 @expr(apo tosmod) @link(apo, tos) @def($therefore, $thus, $hence, $because of that, $consequently)
 @expr(pro tod) @link(pro, tos) @def($therefore, $thus, $hence, $because of that, $consequently)
+@expr(prinom jerom) @link(prinos, jeros) @def($happy ${new year})
+@expr(prinam dinam djynties) @link(pinos, dina, djentis) @def($happy $birthday)
+@expr(dina djynties) @link(dina, djentis) @def($birthday)
