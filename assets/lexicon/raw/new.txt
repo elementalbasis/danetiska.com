@@ -38,7 +38,7 @@
 @key(bumyn, bumens) @ety(\dnt{buio}) @typ(n) @def($growth) @def($tumor)
 @key(butis, buties) @ety(\pie{bʰuH-}; \cf aorist and perfective stems of \dnt{esmi}) @typ(f) @def($essence, $nature)
 @key(natura) @ety(\lat{natura}) @typ(f) @def($nature)
-@def(natural) @ety(\lat{naturalis}) @typ(adj) @def($natural)
+@key(natural) @ety(\lat{naturalis}) @typ(adj) @def($natural)
 @key(jekmi, ikmos; jeksym, iksme; jejoka, jeikme) @ety(\pie{(H)yeh₁-}; \cf \lat{iacio}) @typ(v) @def(to $throw)
 @key(apojekmi, apoikmos; apojeksym, apoiksme; apojejoka, apojeiksme) @ety(\dnt{apo} + \dnt{jekmi}) @typ(v) @def(to $forgive, to $remit, \par{used with the accusative case for the action being forgiven, and the ablative case for the person being forgiven})
 @key(jektis, ikties) @ety(\dnt{jekmi}) @typ(f) @def(\par{act of} $throwing)
