@@ -20,3 +20,4 @@
 @expr(prinom jerom) @link(prinos, jeros) @def($happy ${new year})
 @expr(prinam dinam djynties) @link(pinos, dina, djentis) @def($happy $birthday)
 @expr(dina djynties) @link(dina, djentis) @def($birthday)
+@expr(didoni vidos) @link(didomi, vidos) @def(to $seem, to $appear, to give the $appearance of)

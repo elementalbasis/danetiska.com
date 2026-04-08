@@ -76,6 +76,10 @@
   color: #777;
 }
 
-.silent-gloss{
+.silent-gloss {
   visibility: hidden;
+}
+
+.sample-phrase {
+  color: #800080;
 }

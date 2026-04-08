@@ -86,7 +86,11 @@ function replace_twoarg(s, macro, label, raw, tmp, parts, arg1, arg2, repl, pat,
     arg2 = parts[2]
     sub("\\}$", "", arg2)
 
-    repl = label " " arg1 " <i>" arg2 "</i>"
+    if (macro != "ex") {
+      repl = label " " arg1 " <i>" arg2 "</i>"
+    } else {
+      repl = "<span class=\"sample-phrase\"><i>" arg1 "</i> \"" arg2 "\"</span>"
+    }
     s = substr(s, 1, start - 1) repl substr(s, start + len)
   }
   return s
@@ -100,8 +104,10 @@ function ensure_final_period(s) {
   return s
 }
 
+# This function is needed because when a `&silent` tag is made hidden, there
+# may still remain spaces and commas that are no longer needed.
 function fix_silent_spacing(s) {
-  gsub(/[ \t\r\n]+<span class="silent-gloss"/, "<span class=\"silent-gloss\"", s)
+  gsub(/[ \t\r\n,.:]+<span class="silent-gloss"/, "<span class=\"silent-gloss\"", s)
   #gsub(/<\/span>[ \t\r\n]+/, "</span>", s)
   return s
 }
@@ -162,6 +168,7 @@ function expand_simple_macros(s) {
   s = replace_twoarg(s, "per", "Persian")
   s = replace_twoarg(s, "kyr", "Kyrgyz")
   s = replace_twoarg(s, "bg", "Bulgarian")
+  s = replace_twoarg(s, "ex")
 
   return s
 }
@@ -263,6 +270,7 @@ function handle_gloss_tags(s) {
 
   # Fix an issue that comes about when `&silent` tags are processed, any
   # preceding spaces are left intact; those preceding spaces should be removed.
+  # Also delete any commas, periods, etc. that may remain.
   s = fix_silent_spacing(s)
 
   return s
