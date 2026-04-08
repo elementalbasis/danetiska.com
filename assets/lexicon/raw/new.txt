@@ -52,3 +52,4 @@
 @key(apobuio) @ety(\dnt{apo} + \dnt{buio}) @typ(v) @def(to $forget)
 @key(dybreio) @ety(\dnt{dybros}) @typ(v) @def(to $improve, to $ameliorate, to make something $better)
 @key(edjoneio) @ety(\dnt{esj} + \dnt{djonos}) @typ(v) @def(to $enjoy)
+@key(apparents) @ety(\lat{apparens}) @typ(adj) @def($apparent)

@@ -494,3 +494,4 @@
 @key(smiro) @ety(\pie{(s)mey-}; \cf \lat{mirus}, \rus{смеяться}{smejátʹsja}, \eng{smile}) @typ(v) @def(to $laugh, to $smile)
 @key(smira) @ety(\dnt{smiro}) @typ(f) @def($laughter, $smile)
 @key(etisjtresdo) @ety(\dnt{eti-} + \dnt{sjtresdo}) @typ(v) @def(to $remember, to $recall)
+@key(ne) @ety(\pie{né}; \cf \lat{ne}, \rus{не}{ne}, \eng{no}) @typ(adv) @def($no, $not, \par{negative particle}) @typ(intj) @def($no)
