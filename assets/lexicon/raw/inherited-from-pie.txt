@@ -14,7 +14,7 @@
 @key(belos, belesos) @ety(\pie{bel-}; \cf \grc{βελτίων}{beltī́ōn}, \rus{большой}{bolʹšój}) @typ(n) @def($strength)
 @key(bena) @ety(\pie{gʷḗn}; \cf \grc{γυνή}{gŭnḗ}, \rus{жена}{žená}, \eng{queen}) @typ(f) @def($woman) @def($wife)
 @key(bero) @ety(\pie{bʰéreti}; \cf \lat{fero}, \grc{φέρω}{phérō}, \rus{брать}{bratʹ}, \eng{bear}) @typ(v) @def(to $bear, to $carry) @(to $lift up, to $support)
-@key(bertis, byrties) @ety(\dnt{bero}) @def(\par{act of} $carrying, $bearing)
+@key(bertis, byrties) @ety(\dnt{bero}) @typ(f) @def(\par{act of} $carrying, $bearing)
 @key(probero) @ety(\dnt{pro} + \dnt{bero}) @typ(v) @def(to $offer)
 @key(probertis, probyrties) @ety(\dnt{probero}) @typ(f) @def($offer)
 @key(beros, beresos) @ety(\pie{gʷʰéros}; \cf \grc{θέρος}{théros}, \rus{жар}{žar}) @typ(n) @def($warmth, $heat)
@@ -495,3 +495,4 @@
 @key(smira) @ety(\dnt{smiro}) @typ(f) @def($laughter, $smile)
 @key(etisjtresdo) @ety(\dnt{eti-} + \dnt{sjtresdo}) @typ(v) @def(to $remember, to $recall)
 @key(ne) @ety(\pie{né}; \cf \lat{ne}, \rus{не}{ne}, \eng{no}) @typ(adv) @def($no, $not, \par{negative particle}) @typ(intj) @def($no)
+@key(peto) @ety(\pie{péth₂eti}; \cf \lat{peto}, \grc{πέτομαι}{pétomai}) @typ(v) @def(to $fly) @def(to $dart, to $rush; to make $haste)

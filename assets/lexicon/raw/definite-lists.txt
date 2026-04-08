@@ -11,6 +11,6 @@
 @key(septembrios) @ety(\lat{september}) @typ(m) @def($September)
 @key(octobrios) @ety(\lat{october}) @typ(m) @def($October)
 @key(novembrios) @ety(\lat{november}) @typ(m) @def($November)
-@key(decembrios) @ety(\lat{december}) @typ(adj) @def($December)
+@key(decembrios) @ety(\lat{december}) @typ(m) @def($December)
 
 
