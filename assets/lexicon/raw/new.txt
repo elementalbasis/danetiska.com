@@ -14,7 +14,7 @@
 @key(usaio) @ety(\lat{uso}) @typ(v) @def(to $use, to $utilize)
 @key(utilizo) @ety(\lat{utilizo}) @typ(v) @def(to $use, to $utilize)
 
-@key(-dytos) @ety(\pie{dʰeh₁-}; \cf \lat{facio}, \grc{θετός}{thetós}) @typ(suf) @def(${-able}, ${-ible}, &able, &capable, \par{used to construct words deverbal adjectives that indicate the ability to perform the action of the verb on their referent}; \ex{brugodytos}{useful, capable of being used}, \ex{sjlunudytos}{audible, capable of being heard})
+@key(-dytos) @ety(\pie{dʰeh₁-}; \cf \lat{facio}, \grc{θετός}{thetós}) @typ(suf) @def(${-able}, ${-ible}, \par{used to construct words deverbal adjectives that indicate the ability to perform the action of the verb on their referent}; \ex{brugodytos}{useful, capable of being used}, \ex{sjlunudytos}{audible, capable of being heard}, &able, &capable)
 
 @key(brugedytos) @ety(\dnt{brugo} + \dnt{-dytos}) @typ(adj) @def($useful)
 @key(myntiedytos) @ety(\dnt{myntio} + \dnt{-dytos}) @typ(adj) @def($thinkable)
