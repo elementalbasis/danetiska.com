@@ -225,7 +225,7 @@ include:
 | nom. | series | seriei |
 | voc. | serie | seriei |
 | acc. | seriem | seriens |
-| gen. | seriesos | seriom |
+| gen. | seriesio | seriom |
 | abl. | seried | seriemos |
 | dat. | seriei | seriemos |
 | loc. | serii | seriesu |
