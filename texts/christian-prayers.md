@@ -40,7 +40,7 @@ Amen.
 unto the ages. Amen.
 
 Nai Sjuntu Troiku, mileioste nos. Poti, priskeie skeltins nosjans. Uperpoti,
-apojek derysjtans nosjans. Sjunte, opispesje i jubeie nemektins nosjans, rodi
+apojek derysjtans nosjans. Sjunte, opispesje i jubeie desjmektins nosjans, rodi
 Tvoiosio nymens.
 
 > O Most Holy Trinity, have mercy on us. O Lord, blot out our sins. O Master,
