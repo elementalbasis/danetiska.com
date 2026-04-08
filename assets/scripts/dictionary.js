@@ -71,7 +71,7 @@ function getLemmaHead(entry) {
 }
 
 function getGlosses(entry) {
-  return Array.from(entry.querySelectorAll(".gloss"))
+  return Array.from(entry.querySelectorAll(".gloss, .silent-gloss"))
     .map((el) => normalize(el.textContent))
     .filter(Boolean);
 }
