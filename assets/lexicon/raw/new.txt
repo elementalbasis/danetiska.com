@@ -53,3 +53,6 @@
 @key(dybreio) @ety(\dnt{dybros}) @typ(v) @def(to $improve, to $ameliorate, to make something $better)
 @key(edjoneio) @ety(\dnt{esj} + \dnt{djonos}) @typ(v) @def(to $enjoy)
 @key(apparents) @ety(\lat{apparens}) @typ(adj) @def($apparent)
+@key(apparo) @ety(\lat{appareo}) @typ(v) @def(to $appear)
+@key(bilingues) @ety(\lat{bilinguis}) @typ(adj) @def($bilingual)
+@key(dvidyndjues) @ety(\dnt{dvo} + \dnt{dyndjua}) @typ(adj) @def($bilingual)
