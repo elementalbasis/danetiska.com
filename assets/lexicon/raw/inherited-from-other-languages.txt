@@ -1,4 +1,4 @@
-@key(djahan) @ety(\per{جهان}{jahān}) @typ(m) @def($world) @syn(mundos)
+@key(djahan) @ety(\per{جهان}{jahān}) @typ(m) @def($world)
 
 
 
