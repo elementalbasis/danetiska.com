@@ -317,6 +317,26 @@ function lemma_head_of(key, parts, s) {
   return trim(s)
 }
 
+function render_inline_lemma_list(raw, label, items, n, i, item, out) {
+  raw = trim(raw)
+  if (raw == "") return ""
+
+  n = split(raw, items, /,/)
+  out = "<p class=\"" label "\"><b class=\"label\">" label ":</b> "
+
+  for (i = 1; i <= n; i++) {
+    item = trim(items[i])
+    if (item == "") continue
+
+    if (i > 1) out = out ", "
+
+    out = out "<span class=\"inline-lemma\"><a href=\"/dictionary?q=" item "&mode=lemma-exact\">" item "</a></span>"
+  }
+
+  out = out "</p>"
+  return out
+}
+
 BEGIN {
   in_entry = 0
   in_sense_block = 0
@@ -333,7 +353,7 @@ BEGIN {
   pos = 1
   line = $0
   #while (match($0, /@(key|ety|typ|def|see|expr)\([^()]*\)/)) {
-  while (match(substr(line, pos), /@(key|ety|typ|def|expr|see)\(/)) {
+  while (match(substr(line, pos), /@(key|ety|typ|def|expr|see|syn|rel)\(/)) {
     start = RSTART
     len   = RLENGTH
     tagstart = pos + RSTART - 1
@@ -343,6 +363,7 @@ BEGIN {
     if (token ~ /^@key\(/) {
       close_entry()
       key = arg_of(token)
+      lemma = lemma_head_of(key)
       print "<article class=\"entry\">"
       print "<h1 class=\"lemma\">" key "</h1>"
       in_entry = 1
@@ -378,6 +399,14 @@ BEGIN {
 
       current_typ = "phr"
       open_expr_block(arg_of(token))
+    }
+
+    else if (token ~ /^@syn\(/) {
+      #print render_inline_lemma_list(arg_of(token), "Synonyms")
+    }
+
+    else if (token ~ /^@rel\(/) {
+      #print render_inline_lemma_list(arg_of(token), "Related")
     }
 
     $0 = substr($0, start + len)

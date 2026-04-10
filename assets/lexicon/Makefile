@@ -5,6 +5,7 @@ TMP = build
 PREPENDED = $(TMP)/prepended.txt
 EXPR_ATTACHED = $(TMP)/expr_attached.txt
 MACROS_DELETED = $(TMP)/macros_deleted.txt
+FAMILIES_EXPANDED = $(TMP)/families_expanded.txt
 CLEAN = $(TMP)/clean.txt
 SORTED = $(TMP)/sorted.txt
 HTML = lexicon.html
@@ -16,6 +17,7 @@ TYPES = print_types.awk
 PREPEND_LEMMA = prepend_lemma.awk
 SORT = alphabetize.awk
 ATTACH_EXPR = attach_expr.awk
+EXPAND_FAMILIES = expand_families.awk
 DELETE_MACROS = delete_macros.awk
 TRANSFORM = transform_to_html.awk
 
@@ -51,7 +53,8 @@ $(SORTED): $(CLEAN)
 $(HTML): check symbols $(SORTED)
 	@echo "Transforming to HTML..."
 	@awk -f $(ATTACH_EXPR) $(CLEAN) > $(EXPR_ATTACHED)
-	@awk -f $(DELETE_MACROS) $(EXPR_ATTACHED) > $(MACROS_DELETED)
+	@awk -f $(EXPAND_FAMILIES) $(EXPR_ATTACHED) > $(FAMILIES_EXPANDED)
+	@awk -f $(DELETE_MACROS) $(FAMILIES_EXPANDED) > $(MACROS_DELETED)
 	@awk -f $(TRANSFORM) $(MACROS_DELETED) > $(HTML)
 
 # Clean build artifacts
