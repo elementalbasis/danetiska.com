@@ -36,3 +36,9 @@
 @syn(prostelo, preparaio)
 @syn(harf, bukva[1])
 @syn(protego, lekso)
+@syn(astrovidra[2], astrologia)
+@syn(bivovidra, biologia)
+@syn(djymovidra, geologia)
+@syn(divovidra, theologia)
+@syn(astrovidra[1], astronomia)
+

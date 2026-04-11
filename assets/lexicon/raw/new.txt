@@ -62,12 +62,10 @@
 @key(-isjos) @ety(\pie{-ḱos}; \cf \lat{-cus}, \grc{-κός}{-kós}) @typ(suf) @def(\par{diminutive suffix})
 @key(dybroisjos) @ety(\dnt{dybros} + \dnt{-isjos}) @typ(adj) @def($beautiful, $pretty)
 @key(tygnumi; tagym, tygme; tetoga, tetygme) @ety(\pie{teh₂g-}; \cf \lat{tango}, \grc{τεταγών}{tetagṓn}, \eng{take}) @typ(v) @def(to $touch)
-@key(taktis, tykties) @ety(\dnt{tygnumi}) @typ(f) @def(\par{act of} $touching}) @def(sense of $touch)
+@key(taktis, tykties) @ety(\dnt{tygnumi}) @typ(f) @def(\par{act of} $touching) @def(sense of $touch)
 @key(po) @ety(\bg{по}{po}) @typ(adv) @def(\par{a particle used to form the comparative degree of adjectives}; \ex{po senos}{older})
 @key(nai) @ety(\bg{най}{naj}) @typ(adv) @def(\par{a particle used to form the superlative degree of adjectives}; \par{nai senos}{oldest})
 @key(crema) @ety(\fra{crème}) @typ(f) @def($cream)
-@key(gylnos) @ety(\dnt{gelos}) @typ(m) @def($ice)
-@key(svadugylnos) @ety(\dnt{svadus} + \dnt{gylnos}) @typ(m) @def(${ice cream}, &icecream)
 
 
 @expr(po dybros) @link(po, dybros) @def($better)
@@ -76,3 +74,24 @@
 @expr(nai mysjlos) @link(nai, mysjlos) @def($biggest)
 @expr(po smikros) @link(po, smikros) @def($smaller)
 @expr(nai smikros) @link(nai, smikros) @def($smallest)
+
+
+
+
+@key(perkunos) @ety(\pie{perkʷunos}) @typ(m) @def($thunder, $lightning)
+
+@expr(dina Sules) @link(dina, suls) @def($Sunday)
+@expr(dina Mensos) @link(dina, mens) @def($Monday)
+@expr(dina Tritosio) @link(dina, tritos) @def($Tuesday)
+@expr(dina Dynues) @link(dina, danu) @def($Wednesday)
+@expr(dina Perkunosio) @link(dina, perkunos) @def($Thursday)
+@expr(dina Austras) @link(dina, austra) @def($Friday)
+@expr(dina Jemosio) @link(dina, jemos) @def($Saturday)
+
+
+@key(astrovidra) @ety(\dnt{aster} + \dnt{vidra}) @typ(f) @def[1]($astronomy) @def[2]($astrology)
+@key(bivovidra) @ety(\dnt{biva} + \dnt{vidra}) @typ(f) @def($biology)
+@key(djymovidra) @ety(\dnt{dedjom} + \dnt{vidra}) @typ(f) @def($geology)
+@key(divovidra) @ety(\dnt{divos} + \dnt{vidra}) @typ(f) @def($theology)
+@key(astrologia) @ety(\lat{astrologia}) @typ(f) @def($astrology)
+@key(theologia) @ety(\lat{theologia}) @typ(f) @def($theology)
