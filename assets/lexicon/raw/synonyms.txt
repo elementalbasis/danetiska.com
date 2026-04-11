@@ -41,4 +41,5 @@
 @syn(djymovidra, geologia)
 @syn(divovidra, theologia)
 @syn(astrovidra[1], astronomia)
-
+@syn(spitis[1], honor)
+@syn(spitis[2], respectos)

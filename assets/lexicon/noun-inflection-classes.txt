@@ -1,0 +1,929 @@
+@key(abol, ybles)	10
+@key(academia)	1
+@key(acceleratzion)	15
+@key(accessos)	2
+@key(actiniom)	3
+@key(actor)	15
+@key(actzion)	15
+@key(additzion)	15
+@key(administratzion)	15
+@key(adultos)	2
+@key(advocatos)	2
+@key(aeres)	13
+@key(agenda)	1
+@key(agents)	16
+@key(agnos)	2
+@key(agos, agesos)	9
+@key(agricultura)	1
+@key(albit, ylbites)	20
+@key(algebra)	1
+@key(algorithmos)	2
+@key(alimentom)	3
+@key(alphabetom)	3
+@key(alsna)	1
+@key(altyn)	U
+@key(aluminiom)	3
+@key(ambis, ymbies)	4
+@key(americiom)	3
+@key(amplitudines)	13
+@key(anaitis, anaities)	4
+@key(analysis)	19
+@key(anamisdos)	2
+@key(anats, yntes)	12
+@key(andjos, andjesos)	9
+@key(angulos)	2
+@key(anima)	1
+@key(animal)	U
+@key(annotatzion)	15
+@key(apparatos)	2
+@key(appellatzion)	15
+@key(applicatzion)	15
+@key(aprilios)	2
+@key(arbitriom)	3
+@key(architectura)	1
+@key(area)	1
+@key(argon)	15
+@key(argumentom)	3
+@key(arma)	1
+@key(arpos)	2
+@key(arsjtos)	2
+@key(articulos)	2
+@key(arts)	16
+@key(artus, yrtues)	6
+@key(asjdaha)	1
+@key(asjdros)	2
+@key(asjmon, ysjmens)	8
+@key(aspectos)	2
+@key(associatzion)	15
+@key(assumptzion)	15
+@key(astatziom)	3
+@key(aster, ystres)	10
+@key(astrologia)	1
+@key(astronomia)	1
+@key(astrovidra)	1
+@key(atmosphera)	1
+@key(atomos)	2
+@key(attributom)	3
+@key(auctoritats)	16
+@key(auctor)	15
+@key(auditzion)	15
+@key(augustos)	2
+@key(austra)	1
+@key(automobil)	U
+@key(autonomia)	1
+@key(auxiliom)	3
+@key(avis, yvies)	4
+@key(axis)	19
+@key(badjos)	2
+@key(bakyr)	U
+@key(bamyn, bymens)	8
+@key(barda)	1
+@key(bariom)	3
+@key(basis)	19
+@key(belos, belesos)	9
+@key(bena)	1
+@key(beneficiom)	3
+@key(berdjos)	2
+@key(berkeliom)	3
+@key(beros, beresos)	9
+@key(bertis, byrties)	4
+@key(berylliom)	3
+@key(bibliotheca)	1
+@key(biologia)	1
+@key(bismuthos)	2
+@key(biva)	1
+@key(bivovidra)	1
+@key(blemyn, blymens)	8
+@key(blomos)	2
+@key(bohriom)	3
+@key(bora)	1
+@key(bor, byres)	11
+@key(boros)	2
+@key(botanica)	1
+@key(branus, brynues)	6
+@key(brater, brytres)	10
+@key(brevyn, bryvens)	8
+@key(bromos)	2
+@key(brynos)	2
+@key(brysma)	1
+@key(budnos)	2
+@key(buga)	1
+@key(bukva)	1
+@key(bumyn, bumens)	8
+@key(butis, buties)	4
+@key(cadmiom)	3
+@key(calciom)	3
+@key(calculatzion)	15
+@key(calendariom)	3
+@key(californiom)	3
+@key(candidatos)	2
+@key(capacitats)	16
+@key(caritats)	16
+@key(causa)	1
+@key(cellula)	1
+@key(centrom)	3
+@key(cerebrom)	3
+@key(ceriom)	3
+@key(certificatom)	3
+@key(cesiom)	3
+@key(cetos)	2
+@key(character)	U
+@key(charta)	1
+@key(chloros)	2
+@key(chromos)	2
+@key(circulatzion)	15
+@key(circulos)	2
+@key(classis)	19
+@key(clavis)	19
+@key(clima)	1
+@key(cobaltos)	2
+@key(codices)	13
+@key(cognitzion)	15
+@key(collectzion)	15
+@key(collegiom)	3
+@key(collision)	15
+@key(colonia)	1
+@key(color)	15
+@key(combinatzion)	15
+@key(commerciom)	3
+@key(commission)	15
+@key(communicatzion)	15
+@key(communitats)	16
+@key(comparatzion)	15
+@key(competitzion)	15
+@key(complementom)	3
+@key(components)	16
+@key(compositzion)	15
+@key(compression)	15
+@key(computatzion)	15
+@key(conceptos)	2
+@key(concession)	15
+@key(conditzion)	15
+@key(conductos)	2
+@key(conflictos)	2
+@key(congregatzion)	15
+@key(conjectura)	1
+@key(conjunctzion)	15
+@key(conscientzia)	1
+@key(consensos)	2
+@key(consortziom)	3
+@key(constitutzion)	15
+@key(constructzion)	15
+@key(contactos)	2
+@key(contemplatzion)	15
+@key(contextos)	2
+@key(contractos)	2
+@key(contributzion)	15
+@key(controlaio)	U
+@key(control)	U
+@key(conversion)	15
+@key(coperniciom)	3
+@key(corpore)	14
+@key(correctzion)	15
+@key(correlatzion)	15
+@key(cortices)	13
+@key(cosmos)	2
+@key(creatzion)	15
+@key(creditom)	3
+@key(crema)	1
+@key(criteriom)	3
+@key(cultura)	1
+@key(curiom)	3
+@key(curriculom)	3
+@key(cyclos)	2
+@key(danuia)	1
+@key(danu, dynues)	7
+@key(darmstadtziom)	3
+@key(dasjtru, dysjtrues)	7
+@key(data)	1
+@key(daulat)	U
+@key(debitom)	3
+@key(decembrios)	2
+@key(decision)	15
+@key(declinatzion)	15
+@key(decretom)	3
+@key(dedjom, djymes)	18
+@key(deductzion)	15
+@key(defectos)	2
+@key(definitzion)	15
+@key(demonstratzion)	15
+@key(densitats)	16
+@key(depositom)	3
+@key(depression)	15
+@key(descriptzion)	15
+@key(desjartus, desjyrtues)	6
+@key(desjbudnos)	2
+@key(desjmektis)	4
+@key(desjpietis, desjpities)	4
+@key(determinatzion)	15
+@key(devar)	U
+@key(diaconos)	2
+@key(diagnosis)	19
+@key(dialectica)	1
+@key(dialectos)	2
+@key(dictzionariom)	3
+@key(differentzia)	1
+@key(diffusion)	15
+@key(digitos)	2
+@key(dilatatzion)	15
+@key(dimension)	15
+@key(dina)	1
+@key(directzion)	15
+@key(disciplina)	1
+@key(discussion)	15
+@key(disjtra)	1
+@key(dispositzion)	15
+@key(dissolutzion)	15
+@key(distantzia)	1
+@key(distinctzion)	15
+@key(distributzion)	15
+@key(dius, diuves, diumos)	2
+@key(division)	15
+@key(divovidra)	1
+@key(djahan)	U
+@key(djans, djynses)	17
+@key(djentis, djynties)	4
+@key(djenus, djynues)	6
+@key(djer, djyres)	11
+@key(djeros)	2
+@key(djersos, djersesos)	9
+@key(djesor, djystres)	11
+@key(djima)	1
+@key(djombos)	2
+@key(djonos)	2
+@key(djonu, djynues)	7
+@key(djustus, djustues)	6
+@key(djymovidra)	1
+@key(documentom)	3
+@key(dolgos)	2
+@key(dominiom)	3
+@key(dom, dymes)	18
+@key(domos)	2
+@key(donom)	3
+@key(donts, dyntes)	12
+@key(doru, drues)	7
+@key(dosis)	19
+@key(dotis, dyties)	4
+@key(drags, dryges)	12
+@key(drugos)	2
+@key(drumos)	2
+@key(dubniom)	3
+@key(dugater, duktres)	10
+@key(dumos)	2
+@key(duratzion)	15
+@key(dvibrus, dvibrues)	6
+@key(dviharf)	U
+@key(dvor, dures)	11
+@key(dybrodotis, dybrodyties)	4
+@key(dyndjua)	1
+@key(dysjtretis, dysjtryties)	4
+@key(dysprosiom)	3
+@key(editor)	15
+@key(educatzion)	15
+@key(effectos)	2
+@key(efficientzia)	1
+@key(einsteiniom)	3
+@key(elementom)	3
+@key(embros)	2
+@key(emission)	15
+@key(emphasis)	19
+@key(energia)	1
+@key(engris, yngries)	4
+@key(entitats)	16
+@key(ents)	16
+@key(epocha)	1
+@key(equatzion)	15
+@key(equilibriom)	3
+@key(erbiom)	3
+@key(error)	15
+@key(esjmektis, esjmykties)	4
+@key(esjvos)	2
+@key(essentzia)	1
+@key(europiom)	3
+@key(evaluatzion)	15
+@key(evolutzion)	15
+@key(examinatzion)	15
+@key(excellentzia)	1
+@key(exceptzion)	15
+@key(excessos)	2
+@key(exclusion)	15
+@key(exemplom)	3
+@key(exercitziom)	3
+@key(existentzia)	1
+@key(expansion)	15
+@key(expeditzion)	15
+@key(experientzia)	1
+@key(experimentom)	3
+@key(explicatzion)	15
+@key(expression)	15
+@key(extension)	15
+@key(extractzion)	15
+@key(facilitats)	16
+@key(factom)	3
+@key(factor)	15
+@key(facultats)	16
+@key(familia)	1
+@key(favor)	15
+@key(febris)	19
+@key(februarios)	2
+@key(femina)	1
+@key(fermiom)	3
+@key(fictzion)	15
+@key(figura)	1
+@key(filom)	3
+@key(finantza)	1
+@key(flamma)	1
+@key(fleroviom)	3
+@key(fluoros)	2
+@key(focos)	2
+@key(forma)	1
+@key(formatzion)	15
+@key(formula)	1
+@key(forom)	3
+@key(fortuna)	1
+@key(fractzion)	15
+@key(fragmentom)	3
+@key(franciom)	3
+@key(frequentzia)	1
+@key(fructom)	3
+@key(functzion)	15
+@key(fundamentom)	3
+@key(futuros)	2
+@key(gadoliniom)	3
+@key(galliom)	3
+@key(geldos, geldesos)	9
+@key(gelos, gelesos)	9
+@key(generatzion)	15
+@key(genere)	14
+@key(geometria)	1
+@key(geran, gyrnes)	21
+@key(germaniom)	3
+@key(gortos)	2
+@key(gostis, gysties)	4
+@key(grados)	2
+@key(grammatica)	1
+@key(gravitats)	16
+@key(gremyn, grymens)	8
+@key(habitos)	2
+@key(hafniom)	3
+@key(harf)	U
+@key(harmonia)	1
+@key(hassiom)	3
+@key(heliom)	3
+@key(hereditats)	16
+@key(heroes)	13
+@key(historia)	1
+@key(holmiom)	3
+@key(honor)	15
+@key(horizonts)	16
+@key(horror)	15
+@key(humor)	15
+@key(hydrogenom)	3
+@key(idea)	1
+@key(identitats)	16
+@key(ideologia)	1
+@key(igra)	1
+@key(illustratzion)	15
+@key(imaginatzion)	15
+@key(imagines)	13
+@key(immunitats)	16
+@key(impactos)	2
+@key(imperiom)	3
+@key(importantzia)	1
+@key(impositzion)	15
+@key(impression)	15
+@key(impulsos)	2
+@key(incrementom)	3
+@key(indiom)	3
+@key(individuom)	3
+@key(industria)	1
+@key(inertzia)	1
+@key(influentzia)	1
+@key(informatzion)	15
+@key(ingeniom)	3
+@key(ingressos)	2
+@key(initziom)	3
+@key(innovatzion)	15
+@key(inscriptzion)	15
+@key(insectom)	3
+@key(institutzion)	15
+@key(instructzion)	15
+@key(instrumentom)	3
+@key(integratzion)	15
+@key(intellectos)	2
+@key(intensitats)	16
+@key(intentzion)	15
+@key(interactzion)	15
+@key(interesse)	14
+@key(interpretatzion)	15
+@key(intervallom)	3
+@key(introductzion)	15
+@key(inventzion)	15
+@key(investigatzion)	15
+@key(iridiom)	3
+@key(iskra)	1
+@key(isma)	1
+@key(itos)	2
+@key(januarios)	2
+@key(jektis, ikties)	4
+@key(jemos)	2
+@key(jepyn, ipens)	8
+@key(jeros)	2
+@key(jodos)	2
+@key(jubis, jubies)	4
+@key(judiciom)	3
+@key(jugom)	3
+@key(jugos, jugesos)	9
+@key(juktis)	4
+@key(julios)	2
+@key(junctzion)	15
+@key(junios)	2
+@key(jusma)	1
+@key(justitia)	1
+@key(justitzia)	1
+@key(kalai)	U
+@key(kaliom)	3
+@key(kantis, kynties)	4
+@key(kapros)	2
+@key(kaput, kyptes)	20
+@key(kibrit)	U
+@key(kimisj)	U
+@key(kiomir)	U
+@key(kiresj)	U
+@key(kitab)	U
+@key(kokoros)	2
+@key(kretos, kretesos)	9
+@key(krevyn, kryvens)	8
+@key(krimyn, krimens)	8
+@key(kritis, krities)	4
+@key(kritor, kritres)	10
+@key(kritrom)	3
+@key(krypton)	15
+@key(kudos)	2
+@key(kursjun)	U
+@key(laboratoriom)	3
+@key(labor)	15
+@key(lanthaniom)	3
+@key(lapsos)	2
+@key(latere)	14
+@key(lawrentziom)	3
+@key(lectzion)	15
+@key(lektrom)	3
+@key(lexicom)	3
+@key(libertats)	16
+@key(licentzia)	1
+@key(linea)	1
+@key(lithiom)	3
+@key(livermoriom)	3
+@key(logica)	1
+@key(loipos)	2
+@key(lokus, lykues)	6
+@key(lubos)	2
+@key(lucta)	1
+@key(ludis, ludies)	4
+@key(ludrota)	1
+@key(lukos)	2
+@key(lutetziom)	3
+@key(machina)	1
+@key(magnesiom)	3
+@key(magnitudines)	13
+@key(maimun)	U
+@key(maios)	2
+@key(maliat)	U
+@key(maliatnikos)	2
+@key(manganesos)	2
+@key(martzios)	2
+@key(masjtis, mysjties)	4
+@key(masjtor, mysjtres)	10
+@key(massa)	1
+@key(materia)	1
+@key(mater, mytres)	10
+@key(matrices)	13
+@key(medicina)	1
+@key(mediom)	3
+@key(medios)	2
+@key(meitneriom)	3
+@key(mektis, mykties)	4
+@key(melit, myltes)	20
+@key(membrom)	3
+@key(memoria)	1
+@key(mendeleviom)	3
+@key(menos, menesos)	9
+@key(mens, mensos)	2
+@key(mentis, mynties)	4
+@key(meritom)	3
+@key(mertis, myrties)	4
+@key(mesa)	1
+@key(methodos)	2
+@key(metis, myties)	4
+@key(metrom)	3
+@key(migla)	1
+@key(migratzion)	15
+@key(milota)	1
+@key(ministeriom)	3
+@key(minuta)	1
+@key(miraculom)	3
+@key(misdos)	2
+@key(mitis, mities)	4
+@key(modulatzion)	15
+@key(modulos)	2
+@key(molybdenom)	3
+@key(momentom)	3
+@key(moneta)	1
+@key(mori, myries)	U
+@key(moscoviom)	3
+@key(mosgos)	2
+@key(motivatzion)	15
+@key(motor)	15
+@key(motzion)	15
+@key(mundos)	2
+@key(munduka)	1
+@key(mus, muses)	17
+@key(mutatzion)	15
+@key(mynsom)	3
+@key(mythos)	2
+@key(nadiesjda)	1
+@key(nas, nyses)	17
+@key(natriom)	3
+@key(natura)	1
+@key(natzion)	15
+@key(navis)	19
+@key(nebos, nebesos)	9
+@key(nebros)	2
+@key(necessitats)	16
+@key(negatzion)	15
+@key(negotziom)	3
+@key(neodymiom)	3
+@key(neon)	15
+@key(neptuniom)	3
+@key(nervos)	2
+@key(nesjtis, nysjties)	4
+@key(neudmektis, neudmykties)	4
+@key(nickel)	U
+@key(nihil)	U
+@key(nihoniom)	3
+@key(niobiom)	3
+@key(nisdos)	2
+@key(nitrogenom)	3
+@key(nobeliom)	3
+@key(nobol, nybles)	10
+@key(nogs, nyges)	12
+@key(nomyn, nymens)	8
+@key(nopts, nyptes)	12
+@key(norma)	1
+@key(nota)	1
+@key(notzion)	15
+@key(novembrios)	2
+@key(nucleos)	2
+@key(numeros)	2
+@key(objectom)	3
+@key(obligatzion)	15
+@key(observatzion)	15
+@key(octobrios)	2
+@key(officiom)	3
+@key(oganesson)	15
+@key(olos)	2
+@key(onkos)	2
+@key(onos, onesos)	9
+@key(opera)	1
+@key(operator)	15
+@key(operatzion)	15
+@key(opinion)	15
+@key(oppositzion)	15
+@key(ops, ypes)	12
+@key(optzion)	15
+@key(orbos)	2
+@key(ordinatzion)	15
+@key(ordines)	13
+@key(organismos)	2
+@key(organom)	3
+@key(origines)	13
+@key(oron, yrnes)	21
+@key(orthographia)	1
+@key(osdos)	2
+@key(osjtris, ysjtries)	4
+@key(os, yses)	17
+@key(osmiom)	3
+@key(osnom)	3
+@key(ost, ystes)	20
+@key(oxygenom)	3
+@key(palladiom)	3
+@key(participatzion)	15
+@key(particula)	1
+@key(partitzion)	15
+@key(parts)	16
+@key(pasj, pysjes)	U
+@key(passion)	15
+@key(pater, pytres)	10
+@key(patria)	1
+@key(patronos)	2
+@key(pausa)	1
+@key(pavyn, pyvens)	8
+@key(peplos)	2
+@key(perceptzion)	15
+@key(periodos)	2
+@key(peritis, perities)	4
+@key(perkunos)	2
+@key(perkunos)	2
+@key(perkus, pyrkues)	6
+@key(persna)	1
+@key(persona)	1
+@key(perspectiva)	1
+@key(pervyn, pyrvens)	8
+@key(pesju, pysjues)	7
+@key(petyn, pytens)	8
+@key(philosophia)	1
+@key(phosphoros)	2
+@key(physica)	1
+@key(pictura)	1
+@key(pietis, pities)	4
+@key(pira)	1
+@key(pisda)	1
+@key(pisjtis, pisjties)	4
+@key(pisks, piskes)	12
+@key(plan)	U
+@key(platinom)	3
+@key(plumon, plumnes)	21
+@key(plusis)	4
+@key(plutoniom)	3
+@key(pods, pydes)	12
+@key(poina)	1
+@key(politica)	1
+@key(poloniom)	3
+@key(pontos)	2
+@key(porsjos)	2
+@key(positzion)	15
+@key(potentzia)	1
+@key(potis, pyties)	4
+@key(pramyn)	U
+@key(praseodymiom)	3
+@key(presbyteros)	2
+@key(presentatzion)	15
+@key(presjtis)	4
+@key(pression)	15
+@key(preventzion)	15
+@key(principiom)	3
+@key(prinota)	1
+@key(priskota)	1
+@key(probertis, probyrties)	4
+@key(processos)	2
+@key(productzion)	15
+@key(profession)	15
+@key(professor)	15
+@key(progressos)	2
+@key(projectom)	3
+@key(projectos)	2
+@key(promethiom)	3
+@key(promotzion)	15
+@key(pronuntziatzion)	15
+@key(proportzion)	15
+@key(propositzion)	15
+@key(prospectos)	2
+@key(prospesja)	1
+@key(protactiniom)	3
+@key(protectzion)	15
+@key(protocollom)	3
+@key(provincia)	1
+@key(prumyn, prumens)	8
+@key(punctos)	2
+@key(pusjtis)	4
+@key(qualitats)	16
+@key(quantitats)	16
+@key(question)	15
+@key(radiom)	3
+@key(radios)	2
+@key(radon)	15
+@key(rads, rydes)	12
+@key(ratzion)	15
+@key(reactzion)	15
+@key(realitats)	16
+@key(receptzion)	15
+@key(recerca)	1
+@key(redjs, rydjes)	12
+@key(reductzion)	15
+@key(referentzia)	1
+@key(reflexion)	15
+@key(reformatzion)	15
+@key(region)	15
+@key(registrom)	3
+@key(regula)	1
+@key(relatzion)	15
+@key(religion)	15
+@key(rentgeniom)	3
+@key(repetitzion)	15
+@key(reproductzion)	15
+@key(res, ryses)	17
+@key(resolutzion)	15
+@key(respectos)	2
+@key(responsabilitats)	16
+@key(respublica)	1
+@key(restaurants)	16
+@key(restrictzion)	15
+@key(resultatom)	3
+@key(reversion)	15
+@key(revolutzion)	15
+@key(rheniom)	3
+@key(rhodiom)	3
+@key(ripa)	1
+@key(ritos)	2
+@key(rubidiom)	3
+@key(rugis)	4
+@key(ruptura)	1
+@key(rutheniom)	3
+@key(rutherfordiom)	3
+@key(rysjta)	1
+@key(sals, syles)	12
+@key(saluts)	16
+@key(samariom)	3
+@key(satellites)	13
+@key(scandiom)	3
+@key(schola)	1
+@key(scientia)	1
+@key(seaborgiom)	3
+@key(sector)	15
+@key(sectzion)	15
+@key(seculom)	3
+@key(segmentom)	3
+@key(selectzion)	15
+@key(seleniom)	3
+@key(semis, symies)	4
+@key(semyn, symens)	8
+@key(sensatzion)	15
+@key(sensos)	2
+@key(sentis, synties)	4
+@key(separatzion)	15
+@key(septembrios)	2
+@key(septyndina)	1
+@key(series)	13
+@key(servitziom)	3
+@key(significantzia)	1
+@key(signom)	3
+@key(siliciom)	3
+@key(simulatzion)	15
+@key(sjadina)	1
+@key(sjados)	2
+@key(sjahar)	U
+@key(sjdrynom)	3
+@key(sjerd, sjyrdes)	20
+@key(sjersa)	1
+@key(sjersonts)	16
+@key(sjlakt, sjlyktes)	20
+@key(sjlevos, sjlevesos)	9
+@key(sjlitra)	1
+@key(sjloitrom)	3
+@key(sjlunis, sjlunies)	4
+@key(sjnomyn, sjnymens)	8
+@key(sjnotis, sjnyties)	4
+@key(sjoimos)	2
+@key(sjolodjos)	2
+@key(sjomitis, sjomities)	4
+@key(sjomjuktis)	4
+@key(sjopos)	2
+@key(sjotos)	2
+@key(sjtrysda)	1
+@key(sjvon, sjunes)	U
+@key(skeltis, skylties)	4
+@key(skistis, skisties)	4
+@key(smerus, smyrues)	6
+@key(smira)	1
+@key(snevyn, snyvens)	8
+@key(snibs, snibes)	12
+@key(societats)	16
+@key(solutzion)	15
+@key(sopos)	2
+@key(sosjyn, sysjens)	8
+@key(spasjtor, spysjtres)	10
+@key(spatziom)	3
+@key(species)	13
+@key(spectrom)	3
+@key(spesj, spysjes)	U
+@key(spes, spyses)	17
+@key(spitis, spities)	4
+@key(staia)	1
+@key(statis, styties)	4
+@key(stauros)	2
+@key(sten, stynes)	U
+@key(stibiom)	3
+@key(stol)	U
+@key(stolos)	2
+@key(strontziom)	3
+@key(structura)	1
+@key(strumyn)	U
+@key(strutis, struties)	4
+@key(studiom)	3
+@key(substantzia)	1
+@key(sufficientzia)	1
+@key(suls, sules)	12
+@key(summa)	1
+@key(summarios)	2
+@key(sunus, sunues)	6
+@key(svesor, sustres)	11
+@key(svonos)	2
+@key(syra)	1
+@key(sysna)	1
+@key(systema)	1
+@key(tabula)	1
+@key(tadjir)	U
+@key(taktis, tykties)	4
+@key(tantalom)	3
+@key(tauros)	2
+@key(technetziom)	3
+@key(technica)	1
+@key(telluriom)	3
+@key(temir)	U
+@key(tempore)	14
+@key(tennessos)	2
+@key(tension)	15
+@key(terbiom)	3
+@key(terminatzion)	15
+@key(terminos)	2
+@key(termyn, tyrmens)	8
+@key(terra)	1
+@key(territoriom)	3
+@key(tersos, tersesos)	9
+@key(testimoniom)	3
+@key(textos)	2
+@key(thalliom)	3
+@key(theatrom)	3
+@key(theologia)	1
+@key(theoria)	1
+@key(thermometrom)	3
+@key(thoriom)	3
+@key(thuliom)	3
+@key(titaniom)	3
+@key(tolerantzia)	1
+@key(tonos)	2
+@key(tractatos)	2
+@key(tractzion)	15
+@key(traditzion)	15
+@key(transformatzion)	15
+@key(transitzion)	15
+@key(translatzion)	15
+@key(tremor)	15
+@key(tribus)	U
+@key(tributom)	3
+@key(tubos)	2
+@key(typos)	2
+@key(tzink)	U
+@key(udmektis, udmykties)	4
+@key(udrokimisj)	U
+@key(udros)	2
+@key(udyn, udens)	8
+@key(uiom)	3
+@key(umbra)	1
+@key(union)	15
+@key(unitats)	16
+@key(universitats)	16
+@key(uposteletis)	19
+@key(uraniom)	3
+@key(urusj)	U
+@key(us, uses)	17
+@key(usos)	2
+@key(ustra)	1
+@key(utilitats)	16
+@key(vacuom)	3
+@key(valor)	15
+@key(vanadiom)	3
+@key(variatzion)	15
+@key(varietats)	16
+@key(vector)	15
+@key(veksperos)	2
+@key(velocitats)	16
+@key(vena)	1
+@key(ventos)	2
+@key(verbom)	3
+@key(verdjom)	3
+@key(verdom)	3
+@key(veritats)	16
+@key(version)	15
+@key(vertis, urties)	4
+@key(vestigiom)	3
+@key(vestis, usties)	4
+@key(via)	1
+@key(vibratzion)	15
+@key(victoria)	1
+@key(videva)	1
+@key(vidos, videsos)	9
+@key(vidra)	1
+@key(viros)	2
+@key(virota)	1
+@key(vision)	15
+@key(vita)	1
+@key(vitrom)	3
+@key(vodyn, udens)	8
+@key(voinom)	3
+@key(volna)	1
+@key(volpos)	2
+@key(volumines)	13
+@key(voluntats)	16
+@key(vopeietis)	19
+@key(vops, upes)	12
+@key(vosyn, usens)	8
+@key(wolframiom)	3
+@key(xenon)	15
+@key(ytterbiom)	3
+@key(yttriom)	3
+@key(zadacja)	1
+@key(zirconiom)	3
+@key(zirnik)	U
+@key(zona)	1
