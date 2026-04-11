@@ -12,7 +12,6 @@
 @key(adoptaio) @ety(\lat{adoptare}) @typ(v) @def(to $adopt)
 @key(adultos) @ety(\lat{adultus}) @typ(m) @def($adult)
 @key(advocatos) @ety(\lat{advocatus}) @typ(m) @def($advocate)
-@key(aer) @ety(\lat{aer}) @typ(m) @def($air)
 @key(agenda) @ety(\lat{agenda}) @typ(f) @def($agenda)
 @key(agents) @ety(\lat{agens}) @typ(m) @def($agent)
 @key(aggregaio) @ety(\lat{aggregare}) @typ(v) @def(to $aggregate)
