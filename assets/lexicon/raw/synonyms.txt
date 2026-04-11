@@ -31,7 +31,7 @@
 @syn(pontos, via)
 @syn(vita, biva)
 @syn(nihil, nipos)
-@syn(artus, orden)
+@syn(artus, ordines)
 @syn(mektis, potentzia)
 @syn(prostelo, preparaio)
 @syn(harf, bukva[1])
