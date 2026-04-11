@@ -130,7 +130,6 @@
 @key(curaio) @ety(\lat{curare}) @typ(v) @def(to $care for, to $treat, to $manage)
 @key(curriculom) @ety(\lat{curriculum}) @typ(n) @def($curriculum)
 @key(cyclos) @ety(\lat{cyclus}) @typ(m) @def($cycle)
-@key(data) @ety(\lat{data}) @typ(f) @def($data)
 @key(debitom) @ety(\lat{debitum}) @typ(n) @def($debt)
 @key(decision) @ety(\lat{decisio}) @typ(f) @def($decision)
 @key(declaraio) @ety(\lat{declarare}) @typ(v) @def(to $declare)
