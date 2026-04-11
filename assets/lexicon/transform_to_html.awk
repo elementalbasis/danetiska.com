@@ -10,6 +10,10 @@ function close_sense_block() {
   if (in_sense_block) {
     print "</ol>"
     print "</section>"
+    if (pending_infl_div != "") {
+      print pending_infl_div
+      pending_infl_div = ""
+    }
     in_sense_block = 0
   }
 }
@@ -368,6 +372,13 @@ BEGIN {
   in_sense_block = 0
   in_expr_block = 0
   current_typ = ""
+  pending_infl_div = ""
+}
+
+function shq(s,    t) {
+  t = s
+  gsub(/'/, "'\\''", t)
+  return "'" t "'"
 }
 
 # Ignore any lines that begin with @expr
@@ -389,6 +400,7 @@ BEGIN {
 
     if (token ~ /^@key\(/) {
       close_entry()
+      pending_infl_div = ""
       key = arg_of(token)
       lemma = lemma_head_of(key)
       print "<article class=\"entry\">"
@@ -440,7 +452,8 @@ BEGIN {
       infl_n = infl_template_of(token)
       infl_root1 = infl_root1_of(token)
       infl_root2 = infl_root2_of(token)
-      # do nothing for now
+
+      pending_infl_div = sprintf("<div class=\"infl\" data-inflection-template=\"%s\" data-root1=\"%s\" data-root2=\"%s\"></div>", infl_n, infl_root1, infl_root2)
     }
 
     $0 = substr($0, start + len)
