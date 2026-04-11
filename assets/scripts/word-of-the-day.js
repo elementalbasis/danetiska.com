@@ -43,7 +43,7 @@ async function loadWordOfTheDay() {
       return;
     }
 
-    linkEl.textContent = lemma;
+    linkEl.textContent = lemma + " →";
     linkEl.href = `/dictionary?lemma=${encodeURIComponent(lemma)}`;
   } catch (err) {
     console.error(err);
