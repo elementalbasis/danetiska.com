@@ -37,7 +37,7 @@
 @key(buio) @ety(\pie{bʰuHyéti}; \cf \lat{fio}, \grc{φύω}{phŭ́ō}) @typ(v) @def(to $grow) @def(to $become)
 @key(bumyn, bumens) @ety(\dnt{buio}) @typ(n) @def($growth) @def($tumor)
 @key(butis, buties) @ety(\pie{bʰuH-}; \cf aorist and perfective stems of \dnt{esmi}) @typ(f) @def($essence, $nature)
-@key(natura) @ety(\lat{natura}) @typ(f) @def($nature)
+@key(natura) @infl[1](natur) @ety(\lat{natura}) @typ(f) @def($nature)
 @key(natural) @ety(\lat{naturalis}) @typ(adj) @def($natural)
 @key(jekmi, ikmos; jeksym, iksme; jejoka, jeikme) @ety(\pie{(H)yeh₁-}; \cf \lat{iacio}) @typ(v) @def(to $throw)
 @key(apojekmi, apoikmos; apojeksym, apoiksme; apojejoka, apojeiksme) @ety(\dnt{apo} + \dnt{jekmi}) @typ(v) @def(to $forgive, to $remit, \par{used with the accusative case for the action being forgiven, and the ablative case for the person being forgiven})
@@ -65,7 +65,7 @@
 @key(taktis, tykties) @ety(\dnt{tygnumi}) @typ(f) @def(\par{act of} $touching) @def(sense of $touch)
 @key(po) @ety(\bg{по}{po}) @typ(adv) @def(\par{a particle used to form the comparative degree of adjectives}; \ex{po senos}{older})
 @key(nai) @ety(\bg{най}{naj}) @typ(adv) @def(\par{a particle used to form the superlative degree of adjectives}; \par{nai senos}{oldest})
-@key(crema) @ety(\fra{crème}) @typ(f) @def($cream)
+@key(crema) @infl[1](crem) @ety(\fra{crème}) @typ(f) @def($cream)
 
 
 @expr(po dybros) @link(po, dybros) @def($better)
@@ -89,9 +89,9 @@
 @expr(dina Jemosio) @link(dina, jemos) @def($Saturday)
 
 
-@key(astrovidra) @ety(\dnt{aster} + \dnt{vidra}) @typ(f) @def[1]($astronomy) @def[2]($astrology)
-@key(bivovidra) @ety(\dnt{biva} + \dnt{vidra}) @typ(f) @def($biology)
-@key(djymovidra) @ety(\dnt{dedjom} + \dnt{vidra}) @typ(f) @def($geology)
-@key(divovidra) @ety(\dnt{divos} + \dnt{vidra}) @typ(f) @def($theology)
-@key(astrologia) @ety(\lat{astrologia}) @typ(f) @def($astrology)
-@key(theologia) @ety(\lat{theologia}) @typ(f) @def($theology)
+@key(astrovidra) @infl[1](astrovidr) @ety(\dnt{aster} + \dnt{vidra}) @typ(f) @def[1]($astronomy) @def[2]($astrology)
+@key(bivovidra) @infl[1](bivovidr) @ety(\dnt{biva} + \dnt{vidra}) @typ(f) @def($biology)
+@key(djymovidra) @infl[1](djymovidr) @ety(\dnt{dedjom} + \dnt{vidra}) @typ(f) @def($geology)
+@key(divovidra) @infl[1](divovidr) @ety(\dnt{divos} + \dnt{vidra}) @typ(f) @def($theology)
+@key(astrologia) @infl[1](astrologi) @ety(\lat{astrologia}) @typ(f) @def($astrology)
+@key(theologia) @infl[1](theologi) @ety(\lat{theologia}) @typ(f) @def($theology)

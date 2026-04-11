@@ -51,6 +51,32 @@ function arg_of(token, s) {
   return s
 }
 
+function infl_template_of(token, s) {
+  s = token
+  sub(/^@infl\[/, "", s)
+  sub(/\]\(.*/, "", s)
+  return s
+}
+
+function infl_root1_of(token, s, parts) {
+  s = token
+  sub(/^@infl\[[^]]+\]\(/, "", s)
+  sub(/\)$/, "", s)
+  split(s, parts, /,[ \t]*/)
+  return trim(parts[1])
+}
+
+function infl_root2_of(token, s, parts, root1, root2) {
+  s = token
+  sub(/^@infl\[[^]]+\]\(/, "", s)
+  sub(/\)$/, "", s)
+  split(s, parts, /,[ \t]*/)
+  root1 = trim(parts[1])
+  root2 = trim(parts[2])
+  if (root2 == "") root2 = root1
+  return root2
+}
+
 function replace_onearg(s, macro, label, star, raw, inner, repl, pat, start, len) {
   pat = "\\\\" macro "\\{[^{}]*\\}"
   while (match(s, pat)) {
@@ -353,7 +379,8 @@ BEGIN {
   pos = 1
   line = $0
   #while (match($0, /@(key|ety|typ|def|see|expr)\([^()]*\)/)) {
-  while (match(substr(line, pos), /@(key|ety|typ|def|expr|see|syn|rel)\(/)) {
+  #while (match(substr(line, pos), /@(key|ety|typ|def|expr|see|syn|rel)\(/)) {
+  while (match(substr(line, pos), /@(key|ety|typ|def|expr|see|syn|rel)\(|@infl\[[0-9]+\]\(/)) {
     start = RSTART
     len   = RLENGTH
     tagstart = pos + RSTART - 1
@@ -407,6 +434,13 @@ BEGIN {
 
     else if (token ~ /^@rel\(/) {
       #print render_inline_lemma_list(arg_of(token), "Related")
+    }
+
+    else if (token ~ /^@infl\[[0-9]+\]\(/) {
+      infl_n = infl_template_of(token)
+      infl_root1 = infl_root1_of(token)
+      infl_root2 = infl_root2_of(token)
+      # do nothing for now
     }
 
     $0 = substr($0, start + len)
