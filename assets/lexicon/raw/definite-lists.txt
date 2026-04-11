@@ -1,16 +1,16 @@
 % Months of the Year %
 
-@key(januarios) @ety(\lat{januarius}) @typ(m) @def($January)
-@key(februarios) @ety(\lat{februarius}) @typ(m) @def($February)
-@key(martzios) @ety(\lat{martius}) @typ(m) @def($March)
-@key(aprilios) @ety(\lat{aprilis}) @typ(m) @def($April)
-@key(maios) @ety(\lat{maius}) @typ(m) @def($May)
-@key(junios) @ety(\lat{junius}) @typ(m) @def($June)
-@key(julios) @ety(\lat{julius}) @typ(m) @def($July)
-@key(augustos) @ety(\lat{augustus}) @typ(m) @def($August)
-@key(septembrios) @ety(\lat{september}) @typ(m) @def($September)
-@key(octobrios) @ety(\lat{october}) @typ(m) @def($October)
-@key(novembrios) @ety(\lat{november}) @typ(m) @def($November)
-@key(decembrios) @ety(\lat{december}) @typ(m) @def($December)
+@key(januarios) @infl[2](januari) @ety(\lat{januarius}) @typ(m) @def($January)
+@key(februarios) @infl[2](februari) @ety(\lat{februarius}) @typ(m) @def($February)
+@key(martzios) @infl[2](martzi) @ety(\lat{martius}) @typ(m) @def($March)
+@key(aprilios) @infl[2](aprili) @ety(\lat{aprilis}) @typ(m) @def($April)
+@key(maios) @infl[2](mai) @ety(\lat{maius}) @typ(m) @def($May)
+@key(junios) @infl[2](juni) @ety(\lat{junius}) @typ(m) @def($June)
+@key(julios) @infl[2](juli) @ety(\lat{julius}) @typ(m) @def($July)
+@key(augustos) @infl[2](august) @ety(\lat{augustus}) @typ(m) @def($August)
+@key(septembrios) @infl[2](septembri) @ety(\lat{september}) @typ(m) @def($September)
+@key(octobrios) @infl[2](octobri) @ety(\lat{october}) @typ(m) @def($October)
+@key(novembrios) @infl[2](novembri) @ety(\lat{november}) @typ(m) @def($November)
+@key(decembrios) @infl[2](decembri) @ety(\lat{december}) @typ(m) @def($December)
 
 

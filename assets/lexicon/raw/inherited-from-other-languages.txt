@@ -4,7 +4,7 @@
 
 @key(urusj) @ety(\protrk{ur-}; \cf \kyr{уруш}{uruş}) @typ(m) @def($war)
 
-@key(kokoros) @ety(\ono) @typ(m) @def($chicken, $cock)
+@key(kokoros) @infl[2](kokor) @ety(\ono) @typ(m) @def($chicken, $cock)
 @key(zadacja) @infl[1](zadacj) @ety(\rus{задача}{zadáča}) @typ(f) @def($task, $chore, $objective, $goal, $mission, $aim, $end)
 @key(krasivos) @ety(\rus{красивый}{krasívyj}) @typ(adj) @def($fine, $beautiful, $handsome)
 @key(nadiesjda) @infl[1](nadiesjd) @ety(\rus{надежда}{nadéžda}) @typ(f) @def($hope, $expectation, $prospect)

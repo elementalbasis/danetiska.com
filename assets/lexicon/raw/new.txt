@@ -78,7 +78,7 @@
 
 
 
-@key(perkunos) @ety(\pie{perkʷunos}) @typ(m) @def($thunder, $lightning)
+@key(perkunos) @infl[2](perkun) @infl[2](perkun) @ety(\pie{perkʷunos}) @typ(m) @def($thunder, $lightning)
 
 @expr(dina Sules) @link(dina, suls) @def($Sunday)
 @expr(dina Mensos) @link(dina, mens) @def($Monday)
