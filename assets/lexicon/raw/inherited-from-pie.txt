@@ -401,7 +401,6 @@
 @key(kino) @ety(\pie{keyh₂-}; \cf \lat{cieo}, \grc{κινέω}{kīnéō}) @typ(v) @def(to $move)
 @key(udkino) @ety(\dnt{ud} + \dnt{kino}) @typ(v) @def(to $raise up) @def(to $awaken, to $wake up)
 @key(repo) @ety(\pie{h₁reh₁p-}; \cf \lat{rapio}, \grc{ἐρέπτομαι}{eréptomai}) @typ(v) @def(to $take away, to $snatch away)
-@key(reponts) @ety(\dnt{repo}) @typ(adj) @def($sudden)
 @key(nobos) @ety(\pie{nogʷós}; \cf \rus{нагой}{nagój}, \eng{naked}) @typ(adj) @def($nude, $naked, $bare)
 @key(nobeio) @ety(\dnt{nobos}) @typ(v) @def(to $strip, to $undress, to make $naked)
 @key(aponobeio) @ety(\dnt{apo} + \dnt{nobeio}) @typ(v) @def(to $expose, to $uncover, to $reveal)

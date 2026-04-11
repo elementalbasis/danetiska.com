@@ -34,3 +34,4 @@
 @syn(artus, orden)
 @syn(mektis, potentzia)
 @syn(prostelo, preparaio)
+@syn(harf, bukva[1])

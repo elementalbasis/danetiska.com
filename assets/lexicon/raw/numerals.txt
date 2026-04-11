@@ -45,4 +45,4 @@
 @key(nundsjont) @ety(\pie{h₁néwn̥dḱomt}; \cf \lat{nonaginta}, \grc{ἐνενήκοντα}{enenḗkonta}) @typ(num) @def($ninety)
 @key(sjyntom) @ety(\pie{ḱm̥tóm}; \cf \lat{centum}, \grc{ἑκατόν}{hekatón}, \rus{сто}{sto}, \eng{hundred}) @typ(num) @def($hundred)
 @key(tusonti) @ety(\pie{tuHsont-}; \cf \rus{тысяча}{týsjača}, \eng{thousand}) @typ(num) @def($thousand)
-@key(timen) @ety(\protrk{tümen}) @typ(num) @def($myriad, ten thousand)
+@key(timen) @ety(\protrk{tümen}) @typ(num) @def($myriad, ${ten thousand})

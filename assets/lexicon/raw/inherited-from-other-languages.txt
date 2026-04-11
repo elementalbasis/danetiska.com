@@ -16,7 +16,7 @@
 @key(maliat) @ety(\per{مالیات}{māliyāt}) @typ(m) @def($tax)
 
 @key(da) @ety(\bg{да}{da}) @typ(intj) @def($yes)
-@key(bukva) @ety(\bg{буква}{búkva}) @typ(f) @def($letter, $character \par{of the alphabet}) @def($key \par{of a keyboard, typewriter, \etc}) @def(\field{printing} $type, $lettering) @def($font)
+@key(bukva) @ety(\bg{буква}{búkva}) @typ(f) @def[1]($letter, $character \par{of the alphabet}) @def[2]($key \par{of a keyboard, typewriter, \etc}) @def[3](\field{printing} $type, $lettering) @def($font)
 @key(zdrasti) @ety(\bg{здрасти}{zdrásti}) @typ(intj) @def($hi, $hello, \par{informal greeting})
 @key(cjau) @ety(\ita{ciao}) @typ(intj) @def($bye, $goodbye, \par{informal term used when parting from someone})
 @key(munduka) @ety(\protung{mundukān}) @typ(m) @def($hare, $rabbit)
@@ -34,7 +34,8 @@
 @key(pira) @ety(\unknown) @typ(f) @def(\reg{vulgar} $penis, $dick, $cock)
 
 
-@key(harf) @ety(\ara{حرف}{ḥarf}) @typ(m) @see(bukva)
+@key(harf) @ety(\ara{حرف}{ḥarf}) @typ(m) @def($letter)
+@key(dviharf) @ety(\dnt{dvi-} + \dnt{harf}) @typ(m) @def($digraph)
 
 @key(tadjir) @ety(\ara{تاجر}{tājir}) @typ(m) @def($merchant, $trader, $businessman, $dealer, $tradesman)
 @key(asjdaha) @ety(\per{اژدها}{aždahā}) @typ(m) @def($dragon)

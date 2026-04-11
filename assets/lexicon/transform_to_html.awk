@@ -330,7 +330,7 @@ function render_inline_lemma_list(raw, label, items, n, i, item, out) {
 
     if (i > 1) out = out ", "
 
-    out = out "<span class=\"inline-lemma\"><a href=\"/dictionary?q=" item "&mode=lemma-exact\">" item "</a></span>"
+    out = out "<span class=\"inline-lemma\"><a href=\"/dictionary?lemma=" item "\">" item "</a></span>"
   }
 
   out = out "</p>"
@@ -390,7 +390,7 @@ BEGIN {
 
     else if (token ~ /^@see\(/) {
       ref = arg_of(token)
-      print "&rarr; <span class=\"inline-lemma\"><a href=\"/dictionary?q=" ref "&mode=lemma-exact\">" ref "</a></span>"
+      print "&rarr; <span class=\"inline-lemma\"><a href=\"/dictionary?lemma=" ref "\">" ref "</a></span>"
     }
 
     else if (token ~ /^@expr\(/) {
