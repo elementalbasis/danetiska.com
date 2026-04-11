@@ -35,3 +35,4 @@
 @syn(mektis, potentzia)
 @syn(prostelo, preparaio)
 @syn(harf, bukva[1])
+@syn(protego, lekso)

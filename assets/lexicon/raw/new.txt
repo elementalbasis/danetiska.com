@@ -56,3 +56,23 @@
 @key(apparo) @ety(\lat{appareo}) @typ(v) @def(to $appear)
 @key(bilingues) @ety(\lat{bilinguis}) @typ(adj) @def($bilingual)
 @key(dvidyndjues) @ety(\dnt{dvo} + \dnt{dyndjua}) @typ(adj) @def($bilingual)
+
+
+
+@key(-isjos) @ety(\pie{-ḱos}; \cf \lat{-cus}, \grc{-κός}{-kós}) @typ(suf) @def(\par{diminutive suffix})
+@key(dybroisjos) @ety(\dnt{dybros} + \dnt{-isjos}) @typ(adj) @def($beautiful, $pretty)
+@key(tygnumi; tagym, tygme; tetoga, tetygme) @ety(\pie{teh₂g-}; \cf \lat{tango}, \grc{τεταγών}{tetagṓn}, \eng{take}) @typ(v) @def(to $touch)
+@key(taktis, tykties) @ety(\dnt{tygnumi}) @typ(f) @def(\par{act of} $touching}) @def(sense of $touch)
+@key(po) @ety(\bg{по}{po}) @typ(adv) @def(\par{a particle used to form the comparative degree of adjectives}; \ex{po senos}{older})
+@key(nai) @ety(\bg{най}{naj}) @typ(adv) @def(\par{a particle used to form the superlative degree of adjectives}; \par{nai senos}{oldest})
+@key(crema) @ety(\fra{crème}) @typ(f) @def($cream)
+@key(gylnos) @ety(\dnt{gelos}) @typ(m) @def($ice)
+@key(svadugylnos) @ety(\dnt{svadus} + \dnt{gylnos}) @typ(m) @def(${ice cream}, &icecream)
+
+
+@expr(po dybros) @link(po, dybros) @def($better)
+@expr(nai dybros) @link(nai, dybros) @def($best)
+@expr(po mysjlos) @link(po, mysjlos) @def($bigger)
+@expr(nai mysjlos) @link(nai, mysjlos) @def($biggest)
+@expr(po smikros) @link(po, smikros) @def($smaller)
+@expr(nai smikros) @link(nai, smikros) @def($smallest)
