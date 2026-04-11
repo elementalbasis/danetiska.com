@@ -1,92 +1,29 @@
+import yaml
 
+filename = "endings.yaml"
+with open(filename, "r") as f:
+    data = yaml.safe_load(f)
 
-o_stem_animate_endings = {
-        "nom-sg": "os",
-        "voc-sg": "e",
-        "acc-sg": "om",
-        "gen-sg": "osio",
-        "abl-sg": "od",
-        "dat-sg": "oi",
-        "loc-sg": "i",
-        "ins-sg": "e",
-        "nom-pl": "oi",
-        "voc-pl": "oi",
-        "acc-pl": "ons",
-        "gen-pl": "om",
-        "abl-pl": "omos",
-        "dat-pl": "omos",
-        "loc-pl": "oisu",
-        "ins-pl": "ois",
-        }
-o_stem_neuter_endings = {
-        "nom-sg": "om",
-        "voc-sg": "om",
-        "acc-sg": "om",
-        "gen-sg": "osio",
-        "abl-sg": "od",
-        "dat-sg": "oi",
-        "loc-sg": "i",
-        "ins-sg": "e",
-        "nom-pl": "a",
-        "voc-pl": "a",
-        "acc-pl": "a",
-        "gen-pl": "om",
-        "abl-pl": "omos",
-        "dat-pl": "omos",
-        "loc-pl": "oisu",
-        "ins-pl": "ois",
-        }
-a_stem_endings = {
-        "nom-sg": "a",
-        "voc-sg": "u",
-        "acc-sg": "am",
-        "gen-sg": "as",
-        "abl-sg": "ad",
-        "dat-sg": "ai",
-        "loc-sg": "i",
-        "ins-sg": "e",
-        "nom-pl": "ai",
-        "voc-pl": "ai",
-        "acc-pl": "ans",
-        "gen-pl": "om",
-        "abl-pl": "amos",
-        "dat-pl": "amos",
-        "loc-pl": "asu",
-        "ins-pl": "abi",
-        }
-i_stem_endings = {
-        "nom-sg": "is",
-        "voc-sg": "i",
-        "acc-sg": "im",
-        "gen-sg": "ies",
-        "abl-sg": "ied",
-        "dat-sg": "iei",
-        "loc-sg": "i",
-        "ins-sg": "ie",
-        "nom-pl": "ies",
-        "voc-pl": "ies",
-        "acc-pl": "ins",
-        "gen-pl": "iom",
-        "abl-pl": "imos",
-        "dat-pl": "imos",
-        "loc-pl": "isu",
-        "ins-pl": "ibi",
-        }
-u_stem_endings = {
-        "nom-sg": "us",
-        "voc-sg": "u",
-        "acc-sg": "um",
-        "gen-sg": "ues",
-        "abl-sg": "ued",
-        "dat-sg": "uei",
-        "loc-sg": "ui",
-        "ins-sg": "ue",
-        "nom-pl": "ues",
-        "voc-pl": "ues",
-        "acc-pl": "uns",
-        "gen-pl": "uom",
-        "abl-pl": "umos",
-        "dat-pl": "umos",
-        "loc-pl": "usu",
-        "ins-pl": "ubi",
-        }
+def inflect(root1, root2, endings):
+    tmp = {
+            "nom-sg": root1 + endings["nom-sg"],
+            "voc-sg": root1 + endings["voc-sg"],
+            "acc-sg": root1 + endings["acc-sg"],
+            "gen-sg": root2 + endings["gen-sg"],
+            "abl-sg": root2 + endings["abl-sg"],
+            "dat-sg": root2 + endings["dat-sg"],
+            "loc-sg": root2 + endings["loc-sg"],
+            "ins-sg": root2 + endings["ins-sg"],
+            "nom-pl": root1 + endings["nom-pl"],
+            "voc-pl": root1 + endings["voc-pl"],
+            "acc-pl": root1 + endings["acc-pl"],
+            "gen-pl": root2 + endings["gen-pl"],
+            "abl-pl": root2 + endings["abl-pl"],
+            "dat-pl": root2 + endings["dat-pl"],
+            "loc-pl": root2 + endings["loc-pl"],
+            "ins-pl": root2 + endings["ins-pl"],
+            }
+    return tmp
+
+a = inflect("vir", "vir", data["o_stem_animate_endings"])
+print(a)
