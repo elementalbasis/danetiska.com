@@ -1,0 +1,19 @@
+
+
+o_stem_endings = {
+        "nom-sg":
+        "voc-sg":
+        "acc-sg":
+        "gen-sg":
+        "abl-sg":
+        "dat-sg":
+        "loc-sg":
+        "ins-sg":
+        "nom-pl":
+        "voc-pl":
+        "acc-pl":
+        "gen-pl":
+        "abl-pl":
+        "dat-pl":
+        "loc-pl":
+        "ins-pl":
