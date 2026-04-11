@@ -37,19 +37,41 @@ function getModeFromUrl() {
   return params.get("mode") || "general";
 }
 
-function setSearchStateInUrl(query, mode) {
+function getLemmaFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("lemma") || "";
+}
+
+function setQueryStateInUrl(query, mode) {
   const url = new URL(window.location.href);
+
+  url.searchParams.delete("lemma");
 
   if (query && query.trim()) {
     url.searchParams.set("q", query.trim());
+    if (mode && mode !== "general") {
+      url.searchParams.set("mode", mode);
+    } else {
+      url.searchParams.delete("mode");
+    }
   } else {
     url.searchParams.delete("q");
+    url.searchParams.delete("mode");
   }
 
-  if (mode && mode !== "general") {
-    url.searchParams.set("mode", mode);
+  history.replaceState({}, "", url);
+}
+
+function setLemmaStateInUrl(lemma) {
+  const url = new URL(window.location.href);
+
+  url.searchParams.delete("q");
+  url.searchParams.delete("mode");
+
+  if (lemma && lemma.trim()) {
+    url.searchParams.set("lemma", lemma.trim());
   } else {
-    url.searchParams.delete("mode");
+    url.searchParams.delete("lemma");
   }
 
   history.replaceState({}, "", url);
@@ -95,28 +117,20 @@ function matchesMode(record, query, mode) {
   switch (mode) {
     case "lemma-exact":
       return lemma === q;
-
     case "lemma-prefix":
       return lemma.startsWith(q);
-
     case "lemma-contains":
       return lemma.includes(q);
-
     case "lemma-suffix":
       return lemma.endsWith(q);
-
     case "gloss-exact":
       return glosses.includes(q);
-
     case "gloss-prefix":
       return glosses.some((g) => g.startsWith(q));
-
     case "gloss-contains":
       return glosses.some((g) => g.includes(q));
-
     case "gloss-suffix":
       return glosses.some((g) => g.endsWith(q));
-
     default:
       return false;
   }
@@ -192,14 +206,49 @@ function renderEntryList(records, resultsEl) {
   }
 }
 
-function setModeUi(mode, input) {
-  if (mode === "random") {
-    input.value = "";
-    input.disabled = true;
-    input.placeholder = "Press search";
-  } else {
-    input.disabled = false;
-    input.placeholder = "Search the dictionary";
+function noMatchMessageForMode(query, mode) {
+  switch (mode) {
+    case "lemma-exact":
+      return `No exact lemma match for "${query}".`;
+    case "lemma-prefix":
+      return `No lemma beginning with "${query}".`;
+    case "lemma-contains":
+      return `No lemma containing "${query}".`;
+    case "lemma-suffix":
+      return `No lemma ending with "${query}".`;
+    case "gloss-exact":
+      return `No exact translation match for "${query}".`;
+    case "gloss-prefix":
+      return `No translation beginning with "${query}".`;
+    case "gloss-contains":
+      return `No translation containing "${query}".`;
+    case "gloss-suffix":
+      return `No translation ending with "${query}".`;
+    default:
+      return `No match for "${query}".`;
+  }
+}
+
+function positiveMatchMessageForMode(query, mode, count) {
+  const n = count === 1 ? "1 match" : `${count} matches`;
+
+  switch (mode) {
+    case "lemma-prefix":
+      return `${n} for lemmas beginning with "${query}".`;
+    case "lemma-contains":
+      return `${n} for lemmas containing "${query}".`;
+    case "lemma-suffix":
+      return `${n} for lemmas ending with "${query}".`;
+    case "gloss-exact":
+      return `${n} for exact translation "${query}".`;
+    case "gloss-prefix":
+      return `${n} for translations beginning with "${query}".`;
+    case "gloss-contains":
+      return `${n} for translations containing "${query}".`;
+    case "gloss-suffix":
+      return `${n} for translations ending with "${query}".`;
+    default:
+      return `${n}.`;
   }
 }
 
@@ -219,10 +268,7 @@ function runGeneralSearch(records, query) {
     return {
       kind: "exact",
       matches: exactLemma,
-      message:
-        exactLemma.length === 1
-          ? `1 exact lemma match for "${query}".`
-          : `${exactLemma.length} exact lemma matches for "${query}".`,
+      message: "",
     };
   }
 
@@ -231,10 +277,7 @@ function runGeneralSearch(records, query) {
     return {
       kind: "exact",
       matches: exactGloss,
-      message:
-        exactGloss.length === 1
-          ? `1 exact gloss match for "${query}".`
-          : `${exactGloss.length} exact gloss matches for "${query}".`,
+      message: "",
     };
   }
 
@@ -244,16 +287,14 @@ function runGeneralSearch(records, query) {
     return {
       kind: "none",
       matches: [],
-      message: `No match for “${query}”.`,
+      message: `No match for "${query}".`,
     };
   }
 
   return {
     kind: "suggest",
     matches: suggestions,
-    message:
-      `No match for “${query}”. ` +
-      `Maybe these are what you're looking for?`,
+    message: `No exact match for "${query}".`,
   };
 }
 
@@ -267,25 +308,11 @@ function runModeSearch(records, query, mode) {
     return {
       kind: "random",
       matches: randomRecord ? [randomRecord] : [],
-      message: "Random entry.",
+      message: "",
     };
   }
 
-  const matches = records.filter((record) => matchesMode(record, query, mode));
-
-  let label = mode;
-  switch (mode) {
-    case "lemma-exact": label = "lemma exact"; break;
-    case "lemma-prefix": label = "lemma begins with"; break;
-    case "lemma-contains": label = "lemma contains"; break;
-    case "lemma-suffix": label = "lemma ends with"; break;
-    case "gloss-exact": label = "gloss exact"; break;
-    case "gloss-prefix": label = "gloss begins with"; break;
-    case "gloss-contains": label = "gloss contains"; break;
-    case "gloss-suffix": label = "gloss ends with"; break;
-  }
-
-  if (!query.trim() && mode !== "random") {
+  if (!query.trim()) {
     return {
       kind: "empty",
       matches: [],
@@ -293,21 +320,56 @@ function runModeSearch(records, query, mode) {
     };
   }
 
+  const matches = records.filter((record) => matchesMode(record, query, mode));
+
   if (!matches.length) {
     return {
       kind: "none",
       matches: [],
-      message: `No ${label} matches for "${query}".`,
+      message: noMatchMessageForMode(query, mode),
+    };
+  }
+
+  if (mode === "lemma-exact") {
+    return {
+      kind: "mode",
+      matches,
+      message: "",
     };
   }
 
   return {
     kind: "mode",
     matches,
-    message:
-      matches.length === 1
-        ? `1 ${label} match for "${query}".`
-        : `${matches.length} ${label} matches for "${query}".`,
+    message: positiveMatchMessageForMode(query, mode, matches.length),
+  };
+}
+
+function runDirectLemmaLookup(records, lemma) {
+  const q = normalize(lemma);
+
+  if (!q) {
+    return {
+      kind: "empty",
+      matches: [],
+      message: "",
+    };
+  }
+
+  const matches = records.filter((record) => record.lemmaHead === q);
+
+  if (!matches.length) {
+    return {
+      kind: "none",
+      matches: [],
+      message: `No exact lemma match for "${lemma}".`,
+    };
+  }
+
+  return {
+    kind: "exact",
+    matches,
+    message: "",
   };
 }
 
@@ -322,6 +384,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!form || !input || !modeSelect || !out || !results) return;
 
   let records = [];
+  let savedQuery = "";
+  let inRandomMode = false;
 
   try {
     const lexiconHtml = await loadLexicon();
@@ -332,15 +396,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  function runSearch() {
-    const mode = modeSelect.value;
-    const query = mode === "random" ? "" : input.value.trim();
-
-    setModeUi(mode, input);
-    setSearchStateInUrl(query, mode);
-
-    const result = runModeSearch(records, query, mode);
-
+  function renderResult(result) {
     if (wotd) {
       wotd.style.display = result.kind === "empty" ? "" : "none";
     }
@@ -351,13 +407,56 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    out.innerHTML = escapeHtml(result.message);
+    out.innerHTML = result.message ? escapeHtml(result.message) : "";
     renderEntryList(result.matches, results);
   }
 
+  function applyModeUi(mode) {
+    if (mode === "random") {
+      if (!inRandomMode) {
+        savedQuery = input.value;
+      }
+      inRandomMode = true;
+      input.disabled = true;
+      input.value = "Press Search";
+      input.placeholder = "Press Search";
+    } else {
+      if (inRandomMode) {
+        input.value = savedQuery;
+      }
+      inRandomMode = false;
+      input.disabled = false;
+      input.placeholder = "Search the dictionary";
+    }
+  }
+
+  function runSearch() {
+    const mode = modeSelect.value;
+
+    if (mode === "random") {
+      const result = runModeSearch(records, "", "random");
+      renderResult(result);
+
+      const picked = result.matches[0];
+      if (picked) {
+        setLemmaStateInUrl(picked.lemmaHead);
+      }
+
+      savedQuery = "";
+      input.value = "Press Search";
+      return;
+    }
+
+    const query = input.value.trim();
+    savedQuery = query;
+
+    const result = runModeSearch(records, query, mode);
+    setQueryStateInUrl(query, mode);
+    renderResult(result);
+  }
+
   modeSelect.addEventListener("change", () => {
-    setModeUi(modeSelect.value, input);
-    runSearch();
+    applyModeUi(modeSelect.value);
   });
 
   form.addEventListener("submit", (event) => {
@@ -372,11 +471,31 @@ document.addEventListener("DOMContentLoaded", async () => {
     modeSelect.value = "general";
   }
 
-  const initialQuery = getQueryFromUrl();
-  if (modeSelect.value !== "random") {
-    input.value = initialQuery;
-  }
+  const initialLemma = getLemmaFromUrl();
 
-  setModeUi(modeSelect.value, input);
-  runSearch();
+  if (initialLemma) {
+    savedQuery = "";
+    inRandomMode = false;
+    applyModeUi(modeSelect.value);
+
+    const result = runDirectLemmaLookup(records, initialLemma);
+    renderResult(result);
+
+    if (!input.disabled) {
+      input.value = "";
+    }
+  } else {
+    const initialQuery = getQueryFromUrl();
+    savedQuery = initialQuery;
+    applyModeUi(modeSelect.value);
+
+    if (!input.disabled) {
+      input.value = initialQuery;
+    }
+
+    if (initialQuery.trim()) {
+      const result = runModeSearch(records, initialQuery, initialMode);
+      renderResult(result);
+    }
+  }
 });

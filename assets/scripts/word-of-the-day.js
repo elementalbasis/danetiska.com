@@ -44,7 +44,7 @@ async function loadWordOfTheDay() {
     }
 
     linkEl.textContent = lemma;
-    linkEl.href = `/dictionary?q=${encodeURIComponent(lemma)}&mode=lemma-exact`;
+    linkEl.href = `/dictionary?lemma=${encodeURIComponent(lemma)}`;
   } catch (err) {
     console.error(err);
     linkEl.textContent = "Unavailable";
