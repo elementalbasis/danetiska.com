@@ -53,7 +53,7 @@
 */
 
 /* Part of speech label */
-.pos, .linguistic-register, .field-of-usage {
+.pos, .linguistic-register, .field-of-usage, .related-words {
   font-style: italic;
   color: #1040a0;
   margin-right: 0.5rem;

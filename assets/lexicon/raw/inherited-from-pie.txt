@@ -225,7 +225,7 @@
 @key(verdom) @ety(\pie{werdʰh₁om}; \cf \lat{verbum}, \eng{word}) @typ(n) @def($word)
 @key(verio) @ety(\pie{wéryeti}; \cf \grc{εἴρω}{eírō}) @typ(v) @def(to $say, to $speak, to $tell)
 @key(vidnumi; vidym; vevoida, vevidme) @ety(\pie{weyd-}; \cf \lat{video}, \grc{εἴδομαι}{eídomai}, \rus{видеть}{vídetʹ}, \eng{wit}) @typ(v) @def(to $see)
-@key(vidos, videsos) @ety(\pie{weyd-}; \cf \grc{εἶδος}{eîdos}, \rus{вид}{vid}, \eng{wit}) @typ(n) @def($form, $image, $shape; $appearance, $look) @def(\field{grammar} $aspect)
+@key(vidos, videsos) @ety(\pie{weyd-}; \cf \grc{εἶδος}{eîdos}, \rus{вид}{vid}, \eng{wit}) @typ(n) @def[1]($form, $image, $shape; $appearance, $look) @def[2](\field{grammar} $aspect)
 @key(viros) @ety(\pie{wiHrós}; \cf \lat{vir}) @typ(m) @def($man) @def($husband)
 @key(vodyn, udens) @ety(\pie{wódr̥}; \cf \lat{unda}, \grc{ὕδωρ}{hŭ́dōr}, \rus{вода}{vodá}, \eng{water}) @typ(n) @def($water)
 @key(volna) @ety(\pie{h₂wĺ̥h₁neh₂}; \cf \lat{lana}, \grc{λῆνος}{lênos}, \rus{волокно}{voloknó}, \eng{wool}) @typ(f) @def($hair, $fur, $wool)

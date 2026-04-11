@@ -322,7 +322,7 @@ function render_inline_lemma_list(raw, label, items, n, i, item, out) {
   if (raw == "") return ""
 
   n = split(raw, items, /,/)
-  out = "<p class=\"" label "\"><b class=\"label\">" label ":</b> "
+  out = "<p class=\"related-words-group\"><span class=\"related-words\">" ensure_final_period(label) ":</span> "
 
   for (i = 1; i <= n; i++) {
     item = trim(items[i])
@@ -402,7 +402,7 @@ BEGIN {
     }
 
     else if (token ~ /^@syn\(/) {
-      #print render_inline_lemma_list(arg_of(token), "Synonyms")
+      print render_inline_lemma_list(arg_of(token), "syn")
     }
 
     else if (token ~ /^@rel\(/) {
