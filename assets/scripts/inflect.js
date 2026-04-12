@@ -3,8 +3,10 @@
     "1": "a_stem_endings",
     "2": "o_stem_animate_endings",
     "3": "o_stem_neuter_endings",
-    "4": "i_stem_endings",
-    "5": "u_stem_endings"
+    "4": "i_stem_animate_endings",
+    "5": "i_stem_neuter_endings",
+    "6": "u_stem_animate_endings",
+    "7": "u_stem_neuter_endings",
   };
 
   const CASE_ROWS = [

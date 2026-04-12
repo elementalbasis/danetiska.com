@@ -49,7 +49,7 @@ a_stem_endings:
   dat-pl: amos
   loc-pl: asu
   ins-pl: abi
-i_stem_endings:
+i_stem_animate_endings:
   nom-sg: is
   voc-sg: i
   acc-sg: im
@@ -66,7 +66,24 @@ i_stem_endings:
   dat-pl: imos
   loc-pl: isu
   ins-pl: ibi
-u_stem_endings:
+i_stem_neuter_endings:
+  nom-sg: i
+  voc-sg: i
+  acc-sg: i
+  gen-sg: ies
+  abl-sg: ied
+  dat-sg: iei
+  loc-sg: i
+  ins-sg: ie
+  nom-pl: ia
+  voc-pl: ia
+  acc-pl: ia
+  gen-pl: iom
+  abl-pl: imos
+  dat-pl: imos
+  loc-pl: isu
+  ins-pl: ibi
+u_stem_animate_endings:
   nom-sg: us
   voc-sg: u
   acc-sg: um
@@ -78,6 +95,23 @@ u_stem_endings:
   nom-pl: ues
   voc-pl: ues
   acc-pl: uns
+  gen-pl: uom
+  abl-pl: umos
+  dat-pl: umos
+  loc-pl: usu
+  ins-pl: ubi
+u_stem_neuter_endings:
+  nom-sg: u
+  voc-sg: u
+  acc-sg: u
+  gen-sg: ues
+  abl-sg: ued
+  dat-sg: uei
+  loc-sg: ui
+  ins-sg: ue
+  nom-pl: ua
+  voc-pl: ua
+  acc-pl: ua
   gen-pl: uom
   abl-pl: umos
   dat-pl: umos

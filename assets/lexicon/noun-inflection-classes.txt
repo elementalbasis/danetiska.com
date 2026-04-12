@@ -659,7 +659,7 @@
 @key(praseodymiom)	3
 @key(presbyteros)	2
 @key(presentatzion)	15
-@key(presjtis)	4
+@key(presjtis, prysjties)	4
 @key(pression)	15
 @key(preventzion)	15
 @key(principiom)	3
