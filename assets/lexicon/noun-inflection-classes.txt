@@ -52,7 +52,7 @@
 @key(artus, yrtues)	6
 @key(asjdaha)	1
 @key(asjdros)	2
-@key(asjmon, ysjmens)	8
+@key(asjmon, ysjmens)	U
 @key(aspectos)	2
 @key(associatzion)	15
 @key(assumptzion)	15

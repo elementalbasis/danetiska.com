@@ -117,3 +117,37 @@ u_stem_neuter_endings:
   dat-pl: umos
   loc-pl: usu
   ins-pl: ubi
+n_stem_endings:
+  nom-sg: yn
+  voc-sg: yn
+  acc-sg: yn
+  gen-sg: ens
+  abl-sg: ened
+  dat-sg: enei
+  loc-sg: eni
+  ins-sg: ene
+  nom-pl: yna
+  voc-pl: yna
+  acc-pl: yna
+  gen-pl: enom
+  abl-pl: enmos
+  dat-pl: enmos
+  loc-pl: ensu
+  ins-pl: enbi
+s_stem_endings:
+  nom-sg: os
+  voc-sg: os
+  acc-sg: os
+  gen-sg: esos
+  abl-sg: esed
+  dat-sg: uei
+  loc-sg: ui
+  ins-sg: ue
+  nom-pl: ua
+  voc-pl: ua
+  acc-pl: ua
+  gen-pl: uom
+  abl-pl: umos
+  dat-pl: umos
+  loc-pl: usu
+  ins-pl: ubi

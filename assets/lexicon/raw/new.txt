@@ -35,7 +35,7 @@
 @key(nideio) @ety(\dnt{nid}) @typ(v) @def(to $lower, \par{to move something to a lower position}) @def(to $decrease, to $reduce, to $lower, to $decrement, \par{to lower the degree or quantity of something}) @def(\field{computing} to $download)
 @key(restaurants) @ety(\lat{restaurans}) @typ(m) @def($restaurant)
 @key(buio) @ety(\pie{bʰuHyéti}; \cf \lat{fio}, \grc{φύω}{phŭ́ō}) @typ(v) @def(to $grow) @def(to $become)
-@key(bumyn, bumens) @ety(\dnt{buio}) @typ(n) @def($growth) @def($tumor)
+@key(bumyn, bumens) @infl[8](bum) @ety(\dnt{buio}) @typ(n) @def($growth) @def($tumor)
 @key(butis, buties) @infl[4](but) @ety(\pie{bʰuH-}; \cf aorist and perfective stems of \dnt{esmi}) @typ(f) @def($essence, $nature)
 @key(natura) @infl[1](natur) @ety(\lat{natura}) @typ(f) @def($nature)
 @key(natural) @ety(\lat{naturalis}) @typ(adj) @def($natural)
