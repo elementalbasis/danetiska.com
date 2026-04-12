@@ -12,7 +12,7 @@
 @key(aster, ystres) @ety(\pie{h₂stḗr}; \cf \lat{stella}, \grc{ἀστήρ}{ăstḗr}, \eng{star}) @typ(m) @def($star)
 @key(austra) @infl[1](austr) @ety(\pie{h₂éwsōs}; \cf \lat{aurora}, \grc{ἠώς}{ēṓs}, \eng{Easter}) @typ(f) @def($morning) @def($dawn, $sunrise, $daybreak) @def($east) @def($Venus)
 @key(belos, belesos) @ety(\pie{bel-}; \cf \grc{βελτίων}{beltī́ōn}, \rus{большой}{bolʹšój}) @typ(n) @def($strength)
-@key(bena) @infl[1](ben) @ety(\pie{gʷḗn}; \cf \grc{γυνή}{gŭnḗ}, \rus{жена}{žená}, \eng{queen}) @typ(f) @def($woman) @def($wife)
+@key(bena) @infl[1](ben) @ety(\pie{gʷḗn}; \cf \grc{γυνή}{gŭnḗ}, \rus{жена}{žená}, \eng{queen}) @typ(f) @def[1]($woman) @def[2]($wife)
 @key(bero) @ety(\pie{bʰéreti}; \cf \lat{fero}, \grc{φέρω}{phérō}, \rus{брать}{bratʹ}, \eng{bear}) @typ(v) @def(to $bear, to $carry) @(to $lift up, to $support)
 @key(bertis, byrties) @infl[4](bert, byrt) @ety(\dnt{bero}) @typ(f) @def(\par{act of} $carrying, $bearing)
 @key(probero) @ety(\dnt{pro} + \dnt{bero}) @typ(v) @def(to $offer)

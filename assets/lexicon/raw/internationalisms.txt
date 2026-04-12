@@ -223,7 +223,7 @@
 @key(famosos) @ety(\lat{famosus}) @typ(adj) @def($famous)
 @key(favor) @ety(\lat{favor}) @typ(m) @def($favor)
 @key(febris) @ety(\lat{febris}) @typ(f) @def($fever)
-@key(femina) @infl[1](femin) @ety(\lat{femina}) @typ(f) @def($woman)
+@key(femina) @infl[1](femin) @ety(\lat{femina}) @typ(f) @def[1]($woman) @def[2]($wife)
 @key(fictzion) @ety(\lat{fictio}) @typ(f) @def($fiction)
 @key(figura) @infl[1](figur) @ety(\lat{figura}) @typ(f) @def($figure)
 @key(filom) @infl[3](fil) @ety(\lat{filum}) @typ(n) @def($thread)
@@ -660,3 +660,4 @@
 @key(tempore) @ety(\lat{tempus}) @typ(n) @def($time)
 @key(tolerantzia) @infl[1](tolerantzi) @ety(\lat{tolerantia}) @typ(f) @def($tolerance)
 @key(union) @ety(\lat{unio}) @typ(f) @def($union)
+@key(visitaio) @ety(\lat{visito}) @typ(v) @def(to $visit)

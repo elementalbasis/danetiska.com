@@ -116,3 +116,4 @@
 @key(agricultura) @infl[1](agricultur) @ety(\lat{agricultura}) @typ(f) @def($agriculture)
 @key(punctos) @infl[2](punct) @ety(\lat{punctus}) @typ(m) @def($point)
 @key(typos) @infl[2](typ) @ety(\lat{typus}) @typ(m) @def($type, $kind, $sort, $class) @def(\reg{colloq} $bloke, $guy, $man)
+@key(psycha) @infl[1](psych) @ety(\grc{ψυχή}{psūkhḗ}) @typ(f) @def($soul)
