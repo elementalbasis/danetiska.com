@@ -1,0 +1,24 @@
+\documentclass[10pt,twoside]{book}
+\usepackage{danedict}
+
+\begin{document}
+
+\frontmatter
+\begin{center}
+  {\Huge Danetian Dictionary}\par
+  \vspace{1em}
+  {\large Danetian--English}
+\end{center}
+
+\tableofcontents
+
+\mainmatter
+\chapter*{Lexicon}
+\addcontentsline{toc}{chapter}{Lexicon}
+
+\input{latexified.latex}
+
+\backmatter
+\printindex[dan]
+
+\end{document}
