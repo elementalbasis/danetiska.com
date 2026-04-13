@@ -1,0 +1,15 @@
+% [2023-10-23]
+
+- Socialis Democratiskos Partitos (SDP): centrolaiva;
+- Ludiskos Democratiskos Partitos (LDP): centrodesjna;
+- Alternativa pro Danetam (APD): apostatiodesjna;
+- Libertariana Iniciativa (LI): libertariana desjna;
+- Danetiskos Communistiskos Partitos (DCP): apostatiolaiva;
+- Ecologiskos Partitos (EP): ecologiska laiva.
+
+SDP: Alexios Theodorosio Delafont
+LDP: Matthaios Constantinosio Moysievos
+APD: Richardos Albertosio Delacosta
+LI: Eugenios Michaels Sabatier
+DCP: Demetrios Gregoriosio Petrovos
+EP: Laura Alexandrosio Paulista

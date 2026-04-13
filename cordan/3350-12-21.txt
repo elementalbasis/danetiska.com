@@ -1,0 +1,33 @@
+% 21 Pis 3350
+
+Igreka sjom generale relativitate. Sjodi esti jod anabeboka. Siet _MATH_
+positzion. En coordinatasu _MATH_, _MATH_. Definoime _MATH_. Toda, _MATH_.
+Glygota vectores dyto _MATH_, definekvos _MATH_.
+
+Consideraime _MATH_. Megti sjod etipisjnumeni jasme linear combinatzion _MATH_?
+Tod! Definoime _MATH_.
+
+Apo sjasias definitziones, vidnumos jod _MATH_. Sjod implicati sepontym:
+_MATH_.
+
+Vidnuime sjoda proprietatyns _MATH_. Enosmoi esti inversom? Imos brugonts
+mysjtom jod _MATH_. Nuni,
+_MATH_.
+
+Ide evidente djystre, esti connectzion medi _MATH_ i medi _MATH_. Some djystre
+disjnumos jod _MATH_ ide _MATH_.
+
+Sjoda, consideraime vectorym _MATH_. Vidnumos jod _MATH_.
+
+Sjod brugeti mitim coordinatom medi _MATH_ i _MATH_. Apo tosmad vidnumos jod
+_MATH_.
+
+Je apologeiomos _MATH_ jasme _MATH_, toda _MATH_.
+
+Sjoda, consideraime vectorym _MATH_. Pod proit je variamos _MATH_ infinitesime
+djystre tros pontom _MATH_? _MATH_.
+
+Esti sorprendents jasme visjom sjod sjadeti apo mathematiskas notatziones.
+Notatzion nos dukti. Notatzion sjorysjta nos dukti.
+
+_MATH_.

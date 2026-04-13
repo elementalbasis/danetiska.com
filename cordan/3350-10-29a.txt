@@ -1,0 +1,43 @@
+% Problema Baseles
+% 29 Cap 3350
+
+Exploraioime problemam Baseles, joteros famai impulsaiostet Eulerym. Upodekmi
+jod _MATH_.
+
+Pro pod _MATH_ esti negativos? Pro jod esti inoka djesor jotere udienti
+correctoi terminoi, joda expandomos productom. Summa visjom terminom _MATH_
+esti: _MATH_.
+
+Sjosme trobaiomos solutzionym problemai Baseles.
+
+Sjoda, exploraioime summa peturtom: _MATH_.
+
+Necessitaiomos radyns i ana _MATH_ i ana _MATH_. Functzion _MATH_ pribereti
+radyns ana _MATH_, i functzion _MATH_ radyns ana _MATH_. Vi mygmos etipisjnuni
+functzionym sjosme: _MATH_.
+
+Brugoime identitatym: _MATH_.
+
+Toda: _MATH_.
+
+Apo sjosio mygmos esjbereni valoryns expansiones Taylores. Necessitaiomos
+coefficientym _MATH_. _MATH_.
+
+Toda, _MATH_.
+
+Apo memorias moias, sjod esti rysjtom. Toda, medjo esti conjectura: generator
+terminom inversas summas esti: _MATH_, jodi _MATH_.
+
+Vi mygmos simplificaieni je brugomos trigonometriskans identitatyns.
+
+Verdjoime sjom svesjte potentzie: _MATH_.
+
+Simplificaionts: _MATH_.
+
+Nuni, brugonts theoremam: _MATH_, i vidnumos jod: _MATH_.
+
+Sjoda mygmos disjnuni: _MATH_.
+
+Toda, nysmos esti trobaieni nunam derivatam: _MATH_.
+
+Toda, _MATH_.

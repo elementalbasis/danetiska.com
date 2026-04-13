@@ -1,0 +1,33 @@
+% [2024-06-01]
+
+Romaiskoi calendarioi senti 13 menses:
+* januarios
+* februarios
+* intercalarios
+* martios
+* aprilios
+* maios
+* junios
+* julios
+* augustos
+* septembrios
+* octobrios
+* novembrios
+* decembrios
+
+Danetiskoi calendarioi ge senti 13:
+* mus
+* tauros
+* volpos
+* munduka
+* oron
+* ambis
+* esjvos
+* kokoros
+* djer
+* kapros
+* sjvon
+* porsjos
+* medikstos
+
+Mygmos stoieni correspondenciam medi sjans dvans listans. Mus correspondeti martioi, tauros aprilioi, etc. Sjasme djystre medikstos correspondeti intercalarioi, josme delgeti esni.

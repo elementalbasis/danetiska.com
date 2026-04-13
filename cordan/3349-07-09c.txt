@@ -1,0 +1,5 @@
+% Zettelkasten: Tomographia emisione electronom
+% 2023 0923 0818
+% [2023-09-23d]
+
+Sjnoyosta yosme «PET scan» en angliski, esti technica pro vinedni endo pacientes. Pacientei injectator radioactivos isotopos, yoteros aposjadeti emisione positrons. Positron toda collideti sjom electrone, annihilomnoi, da producontes dvons photonans gamma. Sjoi detectantor machine dekni imagenam.

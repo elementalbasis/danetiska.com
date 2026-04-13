@@ -1,0 +1,31 @@
+% Physica
+% 25 Aqu 3350
+% General Relativitats
+
+Etiproime uper themam generales relativitates, joteram classim kypiostom en
+Arizoni.
+
+Mygmos prostistanti tensorym sjasme: _MATH_. Je veliomos nideieni indicem,
+brugomos metriskom tensorym: _MATH_. Jasme visjopoda, _MATH_.
+
+Upomysjme jod veliomos alieni systemam coordenatom: _MATH_. Pod siet
+somostistants sjom indice nidni?
+
+_MATH_.
+
+Ide je veliomos trobani derivatam? Pasme alietor tensor je imos alioi systemai
+coordenatom?
+
+_MATH_.
+
+Vidnuime sjoda: _MATH_.
+
+Vidnumos udstatim symbolosio Christoffeles, nu ne etisjtresdo conventzionym
+signom, toda moia mathematica mogti esni dusbyta dolgonts signoi negativosio.
+
+Definoime covariantym derivatam: _MATH_.
+
+Assumoime jod _MATH_. Toda, _MATH_.
+
+Confirmaime sjam somostatim calculants symbola Christoffeles pro spheriskans
+coordinatans.

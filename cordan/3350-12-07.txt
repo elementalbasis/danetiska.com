@@ -1,0 +1,9 @@
+% Physica
+% 07 Pis 3350
+% General Relativitats
+
+Vidnuime je mygmos derivani solutzionym Schwarzschild: _MATH_.
+
+Sjoda, trobaime tensorym Ricci: _MATH_.
+
+Pro pod dependeti apo _MATH_? Sjod ne esti sjorysjtos...

@@ -1,0 +1,26 @@
+% [2023-07-05a]
+
+# Danetiska Grammatica
+
+# Resjtopisjtis
+
+Danetiska dandjua pisjantor sjom vidsjanti svesj letrom latiniskosio alphabetosio.
+
+# Verba
+
+Verbom varieti seponts varians grammatiskans proprietatans:
+- trins personans: pramam, viteram, tritam;
+- dvons numerons: singularam, pluralam;
+- pempe modom: indicativom, subjunctivom, imperativom, participiom, infinitivom.
+
+Infleccion verbosio dividetor en trins partans.
+
+Verba magonti esni thematiska ive athematiska.
+
+# Syntaxis
+
+## Copulativom Verbom
+
+Complementom subjectosio daktor en casom:
+- nominativom, joda referetor permanentei proprietatei;
+- instrumental, joda referetor temporaneai proprietatei.

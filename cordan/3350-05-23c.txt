@@ -1,0 +1,13 @@
+% [2024-07-29]
+
+Doru zheneti Paurom
+Paurom zheneti Zhymiam
+Zhymia zheneti Aios
+Aios zheneti Vodyn
+Vodyn zheneti Doru
+
+Doru sezheti Zhymiam
+Zhymia sezheti Vodyn
+Vodyn sezheti Paurom
+Paurom sezheti Aios
+Aios sezheti Doru

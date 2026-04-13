@@ -1,0 +1,14 @@
+% Physica
+% 02 Pis 3350
+% General Relativitats
+
+Sjodi esti somostatis geodesiska (sjtresdo): _MATH_.
+
+Potera esti derivata _MATH_? _MATH_.
+
+Prospesjeti minutom... Sjtresdo jod sja definitzion tensores Ricci esti
+nesjorysjta, pro jod expansion didoti nullom. Potera esti sjorysjta definitzion?
+Prymeneioime apo tensores Riemannes: _MATH_.
+
+Je reduco indicyns _MATH_, toda didoti nullom. Nu posme siet je reducomos _MATH_?
+_MATH_.

@@ -1,0 +1,11 @@
+% Mathematica
+% 06 Aqu 3350
+% Calculatzion infinitosio productosio
+
+Inopodi vevoida productom _MATH_. Podi?
+
+_MATH_.
+
+Vidnuime je integral convergeti: _MATH_.
+
+Apparente djystre esti verom.

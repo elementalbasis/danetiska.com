@@ -1,0 +1,5 @@
+% Zettelkasten: Factorial basis
+% 2023 0921 2051
+% [2023-09-21c]
+
+Factorial basis, ive factoriadiskos, esti systema en yoteri digitoi representanti multiplons factorialom. Exemplosio djare, _MATH_. Visjoinos digitos dolgeti esni minor factoriales yom representati. Esti relacionoste sjom codice Lehmers i permutacionbi.
