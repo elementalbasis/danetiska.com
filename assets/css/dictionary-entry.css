@@ -83,3 +83,13 @@
 .sample-phrase {
   color: #800080;
 }
+
+
+
+.principal-parts {
+  display: block;
+  margin-top: 0.2rem;
+/*  font-size: 0.95rem;*/
+  font-style: italic;
+  color: #777;
+}

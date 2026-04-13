@@ -391,7 +391,7 @@ function shq(s,    t) {
   line = $0
   #while (match($0, /@(key|ety|typ|def|see|expr)\([^()]*\)/)) {
   #while (match(substr(line, pos), /@(key|ety|typ|def|expr|see|syn|rel)\(/)) {
-  while (match(substr(line, pos), /@(key|ety|typ|def|expr|see|syn|rel)\(|@infl\[[0-9]+\]\(/)) {
+  while (match(substr(line, pos), /@(key|pp|ety|typ|def|expr|see|syn|rel)\(|@infl\[[0-9]+\]\(/)) {
     start = RSTART
     len   = RLENGTH
     tagstart = pos + RSTART - 1
@@ -454,6 +454,11 @@ function shq(s,    t) {
       infl_root2 = infl_root2_of(token)
 
       pending_infl_div = sprintf("<div class=\"infl\" data-inflection-template=\"%s\" data-root1=\"%s\" data-root2=\"%s\"></div>", infl_n, infl_root1, infl_root2)
+    }
+
+    else if (token ~ /^@pp\(/) {
+      pp = expand_inline(arg_of(token))
+      print "<span class=\"principal-parts\">" pp "</span>"
     }
 
     $0 = substr($0, start + len)

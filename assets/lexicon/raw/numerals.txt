@@ -26,9 +26,9 @@
 % Cardinals %
 
 @key(oinos) @ety(\pie{h₁óynos}; \cf \lat{unus}, \rus{один}{odín}, \eng{one}) @typ(num) @def($one)
-@key(dvo; dva; dvoi) @ety(\pie{dwóh₁}; \cf \lat{duo}, \grc{δύο}{dúo}, \rus{два}{dva}, \eng{two}) @typ(num) @def($two)
-@key(treies; tistres; tri) @ety(\pie{tréyes}; \cf \lat{tres}, \grc{τρεῖς}{treîs}, \rus{три}{tri}, \eng{three}) @typ(num) @def($three)
-@key(petvores; petestres; petvor) @ety(\pie{kʷetwóres}; \cf \lat{quattuor}, \grc{τέσσαρες}{téssares}, \rus{четыре}{četýre}, \eng{four}) @typ(num) @def($four)
+@key(dvo) @pp(dvo; dva; dvoi) @ety(\pie{dwóh₁}; \cf \lat{duo}, \grc{δύο}{dúo}, \rus{два}{dva}, \eng{two}) @typ(num) @def($two)
+@key(treies) @pp(treies; tistres; tri) @ety(\pie{tréyes}; \cf \lat{tres}, \grc{τρεῖς}{treîs}, \rus{три}{tri}, \eng{three}) @typ(num) @def($three)
+@key(petvores) @pp(petvores; petestres; petvor) @ety(\pie{kʷetwóres}; \cf \lat{quattuor}, \grc{τέσσαρες}{téssares}, \rus{четыре}{četýre}, \eng{four}) @typ(num) @def($four)
 @key(pempe) @ety(\pie{pénkʷe}; \cf \lat{quinque}, \grc{πέντε}{pénte}, \rus{пять}{pjatʹ}, \eng{five}) @typ(num) @def($five)
 @key(svesj) @ety(\pie{swéḱs}; \cf \lat{sex}, \grc{ἕξ}{héx}, \rus{шесть}{šestʹ}, \eng{six}) @typ(num) @def($six)
 @key(septym) @ety(\pie{septḿ̥}; \cf \lat{septem}, \grc{ἑπτά}{heptá}, \rus{семь}{semʹ}, \eng{seven}) @typ(num) @def($seven)
