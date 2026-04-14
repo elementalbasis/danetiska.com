@@ -1,0 +1,18 @@
+Je isi esjtro observeni dium nepts, medi sjunes valposio pe, isi magonts vinedni satellitesans. Mogsi calculonts alturam satellitesos desj instrumentomos; simplese djastre dolgesi dekni basiskans mensurans.
+Joda trobois satellitesam, dolgesi mensureni potiam temporam dolgetor pro moveni medi dvons astrans.
+Esam esjtro, observonts diuns usje 06:00 ana 2023-01-29. Vidom satellitesam CZ-2C R/B, jom moxam identifikeni sjom website heavens-above.com. Opiit apo nortoestesos, dobemt pro visjois altom punctom vindonts nortesam, da movostetor pro estesam.
+Satellites bemt opi ζ-UMa, da movostetor pro ι-Her. Tempora moveni medi sjons dvons asterans est _MATH_.
+Coordinatai dvom astrom mostrontor nid.
+_MATH_.
+Apo sjosmad, magmos calculeni angularam separacionam _MATH_.
+Estimo jod satellitesei est angulos _MATH_ apo horizontes. Vi veliomos trobeni alturam _MATH_ uper djami, jasmi fluget satellites. Vopoime _MATH_ distanciam apo observatores do satellitesei. Toda, _MATH_. Je satellites movetor sjom velocitate _MATH_, toda observome angularam velocitatam _MATH_.
+Nuge dage mensurostome angularam velocitatam peri observatoram. Esti _MATH_.
+Nu, vi magmos utilizontes Resjtans Newtones trobeni velocitatam satellitesos. Satellitesei esti distancia _MATH_ apo centrad djames, jodi _MATH_ esti radios djames.
+_MATH_.
+Apo tosmad, magmos dekni varians substitucionans.
+_MATH_.
+Gravitacional parametrom djames esti _MATH_. Toda, ansmos esti visjai necessariai variabilies calculeni desjnam semitam equaciones.
+_MATH_.
+Josme _MATH_, vi nu magmos resolveni cubiskam equacionam.
+_MATH_.
+Toda, satellites flugeti opi 700 km uper superficiesi djames. Je dakmos trobam en Google peri CZ-2C R/B, vindmos jod satellitesei esti altura opi 800 km uper djami. Toda, nosjos calculos est impressibilie djastre opi.

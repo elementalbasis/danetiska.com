@@ -1,0 +1,16 @@
+Vekspere vidme covariantym derivatam. Enasmai esti special proprietats: derivata
+basies esti sifir: _MATH_.
+En realitati, ne sjnoio je sjod esti sjorysjtom... Esti validom pisjnuni
+_MATH_...? Inoke djystre definekme covariantym derivatam pro componentyns
+vectorom, ide ne pro vectoryns... Inokos operator joteros megti tygnuni vectorym
+esti _MATH_.
+Sjos operator commutator sjom soi joda tygnuti scalarym: _MATH_. Nu joda tygnuni
+vectorym, commutator some djystre? Vidnuime.
+Considerate vector _MATH_. Imos anaiontes viteram derivatam: _MATH_.
+Sjoda anaime commutatzionym: _MATH_.
+Sjodi anabebykme tensorym Riemannes: _MATH_.
+Tensor Riemannes mytieti gradom noncommutativitates operatores _MATH_. Pasme
+udkypiomos tensorym Riccies? Je verdjomos kaike djystre, desj intuitziones
+nipoteras, anaimos: _MATH_.
+Edjo sjtresdo jod intuitzionym imos anaiontes mitontes vectorym _MATH_ peri
+infinitesimom peplom...

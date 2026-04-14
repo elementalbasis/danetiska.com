@@ -1,0 +1,38 @@
+Morsevos Codices esti systema codificaieni textom sjom signalbi skurtabi longabi pe. Mysjto en sjyntojeri XIX Samuele Morse i Alfrede Vail pro communicacionyns longai distanciai. Morsevos Codices mogti transmittomeni sjom svene, luke, ive aliois typois signalom.
+Harfes mygenti rhythmiske djystre representaiomeni. En texti uponi, syllabai "tak" i "rak" senti longai, ide "ti" i "ri" senti skurtai. Spaciom medi verdom ne sagieti nipod; simplice djystre esti pro facilitatym ledjeni.
+* A: tirak
+* B: tak tiri ti
+* C: tak tirak ti
+* D: tak tiri
+* E: ti
+* F: tiri takti
+* G: tak takti
+* H: tiri tiri
+* I: tiri
+* J: tirak tak tak
+* K: tak tirak
+* L: tirak tiri
+* M: tak tak
+* N: takti
+* O: tak tak tak
+* P: tirak takti
+* Q: tak tak tirak
+* R: tirak ti
+* S: tiri ti
+* T: tak
+* U: tiri tak
+* V: tiri tirak
+* W: tirak tak
+* X: tak tiri tak
+* Y: tak tirak tak
+* Z: tak tak tiri
+* 1: tirak tak tak tak
+* 2: tiri tak tak tak
+* 3: tiri tirak tak
+* 4: tiri tiri tak
+* 5: tiri tiri ti
+* 6: tak tiri tiri
+* 7: tak tak tiri ti
+* 8: tak tak tak tiri
+* 9: tak tak tak takti
+* 0: tak tak tak tak tak

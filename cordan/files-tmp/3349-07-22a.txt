@@ -1,0 +1,23 @@
+Danetiskom calendariom esti lunisolar calendariom; visjoinos mens en calendarii sepeti phasins lunas. Menses magonti esni masjloi ive smikroi, sjom 30 i 29 dinom respective djastre.
+Yosme menses senti synchronizostois sjom phasibi lunas, ne magonti exacte djastre sepeni yerom. Dolgonts sjosmoi, calendariom utilizati intercalarions mensans; yeroimos magonti esni ive 12 ive 13 mensom. Tosme synchronizetor calendariom sjom epochasu yerosio.
+Pro sepeni phasins lunas, menses redjontor cycle 25 101 dinom en 850 mensans, didonts periodom 29.530 588 235 dinom. Endo sjosio cyclosio, esti subcyclos 1447 dinom en 49 mensans, distribuomnans sjosme: _MATH_.
+Cyclos 850 mensom componentor 17 subcyclom 49 mensom, plus parcials subcyclosio 17 mensom. Dabrodidonts sjosmoi, esti convenients verdjeni en moduloisu sjosmoisu: _MATH_.
+Yeroi redjontor cycle 4131 mensom en 334 yerom, sjom subcycle 235 mensom en 19 yerom (metoniske cycle), distribuostom sjosme: _MATH_.
+Esti convenients verdjeni en sjosmoisu moduloisu: _MATH_.
+Epocha calendariosio esti -1325-04-03 pro yod but eclipsis solar coincidonts sjom equinoccie.
+Nui, udverdjoime exemplom. Calculoime datam sjadinas, 2023-10-06 gregorianiski. Epocha but -1325-04-03 julianiski.
+_MATH_.
+Apo sjosmad, deducomos yod sjadina esti dina 22 mensos.
+_MATH_.
+Esti mens #41 416.
+_MATH_.
+Esti mens #7 yerosio #9 metoniskosio cyclosio. Toda, yeroi senti 12 mensom.
+_MATH_.
+Esti yeros #3349. Data esti 3349-07-22.
+Danetiskom calendariom dekti computom paschas plus facile: pascha sjadeti ana pramam septamakam stricte djastre posti 15 muses. Sjod esti pro yod pleromens nominale djastre sjadeti ana 15 mensos.
+Pro convenienciam, definoime sepontam:
+- Altunos yeros: _MATH_;
+- Kimisjnos yeros: _MATH_;
+- Altunos mens: _MATH_;
+- Kimisjnos mens: _MATH_;
+- Temirnos mens: _MATH_.

@@ -1,0 +1,1 @@
+Esti cryptographiskos algorithmos yo mogti runepni clavim _MATH_ en tempori _MATH_. Exemplosio djare, clavis 128 bitom en _MATH_, etc. Defensa proti sjom algorithmom esti simple djastre duplicani clavim.
