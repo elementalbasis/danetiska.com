@@ -4,6 +4,7 @@ title: How far away is the horizon?
 author: Javier Castro
 tags: [mathematics]
 cover: /assets/images/asy/horizon_distance.svg
+redirect_to: https://elementalbasis.com/blog/horizon-distance
 ---
 
 The horizon is the point where your line of vision is tangent to the surface of

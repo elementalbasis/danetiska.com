@@ -4,6 +4,7 @@ title: Setting up a Nebula cluster
 author: Javier Castro
 tags: [computing]
 cover: /assets/images/nebula.svg
+redirect_to: https://elementalbasis.com/blog/nebula-cluster
 ---
 
 I have several computers across three different locations. I was

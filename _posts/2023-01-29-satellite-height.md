@@ -4,6 +4,7 @@ title: How to measure the height of a satellite
 author: Javier Castro
 tags: [physics]
 cover: /assets/images/satellite.jpg
+redirect_to: https://elementalbasis.com/blog/satellite-height
 ---
 
 If you go outside to observe the night sky during right after sunset or right

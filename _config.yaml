@@ -1,6 +1,8 @@
 name: Danetian Academy
 #permalink: /blog/:title
 permalink: /:collection/:title
+plugins:
+  - jekyll-redirect-from
 collections:
   - language
   - texts

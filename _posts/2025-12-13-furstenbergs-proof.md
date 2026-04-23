@@ -4,6 +4,7 @@ title: Furstenberg's Proof on the Infinitude of Primes
 author: Spencer Cokely
 tags: [mathematics]
 cover: /assets/images/furstenberg_proof.jpg
+redirect_to: https://elementalbasis.com/blog/furstenbergs-proof
 ---
 
 $$\require{ams}$$

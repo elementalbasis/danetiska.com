@@ -4,6 +4,7 @@ title: What is the shape of a hanging cable?
 author: Javier Castro
 tags: [mathematics, physics]
 cover: /assets/images/catenary_curve.jpg
+redirect_to: https://elementalbasis.com/blog/catenary-curve
 ---
 
 What shape does a hanging chain or cable make? Initially, one may

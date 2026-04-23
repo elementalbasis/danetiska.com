@@ -4,6 +4,7 @@ title: Deriving the volume of an n-sphere
 author: Jackson Hall
 tags: [mathematics]
 cover: /assets/images/sphere.svg
+redirect_to: https://elementalbasis.com/blog/hypersphere-volume
 ---
 
 $$\require{physics}$$
