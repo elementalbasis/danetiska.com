@@ -17,15 +17,13 @@ layout: default
 </p>
 
 <section class="home-section">
-  <h2>Danetian Language and Worldbuilding</h2>
+  <!--<h2>Danetian Language and Worldbuilding</h2>-->
   <div class="post-grid">
     {% assign shown = 0 %}
     {% for post in site.posts %}
       {% if post.url != featured_post.url and shown < 3 %}
-        {% if post.tags contains "worldbuilding" or post.tags contains "calendar" or post.tags contains "conlang" %}
-          {% include post-card.html post=post %}
-          {% assign shown = shown | plus: 1 %}
-        {% endif %}
+        {% include post-card.html post=post %}
+        {% assign shown = shown | plus: 1 %}
       {% endif %}
     {% endfor %}
   </div>
@@ -36,20 +34,24 @@ layout: default
 </p>
 
 <section class="home-section">
-  <h2>Mathematics, Physics, and Computing</h2>
+  <h2>Affiliated projects</h2>
   <div class="post-grid">
-    {% assign shown = 0 %}
-    {% for post in site.posts %}
-      {% if post.url != featured_post.url and shown < 3 %}
-        {% if post.tags contains "math" or post.tags contains "physics" or post.tags contains "computing" %}
-          {% include post-card.html post=post %}
-          {% assign shown = shown | plus: 1 %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    <article class="post-card">
+      <a href="{{ include.post.url }}" class="card-link">
+        <figure class="card-figure">
+          <img
+            src="https://elementalbasis.com/assets/images/eb_logo.svg"
+            alt="Elemental Basis"
+            loading="lazy" decoding="async">
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Elemental Basis</h2>
+          <p class="card-excerpt">A mathematical blog for the physics-minded.</p>
+          <div class="card-meta">
+          </div>
+        </div>
+      </a>
+    </article>
   </div>
 </section>
 
-<p class="all-posts-link">
-  <a href="/posts/">Browse all posts →</a>
-</p>
