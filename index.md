@@ -46,7 +46,7 @@ layout: default
         </figure>
         <div class="card-body">
           <h2 class="card-title">Elemental Basis</h2>
-          <p class="card-excerpt">A mathematical blog for the physics-minded.</p>
+          <p class="card-excerpt">A blog for math and physics nerds.</p>
           <div class="card-meta">
           </div>
         </div>
