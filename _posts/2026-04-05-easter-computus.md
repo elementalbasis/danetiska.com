@@ -31,4 +31,4 @@ is simple:
 The date of Easter arises naturally from the rules of the Danetian calendar,
 giving it an advantage over the Gregorian calendar.
 
-Happy Easter!
+*Prinam Pascham!* Happy Easter!
