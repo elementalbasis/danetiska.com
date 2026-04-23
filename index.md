@@ -37,7 +37,7 @@ layout: default
   <h2>Affiliated projects</h2>
   <div class="post-grid">
     <article class="post-card">
-      <a href="{{ include.post.url }}" class="card-link">
+      <a href="https://elementalbasis.com" class="card-link">
         <figure class="card-figure">
           <img
             src="https://elementalbasis.com/assets/images/eb_logo.svg"
