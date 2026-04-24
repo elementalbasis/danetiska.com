@@ -1,6 +1,7 @@
 window.MathJax = {
   loader: {load: ['[tex]/physics', '[tex]/ams', '[tex]/cancel']},
   tex: {
+    packages: {'[+]': ['physics']},
     inlineMath: {'[+]': [['$', '$']]},
     displayMath: {'[+]': [['$$', '$$']]},
     processEscapes: true,
