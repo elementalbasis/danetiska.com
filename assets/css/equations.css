@@ -1,0 +1,19 @@
+/* MathJax v3/v4 display equations */
+mjx-container[display="true"] {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 0.5em 0;
+}
+
+/* Prevent the equation from shrinking weirdly */
+mjx-container[display="true"] > svg,
+mjx-container[display="true"] > mjx-math {
+  max-width: none !important;
+}
+
+/* Optional: smoother scrolling on mobile */
+mjx-container[display="true"] {
+  -webkit-overflow-scrolling: touch;
+}
