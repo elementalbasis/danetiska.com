@@ -1,0 +1,27 @@
+/* Prevent post navigation from widening the page */
+.post-nav {
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+/* If the nav uses flex */
+.post-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Make long post titles/links break instead of stretching */
+.post-nav a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Safety for the article/content itself */
+article.post,
+.content {
+  max-width: 100%;
+  overflow-x: hidden;
+}

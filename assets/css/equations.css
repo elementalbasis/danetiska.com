@@ -1,19 +1,33 @@
-/* MathJax v3/v4 display equations */
+/* MathJax display equations: scrollable with edge fade of content itself */
 mjx-container[display="true"] {
   display: block;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
   padding: 0.5em 0;
+
+  -webkit-overflow-scrolling: touch;
+
+  /* Fade the actual equation */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 1.5rem,
+    black calc(100% - 1.5rem),
+    transparent
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 1.5rem,
+    black calc(100% - 1.5rem),
+    transparent
+  );
 }
 
-/* Prevent the equation from shrinking weirdly */
+/* Prevent MathJax from shrinking */
 mjx-container[display="true"] > svg,
 mjx-container[display="true"] > mjx-math {
   max-width: none !important;
-}
-
-/* Optional: smoother scrolling on mobile */
-mjx-container[display="true"] {
-  -webkit-overflow-scrolling: touch;
 }

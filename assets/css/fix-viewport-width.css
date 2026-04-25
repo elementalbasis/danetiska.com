@@ -1,0 +1,77 @@
+/* Global anti-overflow sanity */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Let flex/grid children actually shrink */
+main,
+article,
+.content,
+.post,
+.post-nav,
+.site-nav,
+.nav-links {
+  min-width: 0;
+}
+
+/* Keep main inside viewport including padding */
+main {
+  width: 100%;
+  max-width: 880px;
+}
+
+/* Long post titles / links must not stretch layout */
+.post-nav {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-nav a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Images, figures, tables should not force page width */
+img,
+svg,
+canvas,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Code blocks and tables scroll instead of widening page */
+pre,
+table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* MathJax display equations scroll instead of widening page */
+mjx-container[display="true"] {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Make sure header spans the viewport cleanly */
+.masthead {
+  width: 100%;
+}
+
+.site-nav {
+  width: 100%;
+}
