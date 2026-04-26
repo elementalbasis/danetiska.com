@@ -176,7 +176,7 @@ p {
   max-width: 65%;
   min-width: 50%;
   height: auto;
-  max-height: 65%;
+  max-height: 400px;
 }
 
 .post-cover img {
