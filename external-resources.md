@@ -32,3 +32,4 @@ layout: standalone
 27. [Printl](https://printl.app)
 28. [zoom.earth](https://zoom.earth)
 29. [Universal Dependencies](https://https://universaldependencies.org/)
+30. [Intel 4004 Instruction Set](https://oldics.com/wordpress/wp-content/uploads/intel/cpu/i4004/MCS-4_Programming_Manual.pdf)
