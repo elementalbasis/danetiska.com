@@ -46,3 +46,27 @@
   author: Aron Nimzowitsch
   year: 1925
   url: https://ftp.danetiska.com/nimzowitsch1925.pdf
+- id: vasyutin2019
+  type: paper
+  title: Political Complexity in Nomadic Empires of Inner Asia
+  author: Sergey A. Vasyutin
+  year: 2019
+  url: https://ftp.danetiska.com/vasyutin2019.pdf
+- id: ellis2007
+  type: thesis
+  title: Petrarch's *Africa* I-IV: A Translation and Commentary
+  author: Erik Z. D. Ellis
+  year: 2007
+  url: https://ftp.danetiska.com/ellis2007.pdf
+- id: toomer1984
+  type: book
+  title: Ptolemy's Almagest
+  author: G. J. Toomer
+  year: 1984
+  url: https://ftp.danetiska.com/toomer1984.pdf
+- id: annis2020
+  type: paper
+  title: A Conlanger's Thesaurus
+  author: William S. Annis
+  year: 2020
+  url: https://ftp.danetiska.com/annis2020.pdf
