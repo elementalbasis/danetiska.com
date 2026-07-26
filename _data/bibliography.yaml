@@ -1,0 +1,48 @@
+- id: anthony2007
+  type: book
+  title: The Horse, the Wheel, and the Language
+  author: David W. Anthony
+  year: 2007
+  url: https://ftp.danetiska.com/anthony2007.pdf
+- id: barzel1988
+  type: paper
+  title: A Modeling System Based on Dynamic Constraints
+  author: Ronen Barzel, Alan H. Barr
+  year: 2007
+  url: https://ftp.danetiska.com/barzel1988.pdf
+- id: chabas2012
+  type: book
+  title: A Survey of European Astronomical Tables in the Late Middle Ages
+  author: José Chabás, Bernard R. Goldstein
+  year: 2012
+  url: https://ftp.danetiska.com/chabas2012.pdf
+- id: chen2021
+  type: book
+  title: A History of the Second Türk Empire
+  author: Hao Chen
+  year: 2021
+  url: https://ftp.danetiska.com/chen2021.pdf
+- id: hammack2018
+  type: book
+  title: Book of Proof
+  author: Richard Hammack
+  year: 2018
+  url: https://ftp.danetiska.com/hammack2018.pdf
+- id: intel-4004-manual
+  type: manual
+  title: MCS-4 Assembly Language Programming Manual
+  author: Intel Corporation
+  year: 1973
+  url: https://ftp.danetiska.com/intel-4004-manual.pdf
+- id: newmark1999
+  type: paper
+  title: Reversing a One-Way Bilingual Dictionary
+  author: Leonard Newmark
+  year: 1999
+  url: https://ftp.danetiska.com/anthony2007.pdf
+- id: nimzowitsch1925
+  type: book
+  title: My System
+  author: Aron Nimzowitsch
+  year: 1925
+  url: https://ftp.danetiska.com/nimzowitsch1925.pdf

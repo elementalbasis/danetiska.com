@@ -1,0 +1,8 @@
+<ul>
+{% for item in site.data.bibliography %}
+<li>
+<a href="{{ item.url }}">{{ item.title }}</a><br>
+{{ item.author }} ({{ item.year }})
+</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,48 @@
+.library-list {
+    border-top: 1px solid #ccc;
+}
+
+.library-item {
+    display: block;
+
+    padding: 1.5rem 0;
+
+    border-bottom: 1px solid #ccc;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: background-color .15s ease;
+}
+
+.library-item:hover {
+    background: #f7f7f7;
+}
+
+.library-meta {
+    margin: 0;
+    color: #666;
+    font-size: .82rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.library-title {
+    margin: .25rem 0;
+    font-size: 1.35rem;
+}
+
+.library-item:hover .library-title {
+    color: var(--link-hover);
+}
+
+.library-author {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+}
+
+.library-description {
+    margin-top: .75rem;
+    color: #444;
+}
