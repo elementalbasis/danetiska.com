@@ -339,6 +339,7 @@ function danetian_to_julian_day(y, m, d) {
 	return s
 }
 
+/* This function has been verified to work properly. */
 function julian_from_julian_day(n) {
 	//var [yi, mi, di] = [-4712, 1, 1]
 	//var [yi, mi, di, ni] = [-4712, 1, 1, 0]
@@ -346,6 +347,7 @@ function julian_from_julian_day(n) {
 	return julian_date_shift(yi, mi, di, n - ni)
 }
 
+/* This function has been verified to work properly. */
 function gregorian_from_julian_day(n) {
 	//var [yi, mi, di] = [-4713, 11, 24]
 	//var [yi, mi, di, ni] = [-4713, 11, 24, 0]
@@ -353,6 +355,7 @@ function gregorian_from_julian_day(n) {
 	return gregorian_date_shift(yi, mi, di, n - ni)
 }
 
+/* This function has been verified to work properly. */
 function danetian_from_julian_day(n) {
 	//var [yi, mi, di] = [-3387, 9, 21]
 	//var [yi, mi, di, ni] = [-3387, 9, 21, 0]
