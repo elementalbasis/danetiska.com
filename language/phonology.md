@@ -1,6 +1,8 @@
 ---
 title: Phonology
-layout: language
+layout: section
+section: language
+permalink: /language/phonology
 ---
 
 ## Sound inventory

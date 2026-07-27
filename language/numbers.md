@@ -1,6 +1,8 @@
 ---
 title: Numbers
-layout: language
+layout: section
+section: language
+permalink: /language/numbers
 ---
 
 The basic numbers in Danetian are shown below.

@@ -1,6 +1,8 @@
 ---
 title: Christian Prayers
-layout: texts
+layout: section
+section: texts
+permalink: /texts/christian-prayers
 ---
 
 En nymeni Pytres, i Sunues, i Sjuntosio Prumenes. Amen.

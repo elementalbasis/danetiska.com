@@ -1,6 +1,8 @@
 ---
 title: Nouns
-layout: language
+layout: section
+section: language
+permalink: /language/nouns
 ---
 
 Danetian nouns inflect for three

@@ -1,6 +1,8 @@
 ---
 title: Prepositions
-layout: language
+layout: section
+section: language
+permalink: /language/prepositions
 ---
 
 [Prepositions](https://en.wikipedia.org/wiki/Preposition) are used to denote

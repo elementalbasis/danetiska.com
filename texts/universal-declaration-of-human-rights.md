@@ -1,6 +1,8 @@
 ---
 title: Universal Declaration of Human Rights
-layout: texts
+layout: section
+section: texts
+permalink: /texts/universal-declaration-of-human-rights
 ---
 
 ## Statis 1

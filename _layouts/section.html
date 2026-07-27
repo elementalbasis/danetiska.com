@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% assign section = site.data.sections[page.section] %}
+
+<div class="section-layout">
+  <aside class="section-sidebar">
+    {% include section-toc.html %}
+  </aside>
+
+  <article class="section-content">
+    <nav class="section-breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ section.home }}">{{ section.title }}</a>
+
+      {% unless page.url == section.home %}
+        <span aria-hidden="true">›</span>
+        <span>{{ page.title }}</span>
+      {% endunless %}
+    </nav>
+
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    {% include section-pagination.html %}
+  </article>
+</div>

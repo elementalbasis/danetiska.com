@@ -1,6 +1,8 @@
 ---
-layout: language
+layout: section
+section: language
 title: The Danetian language
+permalink: /language
 ---
 
 Danetian is an artificially constructed

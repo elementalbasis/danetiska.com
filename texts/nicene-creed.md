@@ -1,6 +1,8 @@
 ---
 title: Nicene Creed
-layout: texts
+layout: section
+section: texts
+permalink: /texts/nicene-creed
 ---
 
 ## Danetiska

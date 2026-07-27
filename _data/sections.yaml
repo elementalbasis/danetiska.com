@@ -1,0 +1,34 @@
+language:
+  title: Language
+  home: /language
+  items:
+    - title: Overview
+      url: /language
+    - title: Phonology
+      url: /language/phonology
+    - title: Ablaut
+      url: /language/ablaut
+    - title: Nouns
+      url: /language/nouns
+    - title: Numbers
+      url: /language/numbers
+    - title: Proforms
+      url: /language/proforms
+    - title: Prepositions
+      url: /language/prepositions
+texts:
+  title: Texts
+  home: /texts
+  items:
+    - title: Overview
+      url: /texts
+    - title: Schleicher's Fable
+      url: /texts/schleichers-fable
+    - title: The North Wind and the Sun
+      url: /texts/the-north-wind-and-the-sun
+    - title: Universal Declaration of Human Rights
+      url: /texts/universal-declaration-of-human-rights
+    - title: Christian Prayers
+      url: /texts/christian-prayers
+    - title: Nicene Creed
+      url: /texts/nicene-creed

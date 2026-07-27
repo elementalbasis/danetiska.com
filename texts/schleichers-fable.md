@@ -1,6 +1,8 @@
 ---
 title: Schleicher's fable
-layout: texts
+layout: section
+section: texts
+permalink: /texts/schleichers-fable
 ---
 
 ## Danetiska:

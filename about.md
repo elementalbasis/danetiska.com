@@ -32,3 +32,8 @@ government body, official language authority, or accredited institution. It
 exists to support careful study, thoughtful construction, and long-term
 documentation.
 
+## Contact
+
+You may contact the Danetian Academy at the following email address:
+
+**academia@danetiska.com**

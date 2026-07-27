@@ -1,6 +1,8 @@
 ---
 title: The North Wind and the Sun
-layout: texts
+layout: section
+section: texts
+permalink: /texts/the-north-wind-and-the-sun
 ---
 
 ## Danetiska:

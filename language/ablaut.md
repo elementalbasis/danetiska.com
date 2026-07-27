@@ -1,6 +1,8 @@
 ---
+layout: section
+section: language
 title: Ablaut
-layout: language
+permalink: /language/ablaut
 ---
 
 Words in Danetian are composed of one or more

@@ -1,6 +1,8 @@
 ---
 title: Sample Texts
-layout: texts
+layout: section
+section: texts
+permalink: /texts
 ---
 
 This section presents a growing collection of texts translated into Danetian,
