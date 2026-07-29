@@ -61,7 +61,7 @@ unto the ages. Amen.
 
 Pater Nosje, Jo esi en diusu,
 sjunteiostoito nomyn Tvoiom;
-opibiet resjmyn Tvoiom;
+pribiet resjmyn Tvoiom;
 mysjito velia Tvoia jasme en diuvi i ana djymi;
 sjdrynom nosjom anasontiom do nysmos sjadinam;
 ide apojek nysmos delgons nosjons jasme i vi apoikmos delgetrymos nosjomos;
