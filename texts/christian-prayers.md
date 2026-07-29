@@ -62,7 +62,7 @@ unto the ages. Amen.
 Pater Nosje, Jo esi en diusu,
 sjunteiostoito nomyn Tvoiom;
 opibiet resjmyn Tvoiom;
-mysjito velia Tvoia tasme en diuvi i ana djymi;
+mysjito velia Tvoia jasme en diuvi i ana djymi;
 sjdrynom nosjom anasontiom do nysmos sjadinam;
 ide apojek nysmos delgons nosjons jasme i vi apoikmos delgetrymos nosjomos;
 ide ne nos endukies en peritim, nu ludreie nos apo dusbytod.
@@ -97,7 +97,7 @@ I nuni, i jevi, i en oiva oivom. Amen.
 
 > Both now and ever, and unto the ages of ages. Amen.
 
-Reponte djystre Kritor priiti, i visjoinosio masjties aponobeiontor; nu sjom
+Reponte djystre Kritor pri'iti, i visjoinosio masjties aponobeiontor; nu sjom
 andjese vopomos en medinypti: Sjuntos, Sjuntos, Sjuntos esi, Dive; Divodjenitze,
 mileioste nos.
 
