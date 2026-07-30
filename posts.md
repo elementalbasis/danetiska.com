@@ -26,23 +26,4 @@ permalink: /posts/
   {% endfor %}
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".tag-menu button");
-  const items = document.querySelectorAll(".archive-item");
-
-  buttons.forEach(button => {
-    button.addEventListener("click", function () {
-      const selectedTag = this.dataset.tag;
-
-      buttons.forEach(btn => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      items.forEach(item => {
-        const tags = JSON.parse(item.dataset.tags);
-        item.hidden = !(selectedTag === "all" || tags.includes(selectedTag));
-      });
-    });
-  });
-});
-</script>
+<script src="{{ '/assets/scripts/filter.js' | relative_url }}" defer></script>

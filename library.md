@@ -1,43 +1,30 @@
 ---
 layout: default
 title: Library
+permalink: /library/
 ---
 
-<header class="library-intro">
-  <h1>Library</h1>
-  <p>
-    Historical, literary, linguistic, and scientific works published
-    or preserved by the Danetian Academy.
-  </p>
-</header>
+<h1>Library</h1>
+
+<nav class="tag-menu">
+  <button type="button" data-tag="all" class="active">All</button>
+  <button type="button" data-tag="book">Books</button>
+  <button type="button" data-tag="paper">Papers</button>
+  <button type="button" data-tag="manual">Manuals</button>
+  <button type="button" data-tag="thesis">Theses</button>
+</nav>
 
 <section class="library-list">
+  {% assign items = site.data.bibliography | sort: "title" %}
 
-{% assign works = site.data.bibliography | sort: "title" %}
-
-{% for work in works %}
-<a class="library-item" href="{{ work.url }}">
-
-    <p class="library-meta">
-        {{ work.type }}
-        {% if work.year %} · {{ work.year }}{% endif %}
-    </p>
-
-    <h2 class="library-title">
-        {{ work.title }}
-    </h2>
-
-    <p class="library-author">
-        {{ work.author }}
-    </p>
-
-    {% if work.description %}
-    <p class="library-description">
-        {{ work.description }}
-    </p>
-    {% endif %}
-
-</a>
-{% endfor %}
-
+  {% for item in items %}
+    <div
+      class="archive-item"
+      data-tags='{{ item.type | split: "|" | jsonify | downcase }}'
+    >
+      {% include library.html item=item %}
+    </div>
+  {% endfor %}
 </section>
+
+<script src="{{ '/assets/scripts/filter.js' | relative_url }}" defer></script>

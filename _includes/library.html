@@ -1,8 +1,35 @@
-<ul>
-{% for item in site.data.bibliography %}
-<li>
-<a href="{{ item.url }}">{{ item.title }}</a><br>
-{{ item.author }} ({{ item.year }})
-</li>
-{% endfor %}
-</ul>
+<article class="library-item">
+  <a href="{{ include.item.url | relative_url }}" class="library-link">
+    <h2 class="library-title">
+      {{ include.item.title }}
+    </h2>
+
+    <div class="library-meta">
+      {% if include.item.author %}
+        <span class="library-author">
+          {{ include.item.author }}
+        </span>
+      {% endif %}
+
+      {% if include.item.year %}
+        <span class="library-year">
+          ({{ include.item.year }})
+        </span>
+      {% endif %}
+    </div>
+
+    {% if include.item.description %}
+      <p class="library-description">
+        {{ include.item.description }}
+      </p>
+    {% endif %}
+
+    {% if include.item.type %}
+      <div class="tags">
+        <span class="tag">
+          {{ include.item.type | capitalize }}
+        </span>
+      </div>
+    {% endif %}
+  </a>
+</article>
