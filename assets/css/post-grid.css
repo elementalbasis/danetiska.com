@@ -19,11 +19,33 @@
 }
 
 /* Grid of posts */
+/*
 .post-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem;
 }
+*/
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .post-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 
 .post-card, .featured {
   border: 1px solid #ddd;
