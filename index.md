@@ -37,6 +37,22 @@ layout: default
   <h2>Affiliated projects</h2>
   <div class="post-grid">
     <article class="post-card">
+      <a href="https://wiki.danetiska.com" class="card-link">
+        <figure class="card-figure">
+          <img
+            src="https://danetiska.com/assets/images/danetiska_academia_favicon.svg"
+            alt="DanuWiki"
+            loading="lazy" decoding="async">
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">DanuWiki</h2>
+          <p class="card-excerpt">A Zettelkasten-style bilingual corpus.</p>
+          <div class="card-meta">
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="post-card">
       <a href="https://elementalbasis.com" class="card-link">
         <figure class="card-figure">
           <img
