@@ -187,7 +187,7 @@
 @key(septyndina) @infl[1](septyndin) @ety(\dnt{septym} + \dnt{dina}) @typ(f) @def($week)
 @key(sjado) @ety(\pie{ḱh₂d-}; \cf \lat{cado}) @typ(v) @def(to $fall)
 @key(sjados) @infl[2](sjad) @ety(\dnt{sjado}) @typ(m) @def($fall, $decline) @def(\field{grammar} $case)
-@key(sjdrynom) @infl[3](sjdryn) @ety(\pie{ǵr̥h₂nóm}; \cf \lat{granum}, \rus{зерно}{zernó}, \eng{corn}) @typ(n) @def($grain; $cereal, $oats)
+@key(sjdranom) @infl[3](sjdran) @ety(\pie{ǵr̥h₂nóm}; \cf \lat{granum}, \rus{зерно}{zernó}, \eng{corn}) @typ(n) @def($grain; $cereal, $oats) @def($bread)
 @key(sjimos) @ety(\pie{(s)ḱeh₃-}; \cf \lat{obscurus}, \grc{σκότος}{skótos}, \rus{серый}{séryj}, \eng{shadow}) @typ(adj) @def($blue)
 @key(sjlakt) @pp(sjlakt, sjlyktes) @ety(\pie{ǵlákt}; \cf \lat{lac}, \grc{γάλα}{gắlă}) @typ(n) @def($milk)
 @key(sjlinumi) @pp(sjlinumi; sjlim; sjesjloika, sjesjlikme) @ety(\pie{ḱley-}; \cf \lat{clino}, \grc{κλίνω}{klī́nō}, \eng{lean}) @typ(v) @def(to $lean, to $slope, to $incline, to $bend, to $slant) @def(\par{figuratively} \par{with another verb in infinitive} to $tend to do something, to be $inclined towards doing something, to do something $habitually)
