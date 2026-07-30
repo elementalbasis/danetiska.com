@@ -380,6 +380,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const out = document.getElementById("out");
   const results = document.getElementById("results");
   const wotd = document.querySelector(".word-card");
+  const introduction = document.querySelector(".dictionary-introduction");
 
   if (!form || !input || !modeSelect || !out || !results) return;
 
@@ -400,6 +401,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (wotd) {
       wotd.style.display = result.kind === "empty" ? "" : "none";
     }
+
+    if (introduction) {
+      introduction.style.display = result.kind === "empty" ? "" : "none";
+    }
+
 
     if (result.kind === "empty") {
       out.textContent = "";
