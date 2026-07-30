@@ -41,6 +41,8 @@ itself.
 
 ## An Icon of the Stater
 
+<img src="/assets/images/euler-banknote.svg" alt="Euler D$1 Banknote" class="centered-img">
+
 Perhaps the most recognizable note of the current series is the
 **Euler D$1 banknote**. Featuring the Swiss mathematician Leonhard Euler, the
 note has become an iconic symbol of the Danetian stater and is widely associated
