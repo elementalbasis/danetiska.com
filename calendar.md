@@ -178,6 +178,6 @@ coincided with a solar eclipse. Myron writes:
 ## Manual calculations
 
 We have created
-[this document](/assets/docs/modular-tables-for-calendrical-calculations.pdf)
+[this document](https://ftp.danetiska.com/modular-tables-for-calendrical-calculations.pdf)
 to aid in converting Gregorian or Julian dates their corresponding Danetian
 date.
