@@ -11,8 +11,8 @@ permalink: /posts/
   <button type="button" data-tag="worldbuilding">Worldbuilding</button>
   <button type="button" data-tag="conlang">Conlang</button>
   <button type="button" data-tag="calendar">Calendar</button>
-  <button type="button" data-tag="mathematics">Mathematics</button>
 <!--
+  <button type="button" data-tag="mathematics">Mathematics</button>
   <button type="button" data-tag="physics">Physics</button>
   <button type="button" data-tag="computing">Computing</button>
 -->
