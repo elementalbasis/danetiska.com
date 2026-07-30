@@ -52,13 +52,13 @@ Ide udbontym en diuns, i sisdontym desjni Pytres,
 
 > And ascended into the heavaens, and sitteth at the right hand of the Father,
 
-Ide neve opijontym sjom sjlevese krineni bivomos i myrtomos, Josio Rysjmenei ne
+Ide neve pri'jontym sjom sjlevese krineni bivomos i myrtomos, Josio Rysjmenei ne
 iti sont termyn,
 
 > And shall come again with glory to judge the living and the dead, Whose
 kingdom shall have no end;
 
-Ide en Prumyn Sjuntom, Potim bivodykontym, Jos esj Pytres esjjontym,
+Ide en Prumyn Sjuntom, Potim bivodykontym, Jos esj Pytres esj'jontym,
 
 > And in the Holy Spirit, the Lord, the Giver of Live, Who proceedeth from the
 Father,
@@ -77,6 +77,6 @@ Somovepmi oinom baptismam en apoikti skyltiom;
 
 > I confess one baptism in the remission of sins;
 
-Prospesjo etistatim myrtom i bivam prijontes oivosio. Amen.
+Prospesjo etistatim myrtom i bivam pri'jontes oivosio. Amen.
 
 > I look for the resurrection of the dead and the life of the age to come. Amen.
