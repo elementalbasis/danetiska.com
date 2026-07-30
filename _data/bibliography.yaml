@@ -94,3 +94,21 @@
   author: Bernard Comrie
   year: 1976
   url: https://ftp.danetiska.com/comrie1976.pdf
+- id: rahlfs-septuagint
+  type: book
+  title: The Septuagint (LXX)
+  author: Alfred Rahlfs
+  year: 2005
+  url: https://ftp.danetiska.com/rahlfs-septuagint.pdf
+- id: sbl-new-testament
+  type: book
+  title: The Greek New Testament
+  author: Michael W. Holmes
+  year: 2010
+  url: https://ftp.danetiska.com/sbl-new-testament.pdf
+- id: folkerts2016
+  type: paper
+  title: Jost Bürgi's Method for Calculating Sines
+  author: Menso Fokerts, Dieter Launert, Andreas Thom
+  year: 2016
+  url: https://ftp.danetiska.com/folkerts2016.pdf
