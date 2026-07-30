@@ -70,3 +70,27 @@
   author: William S. Annis
   year: 2020
   url: https://ftp.danetiska.com/annis2020.pdf
+- id: caroll2004
+  type: book
+  title: Spacetime and Geometry
+  author: Sean Caroll
+  year: 2004
+  url: https://ftp.danetiska.com/caroll2004.pdf
+- id: doran2003
+  type: book
+  title: Geometric Algebra for Physicists
+  author: Chris Doran, Anthony Lasenby
+  year: 2004
+  url: https://ftp.danetiska.com/doran2003.pdf
+- id: bailey1978
+  type: paper
+  title: Final Report on the CERN Muon Storage Ring Including the Anomalous Magnetic Moment and the Electric Dipole Moment of the Muon, and a Direct Test of Relativistic Time Dilation
+  author: J. Bailey et al.
+  year: 1978
+  url: https://ftp.danetiska.com/bailey1978.pdf
+- id: comrie1976
+  type: book
+  title: Aspect
+  author: Bernard Comrie
+  year: 1976
+  url: https://ftp.danetiska.com/comrie1976.pdf
