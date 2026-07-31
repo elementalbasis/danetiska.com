@@ -85,8 +85,8 @@ Sjlevos Pytrei, i Sunuei, i Sjuntoi Prumenei.
 
 > Glory to the Father, and to the Son, and to the Holy Spirit.
 
-Esj lektrod i supnod udkinostes me, Poti; menos moiom enlukeie i sjerd, ide osna moia
-apokrude, jod kyntioim Tebio, Sjuntu Troiku: Sjuntos, Sjuntos, Sjuntos esi,
+Esj lektrod i supnod udkinostes me, Poti; menos moiom enlukeie i sjerd, ide osna
+moia apokrude, jod kyntioim Tebio, Sjuntu Troiku: Sjuntos, Sjuntos, Sjuntos esi,
 Dive; Divodjenitze, mileioste nos.
 
 > From bed and sleep hast Thou raised me up, O Lord: enlighten my mind and
@@ -108,3 +108,35 @@ Theotokos, have mercy on us.
 Poti, mileioste. (Dvidesjym plysje).
 
 > Lord, have mercy. (Twelve-fold).
+
+Esj supnod udstonts, dybrodidomi Tebio, Nai Sjuntai Troikai, jasme rodi plyses
+Tvoias dybrotas i longobyrties ne ismeiosteto medjo, lenoi i skyltrei, ni
+apostrus me sjom derysjtabi moiabi, nu sjmonolubom Tvoiom medjo dedoisjta; ide
+en aposjnyti lygontym udkinostes me ustreieni i sjleveieni Tvoiam mektim. Ide
+nuni enlukeie opa moia menesos, i apokrude os moiom, anamyntieni verdois
+Tvoiois, i sjokypieni anadotins Tvoians, i dekni veliam Tvoiam, i kyntieni Tebio
+en somomynti sjyrde, i udkyntieni visjosjuntom nomyn Tvoiom: Pytres, i Sunues, i
+Sjuntosio Prumens, i nuni, i jevi, i en oiva oivom. Amen.
+
+> As I rise from sleep, I thank Thee, O Holy Trinity, for through Thy great
+goodness and patience Thou wast not angry with me, and idler and sinner, nor
+hast Thou destroyed me with mine iniquities, but hast shown Thy usual love for
+mankind; and when I was prostrate in despair, Thou hast raised me up to keep the
+morning watch and glorify Thy power. And now enlighten my mind's eye, and open
+my mouth that I may meditate on Thy words, and understand Thy commandments, and
+do Thy will, and hymn Thee in heartfelt confession, and sing praises to Thine
+all-holy name: of the Father, and of the Son, and of the Holy Spirit, now and
+ever, and unto the ages of ages. Amen.
+
+Pri'ite, sjoprosjlinuime i prisjadoime anti Rydjes nosjosio Divosio.
+
+Pri'ite, sjoprosjlinuime i prisjadoime anti Christosio, Rydjes nosjosio Divosio.
+
+Pri'ite, sjoprosjlinuime i prisjadoime anti somosio Christosio, Rydjes nosjosio
+Divosio.
+
+> O come let us worship and fall down before God our King.
+>
+> O come let us worship and fall down before Christ our King and God.
+>
+> O come let us worship and fall down before Christ Himself, our King and God.
