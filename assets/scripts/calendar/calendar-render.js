@@ -197,73 +197,32 @@ export function renderCentury(
   startYear,
   yearCount = 100
 ) {
-  const tableBody = calendar.querySelector(
-    ".century-calendar__body"
+  const yearsContainer = calendar.querySelector(
+    ".century-calendar__years"
   );
 
-  if (!tableBody) {
+  if (!yearsContainer) {
     return;
   }
 
-  if (!Number.isInteger(startYear)) {
-    throw new RangeError(
-      "startYear must be an integer."
-    );
-  }
-
-  if (!Number.isInteger(yearCount) || yearCount < 1) {
-    throw new RangeError(
-      "yearCount must be a positive integer."
-    );
-  }
-
-  tableBody.replaceChildren();
+  yearsContainer.replaceChildren();
 
   const fragment = document.createDocumentFragment();
-  const columnCount = 10;
-  const rowCount = Math.ceil(yearCount / columnCount);
 
-  for (let row = 0; row < rowCount; row += 1) {
-    const tableRow = document.createElement("tr");
+  for (
+    let year = startYear;
+    year < startYear + yearCount;
+    year += 1
+  ) {
+    const yearButton = document.createElement("button");
 
-    for (
-      let column = 0;
-      column < columnCount;
-      column += 1
-    ) {
-      const offset = row * columnCount + column;
-      const tableCell = document.createElement("td");
+    yearButton.type = "button";
+    yearButton.className = "century-calendar__year";
+    yearButton.dataset.year = String(year);
+    yearButton.textContent = String(year);
 
-      tableCell.className = "century-calendar__cell";
-
-      if (offset < yearCount) {
-        const year = startYear + offset;
-        const yearButton = document.createElement("button");
-
-        yearButton.type = "button";
-        yearButton.className = "century-calendar__year";
-        yearButton.dataset.year = String(year);
-        yearButton.textContent = String(year);
-
-        yearButton.setAttribute(
-          "aria-label",
-          `Select year ${year}`
-        );
-
-        tableCell.appendChild(yearButton);
-      } else {
-        tableCell.classList.add(
-          "century-calendar__cell--empty"
-        );
-
-        tableCell.setAttribute("aria-hidden", "true");
-      }
-
-      tableRow.appendChild(tableCell);
-    }
-
-    fragment.appendChild(tableRow);
+    fragment.appendChild(yearButton);
   }
 
-  tableBody.appendChild(fragment);
+  yearsContainer.appendChild(fragment);
 }

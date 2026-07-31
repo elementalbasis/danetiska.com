@@ -3,7 +3,7 @@
   data-century-calendar
   data-start-year="{{ include.start_year | default: 4400 }}"
   data-years="{{ include.years | default: 100 }}"
-  aria-label="{{ include.title | default: 'Century' }}"
+  aria-label="{{ include.title | default: 'Calendar century' }}"
   hidden
 >
   <header class="century-calendar__header">
@@ -15,9 +15,12 @@
       ‹
     </button>
 
-    <span class="century-calendar__title">
-      {{ include.title | default: "Century" }}
-    </span>
+    <button
+      class="century-calendar__title"
+      type="button"
+    >
+      {{ include.title | default: 4400 }}
+    </button>
 
     <button
       class="century-calendar__arrow century-calendar__next"
@@ -28,10 +31,9 @@
     </button>
   </header>
 
-  <table
-    class="century-calendar__table"
-    aria-label="Years in {{ include.title | default: 'the century' }}"
-  >
-    <tbody class="century-calendar__body"></tbody>
-  </table>
+  <div
+    class="century-calendar__years"
+    role="grid"
+    aria-label="Years in the century"
+  ></div>
 </section>
