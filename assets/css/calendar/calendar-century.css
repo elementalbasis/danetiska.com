@@ -1,0 +1,129 @@
+.century-calendar {
+  overflow: hidden;
+}
+
+/*
+ * Century table
+ */
+.century-calendar__table {
+  display: table;
+  width: calc(100% - 2rem) !important;
+  max-width: 760px;
+  margin: 1.25rem auto !important;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0.35rem;
+  table-layout: fixed;
+  background: transparent;
+}
+
+/*
+ * Neutralize inherited site-wide table styling.
+ */
+.century-calendar__table tbody {
+  display: table-row-group;
+  background: transparent;
+}
+
+.century-calendar__table tr,
+.century-calendar__table tr:nth-child(odd),
+.century-calendar__table tr:nth-child(even) {
+  display: table-row;
+  border: 0;
+  background: transparent;
+}
+
+.century-calendar__table .century-calendar__cell,
+.century-calendar__table .century-calendar__cell:first-child,
+.century-calendar__table .century-calendar__cell:last-child,
+.century-calendar__table .century-calendar__cell:nth-child(odd),
+.century-calendar__table .century-calendar__cell:nth-child(even) {
+  display: table-cell;
+  width: 10%;
+  height: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*
+ * Individual year buttons
+ */
+.century-calendar__year {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 3rem;
+  margin: 0;
+  padding: 0.6rem 0.15rem;
+  border: 1px solid var(--calendar-border-light);
+  border-radius: 0.2rem;
+  background: var(--calendar-background);
+  color: var(--calendar-text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+/*
+ * Explicitly prevent the first year of each decade from
+ * inheriting bold first-column table styling.
+ */
+.century-calendar__cell:first-child
+.century-calendar__year {
+  font-weight: 400;
+}
+
+.century-calendar__year:hover {
+  border-color: var(--calendar-border);
+  background: var(--calendar-hover-background);
+  color: var(--calendar-accent);
+}
+
+.century-calendar__year:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--calendar-focus);
+  outline-offset: 1px;
+}
+
+.century-calendar__year--selected {
+  border-color: var(--calendar-accent);
+  background: var(--calendar-selected-background);
+  color: var(--calendar-accent);
+  font-weight: 700;
+}
+
+.century-calendar__cell--empty {
+  visibility: hidden;
+}
+
+@media (max-width: 700px) {
+  .century-calendar {
+    overflow-x: auto;
+  }
+
+  .century-calendar__table {
+    width: 650px !important;
+    margin: 1rem auto !important;
+    border-spacing: 0.25rem;
+  }
+
+  .century-calendar__year {
+    min-height: 2.75rem;
+    padding: 0.5rem 0.1rem;
+    font-size: 0.85rem;
+  }
+}

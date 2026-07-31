@@ -1,0 +1,45 @@
+<section
+  class="month-calendar"
+  data-month-calendar
+  data-days="{{ include.days | default: 30 }}"
+  data-start="{{ include.start | default: 0 }}"
+  aria-label="{{ include.title | default: 'Calendar month' }}"
+>
+  <header class="month-calendar__header">
+    <button
+      class="month-calendar__arrow month-calendar__previous"
+      type="button"
+      aria-label="Previous month"
+    >
+      ‹
+    </button>
+
+    <button class="month-calendar__title" type="button">
+      {{ include.title | default: "Month" }}
+    </button>
+
+    <button
+      class="month-calendar__arrow month-calendar__next"
+      type="button"
+      aria-label="Next month"
+    >
+      ›
+    </button>
+  </header>
+
+  <div class="month-calendar__weekdays" aria-hidden="true">
+    <span class="month-calendar__weekday">Sun</span>
+    <span class="month-calendar__weekday">Mon</span>
+    <span class="month-calendar__weekday">Tue</span>
+    <span class="month-calendar__weekday">Wed</span>
+    <span class="month-calendar__weekday">Thu</span>
+    <span class="month-calendar__weekday">Fri</span>
+    <span class="month-calendar__weekday">Sat</span>
+  </div>
+
+  <div
+    class="month-calendar__days"
+    role="grid"
+    aria-label="{{ include.title | default: 'Calendar days' }}"
+  ></div>
+</section>

@@ -1,0 +1,180 @@
+.calendar-view {
+  --calendar-border: #d7d7d7;
+  --calendar-border-light: #e5e5e5;
+  --calendar-background: #fff;
+  --calendar-header-background: #f7f7f7;
+  --calendar-hover-background: #f3f3f3;
+  --calendar-selected-background: #f8f3d9;
+  --calendar-text: #2e2e2e;
+  --calendar-muted-text: #777;
+  --calendar-accent: #8a7000;
+  --calendar-focus: #c9a300;
+
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  color: var(--calendar-text);
+}
+
+.calendar-view [hidden] {
+  display: none;
+}
+
+.month-calendar,
+.year-calendar,
+.century-calendar {
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--calendar-border);
+  background: var(--calendar-background);
+}
+
+.month-calendar__header,
+.year-calendar__header,
+.century-calendar__header {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) 3rem;
+  align-items: stretch;
+  border-bottom: 1px solid var(--calendar-border);
+  background: var(--calendar-header-background);
+}
+
+.month-calendar__title,
+.year-calendar__title,
+.century-calendar__title,
+.month-calendar__arrow,
+.year-calendar__arrow,
+.century-calendar__arrow {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.month-calendar__title,
+.year-calendar__title,
+.century-calendar__title {
+  display: block;
+  min-width: 0;
+  padding: 0.8rem 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+button.month-calendar__title,
+button.year-calendar__title,
+button.century-calendar__title {
+  cursor: pointer;
+}
+
+.month-calendar__arrow,
+.year-calendar__arrow,
+.century-calendar__arrow {
+  appearance: none;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.month-calendar__arrow:hover,
+.year-calendar__arrow:hover,
+.century-calendar__arrow:hover,
+button.month-calendar__title:hover,
+button.year-calendar__title:hover,
+button.century-calendar__title:hover {
+  color: var(--calendar-accent);
+}
+
+.month-calendar__arrow:focus-visible,
+.year-calendar__arrow:focus-visible,
+.century-calendar__arrow:focus-visible,
+.month-calendar__title:focus-visible,
+.year-calendar__title:focus-visible,
+.century-calendar__title:focus-visible,
+.month-calendar__day:focus-visible,
+.year-calendar__month:focus-visible,
+.century-calendar__year:focus-visible {
+  outline: 2px solid var(--calendar-focus);
+  outline-offset: -2px;
+}
+
+.calendar-view__error {
+  margin: 0;
+  padding: 2rem 1rem;
+  color: var(--calendar-muted-text);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .calendar-view {
+    margin: 1.5rem 0;
+  }
+
+  .month-calendar,
+  .year-calendar,
+  .century-calendar {
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .month-calendar__header,
+  .year-calendar__header,
+  .century-calendar__header {
+    grid-template-columns: 2.75rem minmax(0, 1fr) 2.75rem;
+  }
+
+  .month-calendar__title,
+  .year-calendar__title,
+  .century-calendar__title {
+    font-size: 1.05rem;
+  }
+}
+
+
+/*
+ * Shared flat calendar-grid cells
+ */
+.month-calendar__day,
+.month-calendar__empty,
+.year-calendar__month,
+.year-calendar__empty {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  border-right: 1px solid var(--calendar-border-light);
+  border-bottom: 1px solid var(--calendar-border-light);
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--calendar-background);
+  color: var(--calendar-text);
+  font: inherit;
+}
+
+.month-calendar__day,
+.year-calendar__month {
+  appearance: none;
+  cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+.month-calendar__day:hover,
+.year-calendar__month:hover {
+  background: var(--calendar-hover-background);
+}
+
+.month-calendar__day--selected,
+.year-calendar__month--selected {
+  background: var(--calendar-selected-background);
+  color: var(--calendar-accent);
+}
+
+.month-calendar__empty,
+.year-calendar__empty {
+  display: block;
+  background: var(--calendar-header-background);
+}

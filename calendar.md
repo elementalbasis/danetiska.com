@@ -3,6 +3,52 @@ layout: standalone
 title: The Danetian calendar
 ---
 
+
+
+
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/calendar/calendar.css' | relative_url }}"
+>
+
+<div class="calendar-view">
+
+  {% include month-calendar.html %}
+
+  {% include year-calendar.html %}
+
+  {% include century-calendar.html %}
+
+</div>
+
+<script
+  type="module"
+  src="{{ '/assets/scripts/calendar/calendar-view.js' | relative_url }}"
+></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="dict-date" aria-label="Today’s date">
   <div class="dict-date__inner">
     <div class="dict-date__item">
@@ -16,6 +62,9 @@ title: The Danetian calendar
     </div>
   </div>
 </section>
+
+
+
 
 The Danetian calendar is the traditional 
 [lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar) used by

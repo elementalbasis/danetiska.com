@@ -1,0 +1,36 @@
+<section
+  class="year-calendar"
+  data-year-calendar
+  data-year="{{ include.year | default: include.title }}"
+  data-months="{{ include.months | default: 12 }}"
+  aria-label="{{ include.title | default: 'Calendar year' }}"
+  hidden
+>
+  <header class="year-calendar__header">
+    <button
+      class="year-calendar__arrow year-calendar__previous"
+      type="button"
+      aria-label="Previous year"
+    >
+      ‹
+    </button>
+
+    <button class="year-calendar__title" type="button">
+      {{ include.title | default: "Year" }}
+    </button>
+
+    <button
+      class="year-calendar__arrow year-calendar__next"
+      type="button"
+      aria-label="Next year"
+    >
+      ›
+    </button>
+  </header>
+
+  <div
+    class="year-calendar__months"
+    role="grid"
+    aria-label="Months of {{ include.title | default: 'the year' }}"
+  ></div>
+</section>

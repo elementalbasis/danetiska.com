@@ -1,0 +1,85 @@
+.year-calendar__months {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.year-calendar__month,
+.year-calendar__empty {
+  min-height: 7rem;
+}
+
+.year-calendar__month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+.year-calendar__month:nth-child(3n),
+.year-calendar__empty:nth-child(3n) {
+  border-right: 0;
+}
+
+.year-calendar__month-number {
+  color: var(--calendar-muted-text);
+  font-size: 0.8rem;
+}
+
+.year-calendar__month-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/*
+ * Remove the bottom border from the complete final row.
+ */
+.year-calendar__months > :nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .year-calendar__months {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .year-calendar__month,
+  .year-calendar__empty {
+    min-height: 6rem;
+  }
+
+  .year-calendar__month:nth-child(3n),
+  .year-calendar__empty:nth-child(3n) {
+    border-right: 1px solid var(--calendar-border-light);
+  }
+
+  .year-calendar__month:nth-child(2n),
+  .year-calendar__empty:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .year-calendar__months > :nth-last-child(-n + 3) {
+    border-bottom: 1px solid var(--calendar-border-light);
+  }
+
+  .year-calendar__months > :nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .year-calendar__month,
+  .year-calendar__empty {
+    min-height: 5.25rem;
+  }
+
+  .year-calendar__month {
+    padding: 0.75rem 0.25rem;
+  }
+
+  .year-calendar__month-name {
+    font-size: 0.95rem;
+  }
+}
