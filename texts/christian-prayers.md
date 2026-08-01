@@ -111,7 +111,7 @@ Poti, mileioste. (Dvidesjym plysje).
 
 Esj supnod udstonts, dybrodidomi Tebio, Nai Sjuntai Troikai, jasme rodi plyses
 Tvoias dybrotas i longobyrties ne ismeiosteto medjo, lenoi i skyltrei, ni
-apostrus me sjom derysjtabi moiabi, nu sjmonolubom Tvoiom medjo dedoisjta; ide
+apostrus me sjom derysjtabi moiabi, nu sjmonolubom Tvoiom medjo disjs; ide
 en aposjnyti lygontym udkinostes me ustreieni i sjleveieni Tvoiam mektim. Ide
 nuni enlukeie opa moia menesos, i apokrude os moiom, anamyntieni verdois
 Tvoiois, i sjokypieni anadotins Tvoians, i dekni veliam Tvoiam, i kyntieni Tebio
@@ -140,3 +140,52 @@ Divosio.
 > O come let us worship and fall down before Christ our King and God.
 >
 > O come let us worship and fall down before Christ Himself, our King and God.
+
+Mileioste me, Dive, seponts mysjlam milotam Tvoiam, i seponts plyrotam
+sjodysjtrytiom, tropriskeie derysjtam moiam. Plyre djystre skrebe me apo
+derysjtamos moiamos, ide apo skyltied moiad tropriskeie me. Jasme derysjtam
+moiam edja sjnoio, ide skeltis moia anti mene esti visjoda. Proti Tve inokom
+skyltiostom, ide dusbytom anti Teve masjym, jasme rysjteiostoita en verdoisu
+Tvoioisu, ide viksies joda krinostoita. Bo vid, en derysjtasu sjoprymeiosta, ide
+en skyltisu djenostet me mater moia. Bo vid, verotam lubiostes; nesjnyta i
+sjelosta vidrotas Tvoias prodisjs medjo. Isi embreionts me sjom hyssope, ide imi
+tropriskeiomnos. Isi skrebonts me, i snibes po albos imi dykmynos. Isi me
+sjlununi dykonts gauram i prinotam; jenti gaureiontes osta uponideiekmyna.
+Apoverte pretiops Tvoiom apo skyltimos moiomos, ide visjans derysjtans moians
+tropriskeie. Sjerd priskom masj en moi, Dive, ide prumyn rysjtom etineveie en
+ontroisu moioisu. Ne apoiksies me apo pretiped Tvoiod, ide Prumyn Tvoiom Sjuntom
+ne apokypiois med. Etidido medjo prinotam spysjties Tvoias, ide Prumene Redjonte
+anastele me. Imi endisjnunts derysjtomos pontom Tvoiom, ide desjspitioi Tebio
+jenti sjovertontes. Ludreie me esj krevesed, Dive, Dive spysjties moias; iti
+gaureionts dyndjua moia rysjtotam Tvoiam. Poti, osna moia isi apokrudonts, ide
+os moiom iti pro'uponts farnam Tvoiam. Jasme je veliostois jasnam, toda diem;
+sjom visjyngribi ne isi dybrovelionts. Jasna Divoi, prumyn rupstom; sjerd
+rupstom i uponideiostom Divos ne isi nidspesjonts. Dybrodek, Poti, en dybrovelii
+Tvoii Sionei, ide sjostrunuiento devares Jerusalemes. Toda isi dybrovelionts
+sjom jasnabi rysjtotas, sjom udbyrtibi i visjyngribi; toda jenti prostelontes
+ana jasnastanam Tvoiam tauroisjons.
+
+> Have mercy on me, O God, according to Thy great mercy; and according to the
+multitude of Thy compassions blot out my transgression. Wash me thoroughly from
+mine iniquity, and cleanse me from my sin. For I know mine iniquity, and my sin
+is ever before me. Against Thee only have I sinned and done this evil before
+Thee, that Thou mightest be justified in Thy words, and prevail when Thou art
+judged. For behold, I was conceived in iniquities, and in sins did my mother
+bear me. For behold, Thou hast loved truth; the hidden and secret things of Thy
+wisdom hast Thou made manifest unto me. Thou shalt sprinkle me with hyssop, and
+I shall be made clean; Thou shalt wash me, and I shall be made whiter than snow.
+Thou shalt make me to hear joy and gladness; the bones that be humbled, they
+shall rejoice. Turn thy face away from my sins, and blot out all mine
+iniquities. Create in me a clean heart, O God, and renew a right spirit within
+me. Cast me not away from Thy presence, and take not Thy Holy Spirit from me.
+Restore unto me the joy of Thy salvation, and with Thy governing Spirit
+establish me. I shall teach transgressors Thy ways, and the ungodly shall turn
+back unto Thee. Deliver me from blood-guiltiness, O God, Thou God of my
+salvation; my tongue shall rejoice in Thy righteousness. O Lord, Thou shalt open
+my lips, and my mouth shall declare Thy praise. For if Thou hadst desired
+sacrifice, I had given it; with whole-burnt offerings Thou shalt not be pleased.
+A sacrifice unto God is a broken spirit; a heart that is broken and humbled God
+will not despise. Do good, O Lord, in Thy good pleasure unto Sion, and let the
+walls of Jerusalem be builded. Then shalt Thou be pleased with a sacrifice of
+righteousness, with oblation and whole-burnt offerings. Then shall they offer
+bullocks upon Thine altar.
