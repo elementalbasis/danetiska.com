@@ -1,0 +1,36 @@
+<div class="bible-reader">
+  <header class="bible-header">
+    <p class="bible-path">
+      <a href="/texts/">Texts</a> /
+      <a href="/texts/bible/">Bible</a>
+    </p>
+
+    <h1 id="bible-title">Bible</h1>
+    <p id="bible-subtitle"></p>
+  </header>
+
+  <nav class="bible-controls" aria-label="Bible navigation">
+    <label>
+      Book
+      <select id="bible-book"></select>
+    </label>
+
+    <label>
+      Chapter
+      <select id="bible-chapter"></select>
+    </label>
+  </nav>
+
+  <nav class="bible-navigation" aria-label="Chapter navigation">
+    <button id="bible-previous" type="button">← Previous</button>
+    <button id="bible-next" type="button">Next →</button>
+  </nav>
+
+  <article id="bible-text" class="bible-text"></article>
+</div>
+
+<script id="bible-data" type="application/json">
+  {{ site.data.bible | jsonify }}
+</script>
+
+<script src="/assets/scripts/bible-reader.js"></script>

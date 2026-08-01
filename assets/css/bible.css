@@ -1,0 +1,142 @@
+.bible-reader {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.bible-header {
+  margin-bottom: 1.5rem;
+}
+
+.bible-path {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.bible-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+#bible-subtitle {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.bible-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.bible-controls label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.bible-controls select {
+  min-width: 9rem;
+  padding: 0.4rem;
+  font: inherit;
+}
+
+.bible-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+
+.bible-navigation button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bible-navigation button:disabled {
+  opacity: 0.35;
+  cursor: default;
+  text-decoration: none;
+}
+
+.bible-text {
+  margin-top: 1.5rem;
+}
+
+.bible-unit {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.bible-verse-number {
+  padding-top: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+}
+
+.bible-language p {
+  margin: 0;
+}
+
+.bible-language-name {
+  margin-bottom: 0.35rem !important;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bible-danetian {
+  max-width: 55rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.bible-danetian .bible-language-name {
+  font-size: 0.8rem;
+}
+
+.bible-translations {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bible-translations .bible-language {
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--text-muted, #666);
+}
+
+@media (max-width: 700px) {
+  .bible-unit {
+    grid-template-columns: 1.25rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .bible-verse-number {
+    text-align: left;
+  }
+
+  .bible-danetian {
+    font-size: 1.12rem;
+  }
+
+  .bible-translations {
+    grid-template-columns: 1fr;
+  }
+}
