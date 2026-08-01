@@ -1,36 +1,86 @@
-<div class="bible-reader">
-  <header class="bible-header">
-    <p class="bible-path">
-      <a href="/texts/">Texts</a> /
-      <a href="/texts/bible/">Bible</a>
-    </p>
+<div class="bible-reader" id="bible-reader">
+  <div class="bible-reader-nav">
+    <button
+      class="bible-nav-button"
+      id="bible-prev"
+      type="button"
+      aria-label="Previous chapter"
+    >
+      ‹
+    </button>
 
-    <h1 id="bible-title">Bible</h1>
-    <p id="bible-subtitle"></p>
-  </header>
-
-  <nav class="bible-controls" aria-label="Bible navigation">
     <label>
-      Book
+      <span class="sr-only">Book</span>
       <select id="bible-book"></select>
     </label>
 
     <label>
-      Chapter
+      <span class="sr-only">Chapter</span>
       <select id="bible-chapter"></select>
     </label>
-  </nav>
 
-  <nav class="bible-navigation" aria-label="Chapter navigation">
-    <button id="bible-previous" type="button">← Previous</button>
-    <button id="bible-next" type="button">Next →</button>
-  </nav>
+    <button
+      class="bible-nav-button"
+      id="bible-next"
+      type="button"
+      aria-label="Next chapter"
+    >
+      ›
+    </button>
+  </div>
 
-  <article id="bible-text" class="bible-text"></article>
+  <div class="bible-languages" id="bible-languages">
+    <button
+      type="button"
+      data-text="danetian"
+      aria-pressed="true"
+      class="active"
+    >
+      Danetian
+    </button>
+
+    <button
+      type="button"
+      data-text="english"
+      aria-pressed="true"
+      class="active"
+    >
+      English
+    </button>
+
+    <button
+      type="button"
+      data-text="greek"
+      aria-pressed="false"
+    >
+      Greek
+    </button>
+
+    <button
+      type="button"
+      data-text="latin"
+      aria-pressed="false"
+    >
+      Latin
+    </button>
+
+    <button
+      type="button"
+      data-text="slavonic"
+      aria-pressed="false"
+    >
+      Slavonic
+    </button>
+  </div>
+
+  <p class="bible-status" id="bible-status">
+    Loading texts…
+  </p>
+
+  <article id="bible-content" hidden>
+    <h1 id="bible-heading"></h1>
+    <div class="bible-verses" id="bible-verses"></div>
+  </article>
 </div>
 
-<script id="bible-data" type="application/json">
-  {{ site.data.bible | jsonify }}
-</script>
-
-<script src="/assets/scripts/bible-reader.js"></script>
+<script src="{{ '/assets/scripts/bible-reader.js' | relative_url }}"></script>
