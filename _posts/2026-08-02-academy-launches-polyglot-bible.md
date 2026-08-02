@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Academy launches its online Polyglot Bible
+title: The Academy launches the Kustendja Polyglot Bible
 author: Javier Castro
 tags: [conlang]
 cover: https://upload.wikimedia.org/wikipedia/commons/3/39/Cod._Sangallensis_63_%28277%29.jpg
