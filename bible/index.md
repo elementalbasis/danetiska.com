@@ -1,6 +1,6 @@
 ---
 layout: standalone
-title: Danetian Polyglot Bible
+title: Kustendja Polyglot Bible
 permalink: /bible/
 ---
 
