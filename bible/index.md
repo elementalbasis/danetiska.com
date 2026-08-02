@@ -1,6 +1,6 @@
 ---
 layout: standalone
-title: Interlinear Danetian Bible
+title: Danetian Polyglot Bible
 permalink: /bible/
 ---
 
