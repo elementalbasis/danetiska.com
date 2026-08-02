@@ -63,9 +63,9 @@ Pater Nosje, Jo esi en diusu,
 sjunteiostoito nomyn Tvoiom;
 pribiet resjmyn Tvoiom;
 mysjito velia Tvoia jasme en diuvi i ana djymi;
-sjdrynom nosjom anasontiom do nysmos sjadinam;
+sjdranom nosjom anasontiom do nysmos sjadinam;
 ide apojek nysmos delgons nosjons jasme i vi apoikmos delgetrymos nosjomos;
-ide ne nos endukies en peritim, nu ludreie nos apo dusbytod.
+ide ne nos dukies en peritim, nu ludreie nos apo dusbytod.
 
 > Our Father, Who art in the heavens, hallowed be Thy name;
 Thy kingdom come; Thy will be done on earth as it is in heaven;
