@@ -31,7 +31,7 @@ meaning of the preposition.
 | peri | gen. | about (topic of discussion) |
 | posti | gen. | after (spatial or temporal) |
 | pri | gen. | near |
-| pro | acc. | for, towards |
+| pro | acc. | for |
 | proti | acc. | against |
 | rodi | gen. | for the sake of |
 | seponts | acc. | according to |

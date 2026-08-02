@@ -8,3 +8,4 @@
 @key(ive) @ety(From \dnt{i} + \dnt{-ve}) @typ(conj) @def($or)
 @key(je) @ety(\pie{ís} or \pie{yós}) @typ(conj) @def($if)
 @key(nu) @ety(\pie{nu}; \cf \lat{nunc}, \grc{νῦν}{nûn}, \rus{ныне}{nýne}, \eng{now}) @typ(conj) @def($but)
+@key(josmad) @ety(\dnt{jod}) @typ(conj) @def($than)

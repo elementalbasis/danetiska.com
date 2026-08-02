@@ -43,3 +43,6 @@
 @key(devar) @ety(\per{دیوار}{dēwār}) @typ(m) @def($wall)
 @key(plan) @ety(\fra{plan}) @typ(m) @def($plan)
 
+
+
+@key(glasnos) @ety(\rus{гласный}{glásnyj}) @typ(adj) @def($public, open)

@@ -45,7 +45,7 @@
 @key(apojektis) @pp(apojektis, apoikties) @ety(\dnt{apojekmi}) @typ(v) @def($forgiveness, $remission)
 
 @expr(je vos djusteti) @link(je, vi, djusto) @def($please)
-@expr(dybrodido) @link(dybrodidomi) @def(${thank you}, $thanks; \ex{Dybrodido pro donom.}{Thank you for the gift.})
+@expr(dybrodidomi) @link(dybrodidomi) @def(${thank you}, $thanks; \ex{Dybrodido pro donom.}{Thank you for the gift.})
 
 @key(control) @ety(\fra{contrôle}) @typ(m) @def($control)
 @key(controlaio) @ety(\fra{contrôler}) @typ(m) @def(to $control)

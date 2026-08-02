@@ -17,7 +17,7 @@
 @syn(divido, skidnumi)
 @syn(entitats, ents)
 @syn(seculom, epocha, oivom)
-@syn(evidents, claros, glasnos)
+@syn(evidents, claros)
 @syn(pavyn, flamma)
 @syn(djonos, fructom)
 @syn(presjo, inquiro)
