@@ -56,14 +56,13 @@
 
       const fields = rawLine.split("\t");
 
-      if (fields.length < 5) {
+      if (fields.length < 4) {
         console.warn("Skipping malformed Bible line:", rawLine);
         continue;
       }
 
       const [
-        bookName,
-        abbreviation,
+        book,
         chapter,
         verse,
         ...textParts
@@ -71,14 +70,17 @@
 
       const chapterNumber = Number(chapter);
 
-      if (!bookName || !abbreviation || !Number.isFinite(chapterNumber)) {
+      if (
+        !book.trim() ||
+        !Number.isFinite(chapterNumber) ||
+        !verse.trim()
+      ) {
         console.warn("Skipping invalid Bible line:", rawLine);
         continue;
       }
 
       rows.push({
-        book: bookName.trim(),
-        abbreviation: abbreviation.trim(),
+        book: book.trim(),
         chapter: chapterNumber,
         verse: verse.trim(),
         text: textParts.join("\t").trim()
@@ -90,24 +92,25 @@
 
   function referenceKey(row) {
     return [
-      row.abbreviation,
+      row.book,
       row.chapter,
       row.verse
     ].join(".");
   }
 
-  function chapterKey(abbreviation, chapter) {
-    return `${abbreviation}.${chapter}`;
+  function chapterKey(book, chapter) {
+    return `${book}.${chapter}`;
   }
 
   function indexRows(rows) {
     const verses = new Map();
     const chapters = new Map();
+    const bookChapters = new Map();
 
     for (const row of rows) {
       const key = referenceKey(row);
       const currentChapterKey = chapterKey(
-        row.abbreviation,
+        row.book,
         row.chapter
       );
 
@@ -122,12 +125,19 @@
       }
 
       chapters.get(currentChapterKey).push(row);
+
+      if (!bookChapters.has(row.book)) {
+        bookChapters.set(row.book, new Set());
+      }
+
+      bookChapters.get(row.book).add(row.chapter);
     }
 
     return {
       rows,
       verses,
-      chapters
+      chapters,
+      bookChapters
     };
   }
 
@@ -147,18 +157,6 @@
       ...source,
       ...indexRows(rows)
     };
-
-    for (const row of rows) {
-      if (!books.has(row.abbreviation)) {
-        books.set(row.abbreviation, {
-          name: row.book,
-          abbreviation: row.abbreviation,
-          chapters: new Set()
-        });
-      }
-
-      books.get(row.abbreviation).chapters.add(row.chapter);
-    }
   }
 
   async function loadAllSources() {
@@ -189,6 +187,12 @@
     ).map(button => button.dataset.text);
   }
 
+  function getSelectedSources() {
+    return getSelectedTexts()
+      .map(id => loadedSources[id])
+      .filter(Boolean);
+  }
+
   function restoreSelectedTexts() {
     const stored = localStorage.getItem("bible-reader-texts");
 
@@ -209,10 +213,23 @@
     }
 
     for (const button of languageControls.querySelectorAll("button")) {
-      const active = selected.includes(button.dataset.text);
+      const active =
+        selected.includes(button.dataset.text) &&
+        Boolean(loadedSources[button.dataset.text]);
 
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
+    }
+
+    if (getSelectedTexts().length === 0) {
+      const firstAvailableButton = Array.from(
+        languageControls.querySelectorAll("button[data-text]")
+      ).find(button => loadedSources[button.dataset.text]);
+
+      if (firstAvailableButton) {
+        firstAvailableButton.classList.add("active");
+        firstAvailableButton.setAttribute("aria-pressed", "true");
+      }
     }
   }
 
@@ -221,6 +238,51 @@
       "bible-reader-texts",
       JSON.stringify(getSelectedTexts())
     );
+  }
+
+  function intersectSets(first, second) {
+    return new Set(
+      Array.from(first).filter(value => second.has(value))
+    );
+  }
+
+  function rebuildAvailableBooks() {
+    books.clear();
+
+    const selectedSources = getSelectedSources();
+
+    if (selectedSources.length === 0) {
+      return;
+    }
+
+    const firstSource = selectedSources[0];
+
+    for (const [bookName, chapters] of firstSource.bookChapters) {
+      books.set(bookName, {
+        name: bookName,
+        chapters: new Set(chapters)
+      });
+    }
+
+    for (const source of selectedSources.slice(1)) {
+      for (const [bookName, book] of books) {
+        const sourceChapters = source.bookChapters.get(bookName);
+
+        if (!sourceChapters) {
+          books.delete(bookName);
+          continue;
+        }
+
+        book.chapters = intersectSets(
+          book.chapters,
+          sourceChapters
+        );
+
+        if (book.chapters.size === 0) {
+          books.delete(bookName);
+        }
+      }
+    }
   }
 
   function getOrderedBooks() {
@@ -233,7 +295,7 @@
     for (const book of getOrderedBooks()) {
       const option = document.createElement("option");
 
-      option.value = book.abbreviation;
+      option.value = book.name;
       option.textContent = book.name;
 
       bookSelect.append(option);
@@ -268,6 +330,57 @@
     chapterSelect.value = String(currentChapter);
   }
 
+  function ensureValidLocation() {
+    const orderedBooks = getOrderedBooks();
+
+    if (orderedBooks.length === 0) {
+      currentBook = "";
+      currentChapter = 1;
+      return false;
+    }
+
+    if (!books.has(currentBook)) {
+      currentBook = orderedBooks[0].name;
+    }
+
+    const chapters = Array.from(
+      books.get(currentBook).chapters
+    ).sort((a, b) => a - b);
+
+    if (!chapters.includes(currentChapter)) {
+      currentChapter = chapters[0];
+    }
+
+    return true;
+  }
+
+  function refreshAvailability() {
+    rebuildAvailableBooks();
+    populateBooks();
+
+    if (!ensureValidLocation()) {
+      bookSelect.replaceChildren();
+      chapterSelect.replaceChildren();
+
+      previousButton.disabled = true;
+      nextButton.disabled = true;
+
+      heading.textContent = "";
+      versesContainer.replaceChildren();
+
+      status.textContent =
+        "The selected texts have no books and chapters in common.";
+      status.hidden = false;
+      content.hidden = true;
+
+      return false;
+    }
+
+    syncSelectors();
+
+    return true;
+  }
+
   function parseVerseNumber(value) {
     const match = String(value).match(/^(\d+)(.*)$/);
 
@@ -298,7 +411,7 @@
   function collectChapterReferences() {
     const references = new Map();
 
-    for (const source of Object.values(loadedSources)) {
+    for (const source of getSelectedSources()) {
       const rows = source.chapters.get(
         chapterKey(currentBook, currentChapter)
       );
@@ -428,8 +541,9 @@
 
   function getCurrentLocation() {
     const orderedBooks = getOrderedBooks();
+
     const bookIndex = orderedBooks.findIndex(
-      book => book.abbreviation === currentBook
+      book => book.name === currentBook
     );
 
     const chapters = getChapterList();
@@ -452,7 +566,7 @@
     } = getCurrentLocation();
 
     previousButton.disabled =
-      bookIndex === 0 && chapterIndex === 0;
+      bookIndex <= 0 && chapterIndex <= 0;
 
     nextButton.disabled =
       bookIndex === orderedBooks.length - 1 &&
@@ -472,7 +586,7 @@
     } else if (bookIndex > 0) {
       const previousBook = orderedBooks[bookIndex - 1];
 
-      currentBook = previousBook.abbreviation;
+      currentBook = previousBook.name;
 
       const previousChapters = Array.from(
         previousBook.chapters
@@ -501,7 +615,7 @@
     } else if (bookIndex < orderedBooks.length - 1) {
       const nextBook = orderedBooks[bookIndex + 1];
 
-      currentBook = nextBook.abbreviation;
+      currentBook = nextBook.name;
 
       const nextChapters = Array.from(
         nextBook.chapters
@@ -530,7 +644,11 @@
     if (requestedBook && books.has(requestedBook)) {
       currentBook = requestedBook;
     } else {
-      currentBook = getOrderedBooks()[0].abbreviation;
+      currentBook = getOrderedBooks()[0]?.name || "";
+    }
+
+    if (!currentBook) {
+      return;
     }
 
     const availableChapters = Array.from(
@@ -562,7 +680,7 @@
   languageControls.addEventListener("click", event => {
     const button = event.target.closest("button[data-text]");
 
-    if (!button) {
+    if (!button || !loadedSources[button.dataset.text]) {
       return;
     }
 
@@ -586,7 +704,10 @@
     button.classList.toggle("active", !isActive);
 
     saveSelectedTexts();
-    renderChapter();
+
+    if (refreshAvailability()) {
+      renderChapter();
+    }
   });
 
   bookSelect.addEventListener("change", () => {
@@ -615,13 +736,23 @@
       await loadAllSources();
 
       restoreSelectedTexts();
+      rebuildAvailableBooks();
       populateBooks();
+
+      if (books.size === 0) {
+        throw new Error(
+          "The selected texts have no books and chapters in common."
+        );
+      }
+
       readUrl();
       syncSelectors();
       renderChapter();
     } catch (error) {
       console.error(error);
       status.textContent = error.message;
+      status.hidden = false;
+      content.hidden = true;
     }
   }
 
