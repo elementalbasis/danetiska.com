@@ -198,6 +198,7 @@ function expand_simple_macros(s) {
   s = replace_twoarg(s, "per", "Persian")
   s = replace_twoarg(s, "kyr", "Kyrgyz")
   s = replace_twoarg(s, "bg", "Bulgarian")
+  s = replace_twoarg(s, "av", "Avestan")
   s = replace_twoarg(s, "ex")
 
   return s

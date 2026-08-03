@@ -502,7 +502,7 @@
 @key(plyros) @ety(\pie{pl̥h₁nós}; \cf \lat{plenus}, \rus{полный}{pólnyj}, \eng{full}) @typ(adj) @def($full)
 @key(dotor) @ety(\dnt{didomi} + \dnt{-tor}) @typ(mf) @def($giver)
 @key(pri'imi) @pp(pri'imi, pri'imos; pribem, pribyme; pribeboka, pribebykme) @ety(\dnt{pri} + \dnt{imi}) @typ(v) @def(to $come)
-@key(desjmertis) @pp(desjmerti, desjmyrties) @ety(\dnt{desj} + \dan{mertis}) @typ(adj) @def($immortal, $undying)
+@key(desjmertis) @pp(desjmerti, desjmyrties) @ety(\dnt{desj} + \dnt{mertis}) @typ(adj) @def($immortal, $undying)
 @key(oivom) @ety(\pie{h₂óyu}; \cf \lat{aevum}, \grc{αἰών}{aiṓn}) @typ(n) @def($age, $era, $time) @def($century)
 @key(uperpotis) @ety(\dnt{uper} + \dnt{potis}) @typ(m) @def($master)
 @key(sjunteio) @ety(\dnt{sjuntos} + \dnt{-eio}) @typ(v) @def(to $glorify, to $hallow, to $sanctify, to make $holy)
