@@ -30,3 +30,4 @@
 @expr(opisje) @link(opisjos) @def($next to, $besides)
 @expr(usterom mori) @link(usteros, mori) @def($high seas &sea)
 @expr(en mysjti) @link(en, masjtis) @def(in fact)
+@expr(i tasme iti) @link(i, tod, imi) @def(and so forth, and so on, et cetera)
