@@ -117,3 +117,5 @@
 @key(punctos) @infl[2](punct) @ety(\lat{punctus}) @typ(m) @def($point)
 @key(typos) @infl[2](typ) @ety(\lat{typus}) @typ(m) @def($type, $kind, $sort, $class) @def(\reg{colloq} $bloke, $guy, $man)
 @key(psycha) @infl[1](psych) @ety(\grc{ψυχή}{psūkhḗ}) @typ(f) @def($soul)
+@key(crystallom) @ety(\lat{crystallum}) @typ(n) @def($crystal)
+@key(saltos) @ety(\lat{saltus}) @typ(m) @def($jump, $leap)

@@ -46,3 +46,11 @@
 @key(sjyntom) @ety(\pie{ḱm̥tóm}; \cf \lat{centum}, \grc{ἑκατόν}{hekatón}, \rus{сто}{sto}, \eng{hundred}) @typ(num) @def($hundred)
 @key(tusonti) @ety(\pie{tuHsont-}; \cf \rus{тысяча}{týsjača}, \eng{thousand}) @typ(num) @def($thousand)
 @key(timen) @ety(\protrk{tümen}) @typ(num) @def($myriad, ${ten thousand})
+
+% Other %
+@key(obo) @pp(obo; oba; oboi) @ety(\pie{bʰóh₁}; \cf \lat{ambo}, \grk{ἄμφω}{ámphō}, \rus{оба}{óba}) @typ(num) @def($both)
+@key(pleiros) @ety(\pie{pleh₁-}) @typ(adj) @def($more)
+@key(pleistos) @ety(\pie{pleh₁-}) @typ(adj) @def($most)
+@key(pauros) @ety(\pie{peh₂w-}) @typ(adj) @def($few, $little)
+@key(meiros) @ety(\pie{mey-}) @typ(adj) @def($less, $fewer)
+@key(meistos) @ety(\pie{mey-}) @typ(adj) @def($least, $fewest)

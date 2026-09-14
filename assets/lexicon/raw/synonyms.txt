@@ -50,3 +50,5 @@
 @syn(initziom, pramyn)
 @syn(znaio, sjnoio)
 @syn(opispesjo, visitaio)
+@syn(auxiliom, opimektis)
+@syn(exhibo, esjdisjnumi)
