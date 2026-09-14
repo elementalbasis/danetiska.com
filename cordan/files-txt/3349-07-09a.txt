@@ -1,5 +1,0 @@
-% Zettelkasten: Postiquantiska cryptographia
-% 2023 0923 0709
-% [2023-09-23b]
-
-Opibemtis computatrom quantiskom menaceti algorithmons sjasias dinas, pro yod oinos simple djastre mogti pasnuni encryptosta data sjadinam, da decrypteni enam usje yoda opibamient quantiskoi computatores: «Harvest now, decrypt later».

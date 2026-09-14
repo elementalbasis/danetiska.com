@@ -1,1 +1,0 @@
-Esti forma controlosta angliskas, yosjom lexicom i grammatica simplificokanto. Nucleoi lexicosio senti 850 verdom, nu lista mogti extendomeni 2000 verdom.

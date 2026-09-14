@@ -1,7 +1,0 @@
-% Mathematica
-% 18 Cap 3350
-% Tabula sinom i cosinom
-
-Posti mysjlosio verdjosio, memosja tabulam sinom.
-
-_MATH_.
