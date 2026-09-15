@@ -228,7 +228,7 @@
 @key(vidos) @pp(vidos, videsos) @infl[9](vid) @ety(\pie{weyd-}; \cf \grc{εἶδος}{eîdos}, \rus{вид}{vid}, \eng{wit}) @typ(n) @def[1]($form, $image, $shape; $appearance, $look) @def[2](\field{grammar} $aspect)
 @key(viros) @infl[2](vir) @ety(\pie{wiHrós}; \cf \lat{vir}) @typ(m) @def($man) @def($husband)
 @key(vodyn) @pp(vodyn, udens) @infl[8](vod, ud) @ety(\pie{wódr̥}; \cf \lat{unda}, \grc{ὕδωρ}{hŭ́dōr}, \rus{вода}{vodá}, \eng{water}) @typ(n) @def($water)
-@key(volna) @infl[1](voln) @ety(\pie{h₂wĺ̥h₁neh₂}; \cf \lat{lana}, \grc{λῆνος}{lênos}, \rus{волокно}{voloknó}, \eng{wool}) @typ(f) @def($hair, $fur, $wool)
+@key(launa) @infl[1](laun) @ety(\pie{h₂wĺ̥h₁neh₂}; \cf \lat{lana}, \grc{λῆνος}{lênos}, \rus{волокно}{voloknó}, \eng{wool}) @typ(f) @def($hair, $fur, $wool)
 @key(volpos) @infl[2](volp) @ety(\pie{wĺ̥kʷos}; \cf \lat{lupus}, \grc{λύκος}{lŭ́kos}, \rus{волк}{volk}, \eng{wolf}) @typ(m) @def($wolf)
 @key(gostis) @pp(gostis, gysties) @infl[4](gost, gyst) @ety(\pie{gʰóstis}; \cf \lat{hostis}, \rus{гость}{gostʹ}, \eng{guest}) @typ(m) @def($guest, $visitor, $stranger)
 @key(dedjom) @pp(dedjom, djymes) @ety(\pie{dʰéǵʰōm}; \cf \lat{humus}, \grc{χθών}{khthṓn}, \rus{земля}{zemljá}) @typ(f) @def($earth, $land, $ground, $soil)
@@ -523,3 +523,4 @@
 @key(aposjado) @ety(\dnt{apo} + \dnt{sjado}) @typ(v) @def[1](to ${fall apart}) @def[2](\field{physics} to $decay)
 @key(aposjados) @ety(\dnt{aposjado}) @typ(m) @def[1]($falling $apart) @def[2](\field{physics} $decay)
 @key(opisjos) @ety(\dnt{opi} + \dnt{-isjos}) @typ(m) @def($side)
+@key(vodjos) @ety(\pie{wóǵʰos}) @typ(m) @def($wagon)
