@@ -8,6 +8,6 @@
 @key(ive) @ety(From \dnt{i} + \dnt{-ve}) @typ(conj) @def($or)
 @key(je) @ety(\pie{ís} or \pie{yós}) @typ(conj) @def($if)
 @key(nu) @ety(\pie{nu}; \cf \lat{nunc}, \grc{νῦν}{nûn}, \rus{ныне}{nýne}, \eng{now}) @typ(conj) @def($but)
-@key(jasme) @ety(\dnt{jod}) @typ(conj) @def($than)
+@key(josmad) @ety(\dnt{jod}) @typ(conj) @def($than)
 @key(quasi) @ety(\lat{quasi}) @typ(conj) @def($almost, as if)
 @key(espe) @ety(\pie{h₁éskʷe(h₁)}; \cf \rus{ещё}{ješčó}) @typ(conj) @def($yet, $still, $even)
