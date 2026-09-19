@@ -1,7 +1,7 @@
 @key(evangeliom) @ety(\grc{εὐαγγέλιον}{euangélion}) @typ(n) @def($gospel)
 @key(prodisjnumi) @pp(prodisjnumi, prodisjnumos; prodisjym, prodisjme; prodedoisja, prodedisjme) @ety(\dnt{pro} + \dnt{disjnumi}) @typ(v) @def(to $prophesy)
 @key(prodisjtor) @pp(prodisjtor, prodisjtres) @ety(\dnt{prodisjnumi} + \dnt{-tor}) @typ(m) @def($prophet)
-@key(prodisjtis) @pp(prodisjtis, prodisjties) @ety(\dnt{prodisjnumi} + {-tis}) @typ(f) @def($prophecy)
+@key(prodisjtis) @pp(prodisjtis, prodisjties) @ety(\dnt{prodisjnumi} + \dnt{-tis}) @typ(f) @def($prophecy)
 @key(vid) @ety(\dnt{vidnumi}) @typ(intj) @def($behold)
 @key(projekmi) @pp(projekmi, proikmos, projeksym, proiksme, projejoika, projeiksme) @ety(\dnt{pro} + \dnt{jekmi}) @typ(v) @def(to $send)
 @key(elcji) @ety(From a Turkic language; \cf \kyr{элчи}{elci}) @typ(mf) @def($messenger) @def($ambassador) @def($angel)
