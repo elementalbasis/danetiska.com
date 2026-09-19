@@ -14,7 +14,7 @@
 @key(usaio) @ety(\lat{uso}) @typ(v) @def(to $use, to $utilize)
 @key(utilizo) @ety(\lat{utilizaio}) @typ(v) @def(to $use, to $utilize)
 
-@key(-dytos) @ety(\pie{dʰeh₁-}; \cf \lat{facio}, \grc{θετός}{thetós}) @typ(suf) @def(${-able}, ${-ible}, \par{used to construct words deverbal adjectives that indicate the ability to perform the action of the verb on their referent}; \ex{brugodytos}{useful, capable of being used}, \ex{sjlunudytos}{audible, capable of being heard}, &able, &capable)
+@key(-dytos) @ety(\pie{dʰeh₁-}; \cf \lat{facio}, \grc{θετός}{thetós}) @typ(suf) @def(${-able}, ${-ible}, \par{used to construct words deverbal adjectives that indicate the ability to perform the action of the verb on their referent}; \ex{brugedytos}{useful, capable of being used}, \ex{sjlunudytos}{audible, capable of being heard}, &able, &capable)
 
 @key(brugedytos) @ety(\dnt{brugo} + \dnt{-dytos}) @typ(adj) @def($useful)
 @key(myntiedytos) @ety(\dnt{myntio} + \dnt{-dytos}) @typ(adj) @def($thinkable)
@@ -29,7 +29,7 @@
 @key(pibedytos) @ety(\dnt{pibo} + \dnt{-dytos}) @typ(adj) @def($potable, $drinkable)
 
 @key(minos) @ety(\unknown) @typ(mf) @def($boy, $girl)
-@key(gertis) @pp(gertis, gyrties) @ety(\pie{gʰer-}; \cf \lat{hortor}, \grc{χάρις}{khắrĭs}, \eng{yearn}) @typ(v) @def($need, $necessity)
+@key(gertis) @pp(gertis, gyrties) @ety(\pie{gʰer-}; \cf \lat{hortor}, \grc{χάρις}{khắrĭs}, \eng{yearn}) @typ(f) @def($need, $necessity)
 @key(gyrtios) @ety(\dnt{gertis}) @typ(adj) @def($necessary, $needed)
 @key(udeio) @ety(\dnt{ud}) @typ(v) @def(to $raise, \par{to move something to a higher position}) @def(to $increase, to $augment, to $raise, to $increment, \par{to raise the degree or quantity of something}) @def(\field{computing} to $upload)
 @key(nideio) @ety(\dnt{nid}) @typ(v) @def(to $lower, \par{to move something to a lower position}) @def(to $decrease, to $reduce, to $lower, to $decrement, \par{to lower the degree or quantity of something}) @def(\field{computing} to $download)
@@ -42,13 +42,13 @@
 @key(jekmi) @pp(jekmi, ikmos; jeksym, iksme; jejoka, jeikme) @ety(\pie{(H)yeh₁-}; \cf \lat{iacio}) @typ(v) @def(to $throw)
 @key(apojekmi) @pp(apojekmi, apoikmos; apojeksym, apoiksme; apojejoka, apojeiksme) @ety(\dnt{apo} + \dnt{jekmi}) @typ(v) @def(to $forgive, to $remit, \par{used with the accusative case for the action being forgiven, and the ablative case for the person being forgiven})
 @key(jektis) @pp(jektis, ikties) @infl[4](jekt, ikt) @ety(\dnt{jekmi}) @typ(f) @def(\par{act of} $throwing)
-@key(apojektis) @pp(apojektis, apoikties) @ety(\dnt{apojekmi}) @typ(v) @def($forgiveness, $remission)
+@key(apojektis) @pp(apojektis, apoikties) @ety(\dnt{apojekmi}) @typ(f) @def($forgiveness, $remission)
 
 @expr(je vos djusteti) @link(je, vi, djusto) @def($please)
 @expr(dybrodidomi) @link(dybrodidomi) @def(${thank you}, $thanks; \ex{Dybrodido pro donom.}{Thank you for the gift.})
 
 @key(control) @ety(\fra{contrôle}) @typ(m) @def($control)
-@key(controlaio) @ety(\fra{contrôler}) @typ(m) @def(to $control)
+@key(controlaio) @ety(\fra{contrôler}) @typ(v) @def(to $control)
 @key(apobuio) @ety(\dnt{apo} + \dnt{buio}) @typ(v) @def(to $forget)
 @key(dybreio) @ety(\dnt{dybros}) @typ(v) @def(to $improve, to $ameliorate, to make something $better)
 @key(edjoneio) @ety(\dnt{esj} + \dnt{djonos}) @typ(v) @def(to $enjoy)
@@ -64,7 +64,7 @@
 @key(tygnumi) @pp(tygnumi; tagym, tygme; tetoga, tetygme) @ety(\pie{teh₂g-}; \cf \lat{tango}, \grc{τεταγών}{tetagṓn}, \eng{take}) @typ(v) @def(to $touch)
 @key(taktis) @pp(taktis, tykties) @infl[4](takt, tykt) @ety(\dnt{tygnumi}) @typ(f) @def(\par{act of} $touching) @def(sense of $touch)
 @key(po) @ety(\bg{по}{po}) @typ(adv) @def(\par{a particle used to form the comparative degree of adjectives}; \ex{po senos}{older})
-@key(nai) @ety(\bg{най}{naj}) @typ(adv) @def(\par{a particle used to form the superlative degree of adjectives}; \par{nai senos}{oldest})
+@key(nai) @ety(\bg{най}{naj}) @typ(adv) @def(\par{a particle used to form the superlative degree of adjectives}; \ex{nai senos}{oldest})
 @key(crema) @infl[1](crem) @ety(\fra{crème}) @typ(f) @def($cream)
 
 
@@ -78,7 +78,7 @@
 
 
 
-@key(perkunos) @infl[2](perkun) @infl[2](perkun) @ety(\pie{perkʷunos}) @typ(m) @def($thunder, $lightning)
+@key(perkunos) @infl[2](perkun) @ety(\pie{perkʷunos}) @typ(m) @def($thunder, $lightning)
 
 @expr(dina Sules) @link(dina, suls) @def($Sunday)
 @expr(dina Mensos) @link(dina, mens) @def($Monday)

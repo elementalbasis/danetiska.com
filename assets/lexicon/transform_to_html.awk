@@ -187,6 +187,7 @@ function expand_simple_macros(s) {
   s = replace_onearg(s, "protrk", "Proto-Turkic", 0)
   s = replace_onearg(s, "protung", "Proto-Tungusic", 0)
   s = replace_onearg(s, "dan", "Danish", 0)
+  s = replace_onearg(s, "tur", "Turkish", 0)
   s = replace_onearg(s, "fra", "French", 0)
   s = replace_onearg(s, "ger", "German", 0)
   s = replace_onearg(s, "ita", "Italian", 0)

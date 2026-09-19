@@ -3,7 +3,7 @@
 @key(sjos) @pp(sjos; sja; sjod) @ety(\pie{ḱo-}) @typ(pron) @def($this)
 @key(tos) @pp(tos; ta; tod) @ety(\pie{to-}) @typ(pron) @def($that)
 @key(inopos) @pp(inopos; inopa; inopod) @ety(\dnt{oinos} + \dnt{pos}) @typ(pron) @def($something, $someone)
-@key(visjopos) @pp(visjopos; visjopa; visjopos) @ety(\dnt{visjos} + \dnt{pos}) @typ(pron) @def($everyone, $everybody, $everything)
+@key(visjopos) @pp(visjopos; visjopa; visjopod) @ety(\dnt{visjos} + \dnt{pos}) @typ(pron) @def($everyone, $everybody, $everything)
 @key(nipos) @pp(nipos; nipa; nipod) @ety(\dnt{ni-} + \dnt{pos}) @typ(pron) @def($nobody, ${no one}, $nothing)
 @key(somos) @ety(\pie{somh₁ós}; \cf \grc{ὁμός}{homós}, \rus{самый}{sámyj}, \eng{same}) @typ(pron) @def($same, $alike)
 @key(alios) @ety(\pie{h₂élyos}; \cf \lat{alius}, \grc{ἄλλος}{állos}, \eng{else}) @typ(pron) @def($other, $another)

@@ -48,7 +48,7 @@
 @key(timen) @ety(\protrk{tümen}) @typ(num) @def($myriad, ${ten thousand})
 
 % Other %
-@key(obo) @pp(obo; oba; oboi) @ety(\pie{bʰóh₁}; \cf \lat{ambo}, \grk{ἄμφω}{ámphō}, \rus{оба}{óba}) @typ(num) @def($both)
+@key(obo) @pp(obo; oba; oboi) @ety(\pie{bʰóh₁}; \cf \lat{ambo}, \grc{ἄμφω}{ámphō}, \rus{оба}{óba}) @typ(num) @def($both)
 @key(pleiros) @ety(\pie{pleh₁-}) @typ(adj) @def($more)
 @key(pleistos) @ety(\pie{pleh₁-}) @typ(adj) @def($most)
 @key(pauros) @ety(\pie{peh₂w-}) @typ(adj) @def($few, $little)

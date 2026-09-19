@@ -18,7 +18,7 @@
 @expr(apo tosmod) @link(apo, tos) @def($therefore, $thus, $hence, $because of that, $consequently)
 @expr(pro tod) @link(pro, tos) @def($therefore, $thus, $hence, $because of that, $consequently)
 @expr(prinom jerom) @link(prinos, jeros) @def($happy ${new year})
-@expr(prinam dinam djynties) @link(pinos, dina, djentis) @def($happy $birthday)
+@expr(prinam dinam djynties) @link(prinos, dina, djentis) @def($happy $birthday)
 @expr(dina djynties) @link(dina, djentis) @def($birthday)
 @expr(didoni vidos) @link(didomi, vidos) @def(to $seem, to $appear, to give the $appearance of)
 @expr(djystre) @link(djesor) @def(\par{used after an adjective in the instrumental case to make an adverb}; \ex{krytue djystre}{strongly}, \ex{pryme djystre}{firstly}, \ex{finale djystre}{finally}, \ex{apparente djystre}{apparently})

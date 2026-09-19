@@ -7,7 +7,7 @@
 @key(kokoros) @infl[2](kokor) @ety(\ono) @typ(m) @def($chicken, $cock)
 @key(zadacja) @infl[1](zadacj) @ety(\rus{задача}{zadáča}) @typ(f) @def($task, $chore, $objective, $goal, $mission, $aim, $end)
 @key(krasivos) @ety(\rus{красивый}{krasívyj}) @typ(adj) @def($fine, $beautiful, $handsome)
-@key(nadiesjda) @infl[1](nadiesjd) @ety(\rus{надежда}{nadéžda}) @typ(f) @def($hope, $expectation, $prospect)
+@key(nadiezjda) @infl[1](nadiezjd) @ety(\rus{надежда}{nadéžda}) @typ(f) @def($hope, $expectation, $prospect)
 @key(pominaio) @ety(\rus{поминать}{pominátʹ}) @typ(v) @def(to $remember, to $recall)
 @key(traditzional) @typ(adj) @def($traditional)
 @key(velikos) @ety(\rus{великий}{velíkij}) @typ(adj) @def($large, $big, $great)

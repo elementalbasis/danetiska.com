@@ -1,4 +1,4 @@
-@key(evangeliom) @key(\grc{εὐαγγέλιον}{euangélion}) @typ(n) @def($gospel)
+@key(evangeliom) @ety(\grc{εὐαγγέλιον}{euangélion}) @typ(n) @def($gospel)
 @key(prodisjnumi) @pp(prodisjnumi, prodisjnumos; prodisjym, prodisjme; prodedoisja, prodedisjme) @ety(\dnt{pro} + \dnt{disjnumi}) @typ(v) @def(to $prophesy)
 @key(prodisjtor) @pp(prodisjtor, prodisjtres) @ety(\dnt{prodisjnumi} + \dnt{-tor}) @typ(m) @def($prophet)
 @key(prodisjtis) @pp(prodisjtis, prodisjties) @ety(\dnt{prodisjnumi} + {-tis}) @typ(f) @def($prophecy)
