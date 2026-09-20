@@ -1,0 +1,16 @@
+% Change fonts here only. These commands are used by mystyle.sty.
+\usepackage{fontspec}
+\IfFontExistsTF{Charis SIL}{\setmainfont{Charis SIL}}{%
+  \IfFontExistsTF{CharisSIL}{\setmainfont{CharisSIL}}{%
+    \IfFontExistsTF{Noto Serif}{\setmainfont{Noto Serif}}{\setmainfont{DejaVu Serif}[AutoFakeSlant=0.18]}}}
+\IfFontExistsTF{Atavyros}{\newfontfamily\LexGreek{Atavyros}}{%
+  \newfontfamily\LexGreek{DejaVu Serif}}
+\IfFontExistsTF{Scheherazade New}{\newfontfamily\LexArabic[Script=Arabic]{Scheherazade New}}{%
+  \IfFontExistsTF{ScheherazadeNew-Regular}{\newfontfamily\LexArabic[Script=Arabic]{ScheherazadeNew-Regular}}{%
+    \IfFontExistsTF{Scheherazade}{\newfontfamily\LexArabic[Script=Arabic]{Scheherazade}}{%
+      \newfontfamily\LexArabic[Script=Arabic]{DejaVu Sans}}}}
+\newif\ifLexHasAvestan
+\IfFontExistsTF{Noto Sans Avestan}{%
+  \LexHasAvestantrue\newfontfamily\LexAvestan{Noto Sans Avestan}}{%
+  \LexHasAvestanfalse
+  \PackageWarningNoLine{lexicon}{Noto Sans Avestan not installed; Avestan uses supplied transliteration only}}

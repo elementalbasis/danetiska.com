@@ -1,63 +1,37 @@
-# Files
-RAW = raw
-SRC = lexicon.txt
-TMP = build
-PREPENDED = $(TMP)/prepended.txt
-EXPR_ATTACHED = $(TMP)/expr_attached.txt
-MACROS_DELETED = $(TMP)/macros_deleted.txt
-FAMILIES_EXPANDED = $(TMP)/families_expanded.txt
-CLEAN = $(TMP)/clean.txt
-SORTED = $(TMP)/sorted.txt
-HTML = lexicon.html
+# Run from assets/lexicon/. All maintained code/TeX files live here.
+.DEFAULT_GOAL := html
+.DELETE_ON_ERROR:
+PYTHON ?= python3
+XELATEX ?= xelatex
+XELATEX_FLAGS ?= -interaction=nonstopmode -halt-on-error -file-line-error
+# Keep your existing raw/ layout, or put vocabulary .txt files in the root.
+INPUT_DIR ?= $(if $(wildcard raw),raw,.)
 
-# Scripts
-CHECK = check_matching_brackets.awk
-SYMBOLS = print_symbols.awk
-TYPES = print_types.awk
-PREPEND_LEMMA = prepend_lemma.awk
-SORT = alphabetize.awk
-ATTACH_EXPR = attach_expr.awk
-EXPAND_FAMILIES = expand_families.awk
-DELETE_MACROS = delete_macros.awk
-TRANSFORM = transform_to_html.awk
+.PHONY: all html pdf latex check prepare clean
+all: html pdf
 
-# Default target
-all: $(HTML)
+# One shared preparation step, even with make -j all.
+# Content-aware writes retain timestamps when the data has not changed.
+prepare: build_lexicon.py
+	@$(PYTHON) build_lexicon.py --input "$(INPUT_DIR)" --output build
 
-# Step 1 — bracket check (FAIL HARD)
 check:
-	@cat $(RAW)/* > $(SRC)
-	@echo "Checking brackets..."
-	@awk -f $(CHECK) $(SRC)
+	@$(PYTHON) build_lexicon.py --input "$(INPUT_DIR)" --check
 
-# Step 2 — print symbols and types (NO FAIL)
-symbols:
-	@echo "Printing symbols..."
-	@awk -f $(SYMBOLS) $(SRC) | sort -u
-	@echo "Printing types..."
-	@awk -f $(TYPES) $(SRC) | sort -u
+html: prepare
+	@cp build/lexicon.html lexicon.html
+	@echo "Created lexicon.html"
 
-# Step 3 — clean comments and empty lines
-$(CLEAN): $(SRC)
-	@mkdir -p $(TMP)
-	@echo "Cleaning input..."
-	@grep -vE '^[[:space:]]*(%|$$)' $(SRC) > $(CLEAN)
+latex: prepare
+	@echo "Created build/lexicon.tex and build/english.tex; main document: dictionary.tex"
 
-# Step 4 — alphabetize entries
-$(SORTED): $(CLEAN)
-	@echo "Sorting entries..."
-	@awk -f $(PREPEND_LEMMA) $(CLEAN) > $(PREPENDED)
-	@sort $(PREPENDED) > $(CLEAN)
+pdf: prepare dictionary.tex mystyle.sty fonts.tex
+	@$(XELATEX) $(XELATEX_FLAGS) -output-directory=build dictionary.tex
+	@$(XELATEX) $(XELATEX_FLAGS) -output-directory=build dictionary.tex
+	@cp build/dictionary.pdf dictionary.pdf
+	@echo "Created dictionary.pdf"
 
-# Step 5 — transform to HTML
-$(HTML): check symbols $(SORTED)
-	@echo "Transforming to HTML..."
-	@awk -f $(ATTACH_EXPR) $(CLEAN) > $(EXPR_ATTACHED)
-	@awk -f $(EXPAND_FAMILIES) $(EXPR_ATTACHED) > $(FAMILIES_EXPANDED)
-	#@cat $(EXPR_ATTACHED) > $(FAMILIES_EXPANDED)
-	@awk -f $(DELETE_MACROS) $(FAMILIES_EXPANDED) > $(MACROS_DELETED)
-	@awk -f $(TRANSFORM) $(MACROS_DELETED) > $(HTML)
-
-# Clean build artifacts
+# Only generated files are removed. Vocabulary and maintained TeX stay intact.
 clean:
-	rm -rf $(TMP) $(SRC)
+	rm -rf -- build
+	rm -f -- lexicon.html dictionary.pdf

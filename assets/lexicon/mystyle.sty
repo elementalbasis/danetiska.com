@@ -1,0 +1,49 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mystyle}[2026/09/20 Danetian dictionary]
+\RequirePackage{iftex}
+\RequireXeTeX
+\input{fonts.tex}
+\RequirePackage[letterpaper,margin=0.7in]{geometry}
+\RequirePackage{multicol}
+\RequirePackage{ragged2e}
+\RequirePackage{microtype}
+\RequirePackage{fancyhdr}
+\RequirePackage{etoolbox}
+\RequirePackage[unicode,hidelinks]{hyperref}
+\setlength{\columnsep}{1.6em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+\setlength{\headheight}{14pt}
+\emergencystretch=3em
+\tolerance=1800
+\widowpenalty=10000
+\clubpenalty=10000
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small DANETISKA ACADEMIA}
+\fancyhead[R]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\TeXXeTstate=1
+
+% Entries may continue across columns; never strand the first or final line.
+\newcommand{\LexEntry}[1]{\par\RaggedRight\hangindent=1em\hangafter=1\textbf{#1}\space\ignorespaces}
+\newcommand{\LexType}[1]{\textit{#1.}\space\ignorespaces}
+\newcommand{\LexEtymology}[1]{{\footnotesize [#1]}\space\ignorespaces}
+\newcommand{\LexParts}[1]{{\small (#1)}\space\ignorespaces}
+\newcommand{\LexSense}[2]{\ifstrempty{#1}{}{\textbf{#1.}\ }#2\LexPeriod\space\ignorespaces}
+% Avoid doubled punctuation when source ends in . ! ? ; or :.
+\makeatletter
+\newcommand{\LexPeriod}{\ifnum\spacefactor>1000\else.\fi}
+\makeatother
+\newcommand{\LexNote}[1]{{\footnotesize #1}\LexPeriod\space\ignorespaces}
+
+% One language renderer supports every language used in the source files.
+\newcommand{\LexLanguage}[4]{%
+  #1\ % label
+  \ifstrequal{#2}{arabic}{%
+    {\LexArabic\upshape\beginR #3\endR}\ \textit{#4}%
+  }{\ifstrequal{#2}{greek}{%
+    {\LexGreek\upshape #3}\ \textit{#4}%
+  }{\ifstrequal{#2}{avestan}{%
+    \ifLexHasAvestan{\LexAvestan\upshape\beginR #3\endR}\ \fi\textit{#4}%
+  }{\textit{#3}\ifstrempty{#4}{}{\ \textit{#4}}}}}}

@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+\usepackage{mystyle}
+\input{build/counts.tex}
+\hypersetup{pdftitle={Dictionary of the Danetian Language},pdfauthor={Javier Castro}}
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\large DANETISKA ACADEMIA\par}
+\vspace{1.8cm}
+{\Huge\bfseries Dictionary\par}
+\vspace{0.3cm}
+{\Large of the Danetian Language\par}
+\vspace{1.5cm}
+{\large Javier Castro\par}
+\vfill
+{\large Danetian--English\quad /\quad English--Danetian\par}
+\vspace{0.7cm}
+\EntryCount\ entries and expressions\quad\textbullet\quad\SenseCount\ definitions\par
+\vspace{0.7cm}
+\today
+\end{titlepage}
+\section*{Using this dictionary}
+The Danetian section is alphabetized by headword. Numbered meanings preserve explicit source numbers; unnumbered meanings receive unused numbers in their original order. Principal parts appear in parentheses, and etymologies in square brackets. Expressions have their own entries and are listed under the headwords to which they are linked.
+
+The English section is an index of the terms explicitly marked in the source, including hidden index terms. It is not an independently edited English dictionary. Numbers after a Danetian headword refer to its meanings.
+
+Inflection templates are retained in the HTML data but are not printed as paradigms. Duplicate headwords remain separate until editorially reconciled.
+
+\subsection*{Abbreviations}
+\begin{tabular}{@{}ll@{\qquad}ll@{}}
+\textit{m., f., n.} & noun gender & \textit{mf.} & masculine or feminine\\
+\textit{v.} & verb & \textit{adj.} & adjective\\
+\textit{adv.} & adverb & \textit{pron.} & pronoun\\
+\textit{num.} & numeral & \textit{conj.} & conjunction\\
+\textit{intj.} & interjection & \textit{suf.} & suffix\\
+\textit{prep.} & preposition & \textit{Syn.} & synonyms\\
+\textit{nom., acc., gen.} & nominative, accusative, genitive & \textit{abl., dat.} & ablative, dative\\
+\textit{loc., ins.} & locative, instrumental & \textit{cf.} & compare\\
+PIE & Proto-Indo-European & Anc. Gr. & Ancient Greek\\
+\end{tabular}
+\clearpage
+\section*{Danetian to English}
+\markboth{Danetian to English}{}
+\begin{multicols}{2}
+\input{build/lexicon.tex}
+\end{multicols}
+\clearpage
+\section*{English to Danetian}
+\markboth{English to Danetian}{}
+\begin{multicols}{2}
+\input{build/english.tex}
+\end{multicols}
+\end{document}
