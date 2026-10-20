@@ -11,3 +11,9 @@
 @key(tvoios) @typ(pron) @def($your, $yours \par{singular possessor})
 @key(nosjos) @ety(\pie{nos}) @typ(pron) @def($our, $ours)
 @key(vosjos) @ety(\pie{wos}) @typ(pron) @def($your, $yours \par{plural possessor})
+
+@key(edja, me, mene) @typ(pron) @def($I, $me)
+@key(tu, tve, teve) @typ(pron) @def($you)
+@key(enos; ena; enod) @typ(pron) @def($he, $him; $she, $her; $it)
+@key(vi, nos, nysom) @typ(pron) @def($we, $us)
+@key(ju, vos, usom) @typ(pron) @def($you \par{plural})

@@ -1,0 +1,1 @@
+@key(imi, imos; bem, byme; beboka, bebykme) @typ(v) @def(to $go)

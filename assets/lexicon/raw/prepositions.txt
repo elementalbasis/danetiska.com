@@ -20,7 +20,7 @@
 @key(endo) @ety(\pie{h₁n̥dó}; \cf \grc{ἔνδον}{éndon}) @typ(adv) @def($inside, $within) @typ(prep+gen) @def($inside, $within)
 @key(esjtro) @ety(Formed in analogy to \dnt{endo}) @typ(prep+gen) @def($outside of)
 @key(do) @ety(\pie{de}; \cf \rus{до}{do}) @typ(prep+gen) @def($until)
-@key(nid) @ety(\pie{ní}; \cf \rus{низ}{niz}, \eng{nether}) @typ(prep+acc) @def($down) @def($along, $down \ex{nid danu}{down the river})
+@key(nid) @ety(\pie{ní}; \cf \rus{низ}{niz}, \eng{nether}) @typ(prep+acc) @def($down) @def($along, $down; \ex{nid danu}{down the river})
 @key(ud) @ety(\pie{úd}; \cf \lat{usque}, \grc{ὕστερος}{hŭ́steros}, \eng{out}) @typ(prep+acc) @def($up, $outward)
 @key(pri) @ety(\pie{préy}; \cf \rus{при}{pri}) @typ(prep+gen) @def($near)
 @key(rodi) @ety(\pie{rōdʰi}; \cf \rus{ради}{rádi}) @typ(prep+gen) @def($for the $sake of)

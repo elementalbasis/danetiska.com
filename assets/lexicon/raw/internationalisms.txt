@@ -223,7 +223,7 @@
 @key(famosos) @ety(\lat{famosus}) @typ(adj) @def($famous)
 @key(favor) @ety(\lat{favor}) @typ(m) @def($favor)
 @key(febris) @ety(\lat{febris}) @typ(f) @def($fever)
-@key(femina) @ety(\lat{femina}) @typ(f) @def[1]($woman) @def[2]($wife)
+@key(femina) @ety(\lat{femina}) @typ(f) @def($woman) @def($wife)
 @key(fictzion) @ety(\lat{fictio}) @typ(f) @def($fiction)
 @key(figura) @ety(\lat{figura}) @typ(f) @def($figure)
 @key(filom) @ety(\lat{filum}) @typ(n) @def($thread)
