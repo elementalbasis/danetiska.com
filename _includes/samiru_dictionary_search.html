@@ -1,0 +1,15 @@
+<form class="search" action="{{ '/samiru/' | relative_url }}" method="get"
+      data-lexicon="{{ '/samiru/lexicon.html' | relative_url }}" lang="es">
+  <input name="q" type="search" placeholder="Buscar en el diccionario"
+         aria-label="Palabra o traducción" autocomplete="off" />
+  <select name="mode" id="mode" aria-label="Tipo de búsqueda">
+    <option value="general">Búsqueda general</option>
+    <option value="lemma-exact">Palabra exacta</option>
+    <option value="lemma-prefix">Empieza por</option>
+    <option value="lemma-contains">Contiene</option>
+    <option value="lemma-suffix">Termina en</option>
+    <option value="gloss-exact">Traducción exacta</option>
+    <option value="random">Al azar</option>
+  </select>
+  <button type="submit">Buscar</button>
+</form>
