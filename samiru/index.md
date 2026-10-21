@@ -12,6 +12,9 @@ permalink: /samiru/
     <p>Busque una palabra en samiruano o su traducción al español.
       Puede omitir las tildes y los macrones al buscar.</p>
     <p>Descargue la <a href="/samiru/samiru.pdf">versión PDF del diccionario</a>.</p>
+    <p> El diccionario se ha compilado de los siguientes datos:</p>
+{% capture source %}{% include samiru.txt %}{% endcapture %}
+<pre class="codebox">{{ source | escape }}</pre>
   </div>
 </section>
 
