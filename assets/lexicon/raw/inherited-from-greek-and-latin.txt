@@ -72,7 +72,7 @@
 @key(nativos) @ety(\lat{nativus}) @typ(adj) @def($native)
 @key(necessarios) @ety(\lat{necessarius}) @typ(adj) @def($necessary)
 @key(nota) @ety(\lat{nota}) @typ(f) @def($note)
-@key(origines) @ety(\lat{origo}) @typ(m) @def($origin)
+@key(origen) @ety(\lat{origo}) @typ(m) @def($origin)
 @key(paganos) @ety(\lat{paganus}) @typ(adj) @def($pagan)
 @key(parts) @ety(\lat{pars}) @typ(f) @def($part)
 @key(philosophia) @ety(\grc{φιλοσοφία}{philosophíā}) @typ(f) @def($philosophy)
@@ -119,3 +119,4 @@
 @key(psycha) @ety(\grc{ψυχή}{psūkhḗ}) @typ(f) @def($soul)
 @key(crystallom) @ety(\lat{crystallum}) @typ(n) @def($crystal)
 @key(saltos) @ety(\lat{saltus}) @typ(m) @def($jump, $leap)
+@key(virgen) @ety(\lat{virgo}) @typ(f) @def($virgin)

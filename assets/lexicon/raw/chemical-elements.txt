@@ -39,7 +39,7 @@
 @key(manganesos) @ety(\fra{manganèse}) @typ(m) @def($manganese, \chem{25})
 @key(cobaltos) @ety(\ger{Kobalt}) @typ(m) @def($cobalt, \chem{27})
 @key(nickel) @ety(\ger{Nickel}) @typ(m) @def($nickel, \chem{28})
-@key(tzink) @ety(\ger{Zink}) @typ(m) @def($zinc, \chem{30})
+@key(drugokimisj) @ety(\dnt{drugos} + \dnt{kimisj}) @typ(m) @def($zinc, \chem{30})
 @key(galliom) @ety(\lat{Gallia}) @typ(n) @def($gallium, \chem{31})
 @key(germaniom) @ety(\ger{Germanium}) @typ(n) @def($germanium, \chem{32})
 @key(zirnik) @ety(\ara{زرنيخ}{zirnīḵ}) @typ(m) @def($arsenic, \chem{33})
