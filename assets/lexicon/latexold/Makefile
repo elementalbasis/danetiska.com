@@ -8,7 +8,7 @@ MACROS_DELETED = $(TMP)/macros_deleted.txt
 FAMILIES_EXPANDED = $(TMP)/families_expanded.txt
 CLEAN = $(TMP)/clean.txt
 SORTED = $(TMP)/sorted.txt
-HTML = latexified.latex
+LATEX = latexified.latex
 
 # Scripts
 CHECK = ../check_matching_brackets.awk
@@ -22,7 +22,7 @@ DELETE_MACROS = ../delete_macros.awk
 TRANSFORM = ../transform_to_latex.awk
 
 # Default target
-all: $(HTML)
+all: $(LATEX)
 
 # Step 1 — bracket check (FAIL HARD)
 check:
@@ -49,14 +49,15 @@ $(SORTED): $(CLEAN)
 	@awk -f $(PREPEND_LEMMA) $(CLEAN) > $(PREPENDED)
 	@sort $(PREPENDED) > $(CLEAN)
 
-# Step 5 — transform to HTML
-$(HTML): check symbols $(SORTED)
-	@echo "Transforming to HTML..."
+# Step 5 — transform to LATEX
+$(LATEX): check symbols $(SORTED)
+	@echo "Transforming to LATEX..."
 	@awk -f $(ATTACH_EXPR) $(CLEAN) > $(EXPR_ATTACHED)
 	@awk -f $(EXPAND_FAMILIES) $(EXPR_ATTACHED) > $(FAMILIES_EXPANDED)
 	#@cat $(EXPR_ATTACHED) > $(FAMILIES_EXPANDED)
 	@awk -f $(DELETE_MACROS) $(FAMILIES_EXPANDED) > $(MACROS_DELETED)
-	@awk -f $(TRANSFORM) $(MACROS_DELETED) > $(HTML)
+	@awk -f $(TRANSFORM) $(MACROS_DELETED) > $(LATEX)
+
 
 # Clean build artifacts
 clean:

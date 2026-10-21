@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside]{book}
+\documentclass[12pt,twoside]{book}
 \usepackage{danedict}
 
 \begin{document}
@@ -16,6 +16,8 @@
 \chapter*{Lexicon}
 \addcontentsline{toc}{chapter}{Lexicon}
 
+\twocolumn
+\RaggedRight
 \input{latexified.latex}
 
 \backmatter

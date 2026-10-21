@@ -15,6 +15,7 @@
 \RequirePackage{geometry}
 \RequirePackage{fancyhdr}
 \RequirePackage{setspace}
+\RequirePackage{ragged2e}
 
 % ---------- Page/layout ----------
 \geometry{
@@ -46,12 +47,20 @@
 
 % ---------- Fonts ----------
 % Replace these with your preferred installed fonts if needed.
-\setmainfont{Libertinus Serif}
-\newfontfamily\danetianfont{Libertinus Serif}
-\newfontfamily\foreignfont{Libertinus Serif}
-\newfontfamily\greekfont{Libertinus Serif}
-\newfontfamily\cyrillicfont{Libertinus Serif}
+%\setmainfont{Libertinus Serif}
+%\newfontfamily\danetianfont{Libertinus Serif}
+%\newfontfamily\foreignfont{Libertinus Serif}
+%\newfontfamily\greekfont[Scale=MatchLowercase]{Libertinus Serif}
+%\newfontfamily\cyrillicfont{Libertinus Serif}
 \newfontfamily\arabicfont[Script=Arabic]{Amiri}
+\newfontfamily\avestanfont[Script=Avestan]{Noto Sans Avestan}
+
+
+\setmainfont{Charis SIL}
+\newfontfamily\danetianfont{Charis SIL}
+\newfontfamily\foreignfont{Charis SIL}
+\newfontfamily\cyrillicfont{Charis SIL}
+\newfontfamily\greekfont{Gentium Plus}
 
 \setdefaultlanguage{english}
 \setotherlanguages{greek,russian,arabic}
@@ -70,9 +79,39 @@
   \par\vspace{0.45\baselineskip}%
 }
 
-\newcommand{\dictreset}{%
-  \setcounter{dictsense}{0}%
+
+\newcounter{dictentry}
+
+\makeatletter
+\newcommand{\dictsensecount}[2]{%
+	\expandafter\gdef\csname dictsenses@#1\endcsname{#2}%
+	}
+
+\newcommand{\dictsavesenses}{%
+  \ifnum\value{dictentry}>0
+    \immediate\write\@auxout{%
+      \string\dictsensecount
+        {\arabic{dictentry}}{\arabic{dictsense}}%
+    }%
+  \fi
 }
+
+\newcommand{\dictreset}{%
+	\dictsavesenses
+	\stepcounter{dictentry}%
+	\setcounter{dictsense}{0}%
+}
+
+\newcommand{\dictsenselabel}[1]{%
+	\ifcsname dictsenses@\arabic{dictentry}\endcsname
+		\ifnum\csname dictsenses@\arabic{dictentry}\endcsname>1
+			\textbf{\makebox[1.8em][l]{\footnotesize #1.}}%
+		\fi
+	\fi
+}
+
+\makeatother
+\AtEndDocument{\dictsavesenses}
 
 % ---------- Entry macros ----------
 \NewDocumentCommand{\mykey}{m}{%
@@ -124,13 +163,10 @@
 }
 
 \NewDocumentCommand{\mydef}{o m}{%
-%  \par
-%  \hangindent=2em\hangafter=1
   \stepcounter{dictsense}%
-%  \hspace*{1.2em}%
   \IfNoValueTF{#1}
-    {\textbf{\makebox[1.8em][l]{\footnotesize\arabic{dictsense}.}}}
-    {\textbf{\makebox[1.8em][l]{\footnotesize#1.}}}%
+    {\dictsenselabel{\arabic{dictsense}}}
+    {\dictsenselabel{#1}}%
   #2%
 }
 
@@ -196,10 +232,12 @@
 \NewDocumentCommand{\myono}{}{{\textit{onom.}}}
 \NewDocumentCommand{\myprotrk}{m}{{\foreignfont\textit{Proto-Turkic}~#1}}
 \NewDocumentCommand{\myprotung}{m}{{\foreignfont\textit{Proto-Tungusic}~#1}}
+\NewDocumentCommand{\mytur}{m}{{\foreignfont\textit{Tur.}~#1}}
 \NewDocumentCommand{\myara}{m m}{{\textit{Ar.}~\textarabic{#1}~\emph{#2}}}
 \NewDocumentCommand{\myper}{m m}{{\textit{Pers.}~\textarabic{#1}~\emph{#2}}}
 \NewDocumentCommand{\mygrc}{m m}{{\textit{Gk.}~\textgreek{#1}~\emph{#2}}}
 \NewDocumentCommand{\myrus}{m m}{{\textit{Rus.}~{\cyrillicfont #1}~\emph{#2}}}
+\NewDocumentCommand{\myav}{m m}{{\textit{Av.}~{\avestanfont #1}~\emph{#2}}}
 
 % ---------- Fallbacks for future macros ----------
 % These are harmless placeholders so the document compiles even if your exporter
@@ -213,3 +251,6 @@
   \par\hangindent=2em\hangafter=1
   \hspace*{1.2em}{\footnotesize\itshape Note}~#1%
 }
+
+
+\NewDocumentCommand{\mypp}{m}{}
