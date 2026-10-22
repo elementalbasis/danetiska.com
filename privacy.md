@@ -3,20 +3,56 @@ layout: standalone
 title: Privacy Statement
 ---
 
-The Danetian Academy does not collect, store, or process personal data from
-visitors to this website.
+The Danetian Academy respects the privacy of visitors to this website. No user
+accounts, subscriptions, or contact forms are provided.
 
-This website does not use cookies, analytics services, tracking pixels, or
-similar technologies. No user accounts, subscriptions, or contact forms are
-provided.
 
-Basic technical information may be processed automatically by the hosting
-provider as part of standard server operation. This information is not accessed,
-stored, or used by the Danetian Academy.
+
+### Analytics
+
+This website uses [GoatCounter](https://www.goatcounter.com/), an open-source,
+privacy-focused analytics service, to collect anonymous website usage
+statistics.
+
+GoatCounter records information such as pages visited, referring websites,
+browser type, operating system, and approximate geographical location. IP
+addresses are processed temporarily but are not stored in its analytics
+database.
+
+GoatCounter does not use cookies or persistent identifiers to track visitors.
+The Danetian Academy does not use analytics data for advertising, profiling, or
+identifying individual visitors.
+
+
+
+### Third-party Services
+
+This website uses external services to deliver certain resources, including
+JavaScript libraries and analytics. These providers may receive technical
+information, such as IP addresses and browser headers, when resources are
+requested.
+
+The hosting provider may also process technical information as part of normal
+server operation and security.
+
+
+
+### Correspondence
+
+If you contact the Danetian Academy by email, your address and correspondence
+may be retained for the purpose of responding to your inquiry.
+
+
+
+### External Websites
 
 This website may contain links to external websites. The Danetian Academy is not
-responsible for the privacy practices of external sites.
+responsible for the privacy practices of those websites.
 
-If the functionality of this website changes in the future, this Privacy
-Statement will be updated accordingly.
+
+
+### Changes
+
+This statement may be updated to reflect changes in the website or the services
+it uses.
 
