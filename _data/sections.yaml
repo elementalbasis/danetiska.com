@@ -22,6 +22,10 @@ texts:
   items:
     - title: Overview
       url: /texts
+    - title: Atomic Theory
+      url: /texts/atomic-theory
+    - title: Scythians
+      url: /texts/scythians
     - title: Schleicher's Fable
       url: /texts/schleichers-fable
     - title: The North Wind and the Sun
