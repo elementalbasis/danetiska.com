@@ -34,3 +34,7 @@ assets/lexicon/lexicon.txt
 
 # Ignore all files with the .old extension
 *.old
+
+# Ignore LaTeX byproducts
+*.aux
+*.log
