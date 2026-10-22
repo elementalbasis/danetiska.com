@@ -4,6 +4,7 @@
 @key(viteros) @ety(\pie{wí-tero-s}; \cf \rus{второй}{vtorój}) @typ(adj) @def($second)
 @key(tritos) @ety(\pie{tritós}; \cf \lat{tertius}, \grc{τρίτος}{trĭ́tos}, \rus{третий}{trétij}, \eng{third}) @typ(adj) @def($third)
 @key(peturtos) @ety(\pie{kʷetwr̥tós}; \cf \lat{quartus}, \grc{τέταρτος}{tétărtos}, \rus{четвёртый}{četvjórtyj}, \eng{fourth}) @typ(adj) @def($fourth)
+@key(pempetos) @ety(\pie{penkʷtós}; \cf \lat{quinctus}, \grc{πέμπτος}{pémptos}, \rus{пятый}{pjátyj}, \eng{fifth}) @typ(adj) @def($fifth)
 @key(svesjtos) @ety(\pie{swéḱstos}; \cf \lat{sixtus}, \grc{ἕκτος}{héktos}, \rus{шестой}{šestój}, \eng{sixth}) @typ(adj) @def($sixth)
 @key(septymos) @ety(\pie{septm̥mós}; \cf \lat{septimus}, \grc{ἕβδομος}{hébdomos}, \rus{седьмой}{sedʹmój}, \eng{seventh}) @typ(adj) @def($seventh)
 @key(osjtovos) @ety(\pie{oḱtowós}; \cf \lat{octavus}, \grc{ὄγδοος}{ógdoos}) @typ(adj) @def($eighth)

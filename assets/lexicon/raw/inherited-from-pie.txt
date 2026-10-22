@@ -150,7 +150,6 @@
 @key(paslo) @ety(\pie{kʷeh₂s-}; \cf \rus{кашлять}{kášljatʹ}) @typ(v) @def(to $cough)
 @key(pater, pytres) @ety(\pie{ph₂tḗr}; \cf \lat{pater}, \grc{πατήρ}{pătḗr}, \eng{father}) @typ(m) @def($father)
 @key(pavyn, pyvens) @ety(\pie{péh₂wr̥}; \cf \lat{purgo}, \grc{πῦρ}{pûr}, \eng{fire}) @typ(n) @def($fire)
-@key(pemptos) @ety(\pie{penkʷtós}; \cf \lat{quinctus}, \grc{πέμπτος}{pémptos}, \rus{пятый}{pjátyj}, \eng{fifth}) @typ(adj) @def($fifth)
 @key(peplos) @ety(\pie{kʷékʷlos}; \cf \grc{κύκλος}{kŭ́klos}, \eng{wheel}) @typ(m) @def($circle, $wheel)
 @key(perkus, pyrkues) @ety(\pie{pérkus}; \cf \lat{quercus}) @typ(m) @def($oak)
 @key(pesju, pysjues) @ety(\pie{péḱu}; \cf \lat{pecu}, \eng{fee}) @typ(n) @def($cattle, $livestock; $wealth)
