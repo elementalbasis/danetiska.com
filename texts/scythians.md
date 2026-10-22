@@ -55,8 +55,6 @@ i Volgas, en josmi sjadinam esti Russia;
 Visjoi petvores nemont communym culturalym identitatym, disjtam en enosom
 urusjovi nomadismi, formi gubernosio, i inoki arti i usti.
 
-% Charta extensiones Scythom, peri 700–300 BCE. Simeon Netchev <!-- (CC BY-NC-ND) -->.
-
 ## Scythiskos urusj
 
 Scythiskos militar apparatos includet pletum varietatym jarakom. Esjtro jekni
@@ -83,8 +81,6 @@ Dionym, Scythai tasme dybre igrostont importantym rolym opimegni Artabanom II
 ("Historia Romana", 57.26). Tacitos upobereti sjam affirmatzionym, disjnunts
 Artabanom «sjoledjontym auxiliaryns en Scythii» anti ini kiresjym <!-- ("Annales",
 6.44.1) -->.
-
-% Scythiskoi kiresjtres. Editzion 1900, Encyclopédie Larousse Illustrée <!-- (Public Domain) -->.
 
 Tod brununts, Scythai ne sent inoke djystre masjtores rydjom ive myktioi sopioi.
 Nai spectacular victoria Scythias megti bebuni ta proti Persiskom Imperiom
@@ -127,8 +123,6 @@ Herodotosio disjnuti jod, javot brysjtos redjs ive kaput representat scythiskam
 natzionym en communicatzioni medi prominentyns sjmonyns, alia upokaputa tasme
 dybre veriont svoians opinionyns i nemont significantym mektim determinani
 actzionym.
-
-% Poculom Kul-Obas. Joanbanjo <!-- (CC BY-SA) -->.
 
 Some importante josmad enosom tribal structura, commun organizatzion scythiskas
 armadas probabile djystre bebukiet paure sjnoiosta parts enosom spyses. Altynos
@@ -194,8 +188,6 @@ nideiontes tokinym, i gryphones smerdontes i kraiontes esjvons. Toda, en
 esjledjostois stelois pri brivas, senti kaproi, mundukai, sjvones, cjekirgai i
 avies en miniaturi.
 
-% Scythiskom altynom pectoralom esj Tovsta Mohylad. Terminator <!-- (Public Domain) -->.
-
 Apo toda, artefacta Krysnosio Myries proberonti inoka videsa, inopoda dramatiska,
 scythiskas modas, interessom, sjtrysdom, habitom i bivas visjoinas dinas, jasme
 paura alia funeraria objecta mygonti dekni. Pleira, jasme brivovos, nemonti
@@ -215,8 +207,6 @@ correspondet enosom luboi tatuazjom. Sjnotores tatuazjom sjadinas mygenti
 spitieni artym, jam esjdisjnunti renkai oinosio individuosio en Pazyryk, apo
 omesed do djystres. Ana renkasu senti permanente djystre tatuasta abstracta
 videsa plesjostomnom leonom, tokinom, oviom, antilopom i kaprom.
-
-% Mumia Princessas Ukokes. Kobsev <!-- (Public Domain) -->.
 
 Additzionale djystre, javot anaities Krysnosio Myries disjnunti practiskam
 esjlesjtim pantalonom i tunicom pro esjvinom ludim en glyti climi, enai tasme
@@ -294,8 +284,6 @@ conservastont svoiam independentziam, sepontes svoions antiquons pontons,
 frequente djystre ulontes inokai i kiresjontes opisje svoiom virom. Enai tasme
 dybre prohibostont svoians dugatryns byneiomeni anti nosjeiosteni
 virom en kiresji <!-- (Historiai, 4.110–117) -->.
-
-% Particularom Amazonomachias. Daderot <!-- (Public Domain) -->.
 
 Appianos confirmati statim scythiskom benom jasme gubernantom i urusjtrizom.
 Describonts triumphom Pompeiosio rodi vevoikni Mithridatem VI, enos
