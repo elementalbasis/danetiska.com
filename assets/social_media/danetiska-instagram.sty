@@ -1,0 +1,119 @@
+% danetiska-instagram.sty — square linguistic reference cards
+% Compile with XeLaTeX or LuaLaTeX. Keep one dacard per slide.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{danetiska-instagram}[2026/10/22 v0.2 Square academic slides with logo]
+
+\RequirePackage{geometry}
+\RequirePackage{fontspec}
+\RequirePackage{graphicx}
+\RequirePackage[table]{xcolor}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{ragged2e}
+\RequirePackage{fancyhdr}
+\RequirePackage{xparse}
+
+% 108 mm / 25.4 * 254 dpi = 1080 pixels. PDF itself stays vector.
+\geometry{
+  paperwidth=108mm,paperheight=108mm,
+  left=9mm,right=9mm,top=13mm,bottom=10mm,
+  headheight=27pt,headsep=1pt,footskip=14pt
+}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Noto Sans}
+
+% Match the Academy's dictionary-card palette.
+\definecolor{DABlue}{HTML}{1E3E99}
+\definecolor{DAGreen}{HTML}{38772C}
+\definecolor{DAInk}{HTML}{2C2C2C}
+\definecolor{DAMuted}{HTML}{626B79}
+\definecolor{DARule}{HTML}{C4CCD8}
+\definecolor{DAPale}{HTML}{F4F7FC}
+
+\color{DAInk}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\raggedbottom
+
+% Static branding on all cards. No decorative boxes or wasted side space.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\raisebox{-0.18\height}{\includegraphics[height=6mm]{danetiska_academia_logo.pdf}}}
+\fancyhead[R]{{\color{DAGreen}\fontsize{8}{10}\selectfont DANETISKA.COM}}
+\fancyfoot[L]{{\color{DAMuted}\fontsize{8}{10}\selectfont LANGUAGE NOTES}}
+\fancyfoot[R]{{\color{DAMuted}\fontsize{8}{10}\selectfont\thepage}}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0.35pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{DARule}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{DARule}\leaders\hrule height \footrulewidth\hfill}}
+
+% Every dacard starts a new PDF page (including repeated cards in one file).
+\newif\ifDAstarted
+\DAstartedfalse
+\NewDocumentEnvironment{dacard}{mm}{%
+  \ifDAstarted\clearpage\else\global\DAstartedtrue\fi
+  \thispagestyle{fancy}%
+  \noindent\begin{minipage}[t][\dimexpr\textheight-15pt\relax][t]{\linewidth}%
+  {\color{DAGreen}\fontsize{8.5}{10.2}\selectfont\bfseries\MakeUppercase{#2}\par}%
+  \vspace{0.7mm}%
+  {\color{DABlue}\fontsize{24.5}{27}\selectfont\bfseries #1\par}%
+  \vspace{1mm}%
+}{\end{minipage}\par}
+
+% Explanatory line directly under the title.
+\NewDocumentCommand{\dadesc}{m}{%
+  {\color{DAGreen}\fontsize{9.8}{11.8}\selectfont #1\par}%
+  \vspace{0.9mm}%
+}
+
+% Small table/callout label.
+\NewDocumentCommand{\dalabel}{m}{%
+  \par\vspace{0.5mm}%
+  {\color{DAMuted}\fontsize{8.5}{10}\selectfont\bfseries\MakeUppercase{#1}\par}%
+  \vspace{0.7mm}%
+}
+
+% Equal-width flexible column types. K is a narrower case-label column.
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{K}{>{\raggedright\arraybackslash\color{DAMuted}}p{26mm}}
+
+% Usage: \begin{datable}[10.9]{KCC} ... \end{datable}
+% The optional argument is the table font size in points.
+% Add \midrule after the header row, as in the examples.
+\NewDocumentEnvironment{datable}{O{10.9}m+b}{%
+  \par\noindent\begingroup
+  \fontsize{#1pt}{\dimexpr#1pt+2pt\relax}\selectfont
+  \renewcommand{\arraystretch}{0.55}%
+  \setlength{\tabcolsep}{4pt}%
+  \setlength{\aboverulesep}{0.7pt}%
+  \setlength{\belowrulesep}{0.7pt}%
+  \arrayrulecolor{DARule}%
+  \begin{tabularx}{\linewidth}{@{}#2@{}}\toprule
+  #3
+  \bottomrule\end{tabularx}\endgroup\par
+}{}
+
+\NewDocumentCommand{\dahead}{m}{{\color{DAMuted}\fontsize{10.3}{12}\selectfont\bfseries #1}}
+\NewDocumentCommand{\daform}{m}{{\color{DABlue}\bfseries #1}}
+\NewDocumentCommand{\dameaning}{m}{{\color{DAInk}\bfseries #1}}
+\NewDocumentCommand{\dagloss}{m}{{\color{DAMuted}\itshape #1}}
+
+% Lightweight editorial footnote beneath a SHORT table.
+% On dense eight-row cards, omit notes to preserve comfortable margins.
+\NewDocumentCommand{\danote}{m}{%
+  \par\vspace{1.7mm}%
+  {\color{DAMuted}\fontsize{9.8}{12.5}\selectfont #1\par}%
+}
+
+% Smaller title, useful on cards with two or more tables.
+\NewDocumentCommand{\dasubhead}{m}{%
+  \par\vspace{1mm}%
+  {\color{DABlue}\fontsize{15}{19}\selectfont\bfseries #1\par}%
+  \vspace{1mm}%
+}
