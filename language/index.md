@@ -35,5 +35,4 @@ words, and words relating to the nomadic way of life. Danetian has also
 borrowed extensively from Latin, Greek, Arabic, and Persian.
 
 This language project has been in development since 2016. After countless
-revisions, it has finally reached a stable form. The Danetian Academy is
-dedicated to promoting the Danetian language.
+revisions, it has finally reached a stable form.
