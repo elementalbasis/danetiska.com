@@ -25,8 +25,8 @@ The inflection of Danetian nouns can be decomposed into the following elements:
 |:-|:-|:-|:-|
 | viros | vir- | -o- | -s |
 | virosio | vir- | -o- | -sio |
-| byna | byn- | -a- | -&empty; |
-| bynamos | byn- | -a- | -mos |
+| bena | ben- | -a- | -&empty; |
+| benamos | ben- | -a- | -mos |
 | mentis | ment- | -i- | -s |
 | myntibi | mynt- | -i- | -bi |
 | nebos | nebos- | -&empty;- | -&empty; |
@@ -80,7 +80,7 @@ class are regular. Some examples of second declension nouns are:
 * *arsjtos* (m): bear
 * *divos* (m): god
 * *donom* (n): gift
-* *sjdrynom* (n): grain
+* *sjdranom* (n): grain
 * *esjvos* (m): horse
 * *kapros* (m): goat
 * *lubos* (m): love
@@ -151,7 +151,7 @@ Some examples of i-stem nouns are:
 | voc. | menti | menties |
 | acc. | mentim | mentins |
 | gen. | mynties | myntiom |
-| abl. | mynties, myntied | myntimos |
+| abl. | myntied | myntimos |
 | dat. | myntiei | myntimos |
 | loc. | mynti | myntisu |
 | ins. | myntie | myntibi |
@@ -163,7 +163,7 @@ Some examples of i-stem nouns are:
 | voc. | mori | moria |
 | acc. | mori | moria |
 | gen. | myries | myriom |
-| abl. | myries, myried | myrimos |
+| abl. | myried | myrimos |
 | dat. | myriei | myrimos |
 | loc. | myri | myrisu |
 | ins. | myrie | myribi |
