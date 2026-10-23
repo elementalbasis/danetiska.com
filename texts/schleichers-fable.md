@@ -1,5 +1,5 @@
 ---
-order: 30
+order: 5
 title: Schleicher's fable
 layout: section
 section: texts
@@ -8,20 +8,25 @@ permalink: /texts/schleichers-fable
 
 ## Danetiska:
 
-Ovis, yosmoi valna ne est, vidst esjvons: oinom dukontam brauvom
-vodjom, aliom berontam masjlom borom, i tritom berontam virom pluktie
-djastre. Ovis disjt esjvomos: «Moyom sjerd me payeti, vindontam virom
-dukontam esjvons». Esjvoi disjent: «Sjlu, Ovi! Nosja sjerda nos
-payonti, vindontans sjod: Viros, potis, dekti valnam esj ovies en
-bermom vestrom pro sve. Da oviei valna ne esti». Sjod sjesjlukvos, ovis
-en asjdrom bugostet.
+Ovis, jasmai launa ne est, vidt esjvons: oinom dukontym brum vodjom, aliom
+berontym mysjlom onos, i tritom berontym virom bire djystre.
 
-## Angliska:
+> A sheep, who had no wool, saw some horses: one pulling a heavy wagon, another
+carrying a big load, and a third carrying a man quickly.
 
-A sheep that had no wool saw some horses: one pulling a heavy wagon,
-another carrying a big load, and a third one carrying a man quickly. The
-sheep said to the horses, "My heart pains me, seeing a man driving
-horses." The horses said, "Listen, sheep! Our hearts pain us, seeing
-this: A man, the master, makes the wool of the sheep into a warm garment
-for himself. And the sheep has no wool." Having heard this, the sheep
-fled into the field.
+Ovis vepst esjvomos: «Moiom sjerd me peieti, vidnuntym virom dukontym
+esjvons».
+
+> The sheep said to the horses, "My heart pains me, seeing a a man driving
+horses."
+
+Esjvoi upsent: «Sjlu, ovi, nosja sjerda nos peionti, vidnuntyns sjod: Viros,
+potis, dekti launam ovies en brymam vestim pro sve. Ide oviei ne esti launa».
+
+> The horses said, "Listen, sheep, our hearts pain us, seeing this: A man, the
+master, makes the wool of the sheep into a warm garment for himself. And the
+sheep has no wool."
+
+Sjod sjesjlukvos, ovis bugostet en asjdrom.
+
+> Having heard this, the sheep fled into the field.
