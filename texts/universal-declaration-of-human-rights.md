@@ -1,4 +1,5 @@
 ---
+order: 50
 title: Universal Declaration of Human Rights
 layout: section
 section: texts

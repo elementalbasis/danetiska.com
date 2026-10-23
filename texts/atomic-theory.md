@@ -1,4 +1,5 @@
 ---
+order: 10
 title: Atomic Theory
 layout: section
 section: texts

@@ -1,4 +1,6 @@
 ---
+order: 0
+nav_title: Overview
 title: Sample Texts
 layout: section
 section: texts

@@ -3,6 +3,10 @@ layout: default
 ---
 
 {% assign section = site.data.sections[page.section] %}
+{% assign section_pages = site.pages | where: "section", page.section | sort_natural: "title" %}
+{% assign ordered_pages = section_pages | where_exp: "item", "item.order != nil" | sort: "order" %}
+{% assign unordered_pages = section_pages | where_exp: "item", "item.order == nil" %}
+{% assign section_items = ordered_pages | concat: unordered_pages %}
 
 <div class="section-layout">
   <aside class="section-sidebar">

@@ -1,4 +1,5 @@
 ---
+order: 70
 title: Nicene Creed
 layout: section
 section: texts

@@ -1,4 +1,5 @@
 ---
+order: 10
 title: Phonology
 layout: section
 section: language

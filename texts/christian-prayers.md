@@ -1,4 +1,5 @@
 ---
+order: 60
 title: Christian Prayers
 layout: section
 section: texts

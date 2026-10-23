@@ -1,4 +1,5 @@
 ---
+order: 30
 title: Nouns
 layout: section
 section: language

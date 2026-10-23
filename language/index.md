@@ -1,4 +1,6 @@
 ---
+order: 0
+nav_title: Overview
 layout: section
 section: language
 title: The Danetian language
