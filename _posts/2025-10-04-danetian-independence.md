@@ -2,7 +2,7 @@
 layout: post
 title: Danetian independence
 author: Javier Castro
-tags: [worldbuilding]
+tags: [worldbuilding, history]
 cover: /assets/images/danetian_capitolium.png
 ---
 

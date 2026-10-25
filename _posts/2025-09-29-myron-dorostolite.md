@@ -2,7 +2,7 @@
 layout: post
 title: Myron Dorostolite
 author: Javier Castro
-tags: [calendar, worldbuilding]
+tags: [calendar, worldbuilding, history]
 cover: /assets/images/myron-dorostolite.png
 ---
 

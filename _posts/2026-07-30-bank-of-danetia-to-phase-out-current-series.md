@@ -2,7 +2,7 @@
 layout: post
 title: Bank of Danetia announces plans to replace current banknote series
 author: Javier Castro
-tags: [worldbuilding]
+tags: [worldbuilding, news]
 cover: /assets/images/banknotes.jpg
 ---
 

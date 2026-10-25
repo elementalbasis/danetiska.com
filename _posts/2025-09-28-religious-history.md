@@ -2,7 +2,7 @@
 layout: post
 title: Religious history of Danetia
 author: Javier Castro
-tags: [worldbuilding]
+tags: [worldbuilding, history]
 cover: /assets/images/st-peters-basilica.jpg
 ---
 
