@@ -57,3 +57,25 @@
 .library-item .tags {
   margin-top: .75rem;
 }
+
+/* Tools use the same entry include as the reference catalogue. */
+.library-list--compact .library-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.library-list--compact .library-title,
+.library-list--compact .library-description {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .library-list--compact .library-link {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+}

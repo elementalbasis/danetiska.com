@@ -10,9 +10,11 @@ if (menu) {
 
       buttons.forEach(function (otherButton) {
         otherButton.classList.remove("active");
+        otherButton.setAttribute("aria-pressed", "false");
       });
 
       button.classList.add("active");
+      button.setAttribute("aria-pressed", "true");
 
       items.forEach(function (item) {
         let tags = [];

@@ -42,7 +42,6 @@
 
 .post-card:hover, .featured:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow-card-hover);
 }
 
 .post-card img {

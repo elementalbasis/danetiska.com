@@ -1,0 +1,5 @@
+<nav class="tag-menu" aria-label="{{ include.label | escape }}">
+  {% for filter in include.items %}
+  <button type="button" data-tag="{{ filter.tag | escape }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"{% if forloop.first %} class="active"{% endif %}>{{ filter.title | escape }}</button>
+  {% endfor %}
+</nav>

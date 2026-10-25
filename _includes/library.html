@@ -1,35 +1,19 @@
 <article class="library-item">
-  <a href="{{ include.item.url | relative_url }}" class="library-link">
-    <h2 class="library-title">
-      {{ include.item.title }}
-    </h2>
+  {% assign url_start = include.item.url | slice: 0, 1 %}
+  <a href="{% if url_start == '/' %}{{ include.item.url | relative_url | escape }}{% else %}{{ include.item.url | escape }}{% endif %}" class="library-link">
+    <h{{ include.heading | default: 2 }} class="library-title">{{ include.item.title | escape }}</h{{ include.heading | default: 2 }}>
 
+    {% if include.item.author or include.item.year %}
     <div class="library-meta">
-      {% if include.item.author %}
-        <span class="library-author">
-          {{ include.item.author }}
-        </span>
-      {% endif %}
-
-      {% if include.item.year %}
-        <span class="library-year">
-          ({{ include.item.year }})
-        </span>
-      {% endif %}
+      {% if include.item.author %}<span class="library-author">{{ include.item.author | escape }}</span>{% endif %}
+      {% if include.item.year %}<span class="library-year">({{ include.item.year | escape }})</span>{% endif %}
     </div>
-
-    {% if include.item.description %}
-      <p class="library-description">
-        {{ include.item.description }}
-      </p>
     {% endif %}
 
+    {% if include.item.description %}<p class="library-description">{{ include.item.description | escape }}</p>{% endif %}
+
     {% if include.item.type %}
-      <div class="tags">
-        <span class="tag">
-          {{ include.item.type | capitalize }}
-        </span>
-      </div>
+    <div class="tags"><span class="tag">{{ include.item.type | capitalize | escape }}</span></div>
     {% endif %}
   </a>
 </article>

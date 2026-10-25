@@ -13,7 +13,7 @@ layout: default
 </section>
 
 <p class="all-posts-link">
-  <a href="/posts/">Browse all posts →</a>
+  <a href="/posts/">Browse all articles →</a>
 </p>
 
 <section class="home-section">
@@ -30,7 +30,7 @@ layout: default
 </section>
 
 <p class="all-posts-link">
-  <a href="/posts/">Browse all posts →</a>
+  <a href="/posts/">Browse all articles →</a>
 </p>
 
 <section class="home-section">

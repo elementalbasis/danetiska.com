@@ -1,0 +1,25 @@
+<header class="masthead">
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="nav-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/danetiska_academia_logo.svg' | relative_url }}" class="nav-logo" alt="Danetian Academy home" width="169" height="44">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation" hidden>Menu</button>
+
+    <ul class="nav-links" id="primary-nav">
+      {% for item in site.data.navigation %}
+        {% assign current_section = false %}
+        {% for path in item.active_paths %}
+          {% assign path_length = path | size %}
+          {% assign page_prefix = page.url | slice: 0, path_length %}
+          {% if page_prefix == path %}
+            {% assign current_section = true %}
+          {% endif %}
+        {% endfor %}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if current_section %} class="is-current" aria-current="{% if page.url == item.url %}page{% else %}true{% endif %}"{% endif %}>{{ item.title | escape }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

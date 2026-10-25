@@ -4,27 +4,19 @@ title: Library
 permalink: /library/
 ---
 
-<h1>Library</h1>
+{% include page-heading.html title=page.title description=site.data.library.introduction %}
 
-<nav class="tag-menu">
-  <button type="button" data-tag="all" class="active">All</button>
-  <button type="button" data-tag="book">Books</button>
-  <button type="button" data-tag="paper">Papers</button>
-  <button type="button" data-tag="manual">Manuals</button>
-  <button type="button" data-tag="thesis">Theses</button>
-</nav>
-
-<section class="library-list">
-  {% assign items = site.data.bibliography | sort: "title" %}
-
-  {% for item in items %}
-    <div
-      class="archive-item"
-      data-tags='{{ item.type | split: "|" | jsonify | downcase }}'
-    >
-      {% include library.html item=item %}
-    </div>
+<section class="collection-grid" aria-label="Library collections">
+  {% for collection in site.data.library.collections %}
+    {% include collection-card.html item=collection %}
   {% endfor %}
 </section>
 
-<script src="{{ '/assets/scripts/filter.js' | relative_url }}" defer></script>
+<section class="resource-section" aria-labelledby="library-tools-heading">
+  <h2 class="section-heading" id="library-tools-heading">Tools</h2>
+  <div class="library-list library-list--compact">
+    {% for tool in site.data.library.tools %}
+      {% include library.html item=tool heading=3 %}
+    {% endfor %}
+  </div>
+</section>

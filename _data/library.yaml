@@ -1,0 +1,49 @@
+introduction: Explore the Academy's texts, scholarly editions, reference works, and tools.
+collections:
+  - id: bible
+    label: Featured edition
+    title: Kustendja Polyglot Bible
+    description: A parallel reader for comparing biblical texts across languages and traditions.
+    url: /bible/
+    action: Open reader
+    featured: true
+    details:
+      - title: English
+      - title: Latin
+      - title: Greek
+      - title: Slavonic
+      - title: Danetian
+        note: Translation in progress
+  - id: texts
+    label: Texts
+    title: Danetian texts
+    description: Literature, translations, prayers, and scientific writing, with parallel English texts.
+    url: /texts
+    action: Browse texts
+  - id: reference
+    label: Reference
+    title: Books & papers
+    description: A catalogue of works supporting the study of language, history, and the sciences.
+    url: /library/reference/
+    action: Browse catalogue
+tools:
+  - title: Danetian Calendar
+    description: Explore the calendar and convert dates.
+    url: /calendar
+  - title: Lexerat
+    description: Prepare and publish dictionaries.
+    url: https://github.com/elementalbasis/lexerat
+  - title: DanuWiki
+    description: Explore the bilingual corpus.
+    url: https://wiki.danetiska.com
+filters:
+  - title: All
+    tag: all
+  - title: Books
+    tag: book
+  - title: Papers
+    tag: paper
+  - title: Manuals
+    tag: manual
+  - title: Theses
+    tag: thesis

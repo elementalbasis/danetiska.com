@@ -1,25 +1,12 @@
 ---
 layout: default
-title: Posts
+title: Articles
 permalink: /posts/
 ---
 
-<h1>Posts</h1>
+{% include page-heading.html title=page.title description="Studies of Danetian language, history, culture, and civic life, alongside news and announcements." %}
 
-<nav class="tag-menu">
-  <button type="button" data-tag="all" class="active">All</button>
-  <button type="button" data-tag="worldbuilding">Worldbuilding</button>
-  <button type="button" data-tag="conlang">Conlang</button>
-  <button type="button" data-tag="calendar">Calendar</button>
-  <button type="button" data-tag="history">History</button>
-  <button type="button" data-tag="news">News</button>
-
-<!--
-  <button type="button" data-tag="mathematics">Mathematics</button>
-  <button type="button" data-tag="physics">Physics</button>
-  <button type="button" data-tag="computing">Computing</button>
--->
-</nav>
+{% include filter-menu.html items=site.data.article_filters label="Filter articles" %}
 
 <section class="post-grid">
   {% for post in site.posts %}

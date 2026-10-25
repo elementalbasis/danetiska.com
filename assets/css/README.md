@@ -70,3 +70,33 @@ artwork; its source and CC0 license are recorded alongside it. To support anothe
 platform, add its 24-by-24 SVG artwork as a named `<symbol>` in that sprite, then
 reference its identifier from the data list. All icons are served by the site; no third-party scripts, icon fonts,
 or external icon service is required.
+
+## Navigation and Library
+
+`_data/navigation.yaml` is the single source for the primary navigation's labels,
+destinations, and active-section prefixes. `_includes/site-nav.html` renders it;
+`navigation.css` owns its styling. The mobile menu progressively enhances visible
+links, supports Escape and outside-click dismissal, and exposes its state through
+`aria-expanded`. Its responsive breakpoint lives only in CSS.
+
+`/library/` is the Library overview; `/library/reference/` keeps the existing
+bibliography and type filters. Texts, Bible, Calendar, dictionary, and article URLs
+stay unchanged. The article archive keeps `/posts/`, with the visible label
+Articles and descriptive filter labels mapped to the existing tags.
+
+`_data/library.yaml` defines the collection cards and tools. Reuse
+`_includes/collection-card.html` for other collection entrances and
+`_includes/page-heading.html` for page introductions. Shared components belong
+in `components.css`: collection cards join the existing radius, surface, border,
+shadow, and keyboard-focus rules. No independent Library palette or radius is
+introduced.
+
+Both the tools and bibliography reuse `_includes/library.html`. Its optional
+`heading` parameter sets the heading level (default 2); the compact list modifier
+uses the same markup for tool rows. Internal URLs pass through `relative_url`;
+external resource and PDF URLs remain absolute.
+
+The article and reference type filters share `_includes/filter-menu.html` and
+`filter.js`. Their labels and underlying tags live in `_data/article_filters.yaml`
+and `_data/library.yaml`; selected buttons expose `aria-pressed` as well as the
+shared active style.

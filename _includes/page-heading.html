@@ -1,0 +1,11 @@
+<header class="page-heading">
+  {% if include.parent_url %}
+  <nav class="section-breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ include.parent_url | relative_url }}">{{ include.parent_title | escape }}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{{ include.title | escape }}</span>
+  </nav>
+  {% endif %}
+  <h1>{{ include.title | escape }}</h1>
+  {% if include.description %}<p>{{ include.description | escape }}</p>{% endif %}
+</header>
