@@ -7,8 +7,6 @@
 
 .tag-menu button {
   font-size: var(--text-sm);
-
-  background: transparent;
 }
 
 .tag-menu button[data-tag="all"] {

@@ -92,3 +92,22 @@ narrow and wide widths whenever shared components change.
 
 Keep content and dataset sources separate from presentation refactors. Existing
 page URLs, dictionary data, Bible text and article content are preserved.
+
+## Interaction and heading styles
+
+Headings use `--font-heading`, which defaults to the site sans serif. Dictionary
+lemmas, expressions and inline lemmas use `--font-body` independently so editorial
+heading changes cannot change the dictionary's typeface. Section titles use the
+shared `--text-2xl` size.
+
+Pressed buttons share the charcoal surface in `components.css`. Feature styles
+must not override that background with a transparent fill. Navigation links are text links:
+they turn gold on hover, while the current section remains dark and underlined,
+including on hover. The active section is determined by the existing navigation
+data and exposed through `aria-current`. Links use the original gold hover color.
+Calendar and focus colors use the same shared gold palette. Dictionary and search
+controls retain their existing semantic colors.
+
+Section headings connect directly to resource lists so the first row has the
+same padding as subsequent rows. Card groups retain their shared spacing below
+section headings.

@@ -19,7 +19,7 @@
 }
 .section-heading,
 .section-header {
-  margin: 0 0 var(--space-5);
+  margin: 0;
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-border);
 }
@@ -30,8 +30,15 @@
   justify-content: space-between;
   gap: var(--space-3);
 }
+.section-heading,
+.section-header h2 {
+  font-size: var(--text-2xl);
+}
 .section-header h2 {
   margin: 0;
+}
+.resource-section > .card-grid {
+  margin-top: var(--space-5);
 }
 .section-header > a {
   font-size: var(--text-sm);

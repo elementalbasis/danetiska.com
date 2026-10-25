@@ -58,7 +58,7 @@ h4 {
 }
 h1,
 h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
 }
 h1 {
   font-size: var(--text-3xl);

@@ -61,6 +61,7 @@
 }
 
 .nav-links a.is-current {
+  color: var(--color-text);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.35em;
