@@ -3,7 +3,7 @@ async function loadWordOfTheDay() {
   if (!linkEl) return;
 
   try {
-    const response = await fetch("/assets/lexicon/word_of_the_day_3352.tsv", { cache: "no-store" });
+    const response = await fetch("/assets/lexicon/word_of_the_day.tsv", { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Failed to load TSV: ${response.status}`);
     }
