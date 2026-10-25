@@ -24,7 +24,7 @@ Moreover, there are 6 vowels, shown below.
 
 | | Front | Central | Back |
 |:---|:---:|:---:|:---:|
-| Close | i | ɨ~ə | u |
+| Close | i | ɨ ~ ə | u |
 | Mid | e | | o |
 | Open | | a | |
 
