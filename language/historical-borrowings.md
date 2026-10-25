@@ -1,6 +1,6 @@
 ---
 order: 500
-title: Historical Borrowings
+title: Historical borrowings
 layout: section
 section: language
 permalink: /language/historical-borrowings

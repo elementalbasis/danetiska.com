@@ -1,6 +1,6 @@
 ---
 order: 60
-title: Christian Prayers
+title: Christian prayers
 layout: section
 section: texts
 permalink: /texts/christian-prayers

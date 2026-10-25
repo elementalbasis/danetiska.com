@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Occitan Company and the Romance Surnames of Danetia
+title: The Occitan Company and the Romance surnames of Danetia
 author: Javier Castro
 tags: [news]
 cover: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Entrada_de_Roger_de_Flor_en_Constantinopla_%28Palacio_del_Senado_de_Espa%C3%B1a%29.jpg/1280px-Entrada_de_Roger_de_Flor_en_Constantinopla_%28Palacio_del_Senado_de_Espa%C3%B1a%29.jpg
