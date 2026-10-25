@@ -1,0 +1,588 @@
+% Proposed additions to the Dictionary of the Danetian Language
+% Prepared 25 October 2026 from the reviewed corpus inventory.
+% This is a reviewable proposal, not a modification of the existing dictionary.
+%
+% Conventions match the supplied raw sources: @key, @ety, @typ, @def,
+% @expr, @link; inline language macros; $gloss and ${multiword gloss}.
+% All % lines are Lexerat comments, not dictionary definitions.
+%
+% Proposed citation forms/genders and lexical etymologies are editorial choices.
+% Borrowed vocabulary names its proposed donor language and source form,
+% following the provenance conventions of chemical-elements.txt.
+% Source assignments remain proposals within the Danetian historical model.
+% Only explicitly attested irregular principal parts are supplied.
+%
+% CORRECTION TO EARLIER AUDIT: videsa is plural of vidos, videsos. Excluded.
+% CORRECTION: region is already recorded in internationalisms.txt. Excluded.
+
+
+% Science %
+
+% Attested: molecula, moleculai, moleculom
+% Source: corpus/atomiska_theoria.txt:15
+@key(molecula) @ety(\lat{molecula}) @typ(f) @def(\field{chemistry} $molecule)
+
+% Attested: electron, electronbi, electroned, electrones, electronom, electronym, electronyns
+% Source: corpus/atomiska_theoria.txt:107
+@key(electron) @ety(\fra{électron}) @typ(m) @def(\field{physics} $electron)
+
+% Attested: proton, protonbi, protone, protoned, protones, protonom, protonym, protonyns
+% Source: corpus/atomiska_theoria.txt:103
+@key(proton) @ety(\fra{proton}) @typ(m) @def(\field{physics} $proton)
+
+% Attested: neutron, neutronbi, neutrones, neutronom, neutronym, neutronyns
+% Source: corpus/atomiska_theoria.txt:103
+@key(neutron) @ety(\fra{neutron}) @typ(m) @def(\field{physics} $neutron)
+
+% Attested: positronym
+% Source: corpus/atomiska_theoria.txt:111
+% REVIEW: Citation form positron and masculine gender are inferred from positronym and parallel proton/electron.
+@key(positron) @ety(\fra{positron}) @typ(m) @def(\field{physics} $positron)
+
+% Attested: neutrinom
+% Source: corpus/atomiska_theoria.txt:115
+% REVIEW: Proposed masculine consonant-stem neutrin. Attested neutrinom could instead be a neuter citation form; confirm before merging.
+@key(neutrinos) @ety(\ita{neutrino}) @typ(m) @def(\field{physics} $neutrino)
+
+% Attested: photon
+% Source: corpus/atomiska_theoria.txt:118
+@key(photon) @ety(\fra{photon}) @typ(m) @def(\field{physics} $photon)
+
+% Attested: ion
+% Source: corpus/atomiska_theoria.txt:75
+@key(ion) @ety(\fra{ion}) @typ(m) @def(\field{chemistry} $ion)
+
+% Attested: isotopoi, isotopom, isotopons, isotopos, isotoposio
+% Source: corpus/atomiska_theoria.txt:134
+@key(isotopos) @ety(\fra{isotope}) @typ(m) @def(\field{physics} $isotope)
+
+% Attested: chemia
+% Source: corpus/atomiska_theoria.txt:61
+@key(chemia) @ety(\grc{χημεία}{khēmeía}) @typ(f) @def($chemistry)
+
+% Attested: chemicoi, chemiskasu, chemiski
+% Source: corpus/atomiska_theoria.txt:153
+% REVIEW: Split into chemicos, chemist, and chemiskos, chemical, preserving the different stems actually used.
+@key(chemicos) @ety(\lat{chemicus}) @typ(m) @def($chemist)
+
+% Attested: chemicoi, chemiskasu, chemiski
+% Source: corpus/atomiska_theoria.txt:153
+% REVIEW: Split into chemicos, chemist, and chemiskos, chemical, preserving the different stems actually used.
+@key(chemiskos) @ety(\dnt{chemia}) @typ(adj) @def($chemical)
+
+% Attested: electriskam, electriskod, electriskom
+% Source: corpus/atomiska_theoria.txt:116
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(electriskos) @ety(\lat{electricus}) @typ(adj) @def($electric, $electrical)
+
+% Attested: electricitatym
+% Source: corpus/atomiska_theoria.txt:156
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(electricitats) @ety(\fra{électricité}) @typ(f) @def($electricity)
+
+% Attested: radioactiva, radioactivom, radioactivos
+% Source: corpus/atomiska_theoria.txt:115
+@key(radioactivos) @ety(\fra{radioactif}) @typ(adj) @def($radioactive)
+
+% Attested: nuclear, nucleare, nuclearom
+% Source: corpus/atomiska_theoria.txt:149
+@key(nuclear) @ety(\dnt{nucleos}) @typ(adj) @def($nuclear)
+
+% Attested: quantiska, quantiskom
+% Source: corpus/atomiska_theoria.txt:125
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(quantiskos) @ety(\lat{quantum}) @typ(adj) @def(\field{physics} $quantum)
+
+% Attested: atomiska, atomiskas, atomiski, atomiskos
+% Source: corpus/atomiska_theoria.txt:1
+@key(atomiskos) @ety(\dnt{atomos}) @typ(adj) @def($atomic)
+
+% Attested: semibiva
+% Source: corpus/atomiska_theoria.txt:98
+@key(semibiva) @ety(\dnt{semis} + \dnt{biva}) @typ(f) @def(\field{physics} ${half-life})
+
+% Attested: fission
+% Source: corpus/atomiska_theoria.txt:156
+% REVIEW: Citation form is directly attested; feminine gender is proposed by analogy with the learned -ion nouns.
+@key(fission) @ety(\fra{fission}) @typ(f) @def(\field{physics} $fission)
+
+% Attested: fusion
+% Source: corpus/atomiska_theoria.txt:157
+@key(fusion) @ety(\lat{fusio}) @typ(f) @def(\field{physics} $fusion)
+
+% Attested: scientificoi
+% Source: corpus/atomiska_theoria.txt:134
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(scientificos) @ety(\lat{scientificus}) @typ(m) @def($scientist)
+@key(scientifiskos) @ety(\lat{scientificus}) @typ(adj) @def($scientific)
+
+% Attested: fundamentale, fundamentales
+% Source: corpus/atomiska_theoria.txt:127
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(fundamental) @ety(\dnt{fundamentom}) @typ(adj) @def($fundamental, $basic)
+
+% Attested: majoria, majorii
+% Source: corpus/atomiska_theoria.txt:15
+@key(majoria) @ety(\dnt{major}) @typ(f) @def($majority, \par{the} ${greater part})
+
+% Attested: individuales
+% Source: corpus/atomiska_theoria.txt:18
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(individual) @ety(\dnt{individuos}) @typ(adj) @def($individual)
+
+% Attested: extreme
+% Source: corpus/atomiska_theoria.txt:118
+% REVIEW: Proposes adjective extremos from extreme djystre; the nominative itself is inferred.
+@key(extremos) @ety(\lat{extremus}) @typ(adj) @def($extreme)
+
+% Attested: negative, negativom
+% Source: corpus/atomiska_theoria.txt:32
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(negativos) @ety(\lat{negativus}) @typ(adj) @def($negative)
+
+% Attested: ordinaria, ordinarie
+% Source: corpus/atomiska_theoria.txt:17
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(ordinarios) @ety(\lat{ordinarius}) @typ(adj) @def($ordinary, $usual)
+
+% Attested: raroi
+% Source: corpus/atomiska_theoria.txt:45
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(raros) @ety(\lat{rarus}) @typ(adj) @def($rare, $uncommon)
+
+% Attested: eventuale
+% Source: corpus/atomiska_theoria.txt:157
+% REVIEW: Corpus attests eventuale djystre. Entry adds the adjective eventual; the adverbial phrase is supplied separately.
+@key(eventual) @ety(\fra{éventuel}) @typ(adj) @def($eventual)
+
+% Attested: familiara
+% Source: corpus/atomiska_theoria.txt:53
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(familiar) @ety(\lat{familiaris}) @typ(adj) @def($familiar)
+
+% Attested: periodiska, periodiske, periodiski
+% Source: corpus/atomiska_theoria.txt:105
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(periodiskos) @ety(\dnt{periodos}) @typ(adj) @def($periodic)
+
+% Attested: proprietates, proprietatyns
+% Source: corpus/atomiska_theoria.txt:65
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(proprietats) @ety(\lat{proprietas}) @typ(f) @def($property, $characteristic)
+
+% Attested: similares, similaryns
+% Source: corpus/atomiska_theoria.txt:65
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(similar) @ety(\fra{similaire}) @typ(adj) @def($similar)
+
+% Attested: identiske
+% Source: corpus/atomiska_theoria.txt:92
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(identiskos) @ety(\dnt{identitats}) @typ(adj) @def($identical)
+
+% Attested: instabiles
+% Source: corpus/atomiska_theoria.txt:96
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(instabil) @ety(\lat{instabilis}) @typ(adj) @def($unstable)
+
+% Attested: abundants
+% Source: corpus/atomiska_theoria.txt:89
+@key(abundants) @ety(\lat{abundans}) @typ(adj) @def($abundant, $plentiful)
+
+% Attested: totale, totales
+% Source: corpus/atomiska_theoria.txt:145
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(total) @ety(\lat{totalis}) @typ(adj) @def($total, $whole, $entire)
+
+% Attested: specimenes
+% Source: corpus/atomiska_theoria.txt:98
+% REVIEW: Proposed specimen, neuter, following the Latin source; Danetian declension needs confirmation.
+@key(specimen) @ety(\lat{specimen}) @typ(n) @def($sample, $specimen)
+
+% Attested: oppositom
+% Source: corpus/atomiska_theoria.txt:76
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(oppositos) @ety(\lat{oppositus}) @typ(adj) @def($opposite)
+
+% Attested: attractzion
+% Source: corpus/atomiska_theoria.txt:76
+@key(attractzion) @ety(\lat{attractio}) @typ(f) @def($attraction)
+
+% Attested: emitteni, emittetor
+% Source: corpus/atomiska_theoria.txt:103
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(emitto) @ety(\lat{emittere}) @typ(v) @def(to $emit)
+
+% Attested: providnuni, providnunts, providnuti
+% Source: corpus/atomiska_theoria.txt:156
+% REVIEW: Citation form inferred from providnuti/providnuni. Origin and non-present principal parts are unresolved.
+@key(providnumi) @ety(\dnt{pro} + \dnt{vidnumi}) @typ(v) @def(to $provide)
+
+% Attested: perdeti, perdostonto
+% Source: corpus/atomiska_theoria.txt:105
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(perdo) @ety(\lat{perdere}) @typ(v) @def(to $lose)
+
+% Attested: illimitastom
+% Source: corpus/atomiska_theoria.txt:158
+% REVIEW: Treated as an adjective, not evidence for an independently attested verb illimito.
+@key(illimitastos) @ety(\dnt{illimitatus}) @typ(adj) @def($unlimited)
+
+% Attested: catenovam
+% Source: corpus/atomiska_theoria.txt:143
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(catenovos) @ety(\dnt{catena}) @typ(adj) @def(\par{relating to a} $chain)
+
+% Attested: fissiles
+% Source: corpus/atomiska_theoria.txt:140
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(fissil) @ety(\lat{fissilis}) @typ(adj) @def(\field{physics} $fissile)
+
+% Attested: discretom
+% Source: corpus/atomiska_theoria.txt:122
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(discretos) @ety(\lat{discretus}) @typ(adj) @def($discrete)
+
+% Attested: distinctom
+% Source: corpus/atomiska_theoria.txt:124
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(distinctos) @ety(\lat{distinctus}) @typ(adj) @def($distinct)
+
+% Attested: converse
+% Source: corpus/atomiska_theoria.txt:121
+% REVIEW: Proposes adjective conversos from converse in the meaning conversely; an independent adjective sense remains to be confirmed.
+@key(conversos) @ety(\lat{conversus}) @typ(adj) @def($converse, $reverse)
+
+% Attested: scali
+% Source: corpus/atomiska_theoria.txt:123
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(scala) @ety(\lat{scala}) @typ(f) @def($scale)
+
+% Attested: eventoi
+% Source: corpus/atomiska_theoria.txt:123
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(eventos) @ety(\lat{eventus}) @typ(m) @def($event, $occurrence)
+
+% Attested: confirmati
+% Source: corpus/atomiska_theoria.txt:6
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(confirmo, -amos) @ety(\lat{confirmare}) @typ(v) @def(to $confirm)
+
+% Attested: composita, compositom
+% Source: corpus/atomiska_theoria.txt:22
+@key(compositom) @ety(\lat{compositum}) @typ(n) @def(\field{chemistry} $compound)
+
+% Attested: millionym
+% Source: corpus/atomiska_theoria.txt:25
+% REVIEW: Proposes million with type num, following the numeral list; corpus millionym also shows nominal inflection.
+@key(million) @ety(\fra{million}) @typ(num) @def($million)
+
+
+% History and society %
+
+% Attested: nomadai
+% Source: corpus/scythai.txt:9
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(nomada) @ety(\grc{νομάς}{nomás}) @typ(m) @def($nomad)
+
+% Attested: nomadiskam, nomadiskas, nomadiskasu, nomadiski, nomadiskoi, nomadiskos
+% Source: corpus/scythai.txt:143
+@key(nomadiskos) @ety(\dnt{nomada}) @typ(adj) @def($nomadic)
+
+% Attested: nomadismi, nomadismos
+% Source: corpus/scythai.txt:138
+@key(nomadismos) @ety(\dnt{nomada}) @typ(m) @def($nomadism)
+
+% Attested: steppa, steppamos, steppans, steppas, steppasu, steppi, steppom
+% Source: corpus/scythai.txt:20
+@key(steppa) @ety(\unknown; \cf \rus{степь}{stepʹ}) @typ(f) @def($steppe)
+
+% Attested: steppovoi, steppovom
+% Source: corpus/scythai.txt:16
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(steppovos) @ety(\dnt{steppa}) @typ(adj) @def(\par{relating to the} $steppe)
+
+% Attested: geographia
+% Source: corpus/scythai.txt:6
+@key(geographia) @ety(\lat{geographia}) @typ(f) @def($geography)
+
+% Attested: grupoi, grupom, grupos, gruposio
+% Source: corpus/scythai.txt:135
+% REVIEW: grupos is directly attested, but the particular borrowing route is not established.
+@key(grupos) @ety(\fra{groupe}) @typ(m) @def($group)
+
+% Attested: archaeologiska, archaeologiskom
+% Source: corpus/scythai.txt:24
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(archaeologiskos) @ety(\fra{archéologique}) @typ(adj) @def($archaeological)
+
+% Attested: architecturiske, architecturiskoi
+% Source: corpus/scythai.txt:141
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(architecturiskos) @ety(\dnt{architectura}) @typ(adj) @def($architectural)
+
+% Attested: dynastia
+% Source: corpus/personal_notes/3349-07-05d.txt:5
+@key(dynastia) @ety(\lat{dynastia}) @typ(f) @def($dynasty)
+
+% Attested: dynastiskosio
+% Source: corpus/scythai.txt:70
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(dynastiskos) @ety(\dnt{dynastia}) @typ(adj) @def($dynastic)
+
+% Attested: funeraria, funerariod, funerariom
+% Source: corpus/scythai.txt:125
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(funerarios) @ety(\lat{funerarius}) @typ(adj) @def($funerary)
+
+% Attested: permanente, permanentyns
+% Source: corpus/scythai.txt:146
+% REVIEW: Proposes permanents from permanentyns and permanente; follows existing adjective keys such as apparents.
+@key(permanents) @ety(\lat{permanens}) @typ(adj) @def($permanent)
+
+% Attested: tribal, tribalom
+% Source: corpus/scythai.txt:105
+@key(tribal) @ety(\dnt{tribus}) @typ(adj) @def($tribal)
+
+% Attested: securitatym
+% Source: corpus/scythai.txt:240
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(securitats) @ety(\lat{securitas}) @typ(f) @def($security, $safety)
+
+% Attested: mirabil, mirabile, mirabiloi, mirabilym
+% Source: corpus/scythai.txt:174
+@key(mirabil) @ety(\lat{mirabilis}) @typ(adj) @def($marvellous, $remarkable)
+
+% Attested: cultos
+% Source: corpus/scythai.txt:235
+@key(cultos) @ety(\lat{cultus}) @typ(m) @def($cult, $worship)
+
+% Attested: symbolismos
+% Source: corpus/scythai.txt:235
+@key(symbolismos) @ety(\fra{symbolisme}) @typ(m) @def($symbolism)
+
+% Attested: pantheones
+% Source: corpus/scythai.txt:263
+% REVIEW: Citation form and neuter gender are provisional; corpus supplies only pantheones.
+@key(pantheon) @ety(\lat{pantheon}) @typ(n) @def($pantheon)
+
+% Attested: panflauta
+% Source: corpus/scythai.txt:216
+% REVIEW: Compound is attested; immediate donor language is not established.
+@key(panflauta) @ety(\unknown) @typ(f) @def(${pan flute})
+
+% Attested: superstructura
+% Source: corpus/scythai.txt:160
+@key(superstructura) @ety(\fra{superstructure}) @typ(f) @def($superstructure)
+
+% Attested: infrastructuram
+% Source: corpus/scythai.txt:140
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(infrastructura) @ety(\fra{infrastructure}) @typ(f) @def($infrastructure)
+
+% Attested: sophisticatzion, sophisticatzionym
+% Source: corpus/scythai.txt:175
+@key(sophisticatzion) @ety(\fra{sophistication}) @typ(f) @def($sophistication)
+
+% Attested: exuberantzias
+% Source: corpus/scythai.txt:199
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(exuberantzia) @ety(\lat{exuberantia}) @typ(f) @def($exuberance)
+
+% Attested: vibrantziam
+% Source: corpus/scythai.txt:175
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(vibrantzia) @ety(\eng{vibrancy}) @typ(f) @def($vibrancy)
+
+% Attested: dantzatritzans
+% Source: corpus/scythai.txt:214
+% REVIEW: Feminine agent formation inferred from dantzatritzans; no unattested masculine agent lemma is added.
+@key(dantzatritza) @ety(\dnt{dantza}) @typ(f) @def(\par{female} $dancer)
+
+% Attested: redjitzai
+% Source: corpus/scythai.txt:296
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(redjitza) @ety(\dnt{redjs}) @typ(f) @def($queen, \par{female} $ruler)
+
+% Attested: urusjtritzai, urusjtritzom
+% Source: corpus/scythai.txt:276
+% REVIEW: Normalizes urusjtrizom to the better-supported -tritz- stem. Dictionary urusjtor already exists.
+@key(urusjtritza) @ety(\dnt{urusjtor}) @typ(f) @def(\par{female} $warrior)
+
+% Attested: militar, militares, militari
+% Source: corpus/scythai.txt:258
+@key(militar) @ety(\lat{militaris}) @typ(adj) @def($military)
+
+% Attested: independentziam
+% Source: corpus/scythai.txt:278
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(independentzia) @ety(\fra{indépendance}) @typ(f) @def($independence)
+
+% Attested: independente
+% Source: corpus/atomiska_theoria.txt:77
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(independents) @ety(\fra{indépendant}) @typ(adj) @def($independent)
+
+% Attested: central, centrales, centrali
+% Source: corpus/scythai.txt:304
+@key(central) @ety(\lat{centralis}) @typ(adj) @def($central)
+
+
+% Religion and grammar %
+
+% Attested: inoda
+% Source: danetian(1).tsv:31
+@key(inoda) @ety(\dnt{oinos} + \dnt{-da}) @typ(adv) @def($immediately, at $once)
+
+% Attested: ni
+% Source: corpus/atomiska_theoria.txt:116
+% REVIEW: Neither/nor and not even are usage-based senses; origin remains unassigned.
+@key(ni) @ety(\pie{néy}; \cf \lat{ni}, \rus{ни}{ni}) @typ(conj) @def($neither, $nor) @typ(adv) @def(not $even)
+
+% Attested: svoi, svoia, svoiai, svoiam, svoians, svoias, svoie, svoii, svoiod, svoiom, svoiomos, svoions, svoiosio
+% Source: corpus/atomiska_theoria.txt:44
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(svoios) @typ(pron) @def(\par{reflexive possessive} one's $own)
+
+% Attested: amen
+% Source: corpus/personal_notes/3349-02-13b.txt:49
+@key(amen) @ety(\lat{amen}) @typ(intj) @def($amen)
+
+% Attested: demonia
+% Source: danetian(1).tsv:53
+% REVIEW: Neuter singular demoniom is inferred from demonia; confirm the intended learned borrowing and its gender.
+@key(demoniom) @ety(\grc{δαιμόνιον}{daimónĭon}) @typ(n) @def($demon)
+
+% Attested: lepros
+% Source: danetian(1).tsv:61
+% REVIEW: Gender is proposed as masculine from the single attestation; confirm whether mf is preferable.
+@key(lepros) @ety(\dnt{lepra}) @typ(m) @def($leper)
+
+% Attested: lepra
+% Source: danetian(1).tsv:63
+@key(lepra) @ety(\lat{lepra}) @typ(f) @def($leprosy)
+
+% Attested: tensor, tensores, tensorym
+% Source: corpus/personal_notes/3350-11-25.txt:16
+@key(tensor) @ety(\lat{tensor}) @typ(m) @def(\field{mathematics} $tensor)
+
+% Attested: indicativos
+% Source: corpus/personal_notes/3349-08-10d.txt:12
+@key(indicativos) @ety(\lat{indicativus}) @typ(adj) @def(\field{grammar} $indicative)
+
+% Attested: subjunctivos
+% Source: corpus/personal_notes/3349-08-10d.txt:16
+@key(subjunctivos) @ety(\lat{subjunctivus}) @typ(adj) @def(\field{grammar} $subjunctive)
+
+% Attested: aoristos
+% Source: corpus/personal_notes/3349-08-10d.txt:14
+@key(aoristos) @ety(\grc{ἀόριστος}{aóristos}) @typ(adj) @def(\field{grammar} $aorist)
+
+% Attested: jotera, joterai, joteram, joteri, joterom, joteros
+% Source: corpus/personal_notes/3348-11-11a.txt:10
+% REVIEW: Definition follows current Academy proforms table (relative, out of two). Older notes also use this family more broadly as a general relative.
+@key(joteros; jotera; joterom) @ety(\pie{yó-teros}) @typ(pron) @def(\par{relative} $which \par{out of two, or out of a selection})
+
+% Attested: potera, poterons
+% Source: corpus/atomiska_theoria.txt:60
+% REVIEW: Definition follows current Academy proforms table (interrogative, out of two); older usage may be broader.
+@key(poteros; potera; poterom) @ety(\dnt{pos}) @typ(pron) @def(\par{interrogative} $which \par{out of two, or out of a selection})
+
+% Attested: sjmon, sjmones, sjmonyns
+% Source: corpus/atomiska_theoria.txt:3
+% REVIEW: sjmon, sjmynes is explicitly supplied by the 2024 reform note; gender mf is proposed. Older djamon/djymon are not additional headwords here.
+@key(sjmon, sjmynes) @ety(\pie{ǵʰmṓ}; \cf \lat{homo}) @typ(mf) @def(${human being}, $person)
+
+% Attested: sve
+% Source: danetian(1).tsv:48
+@key(sve) @typ(pron) @def(\par{reflexive} $self, $oneself)
+
+% Attested: spysjties
+% Source: danetian(1).tsv:14
+% REVIEW: Nominative spasjtis is inferred from genitive spysjties and recorded spasjo. Confirm strong stem.
+@key(spasjtis, spysjties) @ety(\dnt{spasjo}) @typ(f) @def($salvation)
+
+% Attested: derysjtad, derysjtam, derysjtans, derysjtasu, derysjtomos
+% Source: danetian(1).tsv:11
+% REVIEW: Meaning transgression/iniquity is supported by Psalm 50; no speculative derivation from rysjta is asserted.
+@key(derysjta) @ety(\dnt{desj} + \dnt{rysjta}) @typ(f) @def($transgression, $iniquity)
+
+% Attested: nepriska, nepriski, nepriskom
+% Source: danetian(1).tsv:44
+% REVIEW: Transparent ne- + priskos derivative; optional if productive negation is comprehensively documented elsewhere.
+@key(nepriskos) @ety(\dnt{ne} + \dnt{priskos}) @typ(adj) @def($unclean, $impure)
+
+% Attested: djystreieti, djystreiostet
+% Source: danetian(1).tsv:48
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(djystreio) @ety(\dnt{djesor}) @typ(v) @def(to $command, to $charge)
+
+% Attested: tropriskeie, tropriskeiomnos, tropriskeioste
+% Source: danetian(1).tsv:11
+% REVIEW: Citation form inferred from the attested inflection(s).
+@key(tropriskeio) @ety(\dnt{tros} + \dnt{priskeio}) @typ(v) @def(to $cleanse thoroughly, to $purify)
+
+% Attested: visjomektrym
+% Source: corpus/personal_notes/3352-01-14.txt:6
+% REVIEW: Highly provisional citation form visjomekter: corpus supplies visjomektrym and variant visjomoktrym. No genitive or full paradigm has been invented.
+@key(visjomektor) @ety(Related to \dnt{visjos} and \dnt{mektis}) @typ(adj) @def($almighty, $omnipotent)
+
+
+% Science %
+
+% Attested: humanitates, humanitats
+% Source: corpus/atomiska_theoria.txt:155
+@key(humanitats) @ety(\lat{humanitas}) @typ(f) @def($humanity, $humankind)
+
+
+% Optional older / historical-attestation vocabulary: review retention %
+% These words are not declared obsolete merely because their evidence is older.
+
+% Attested: ge
+% Source: corpus/personal_notes/3348-11-11a.txt:18
+% REVIEW: Meaning provisional: discourse/emphatic uses coexist with occurrences of the letter name ge. Check whether also/even adequately describes the particle.
+@key(ge) @ety(\pie{gʰe}) @typ(adv) @def(\par{emphatic particle} $also, $even)
+
+% Attested: ve
+% Source: corpus/personal_notes/3347-10-28.txt:15
+@key(-ve, ve) @ety(\unknown; \cf \lat{-ve}) @typ(conj) @def($or)
+
+% Attested: kahan, kahanes
+% Source: corpus/personal_notes/3349-06-07b.txt:6
+% REVIEW: Turkic affiliation is proposed from title and setting; no specific donor or reconstructed proto-form is invented.
+@key(kahan) @ety(From a Turkic language) @typ(m) @def($khagan, $khan)
+
+% Attested: kahanatom, kahanatos, kahanatosio
+% Source: corpus/personal_notes/3349-07-05b.txt:5
+% REVIEW: Keeps directly attested masculine kahanatos, not an unattested neuter kahanatom citation form.
+@key(kahanatos) @ety(\dnt{kahan}) @typ(m) @def($khaganate)
+
+% Attested: partitoi, partitos
+% Source: corpus/personal_notes/3348-11-11a.txt:12
+@key(partitos) @ety(\cf \it{partito}) @typ(m) @def(\field{politics} $party)
+
+% Attested: milicia, miliciam
+% Source: corpus/personal_notes/3349-02-05.txt:6
+% REVIEW: Retains older attested milicia. Under the modern convention, militzia may be intended; confirm before merging.
+@key(militzia) @ety(\lat{militia}) @typ(f) @def($militia, ${military service})
+
+% Attested: monachoi
+% Source: corpus/personal_notes/3349-03-18f.txt:10
+@key(monachos) @ety(\lat{monachus}) @typ(m) @def($monk)
+
+% Attested: papa
+% Source: corpus/personal_notes/3349-03-18b.txt:5
+% REVIEW: Includes only the papal sense established in historical prose. The familial papa usage is not conflated with pope.
+@key(papa) @ety(\lat{papa}) @typ(m) @def($pope)
+
+% Attested: gymnasioi
+% Source: corpus/personal_notes/3347-11-27.txt:14
+@key(gymnasiom) @ety(\lat{gymnasium}) @typ(n) @def($gymnasium, $gym)
+
+% Attested: lista
+% Source: corpus/personal_notes/3349-04-26b.txt:3
+@key(lista) @ety(\fra{liste}) @typ(f) @def($list)
+
+% Attested: universom
+% Source: corpus/personal_notes/3348-01-13.txt:15
+@key(universom) @ety(\lat{universum}) @typ(n) @def($universe)
