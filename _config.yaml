@@ -1,8 +1,10 @@
 name: Danetian Academy
+url: "https://danetiska.com"
 #permalink: /blog/:title
 permalink: /:collection/:title
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 collections:
   - language
   - texts
