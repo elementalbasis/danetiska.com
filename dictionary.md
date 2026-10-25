@@ -23,6 +23,10 @@ layout: standalone
       evidence becomes available from written texts and contemporary usage.
     </p>
 
+    <p>
+      Also available in <a href="/assets/lexicon/dictionary.pdf">PDF format</a>.
+    </p>
+
   </div>
 
   <img
