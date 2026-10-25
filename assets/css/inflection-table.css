@@ -7,14 +7,9 @@
   margin-bottom: 0.35rem;
 }
 
-.infl-table {
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-
 .infl-table th,
 .infl-table td {
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   padding: 0.25rem 0.5rem;
   text-align: left;
 }

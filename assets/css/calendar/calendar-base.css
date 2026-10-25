@@ -1,19 +1,8 @@
 .calendar-view {
-  --calendar-border: #d7d7d7;
-  --calendar-border-light: #e5e5e5;
-  --calendar-background: #fff;
-  --calendar-header-background: #f7f7f7;
-  --calendar-hover-background: #f3f3f3;
-  --calendar-selected-background: #f8f3d9;
-  --calendar-text: #2e2e2e;
-  --calendar-muted-text: #777;
-  --calendar-accent: #8a7000;
-  --calendar-focus: #c9a300;
-
   width: 100%;
-  max-width: 900px;
+  max-width: var(--width-reading);
   margin: 2rem auto;
-  color: var(--calendar-text);
+  color: var(--color-text);
 }
 
 .calendar-view [hidden] {
@@ -25,8 +14,8 @@
 .century-calendar {
   width: 100%;
   margin: 0;
-  border: 1px solid var(--calendar-border);
-  background: var(--calendar-background);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .month-calendar__header,
@@ -35,8 +24,8 @@
   display: grid;
   grid-template-columns: 3rem minmax(0, 1fr) 3rem;
   align-items: stretch;
-  border-bottom: 1px solid var(--calendar-border);
-  background: var(--calendar-header-background);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-subtle);
 }
 
 .month-calendar__title,
@@ -46,6 +35,7 @@
 .year-calendar__arrow,
 .century-calendar__arrow {
   border: 0;
+  border-radius: 0;
   background: transparent;
   color: inherit;
   font: inherit;
@@ -73,7 +63,7 @@ button.century-calendar__title {
 .century-calendar__arrow {
   appearance: none;
   padding: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 1.8rem;
   line-height: 1;
   cursor: pointer;
@@ -85,7 +75,7 @@ button.century-calendar__title {
 button.month-calendar__title:hover,
 button.year-calendar__title:hover,
 button.century-calendar__title:hover {
-  color: var(--calendar-accent);
+  color: var(--color-accent-text);
 }
 
 .month-calendar__arrow:focus-visible,
@@ -97,14 +87,14 @@ button.century-calendar__title:hover {
 .month-calendar__day:focus-visible,
 .year-calendar__month:focus-visible,
 .century-calendar__year:focus-visible {
-  outline: 2px solid var(--calendar-focus);
+  outline: 2px solid var(--color-accent);
   outline-offset: -2px;
 }
 
 .calendar-view__error {
   margin: 0;
   padding: 2rem 1rem;
-  color: var(--calendar-muted-text);
+  color: var(--color-text-muted);
   text-align: center;
 }
 
@@ -133,48 +123,51 @@ button.century-calendar__title:hover {
   }
 }
 
-
 /*
  * Shared flat calendar-grid cells
  */
 .month-calendar__day,
 .month-calendar__empty,
 .year-calendar__month,
-.year-calendar__empty {
+.year-calendar__empty,
+.century-calendar__year {
   min-width: 0;
   margin: 0;
   border: 0;
-  border-right: 1px solid var(--calendar-border-light);
-  border-bottom: 1px solid var(--calendar-border-light);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   border-radius: 0;
   box-shadow: none;
-  background: var(--calendar-background);
-  color: var(--calendar-text);
+  background: var(--color-surface);
+  color: var(--color-text);
   font: inherit;
 }
 
 .month-calendar__day,
-.year-calendar__month {
+.year-calendar__month,
+.century-calendar__year {
   appearance: none;
   cursor: pointer;
   transition:
-    background-color 120ms ease,
-    color 120ms ease;
+    background-color var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .month-calendar__day:hover,
-.year-calendar__month:hover {
-  background: var(--calendar-hover-background);
+.year-calendar__month:hover,
+.century-calendar__year:hover {
+  background: var(--color-surface-hover);
 }
 
 .month-calendar__day--selected,
-.year-calendar__month--selected {
-  background: var(--calendar-selected-background);
-  color: var(--calendar-accent);
+.year-calendar__month--selected,
+.century-calendar__year--selected {
+  background: var(--color-accent-surface);
+  color: var(--color-accent-text);
 }
 
 .month-calendar__empty,
 .year-calendar__empty {
   display: block;
-  background: var(--calendar-header-background);
+  background: var(--color-surface-subtle);
 }

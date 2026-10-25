@@ -1,5 +1,3 @@
-/* === MINIMAL CUBICLE STYLES === */
-
 /* Featured post */
 .featured {
   margin-top: 2rem;
@@ -8,64 +6,49 @@
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  border-radius: 8px;
 }
 .featured h1 {
   font-size: 1.8rem;
   margin-top: 0.5rem;
 }
 .featured p {
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
 /* Grid of posts */
-/*
+
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
-}
-*/
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
 }
 
 @media (max-width: 900px) {
-    .post-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .post-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
-    .post-grid {
-        grid-template-columns: 1fr;
-    }
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-
-
-
 .post-card, .featured {
-  border: 1px solid #ddd;
-  border-radius: 8px;
   overflow: hidden;
-  background: #fff;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
   padding: 1rem;
 }
 
 .post-card:hover, .featured:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .post-card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 .post-card h2 {
@@ -75,7 +58,7 @@
 
 .post-card p {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--color-text-secondary);
   margin: 0 0.8rem 0.8rem;
 }
 
@@ -83,11 +66,7 @@
   text-decoration: none;
 }
 
-
-
-
-/* In the posts page, ensure that the propering filtering of posts according
- * to tags is performed. */
+/* Hidden archive items must remain hidden when filtering by tag. */
 
 .archive-item {
   display: contents;
@@ -96,7 +75,6 @@
 .archive-item[hidden] {
   display: none !important;
 }
-
 
 /* Style the "View all posts" button */
 
@@ -108,42 +86,4 @@
 .all-posts-link a {
   display: inline-block;
   padding: 0.5rem 1rem;
-
-  border: 1px solid #ccc;
-  border-radius: 999px;
-
-  text-decoration: none;
-  color: inherit;
-
-  transition:
-    background 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.all-posts-link a:hover {
-  background: #f5f5f5;
-  border-color: #888;
-}
-
-
-
-
-/* Style the posts themselves */
-
-.post-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ddd;
-  font-size: 0.95rem;
-}
-
-.post-nav a {
-  text-decoration: none;
-  /*color: #0077cc;*/
-}
-
-.post-nav a:hover {
-  text-decoration: underline;
 }

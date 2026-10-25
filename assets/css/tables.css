@@ -9,11 +9,11 @@ table {
 }
 
 th, td {
-  border: 1px solid #aaa;
+  border: 1px solid var(--color-border-strong);
   padding: 0.4rem 0.6rem;
 }
 
 th, td:first-child {
-  background: #f0f0f0;
+  background: var(--color-surface-hover);
   font-weight: 600;
 }

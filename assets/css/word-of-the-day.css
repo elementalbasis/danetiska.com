@@ -1,49 +1,45 @@
 .word-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #e0e0e0;
+  background: var(--color-surface-muted);
   padding: 1rem 1.1rem;
   max-width: 40rem;
   margin: 1.5rem auto;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.word-card__label,
+.word-card__date {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
 }
 
 .word-card__label {
   font-size: 1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  /*color: #666;*/
-  margin-bottom: 0.35rem;
 }
 
 .word-card__date {
   font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  /*color: #666;*/
-  margin-bottom: 0.35rem;
 }
 
 .word-card__word {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1040a0;
+  color: var(--color-primary);
   line-height: 1.15;
   margin-bottom: 0.35rem;
 }
 
 .word-card__gloss {
-  color: #555;
+  color: var(--color-text-secondary);
   font-size: 1rem;
   line-height: 1.4;
 }
 
 .word-card__word a {
-  color: #1040a0;
+  color: inherit;
   text-decoration: none;
 }
 
 .word-card__word a:hover {
   text-decoration: underline;
-  color: #c9a300;
+  color: var(--color-accent);
 }

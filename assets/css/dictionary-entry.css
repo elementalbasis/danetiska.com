@@ -1,34 +1,25 @@
-
-
 /* Entry container */
 .entry {
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* Lemma (big word at top) */
+/* Shared lemma and expression headings. */
+.lemma,
+.expr-head,
+.inline-lemma {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.5px;
+  color: var(--color-primary);
+}
+
 .lemma {
   font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: 0.5px;
-  color: #1040a0;
 }
 
 .expr-head {
-  /*font-size: 2.4rem;*/
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: 0.5px;
-  color: #c04000;
-}
-
-.inline-lemma {
-  /*font-size: 2.4rem;*/
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: 0.5px;
-  color: #1040a0;
+  color: var(--color-expression);
 }
 
 .inline-lemma a {
@@ -37,34 +28,23 @@
 }
 
 .inline-lemma a:hover {
-  color: #c9a300;
+  color: var(--color-accent);
 }
 
 /* Etymology */
 .etymology {
-  color: #008000;
+  color: var(--color-etymology);
   margin-bottom: 1.2rem;
 }
-
-/*
-.etymology i {
-  font-style: italic;
-}
-*/
 
 /* Part of speech label */
 .pos, .linguistic-register, .field-of-usage, .related-words {
   font-style: italic;
-  color: #1040a0;
+  color: var(--color-primary);
   margin-right: 0.5rem;
 }
 
 /* Numbered definitions */
-/*
-.sense-block ol {
-  margin: 0.4rem 0 0 1.4rem;
-}
-*/
 
 .sense-block li, .expr-block li {
   margin-bottom: 0.25rem;
@@ -73,7 +53,7 @@
 
 .qualifier {
   font-style: italic;
-  color: #777;
+  color: var(--color-text-muted);
 }
 
 .silent-gloss {
@@ -81,15 +61,13 @@
 }
 
 .sample-phrase {
-  color: #800080;
+  color: var(--color-example);
 }
-
-
 
 .principal-parts {
   display: block;
   margin-top: 0.2rem;
-/*  font-size: 0.95rem;*/
+
   font-style: italic;
-  color: #777;
+  color: var(--color-text-muted);
 }

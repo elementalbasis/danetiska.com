@@ -1,4 +1,6 @@
+@import "/assets/css/theme.css";
 @import "/assets/css/base.css";
+@import "/assets/css/components.css";
 @import "/assets/css/date_today.css";
 @import "/assets/css/dictionary.css";
 @import "/assets/css/dictionary-entry.css";
@@ -17,5 +19,3 @@
 @import "/assets/css/library.css";
 @import "/assets/css/section-toc.css";
 @import "/assets/css/bible.css";
-
-@import "/assets/css/fix-viewport-width.css";

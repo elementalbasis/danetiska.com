@@ -1,21 +1,18 @@
-
 pre {
   white-space: pre-wrap;
-  background: #e0e0e0;
+  background: var(--color-surface-muted);
   padding: 1rem;
-  border-radius: .5rem;
+  max-width: 100%;
   overflow-x: auto;
 }
-
 
 .codebox {
   margin-top: 0.75rem;
   padding: 1rem;
-  background: #0f172a;           /* deep slate / navy */
-  color: #e5e7eb;                /* soft light gray */
-  border-radius: 8px;
-  border: 1px solid #1e293b;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--color-code-surface);           /* deep slate / navy */
+  color: var(--color-code-text);                /* soft light gray */
+  border: 1px solid var(--color-code-border);
+  font-family: var(--font-mono);
   font-size: 0.9rem;
   line-height: 1.4;
   max-height: 60vh;              /* don’t let it run away */
@@ -25,7 +22,7 @@ pre {
 
 /* Optional: subtle focus highlight when updated */
 .codebox:focus-within {
-  border-color: #38bdf8;
+  border-color: var(--color-code-focus);
 }
 
 /* Optional: scrollbar polish (webkit browsers) */
@@ -33,15 +30,12 @@ pre {
   width: 8px;
 }
 .codebox::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 4px;
+  background: var(--color-code-scrollbar);
 }
 
-
 code:not(pre code) {
-  background: #e0e0e0;
+  background: var(--color-surface-muted);
   color: inherit;
   padding: 0.05em 0.25em;   /* smaller = less vertical height */
-  border-radius: 4px;
   line-height: 1;           /* prevents extra vertical expansion */
 }

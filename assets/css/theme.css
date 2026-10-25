@@ -1,0 +1,44 @@
+:root {
+  --color-text: #2e2e2e;
+  --color-text-secondary: #555;
+  --color-text-muted: #777;
+  --color-surface: #fff;
+  --color-surface-subtle: #f7f7f7;
+  --color-surface-muted: #e0e0e0;
+  --color-surface-hover: #f0f0f0;
+  --color-border: #ccc;
+  --color-border-strong: #aaa;
+  --color-border-hover: #888;
+  --color-accent: #c9a300;
+  --color-accent-text: #8a7000;
+  --color-accent-surface: #f8f3d9;
+  --color-primary: #1040a0;
+  --color-expression: #c04000;
+  --color-etymology: #008000;
+  --color-example: #800080;
+  --color-inverse-surface: #333;
+
+  /* Code output needs its own contrasting surface and text. */
+  --color-code-surface: #0f172a;
+  --color-code-text: #e5e7eb;
+  --color-code-border: #1e293b;
+  --color-code-focus: #38bdf8;
+  --color-code-scrollbar: #334155;
+  --color-mask: #000;
+
+  --link-color: var(--color-text);
+  --link-hover: var(--color-accent);
+  --radius: 0.5rem;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --line-height-body: 1.35;
+  --width-content: 880px;
+  --width-reading: 900px;
+  --width-wide: 1100px;
+  --width-dictionary: 42rem;
+  --transition-fast: 150ms ease;
+  --shadow-figure: 2px 2px 8px rgb(0 0 0 / 5%);
+  --shadow-card-hover: 0 4px 12px rgb(0 0 0 / 8%);
+  --shadow-focus: 0 0 0 2px rgb(0 0 0 / 15%);
+}

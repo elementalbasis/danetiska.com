@@ -4,34 +4,10 @@
 }
 
 .century-calendar__year {
-  min-width: 0;
   min-height: 4.5rem;
-  margin: 0;
   padding: 0.75rem 0.25rem;
-
-  appearance: none;
-  border: 0;
-  border-right: 1px solid var(--calendar-border-light);
-  border-bottom: 1px solid var(--calendar-border-light);
-  border-radius: 0;
-  box-shadow: none;
-
-  background: var(--calendar-background);
-  color: var(--calendar-text);
-  font: inherit;
   font-variant-numeric: tabular-nums;
   text-align: center;
-
-  cursor: pointer;
-}
-
-.century-calendar__year:hover {
-  background: var(--calendar-hover-background);
-}
-
-.century-calendar__year--selected {
-  background: var(--calendar-selected-background);
-  color: var(--calendar-accent);
 }
 
 /*
@@ -54,7 +30,7 @@
   }
 
   .century-calendar__year:nth-child(10n) {
-    border-right: 1px solid var(--calendar-border-light);
+    border-right: 1px solid var(--color-border);
   }
 
   .century-calendar__year:nth-child(5n) {
@@ -62,7 +38,7 @@
   }
 
   .century-calendar__years > :nth-last-child(-n + 10) {
-    border-bottom: 1px solid var(--calendar-border-light);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .century-calendar__years > :nth-last-child(-n + 5) {
@@ -79,7 +55,7 @@
   }
 
   .century-calendar__year:nth-child(5n) {
-    border-right: 1px solid var(--calendar-border-light);
+    border-right: 1px solid var(--color-border);
   }
 
   .century-calendar__year:nth-child(2n) {
@@ -87,7 +63,7 @@
   }
 
   .century-calendar__years > :nth-last-child(-n + 5) {
-    border-bottom: 1px solid var(--calendar-border-light);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .century-calendar__years > :nth-last-child(-n + 2) {
@@ -104,7 +80,7 @@
   }
 
   .century-calendar__year:nth-child(2n) {
-    border-right: 1px solid var(--calendar-border-light);
+    border-right: 1px solid var(--color-border);
   }
 
   .century-calendar__year {
@@ -113,7 +89,7 @@
   }
 
   .century-calendar__years > :nth-last-child(-n + 2) {
-    border-bottom: 1px solid var(--calendar-border-light);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .century-calendar__years > :last-child {

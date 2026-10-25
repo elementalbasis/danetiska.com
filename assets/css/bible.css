@@ -1,6 +1,6 @@
 .bible-reader {
   margin: 2rem auto;
-  max-width: 1100px;
+  max-width: var(--width-wide);
 }
 
 .bible-reader-nav {
@@ -15,11 +15,6 @@
 .bible-reader-nav button,
 .bible-languages button {
   appearance: none;
-  border: 1px solid var(--border-color, #bbb);
-  border-radius: 0.25rem;
-  background: var(--background-color, #fff);
-  color: inherit;
-  font: inherit;
   line-height: 1.2;
 }
 
@@ -51,8 +46,8 @@
 }
 
 .bible-languages button[aria-pressed="true"] {
-  color: var(--background-color, #fff);
-  background: var(--text-color, #222);
+  color: var(--color-surface);
+  background: var(--color-text);
 }
 
 .bible-status,
@@ -70,7 +65,7 @@
   grid-template-columns: 2.5rem minmax(0, 1fr);
   gap: 1rem;
   padding: 1.25rem 0;
-  border-top: 1px solid var(--border-color, #ddd);
+  border-top: 1px solid var(--color-border);
 }
 
 .bible-verse:first-child {
@@ -140,9 +135,5 @@
   .bible-verse {
     grid-template-columns: 1.75rem minmax(0, 1fr);
     gap: 0.65rem;
-  }
-
-  .bible-verse-number {
-    padding-top: 0.2rem;
   }
 }

@@ -13,15 +13,15 @@ mjx-container[display="true"].math-scrollable {
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
-    black 1.5rem,
-    black calc(100% - 1.5rem),
+    var(--color-mask) 1.5rem,
+    var(--color-mask) calc(100% - 1.5rem),
     transparent
   );
   mask-image: linear-gradient(
     to right,
     transparent,
-    black 1.5rem,
-    black calc(100% - 1.5rem),
+    var(--color-mask) 1.5rem,
+    var(--color-mask) calc(100% - 1.5rem),
     transparent
   );
 }
