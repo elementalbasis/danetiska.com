@@ -81,7 +81,8 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
-\newcolumntype{K}{>{\raggedright\arraybackslash\color{DAMuted}}p{26mm}}
+\newcolumntype{K}{>{\raggedright\arraybackslash\color{DAMuted}}m{26mm}}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
 
 % Usage: \begin{datable}[10.9]{KCC} ... \end{datable}
 % The optional argument is the table font size in points.
@@ -89,7 +90,7 @@
 \NewDocumentEnvironment{datable}{O{10.9}m+b}{%
   \par\noindent\begingroup
   \fontsize{#1pt}{\dimexpr#1pt+2pt\relax}\selectfont
-  \renewcommand{\arraystretch}{0.55}%
+  \renewcommand{\arraystretch}{1.20}%
   \setlength{\tabcolsep}{4pt}%
   \setlength{\aboverulesep}{0.7pt}%
   \setlength{\belowrulesep}{0.7pt}%

@@ -1,0 +1,135 @@
+% Compile with XeLaTeX or LuaLaTeX. No style-file changes needed.
+% Glosses are a provisional analysis; source word forms are unsegmented.
+\documentclass{article}
+\usepackage{danetiska-instagram}
+\usepackage[noglossaries]{leipzig}
+\definecolor{DATextRed}{HTML}{FF0000}
+\definecolor{DATranslationPurple}{HTML}{800080}
+
+% Each word and its gloss share a left edge and wrap as one unit.
+% The leipzig package supplies abbreviation formatting.
+\renewcommand{\leipzigfont}[1]{{\fontsize{6.6}{8}\selectfont\MakeUppercase{#1}}}
+\newcommand{\gram}[1]{\leipzigfont{#1}}
+\newcommand{\gw}[2]{%
+  \leavevmode\vtop{\hbox{\strut\color{DATextRed}\normalfont\bfseries\fontsize{10.5}{13}\selectfont #1}%
+    \hbox{\strut\color{DAMuted}\normalfont\fontsize{7.5}{10}\selectfont #2}%
+    \vskip 2.5mm}%
+  \hskip 1.8mm plus 0.4mm\relax\ignorespaces}
+\newcounter{glossexample}
+\newenvironment{alignedgloss}{%
+  \par\refstepcounter{glossexample}%
+  \noindent\begin{minipage}[t]{8mm}%
+    \normalfont\bfseries\fontsize{10}{13}\selectfont\strut(\arabic{glossexample})%
+  \end{minipage}%
+  \begin{minipage}[t]{\dimexpr\linewidth-8mm\relax}%
+    \raggedright\setlength{\parskip}{0pt}\noindent
+}{\par\end{minipage}\par}
+\newcommand{\translation}[1]{\par\vspace{1mm}{\color{DATranslationPurple}\normalfont\fontsize{10}{13}\selectfont\itshape #1\par}}
+
+\begin{document}
+\begin{dacard}{Schleicher’s fable}{Danetian / 01}
+\vspace{2mm}
+\begin{alignedgloss}
+\gw{Ovis,}{sheep.\gram{NOM.SG}}
+\gw{jasmai}{REL.\gram{DAT.SG}}
+\gw{launa}{wool.\gram{NOM.SG}}
+\gw{ne}{\gram{NEG}}
+\gw{est,}{be.\gram{PRS.3SG}}
+\gw{vidt}{see.\gram{AOR.3SG}}
+\gw{esjvons:}{horse.\gram{ACC.PL}}
+\end{alignedgloss}
+\translation{A sheep, who had no wool, saw some horses:}
+\end{dacard}
+
+\begin{dacard}{Schleicher’s fable}{Danetian / 02}
+\vspace{2mm}
+\begin{alignedgloss}
+\gw{oinom}{one.\gram{ACC.SG}}
+\gw{dukontym}{pull.\gram{PRS.PTCP.ACC.SG}}
+\gw{brum}{heavy.\gram{ACC.SG}}
+\gw{vodjom,}{wagon.\gram{ACC.SG}}
+\gw{aliom}{other.\gram{ACC.SG}}
+\gw{berontym}{carry.\gram{PRS.PTCP.ACC.SG}}
+\gw{mysjlom}{big.\gram{ACC.SG}}
+\gw{onos,}{load.\gram{ACC.SG}}
+\gw{i}{and}
+\gw{tritom}{third.\gram{ACC.SG}}
+\gw{berontym}{carry.\gram{PRS.PTCP.ACC.SG}}
+\gw{virom}{man.\gram{ACC.SG}}
+\gw{bire}{quick.\gram{INS.SG}}
+\gw{djystre.}{hand.\gram{INS.SG}}
+\end{alignedgloss}
+\translation{One pulling a heavy wagon, another carrying a big load, and a third carrying a man quickly.}
+\end{dacard}
+
+\begin{dacard}{Schleicher’s fable}{Danetian / 03}
+\vspace{2mm}
+\begin{alignedgloss}
+\gw{Ovis}{sheep.\gram{NOM.SG}}
+\gw{vepst}{say.\gram{AOR.3SG}}
+\gw{esjvomos:}{horse.\gram{DAT.PL}}
+\gw{«Moiom}{my.\gram{NOM.SG.N}}
+\gw{sjerd}{heart.\gram{NOM.SG}}
+\gw{me}{1SG.\gram{ACC}}
+\gw{peieti,}{hurt.\gram{PRS.3SG}}
+\gw{vidnuntym}{see.\gram{PRS.PTCP.ACC.SG}}
+\gw{virom}{man.\gram{ACC.SG}}
+\gw{dukontym}{drive.\gram{PRS.PTCP.ACC.SG}}
+\gw{esjvons».}{horse.\gram{ACC.PL}}
+\end{alignedgloss}
+\translation{The sheep said to the horses, “My heart pains me, seeing a man driving horses.”}
+\end{dacard}
+
+\begin{dacard}{Schleicher’s fable}{Danetian / 04}
+\vspace{2mm}
+\begin{alignedgloss}
+\gw{Esjvoi}{horse.\gram{NOM.PL}}
+\gw{upsent:}{say.\gram{AOR.3PL}}
+\gw{«Sjlu,}{listen.\gram{IMP.2SG}}
+\gw{ovi,}{sheep.\gram{VOC.SG}}
+\gw{nosja}{our.\gram{NOM.PL.N}}
+\gw{sjerda}{heart.\gram{NOM.PL}}
+\gw{nos}{1PL.\gram{ACC}}
+\gw{peionti,}{hurt.\gram{PRS.3PL}}
+\gw{vidnuntyns}{see.\gram{PRS.PTCP.ACC.PL}}
+\gw{sjod:}{this.\gram{ACC.SG.N}}
+\end{alignedgloss}
+\translation{The horses said, “Listen, sheep, our hearts pain us, seeing this:}
+\end{dacard}
+
+\begin{dacard}{Schleicher’s fable}{Danetian / 05}
+\vspace{2mm}
+\begin{alignedgloss}
+\gw{Viros,}{man.\gram{NOM.SG}}
+\gw{potis,}{master.\gram{NOM.SG}}
+\gw{dekti}{make.\gram{PRS.3SG}}
+\gw{launam}{wool.\gram{ACC.SG}}
+\gw{ovies}{sheep.\gram{GEN.SG}}
+\gw{en}{in}
+\gw{brymam}{warm.\gram{ACC.SG}}
+\gw{vestim}{clothing.\gram{ACC.SG}}
+\gw{pro}{for}
+\gw{sve.}{\gram{REFL.ACC.SG}}
+\gw{Ide}{and}
+\gw{oviei}{sheep.\gram{DAT.SG}}
+\gw{ne}{\gram{NEG}}
+\gw{esti}{be.\gram{PRS.3SG}}
+\gw{launa».}{wool.\gram{NOM.SG}}
+\end{alignedgloss}
+\translation{A man, the master, makes the wool of the sheep into a warm garment for himself. And the sheep has no wool.”}
+\end{dacard}
+
+\begin{dacard}{Schleicher’s fable}{Danetian / 06}
+\vspace{2mm}
+\begin{alignedgloss}
+\gw{Sjod}{this.\gram{ACC.SG.N}}
+\gw{sjesjlukvos,}{hear.\gram{PRF.PTCP.NOM.SG}}
+\gw{ovis}{sheep.\gram{NOM.SG}}
+\gw{bugostet}{flee.\gram{AOR.3SG}}
+\gw{en}{in}
+\gw{asjdrom.}{field.\gram{ACC.SG}}
+\end{alignedgloss}
+\translation{Having heard this, the sheep fled into the field.}
+\end{dacard}
+
+\end{document}
