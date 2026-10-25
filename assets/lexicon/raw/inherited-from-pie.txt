@@ -371,7 +371,7 @@
 @key(prinos) @ety(\pie{preyH-nós}; \cf \eng{friend}) @typ(adj) @def($happy, $joyful, $glad)
 @key(prinota) @ety(\dnt{prinos}) @typ(f) @def($happiness, $joy, $gladness)
 @key(peruti) @ety(\pie{péruti}; \cf \grc{πέρυσι}{pérusi}) @typ(adv) @def(a $year ago, last $year, $yesteryear)
-@key(espe) @ety(\pie{h₁és-kʷe}; \cf \rus{ещё}{ješčó}) @typ(adv) @def($yet, $still)
+
 @key(dege) @ety(\pie{de-gʰe}) @typ(adv) @def($already, $anymore)
 @key(syndje) @ety(\pie{sm̥-gʰé}) @typ(adv) @def($together)
 @key(pasj, pysjes) @ety(\pie{peh₂ḱ-}; \cf \lat{pax}, \eng{fair}) @typ(f) @def($peace)

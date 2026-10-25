@@ -1,3 +1,0 @@
-\xpg@aux {}{english}
-\contentsline {chapter}{Danetian--English}{1}{section*.2}%
-\contentsline {chapter}{English--Danetian}{55}{section*.3}%
