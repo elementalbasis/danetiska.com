@@ -1,15 +1,8 @@
 ---
 layout: standalone
+wide: true
 title: The Danetian calendar
 ---
-
-
-
-
-<link
-  rel="stylesheet"
-  href="{{ '/assets/css/calendar/calendar.css' | relative_url }}"
->
 
 <div class="calendar-view">
 
@@ -26,29 +19,6 @@ title: The Danetian calendar
   src="{{ '/assets/scripts/calendar/calendar-view.js' | relative_url }}"
 ></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="dict-date" aria-label="Today’s date">
   <div class="dict-date__inner">
     <div class="dict-date__item">
@@ -63,9 +33,6 @@ title: The Danetian calendar
   </div>
 </section>
 
-
-
-
 The Danetian calendar is the traditional 
 [lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar) used by
 the Danetian people. Each month starts at the
@@ -77,8 +44,6 @@ accomplish this, a series of algorithms were formalized by
 *On the Reckoning of the Luminaries*, to
 perform calendrical calculations.
 
-
-
 ## Calendar Calculator
 
 The calculator below allows for the conversion between
@@ -88,24 +53,26 @@ Danetian dates. (NOTE: All dates must be input in YYYY-MM-DD format, and years
 must use
 [astronomical numbering](https://en.wikipedia.org/wiki/Astronomical_year_numbering)).
 
-<form id="form_calendar_calculator">
+<form id="form_calendar_calculator" class="form-grid">
+  <div class="form-field">
     <label for="input_date">Enter date:</label>
     <input type="text" id="input_date" placeholder="YYYY-MM-DD" required>
+  </div>
+  <div class="form-field">
     <label for="select_calendar">Interpret as:</label>
     <select id="select_calendar" required>
         <option value="g">Gregorian</option>
         <option value="j">Julian</option>
         <option value="d">Danetian</option>
     </select>
-    <input type="submit" value="Submit">
+  </div>
+    <button type="submit">Convert</button>
 </form>
 <p id="result_gregorian"></p>
 <p id="result_julian"></p>
 <p id="result_danetian"></p>
 <p id="result_danetian_linear_count"></p>
-<script src="/assets/scripts/calculator.js" defer></script>
-
-
+<script type="module" src="{{ "/assets/scripts/calculator.js" | relative_url }}"></script>
 
 ## Explanation of the calendar
 
@@ -121,8 +88,6 @@ around this, some years are set to have $12$ months, while others have $13$, so 
 the average year length ends up being around $365.2421$ days.
 Essentially, an entire leap month is inserted every two or three years in order
 to keep the calendar in sync with the seasons.
-
-
 
 ## Month names
 
@@ -143,8 +108,6 @@ The thirteenth month is called *Terra*.
 11. *Aquarius*
 12. *Pisces*
 13. *Terra*
-
-
 
 ## Mathematical rules for months
 
@@ -180,8 +143,6 @@ overriding rule 1. Moreover, they override and reset the count on rule 2.
 4. Golden months occur every $850$ months. Golden months are always full months,
 overriding rule 1. Moreover, they override and reset the count on rules 2 and 3.
 
-
-
 ## Mathematical rules for years
 
 Years can either be short ($12$ months) or long ($13$ months; also called leap
@@ -203,8 +164,6 @@ years: $2, \,5, \,7, \,10, \,13, \,15, \,18$.
 2. After $334$ years, a new Metonic cycle starts, overriding and resetting the
 count on rule 1.
 
-
-
 ## Calendar epoch
 
 [Myron Dorostolite](/posts/myron-dorostolite.html)
@@ -221,8 +180,6 @@ coincided with a solar eclipse. Myron writes:
 > let that day be established as the root of the reckoning.
 >
 > **Myron Dorostolite, On the Reckoning of the Luminaries, 1349**
-
-
 
 ## Manual calculations
 

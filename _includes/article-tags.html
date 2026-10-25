@@ -1,0 +1,1 @@
+{% for tag in include.tags %}{% assign public_tag = site.data.article_filters | where: 'tag', tag | first %}{{ public_tag.title | default: tag | escape }}{% unless forloop.last %} · {% endunless %}{% endfor %}

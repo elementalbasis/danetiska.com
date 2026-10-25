@@ -5,7 +5,7 @@
 
 .century-calendar__year {
   min-height: 4.5rem;
-  padding: 0.75rem 0.25rem;
+  padding: var(--space-3) var(--space-1);
   font-variant-numeric: tabular-nums;
   text-align: center;
 }

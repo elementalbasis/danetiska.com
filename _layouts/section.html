@@ -15,18 +15,8 @@ layout: default
 
   <article class="section-content">
 
-    <nav class="section-breadcrumbs" aria-label="Breadcrumb">
-      <a href="{{ section.home }}">{{ section.title }}</a>
-
-      {% unless page.url == section.home %}
-        <span aria-hidden="true">›</span>
-        <span>{{ page.title }}</span>
-      {% endunless %}
-    </nav>
-
-    <h1>{{ page.title }}</h1>
-
-    {{ content }}
+    {% include page-heading.html title=page.title parent_url=section.home parent_title=section.title %}
+    <div class="prose">{{ content }}</div>
 
     {% include section-pagination.html %}
   </article>

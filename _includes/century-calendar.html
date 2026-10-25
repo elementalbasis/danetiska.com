@@ -6,30 +6,8 @@
   aria-label="{{ include.title | default: 'Calendar century' }}"
   hidden
 >
-  <header class="century-calendar__header">
-    <button
-      class="century-calendar__arrow century-calendar__previous"
-      type="button"
-      aria-label="Previous century"
-    >
-      ‹
-    </button>
-
-    <button
-      class="century-calendar__title"
-      type="button"
-    >
-      {{ include.title | default: 4400 }}
-    </button>
-
-    <button
-      class="century-calendar__arrow century-calendar__next"
-      type="button"
-      aria-label="Next century"
-    >
-      ›
-    </button>
-  </header>
+  {% assign calendar_title = include.title | default: "Century" %}
+  {% include calendar-header.html kind="century" title=calendar_title %}
 
   <div
     class="century-calendar__years"

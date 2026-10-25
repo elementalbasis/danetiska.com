@@ -13,8 +13,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  padding: 1rem 0.5rem;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-2);
   text-align: center;
 }
 
@@ -25,11 +25,11 @@
 
 .year-calendar__month-number {
   color: var(--color-text-muted);
-  font-size: 0.8rem;
+  font-size: var(--text-xs);
 }
 
 .year-calendar__month-name {
-  font-size: 1.05rem;
+  font-size: var(--text-base);
   font-weight: 600;
 }
 
@@ -76,10 +76,10 @@
   }
 
   .year-calendar__month {
-    padding: 0.75rem 0.25rem;
+    padding: var(--space-3) var(--space-1);
   }
 
   .year-calendar__month-name {
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
   }
 }

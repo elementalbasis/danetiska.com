@@ -1,32 +1,31 @@
-document.getElementById('form_calendar_calculator').addEventListener('submit', function(event) {
-	event.preventDefault()
+import * as calendar from "./calendar/calendar-arithmetic.js";
 
-	var date_string = document.getElementById('input_date').value
-	var calendar_type = document.getElementById('select_calendar').value
-
-	var [y, m, d] = interpret_date_string(date_string)
-
-	var n = 0
-	if (calendar_type == "g") {
-		n = gregorian_to_julian_day(y, m, d)
-	} else if (calendar_type == "j") {
-		n = julian_to_julian_day(y, m, d)
-	} else if (calendar_type == "d") {
-		n = danetian_to_julian_day(y, m, d)
-	} else {
-		n = 0
-	}
-
-	var [yg, mg, dg] = gregorian_from_julian_day(n)
-	var [yj, mj, dj] = julian_from_julian_day(n)
-	var [yd, md, dd] = danetian_from_julian_day(n)
-	var date_g = iso_format(yg, mg, dg) + 'g'
-	var date_j = iso_format(yj, mj, dj) + 'j'
-	var date_d = iso_format(yd, md, dd) + 'd'
-
-	document.getElementById('result_gregorian').innerText = `${date_g}`
-	document.getElementById('result_julian').innerText = `${date_j}`
-	document.getElementById('result_danetian').innerText = `${date_d}`
-	document.getElementById('result_danetian_linear_count').innerText = `${n - 1237193}`
-})
-
+const form = document.getElementById("form_calendar_calculator");
+const outputs = ["gregorian", "julian", "danetian"];
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const input = document.getElementById("input_date");
+  input.setCustomValidity("");
+  try {
+    const date = calendar.interpret_date_string(input.value);
+    const type = { g: "gregorian", j: "julian", d: "danetian" }[
+      document.getElementById("select_calendar").value
+    ];
+    const day = calendar[`${type}_to_julian_day`](...date);
+    for (const name of outputs) {
+      document.getElementById(`result_${name}`).textContent =
+        calendar.iso_format(...calendar[`${name}_from_julian_day`](day)) +
+        name[0];
+    }
+    document.getElementById("result_danetian_linear_count").textContent =
+      String(day - 1237193);
+  } catch (error) {
+    for (const name of [...outputs, "danetian_linear_count"])
+      document.getElementById(`result_${name}`).textContent = "";
+    input.setCustomValidity(error.message);
+    input.reportValidity();
+  }
+});
+form.addEventListener("input", () =>
+  document.getElementById("input_date").setCustomValidity(""),
+);

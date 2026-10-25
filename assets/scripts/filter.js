@@ -29,7 +29,7 @@ if (menu) {
           selectedTag === "all" ||
           tags.includes(selectedTag);
 
-        item.style.display = matches ? "" : "none";
+        item.hidden = !matches;
       });
     });
   });

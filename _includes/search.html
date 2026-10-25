@@ -1,0 +1,8 @@
+{% assign search = site.data.search[include.language] %}
+<form class="search" action="{{ search.action | relative_url }}" method="get" lang="{{ include.language }}" data-lexicon="{{ search.lexicon | relative_url }}" data-messages='{{ search.messages | jsonify | escape }}'>
+  <input name="q" type="search" placeholder="{{ search.placeholder | escape }}" aria-label="{{ search.placeholder | escape }}" autocomplete="off">
+  <select name="mode" aria-label="{{ search.mode_label | escape }}">
+    {% for mode in search.modes %}<option value="{{ mode.value }}">{{ mode.title | escape }}</option>{% endfor %}
+  </select>
+  <button type="submit">{{ search.button | escape }}</button>
+</form>

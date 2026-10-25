@@ -18,24 +18,4 @@
   {% endif %}
 {% endfor %}
 
-{% if previous_item or next_item %}
-  <nav class="section-pagination" aria-label="Section navigation">
-    <div class="section-pagination-previous">
-      {% if previous_item %}
-        <span>Previous</span>
-        <a href="{{ previous_item.url | relative_url }}">
-          ← {{ previous_item.nav_title | default: previous_item.title }}
-        </a>
-      {% endif %}
-    </div>
-
-    <div class="section-pagination-next">
-      {% if next_item %}
-        <span>Next</span>
-        <a href="{{ next_item.url | relative_url }}">
-          {{ next_item.nav_title | default: next_item.title }} →
-        </a>
-      {% endif %}
-    </div>
-  </nav>
-{% endif %}
+{% include pagination.html previous=previous_item next=next_item label="Section navigation" %}

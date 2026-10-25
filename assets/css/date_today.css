@@ -1,6 +1,6 @@
 .dict-date {
-  margin: 2.5rem 0 1.25rem;
-  padding: 1.25rem 1rem;
+  margin: var(--space-7) 0 var(--space-5);
+  padding: var(--space-5) var(--space-4);
   border-top: 2px solid var(--color-inverse-surface);
   border-bottom: 2px solid var(--color-inverse-surface);
   background: var(--color-surface-subtle);
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: var(--space-5);
   flex-wrap: wrap;
 }
 
@@ -22,21 +22,21 @@
 
 .dict-date__label {
   display: block;
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-label);
   text-transform: uppercase;
   color: var(--color-text-secondary);
 }
 
 .dict-date__value {
   display: block;
-  margin-top: 0.25rem;
-  font-size: 1.05rem;
+  margin-top: var(--space-1);
+  font-size: var(--text-base);
   font-weight: 500;
 }
 
 .dict-date__sep {
-  font-size: 1.25rem;
+  font-size: var(--text-lg);
   color: var(--color-text-muted);
 }
 
@@ -44,7 +44,7 @@
 @media (max-width: 600px) {
   .dict-date__inner {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-3);
   }
 
   .dict-date__sep {

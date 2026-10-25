@@ -4,8 +4,7 @@
     <span id="gregorian_date_today"></span> || <span id="danetian_date_today"></span>
   </div>
   <div class="word-card__word">
-    <a id="word-of-the-day-link" href="dictionary">Loading...</a>
+    <a id="word-of-the-day-link" href="{{ "/dictionary" | relative_url }}">Loading...</a>
   </div>
-  <!--<div class="word-card__gloss">dawn, east, Venus</div>-->
 </div>
-<script src="/assets/scripts/word-of-the-day.js"></script>
+<script src="{{ "/assets/scripts/word-of-the-day.js" | relative_url }}" defer></script>

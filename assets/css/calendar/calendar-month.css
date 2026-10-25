@@ -10,10 +10,10 @@
 }
 
 .month-calendar__weekday {
-  padding: 0.55rem 0.25rem;
+  padding: var(--space-2) var(--space-1);
   border-right: 1px solid var(--color-border);
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   text-align: center;
 }
@@ -30,7 +30,7 @@
 .month-calendar__day {
   position: relative;
   display: block;
-  padding: 0.55rem;
+  padding: var(--space-2);
   text-align: left;
 }
 
@@ -51,8 +51,8 @@
 
 @media (max-width: 600px) {
   .month-calendar__weekday {
-    padding: 0.45rem 0.1rem;
-    font-size: 0.75rem;
+    padding: var(--space-2) var(--space-1);
+    font-size: var(--text-xs);
   }
 
   .month-calendar__day,
@@ -61,7 +61,7 @@
   }
 
   .month-calendar__day {
-    padding: 0.4rem;
+    padding: var(--space-2);
   }
 }
 

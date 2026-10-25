@@ -1,10 +1,10 @@
 .section-layout {
   display: grid;
   grid-template-columns: minmax(180px, 230px) minmax(0, 1fr);
-  gap: 2.5rem;
+  gap: var(--space-7);
   width: 100%;
   max-width: var(--width-wide);
-  margin: 2rem auto;
+  margin: var(--space-6) auto;
 }
 
 .section-sidebar {
@@ -15,15 +15,15 @@
   position: sticky;
   top: 5.5rem;
   border-right: 1px solid var(--color-border);
-  padding-right: 1.25rem;
-  font-size: 0.95rem;
+  padding-right: var(--space-5);
+  font-size: var(--text-sm);
 }
 
 .section-toc-title {
   display: block;
-  margin-bottom: 0.65rem;
+  margin-bottom: var(--space-3);
   color: var(--color-text);
-  font-size: 1.05rem;
+  font-size: var(--text-base);
   font-weight: 600;
   text-decoration: none;
 }
@@ -39,15 +39,15 @@
 }
 
 .section-toc li + li {
-  margin-top: 0.15rem;
+  margin-top: var(--space-1);
 }
 
 .section-toc li a {
   display: block;
-  padding: 0.35rem 0.6rem;
+  padding: var(--space-2) var(--space-3);
   border-left: 3px solid transparent;
   color: var(--color-text-secondary);
-  line-height: 1.35;
+  line-height: var(--line-height-ui);
   text-decoration: none;
 }
 
@@ -70,10 +70,10 @@
 }
 
 .section-breadcrumbs {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
   color: var(--color-text-muted);
-  font-size: 0.9rem;
-  margin-top: 1rem;
+  font-size: var(--text-sm);
+  margin-top: var(--space-4);
 }
 
 .section-breadcrumbs a {
@@ -82,25 +82,25 @@
 }
 
 .section-breadcrumbs span {
-  margin-left: 0.3rem;
+  margin-left: var(--space-1);
 }
 
 .section-pagination {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 3rem;
-  padding-top: 1rem;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+  padding-top: var(--space-4);
   border-top: 1px solid var(--color-border);
 }
 
 .section-pagination span {
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: var(--space-1);
   color: var(--color-text-muted);
-  font-size: 0.8rem;
+  font-size: var(--text-xs);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--tracking-label);
 }
 
 .section-pagination a {
@@ -114,28 +114,28 @@
 @media (max-width: 700px) {
   .section-layout {
     display: block;
-    margin-top: 1rem;
+    margin-top: var(--space-4);
   }
 
   .section-sidebar {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-5);
   }
 
   .section-toc {
     position: static;
     border: 1px solid var(--color-border);
     background: var(--color-surface-subtle);
-    padding: 0.75rem 1rem;
+    padding: var(--space-3) var(--space-4);
   }
 
   .section-toc-title {
-    margin-bottom: 0.4rem;
+    margin-bottom: var(--space-2);
   }
 
   .section-toc ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.15rem 0.75rem;
+    gap: var(--space-1) var(--space-3);
   }
 
   .section-toc li + li {

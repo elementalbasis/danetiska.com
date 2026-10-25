@@ -1,48 +1,16 @@
-/* =========================
-   TAG MENU (POST FILTER)
-   ========================= */
-
 .tag-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1.5rem 0 2rem 0;
+  gap: var(--space-2);
+  margin: var(--space-5) 0 var(--space-6) 0;
 }
 
-/* Base button */
 .tag-menu button {
-  font: inherit;
-  padding: 0.4rem 0.75rem;
+  font-size: var(--text-sm);
 
   background: transparent;
 }
 
-/* Active (selected filter) */
-.tag-menu button.active {
-  background: var(--color-inverse-surface);
-  color: var(--color-surface);
-  border-color: var(--color-inverse-surface);
-}
-
-/* Optional: emphasize "All" */
 .tag-menu button[data-tag="all"] {
   font-weight: 600;
-}
-
-/* Focus (keyboard navigation) */
-.tag-menu button:focus {
-  outline: none;
-  box-shadow: var(--shadow-focus);
-}
-
-/* Mobile refinement */
-@media (max-width: 600px) {
-  .tag-menu {
-    gap: 0.4rem;
-  }
-
-  .tag-menu button {
-    padding: 0.35rem 0.6rem;
-    font-size: 0.9rem;
-  }
 }

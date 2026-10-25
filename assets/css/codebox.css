@@ -1,23 +1,23 @@
 pre {
   white-space: pre-wrap;
   background: var(--color-surface-muted);
-  padding: 1rem;
+  padding: var(--space-4);
   max-width: 100%;
   overflow-x: auto;
 }
 
 .codebox {
-  margin-top: 0.75rem;
-  padding: 1rem;
-  background: var(--color-code-surface);           /* deep slate / navy */
-  color: var(--color-code-text);                /* soft light gray */
+  margin-top: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-code-surface); /* deep slate / navy */
+  color: var(--color-code-text); /* soft light gray */
   border: 1px solid var(--color-code-border);
   font-family: var(--font-mono);
-  font-size: 0.9rem;
-  line-height: 1.4;
-  max-height: 60vh;              /* don’t let it run away */
-  overflow: auto;                /* scroll if many matches */
-  white-space: pre-wrap;         /* wrap long lines */
+  font-size: var(--text-sm);
+  line-height: var(--line-height-ui);
+  max-height: 60vh; /* don’t let it run away */
+  overflow: auto; /* scroll if many matches */
+  white-space: pre-wrap; /* wrap long lines */
 }
 
 /* Optional: subtle focus highlight when updated */
@@ -36,6 +36,6 @@ pre {
 code:not(pre code) {
   background: var(--color-surface-muted);
   color: inherit;
-  padding: 0.05em 0.25em;   /* smaller = less vertical height */
-  line-height: 1;           /* prevents extra vertical expansion */
+  padding: 0.05em 0.25em; /* smaller = less vertical height */
+  line-height: 1; /* prevents extra vertical expansion */
 }

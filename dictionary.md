@@ -1,9 +1,11 @@
 ---
 title: Dictionary of the Danetian language
 layout: standalone
+inflections: true
+wide: true
 ---
 
-{% include dictionary_search.html %}
+{% include search.html language="en" %}
 {% include word_of_the_day.html %}
 
 <section class="dictionary-introduction">
@@ -37,8 +39,8 @@ layout: standalone
 </section>
 
 <section class="results">
-  <p id="out"></p>
+  <p id="out" role="status" aria-live="polite"></p>
   <div id="results"></div>
 </section>
 
-<script src="./assets/scripts/dictionary.js"></script>
+<script src="{{ "/assets/scripts/dictionary.js" | relative_url }}" defer></script>

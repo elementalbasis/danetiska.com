@@ -2,6 +2,11 @@
   border-top: 1px solid var(--color-border);
 }
 
+.section-heading + .library-list,
+.section-header + .library-list {
+  border-top: 0;
+}
+
 .library-item {
   display: block;
   border-bottom: 1px solid var(--color-border);
@@ -10,7 +15,7 @@
 .library-link {
   display: block;
 
-  padding: 1.5rem 0;
+  padding: var(--space-5) 0;
 
   color: inherit;
   text-decoration: none;
@@ -24,18 +29,9 @@
   background: var(--color-surface-subtle);
 }
 
-.library-meta {
-  margin: 0;
-
-  color: var(--color-text-muted);
-  font-size: .82rem;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
-
 .library-title {
-  margin: .25rem 0;
-  font-size: 1.35rem;
+  margin: var(--space-1) 0;
+  font-size: var(--text-xl);
 }
 
 .library-link:hover .library-title {
@@ -50,12 +46,12 @@
 }
 
 .library-description {
-  margin-top: .75rem;
+  margin-top: var(--space-3);
   color: var(--color-text-secondary);
 }
 
-.library-item .tags {
-  margin-top: .75rem;
+.library-item > .library-link > .library-meta:last-child {
+  margin-top: var(--space-3);
 }
 
 /* Tools use the same entry include as the reference catalogue. */
@@ -63,19 +59,19 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   align-items: baseline;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
 }
 
 .library-list--compact .library-title,
 .library-list--compact .library-description {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--text-base);
 }
 
 @media (max-width: 600px) {
   .library-list--compact .library-link {
     grid-template-columns: minmax(0, 1fr);
-    gap: 0.25rem;
+    gap: var(--space-1);
   }
 }

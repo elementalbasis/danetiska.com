@@ -1,24 +1,10 @@
-.wrap {
-  max-width: var(--width-reading);
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.header {
-  margin-bottom: 1rem;
-}
-
-.muted {
-  color: var(--color-text-muted);
-}
-
 .dictionary-introduction {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: var(--space-7);
   max-width: var(--width-dictionary);
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: var(--space-6) auto;
+  padding: 0 var(--space-4);
 }
 
 .dictionary-description {
@@ -46,7 +32,7 @@
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-2);
   color: var(--color-text);
 }
 
@@ -54,7 +40,7 @@
   .dictionary-introduction {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--space-5);
   }
 
   .dictionary-description {

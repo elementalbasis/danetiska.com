@@ -8,10 +8,10 @@ permalink: /posts/
 
 {% include filter-menu.html items=site.data.article_filters label="Filter articles" %}
 
-<section class="post-grid">
+<section class="card-grid">
   {% for post in site.posts %}
     <div class="archive-item" data-tags='{{ post.tags | jsonify | downcase }}'>
-      {% include post-card.html post=post %}
+      {% include card.html item=post %}
     </div>
   {% endfor %}
 </section>

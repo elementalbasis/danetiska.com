@@ -1,10 +1,12 @@
 ---
 title: Diccionario de la lengua samiruana
 layout: standalone
+wide: true
+lang: es
 permalink: /samiru/
 ---
 
-{% include samiru_dictionary_search.html %}
+{% include search.html language="es" %}
 
 <section class="dictionary-introduction" lang="es">
   <div class="dictionary-description">
@@ -23,4 +25,4 @@ permalink: /samiru/
   <div id="results"></div>
 </section>
 
-<script src="{{ '/assets/scripts/dictionary-samiru.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/scripts/dictionary.js' | relative_url }}" defer></script>

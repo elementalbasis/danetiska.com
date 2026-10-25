@@ -13,3 +13,8 @@ plugins:
 collections:
   - language
   - texts
+email: academia@danetiska.com
+exclude:
+  - README.md
+  - docs
+  - tests

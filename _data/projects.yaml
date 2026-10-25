@@ -1,0 +1,10 @@
+- title: DanuWiki
+  url: https://wiki.danetiska.com
+  image: /assets/images/danetiska_academia_favicon.svg
+  fit: contain
+  description: A Zettelkasten-style bilingual corpus.
+- title: Elemental Basis
+  url: https://elementalbasis.com
+  image: https://elementalbasis.com/assets/images/eb_logo.svg
+  fit: contain
+  description: A blog for mathematics and physics.

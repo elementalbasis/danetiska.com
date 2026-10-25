@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-
-<h1>{{ page.title }}</h1>
-<div class="content">
-     {{ content }}
-</div>
+<article class="document{% unless page.wide %} document--reading{% endunless %}">
+  {% include page-heading.html title=page.title description=page.description %}
+  <div class="prose">{{ content }}</div>
+</article>

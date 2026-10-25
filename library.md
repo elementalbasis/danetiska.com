@@ -6,9 +6,9 @@ permalink: /library/
 
 {% include page-heading.html title=page.title description=site.data.library.introduction %}
 
-<section class="collection-grid" aria-label="Library collections">
+<section class="card-grid" aria-label="Library collections">
   {% for collection in site.data.library.collections %}
-    {% include collection-card.html item=collection %}
+    {% include card.html item=collection %}
   {% endfor %}
 </section>
 

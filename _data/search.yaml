@@ -1,0 +1,92 @@
+en:
+  action: /dictionary
+  lexicon: /assets/lexicon/lexicon.html
+  placeholder: Search the dictionary
+  mode_label: Search mode
+  button: Search
+  modes:
+  - value: general
+    title: General search
+  - value: lemma-exact
+    title: Exact match
+  - value: lemma-prefix
+    title: Beginning with
+  - value: lemma-contains
+    title: Containing
+  - value: lemma-suffix
+    title: Ending in
+  - value: gloss-exact
+    title: Exact translation
+  - value: random
+    title: Random
+  messages:
+    none:
+      lemma-exact: No exact lemma match for "{query}".
+      lemma-prefix: No lemma beginning with "{query}".
+      lemma-contains: No lemma containing "{query}".
+      lemma-suffix: No lemma ending with "{query}".
+      gloss-exact: No exact translation match for "{query}".
+      gloss-prefix: No translation beginning with "{query}".
+      gloss-contains: No translation containing "{query}".
+      gloss-suffix: No translation ending with "{query}".
+      default: No match for "{query}".
+    matches:
+      lemma-prefix: '{count} for lemmas beginning with "{query}".'
+      lemma-contains: '{count} for lemmas containing "{query}".'
+      lemma-suffix: '{count} for lemmas ending with "{query}".'
+      gloss-exact: '{count} for exact translation "{query}".'
+      gloss-prefix: '{count} for translations beginning with "{query}".'
+      gloss-contains: '{count} for translations containing "{query}".'
+      gloss-suffix: '{count} for translations ending with "{query}".'
+      default: '{count}.'
+    singular: 1 match
+    plural: '{count} matches'
+    suggest: No exact match for "{query}".
+    error: Could not load the dictionary.
+    random: Press Search
+es:
+  action: /samiru/
+  lexicon: /samiru/lexicon.html
+  placeholder: Buscar en el diccionario
+  mode_label: Tipo de búsqueda
+  button: Buscar
+  modes:
+  - value: general
+    title: Búsqueda general
+  - value: lemma-exact
+    title: Palabra exacta
+  - value: lemma-prefix
+    title: Empieza por
+  - value: lemma-contains
+    title: Contiene
+  - value: lemma-suffix
+    title: Termina en
+  - value: gloss-exact
+    title: Traducción exacta
+  - value: random
+    title: Al azar
+  messages:
+    none:
+      lemma-exact: No se encontró la palabra exacta "{query}".
+      lemma-prefix: No hay palabras que empiecen por "{query}".
+      lemma-contains: No hay palabras que contengan "{query}".
+      lemma-suffix: No hay palabras que terminen en "{query}".
+      gloss-exact: No se encontró la traducción exacta "{query}".
+      gloss-prefix: No hay traducciones que empiecen por "{query}".
+      gloss-contains: No hay traducciones que contengan "{query}".
+      gloss-suffix: No hay traducciones que terminen en "{query}".
+      default: No hay coincidencias para "{query}".
+    matches:
+      lemma-prefix: '{count} para palabras que empiecen por "{query}".'
+      lemma-contains: '{count} para palabras que contengan "{query}".'
+      lemma-suffix: '{count} para palabras que terminen en "{query}".'
+      gloss-exact: '{count} para la traducción exacta "{query}".'
+      gloss-prefix: '{count} para traducciones que empiecen por "{query}".'
+      gloss-contains: '{count} para traducciones que contengan "{query}".'
+      gloss-suffix: '{count} para traducciones que terminen en "{query}".'
+      default: '{count}.'
+    singular: 1 coincidencia
+    plural: '{count} coincidencias'
+    suggest: No hay coincidencias exactas para "{query}".
+    error: No se pudo cargar el diccionario samiruano.
+    random: Pulsa Buscar

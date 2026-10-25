@@ -1,5 +1,6 @@
 ---
 layout: standalone
+wide: true
 title: Kustendja Polyglot Bible
 permalink: /bible/
 section: texts

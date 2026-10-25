@@ -3,71 +3,40 @@ title: Danetian Academy
 layout: default
 ---
 
-{% include dictionary_search.html %}
-{% include word_of_the_day.html %}
+{% include page-heading.html title=page.title description=site.description %}
 
-{% assign featured_post = site.posts.first %}
-
-<section class="home-featured">
-  {% include featured.html post=featured_post %}
+<section class="home-reference" aria-label="Dictionary">
+  {% include search.html language="en" %}
+  {% include word_of_the_day.html %}
 </section>
 
-<p class="all-posts-link">
-  <a href="/posts/">Browse all articles →</a>
-</p>
-
-<section class="home-section">
-  <!--<h2>Danetian Language and Worldbuilding</h2>-->
-  <div class="post-grid">
-    {% assign shown = 0 %}
-    {% for post in site.posts %}
-      {% if post.url != featured_post.url and shown < 3 %}
-        {% include post-card.html post=post %}
-        {% assign shown = shown | plus: 1 %}
-      {% endif %}
+<section class="resource-section" aria-labelledby="home-articles">
+  <header class="section-header">
+    <h2 id="home-articles">Articles</h2>
+    <a href="{{ '/posts/' | relative_url }}">Browse all articles →</a>
+  </header>
+  <div class="card-grid">
+    {% for post in site.posts limit:4 %}
+      {% if forloop.first %}{% include card.html item=post featured=true %}{% else %}{% include card.html item=post %}{% endif %}
     {% endfor %}
   </div>
 </section>
 
-<p class="all-posts-link">
-  <a href="/posts/">Browse all articles →</a>
-</p>
-
-<section class="home-section">
-  <h2>Affiliated projects</h2>
-  <div class="post-grid">
-    <article class="post-card">
-      <a href="https://wiki.danetiska.com" class="card-link">
-        <figure class="card-figure">
-          <img
-            src="https://danetiska.com/assets/images/danetiska_academia_favicon.svg"
-            alt="DanuWiki"
-            loading="lazy" decoding="async">
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">DanuWiki</h2>
-          <p class="card-excerpt">A Zettelkasten-style bilingual corpus.</p>
-          <div class="card-meta">
-          </div>
-        </div>
-      </a>
-    </article>
-    <article class="post-card">
-      <a href="https://elementalbasis.com" class="card-link">
-        <figure class="card-figure">
-          <img
-            src="https://elementalbasis.com/assets/images/eb_logo.svg"
-            alt="Elemental Basis"
-            loading="lazy" decoding="async">
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Elemental Basis</h2>
-          <p class="card-excerpt">A blog for math and physics nerds.</p>
-          <div class="card-meta">
-          </div>
-        </div>
-      </a>
-    </article>
+<section class="resource-section" aria-labelledby="home-library">
+  <header class="section-header">
+    <h2 id="home-library">Library</h2>
+    <a href="{{ '/library/' | relative_url }}">Explore the Library →</a>
+  </header>
+  <div class="library-list library-list--compact">
+    {% for collection in site.data.library.collections %}
+      {% include library.html item=collection heading=3 %}
+    {% endfor %}
   </div>
 </section>
 
+<section class="resource-section" aria-labelledby="home-projects">
+  <h2 class="section-heading" id="home-projects">Affiliated projects</h2>
+  <div class="card-grid">
+    {% for project in site.data.projects %}{% include card.html item=project %}{% endfor %}
+  </div>
+</section>

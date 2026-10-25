@@ -1,40 +1,14 @@
 ---
 layout: default
 ---
-
-{% include post-nav.html %}
-
-<h1>{{ page.title }}</h1>
-<article class="post">
-<p class="byline">{{ page.author }}
-	<br>{{ page.date | date: "%d %B %Y" }}
-	<br><span id="danetian-date"></span>
-</p>
-
-{% if page.cover %}
-<div class="post-cover">
-	<img src="{{ page.cover }}" alt="Cover image for {{ page.title }}">
-</div>
-{% endif %}
-
-<div class="content">
-     {{ content }}
-</div>
+<article class="document document--reading">
+  {% include page-heading.html title=page.title %}
+  <p class="byline">
+    {% if page.author %}<span>{{ page.author | escape }}</span>{% endif %}
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
+    <span data-danetian-date="{{ page.date | date: '%Y-%m-%d' }}"></span>
+  </p>
+  {% if page.cover %}<div class="post-cover"><img src="{{ page.cover | relative_url | escape }}" alt="{{ page.cover_alt | default: '' | escape }}"></div>{% endif %}
+  <div class="prose">{{ content }}</div>
+  {% include post-nav.html %}
 </article>
-
-{% include post-nav.html %}
-
-<!--<script src="/assets/scripts/calendar.js"></script>-->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-	  const [yg, mg, dg] = "{{ page.date | date: '%Y-%m-%d' }}".split("-").map(Number);
-	  //var yg = gDate.getFullYear(); //u.slice(0,4)*1
-	  //var mg = gDate.getMonth() + 1; //u.slice(5,7)*1
-	  //var dg = gDate.getDate(); //u.slice(8,10)*1
-	  var n = gregorian_to_julian_day(yg, mg, dg);
-	  var [yd, md, dd] = danetian_from_julian_day(n);
-	  var s = verbose_format(yd, md, dd, g_danetian_month_names);
-
-    document.getElementById("danetian-date").textContent = s;
-  });
-</script>

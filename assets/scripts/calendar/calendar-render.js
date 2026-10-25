@@ -1,18 +1,4 @@
-export const DANETIAN_MONTH_NAMES = [
-  "Aries",
-  "Taurus",
-  "Gemini",
-  "Cancer",
-  "Leo",
-  "Virgo",
-  "Libra",
-  "Scorpio",
-  "Sagittarius",
-  "Capricorn",
-  "Aquarius",
-  "Pisces",
-  "Intercalaris"
-];
+import { DANETIAN_MONTH_NAMES } from "./calendar-arithmetic.js";
 
 /**
  * Render a month.

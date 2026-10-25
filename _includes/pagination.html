@@ -1,0 +1,6 @@
+{% if include.previous or include.next %}
+<nav class="section-pagination" aria-label="{{ include.label | escape }}">
+  <div class="section-pagination-previous">{% if include.previous %}<span>Previous</span><a href="{{ include.previous.url | relative_url }}">← {{ include.previous.nav_title | default: include.previous.title | escape }}</a>{% endif %}</div>
+  <div class="section-pagination-next">{% if include.next %}<span>Next</span><a href="{{ include.next.url | relative_url }}">{{ include.next.nav_title | default: include.next.title | escape }} →</a>{% endif %}</div>
+</nav>
+{% endif %}

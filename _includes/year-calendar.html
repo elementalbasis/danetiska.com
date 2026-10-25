@@ -6,27 +6,8 @@
   aria-label="{{ include.title | default: 'Calendar year' }}"
   hidden
 >
-  <header class="year-calendar__header">
-    <button
-      class="year-calendar__arrow year-calendar__previous"
-      type="button"
-      aria-label="Previous year"
-    >
-      ‹
-    </button>
-
-    <button class="year-calendar__title" type="button">
-      {{ include.title | default: "Year" }}
-    </button>
-
-    <button
-      class="year-calendar__arrow year-calendar__next"
-      type="button"
-      aria-label="Next year"
-    >
-      ›
-    </button>
-  </header>
+  {% assign calendar_title = include.title | default: "Year" %}
+  {% include calendar-header.html kind="year" title=calendar_title %}
 
   <div
     class="year-calendar__months"

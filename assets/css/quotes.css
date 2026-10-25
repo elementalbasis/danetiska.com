@@ -1,8 +1,0 @@
-blockquote {
-  margin: 2em 0;
-  padding-left: 1.25em;
-  border-left: 3px solid var(--color-border-strong);
-  font-style: italic;
-  color: var(--color-text-secondary);
-  line-height: 1.6;
-}

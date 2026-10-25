@@ -1,7 +1,7 @@
 .calendar-view {
   width: 100%;
   max-width: var(--width-reading);
-  margin: 2rem auto;
+  margin: var(--space-6) auto;
   color: var(--color-text);
 }
 
@@ -46,8 +46,8 @@
 .century-calendar__title {
   display: block;
   min-width: 0;
-  padding: 0.8rem 0.5rem;
-  font-size: 1.15rem;
+  padding: var(--space-3) var(--space-2);
+  font-size: var(--text-lg);
   font-weight: 600;
   text-align: center;
 }
@@ -64,7 +64,7 @@ button.century-calendar__title {
   appearance: none;
   padding: 0;
   font-family: var(--font-serif);
-  font-size: 1.8rem;
+  font-size: var(--text-2xl);
   line-height: 1;
   cursor: pointer;
 }
@@ -93,14 +93,14 @@ button.century-calendar__title:hover {
 
 .calendar-view__error {
   margin: 0;
-  padding: 2rem 1rem;
+  padding: var(--space-6) var(--space-4);
   color: var(--color-text-muted);
   text-align: center;
 }
 
 @media (max-width: 600px) {
   .calendar-view {
-    margin: 1.5rem 0;
+    margin: var(--space-5) 0;
   }
 
   .month-calendar,
@@ -119,7 +119,7 @@ button.century-calendar__title:hover {
   .month-calendar__title,
   .year-calendar__title,
   .century-calendar__title {
-    font-size: 1.05rem;
+    font-size: var(--text-base);
   }
 }
 

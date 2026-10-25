@@ -1,542 +1,224 @@
-const g_gregorian_month_lengths = [31,28,31,30,31,30,31,31,30,31,30,31]
-const g_gregorian_leap_year_month_lengths = [31,29,31,30,31,30,31,31,30,31,30,31]
-const g_metonic_cycle = [12,13,12,12,13,12,13,12,12,13,12,12,13,12,13,12,12,13,12]
-const g_danetian_month_names = [
-	"Aries",
-	"Taurus",
-	"Gemini",
-	"Cancer",
-	"Leo",
-	"Virgo",
-	"Libra",
-	"Scorpius",
-	"Sagittarius",
-	"Capricornus",
-	"Aquarius",
-	"Pisces",
-	"Terra"
-]
-const g_danetian_month_abbreviations = ["Ari", "Tau", "Gem", "Can", "Leo", "Vir",
-	"Lib", "Sco", "Sag", "Cap", "Aqu", "Pis", "Ter"]
+/* Calendar arithmetic has one implementation shared by every date feature. */
+const GREGORIAN_MONTH_LENGTHS = [
+  31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31,
+];
+const METONIC_CYCLE = [
+  12, 13, 12, 12, 13, 12, 13, 12, 12, 13, 12, 12, 13, 12, 13, 12, 12, 13, 12,
+];
+export const DANETIAN_MONTH_NAMES = [
+  "Aries",
+  "Taurus",
+  "Gemini",
+  "Cancer",
+  "Leo",
+  "Virgo",
+  "Libra",
+  "Scorpius",
+  "Sagittarius",
+  "Capricornus",
+  "Aquarius",
+  "Pisces",
+  "Terra",
+];
+const GREGORIAN_MONTH_NAMES = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+const EPOCH_JULIAN_DAY = 2460764;
 
-const g_gregorian_month_names = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-]
-
-function mod(n, d) {
-	return ((n % d) + d) % d
+export function mod(n, divisor) {
+  return ((n % divisor) + divisor) % divisor;
 }
 
-function gregorian_month_length(y, m) {
-	var month_lengths = g_gregorian_month_lengths
-	if (gregorian_is_leap_year(y)) {
-		month_lengths = g_gregorian_leap_year_month_lengths
-	}
-	return month_lengths[m-1]
+export function danetian_year_length(year) {
+  return METONIC_CYCLE[mod(mod(year - 1, 334), 19)];
 }
 
-function gregorian_is_leap_year(y) {
-	if (mod(y, 400) == 0) {
-		return true
-	} else if (mod(y, 100) == 0) {
-		return false
-	} else if (mod(y, 4) == 0) {
-		return true
-	} else {
-		return false
-	}
-}
-
-function gregorian_year_length(y) {
-	return 12
-}
-
-function julian_year_length(y) {
-	return 12
-}
-
-function julian_month_length(y, m) {
-	var month_lengths = g_gregorian_month_lengths
-	if (julian_is_leap_year(y)) {
-		month_lengths = g_gregorian_leap_year_month_lengths
-	}
-	return month_lengths[m-1]
-}
-
-function julian_is_leap_year(y) {
-	if (mod(y, 4) == 0) {
-		return true
-	} else {
-		return false
-	}
-}
-
-function danetian_months_in_previous_years_within_metonic_cycle(y) {
-	var HR = mod(y - 1, 334) + 1
-	var KR = mod(HR - 1, 19) + 1
-	var s = 0
-	for (var i = 1; i <= KR-1; i++) {
-		s += g_metonic_cycle[i-1]
-	}
-	return s
-}
-/*
-function gregorian_days_in_previous_months_within_year(y, m) {
-	var s = 0
-	for (var i = 1; i <= m - 1; i++) {
-		s += gregorian_month_length(y, m)
-	}
-	return s
-}
-
-function julian_days_in_previous_months_within_year(y, m) {
-	var s = 0
-	for (var i = 1; i <= m - 1; i++) {
-		s += julian_month_length(y, m)
-	}
-	return s
-}
-*/
-function danetian_year_length(y) {
-	var HR = mod(y - 1, 334) + 1
-	var KR = mod(HR - 1, 19) + 1
-	return g_metonic_cycle[KR-1]
-}
-
-function danetian_month_ordinal(y, m) {
-	var H = Math.floor((y - 1) / 334)
-	var HR = mod(y - 1, 334) + 1
-	var K = Math.floor((HR - 1) / 19)
-	var U = danetian_months_in_previous_years_within_metonic_cycle(y)
-	var n = 4131*H + 235*K + U + m
-	return n
-}
-
-function danetian_month_length(y, m) {
-	var n = danetian_month_ordinal(y, m)
-	var HR = mod(n - 1, 850) + 1
-	var KR = mod(HR - 1, 49) + 1
-	var LR = mod(KR - 1, 17) + 1
-	var MR = mod(LR - 1, 2) + 1
-	if (mod(MR, 2) == 1) {
-		return 30
-	} else {
-		return 29
-	}
-}
-/*
-function danetian_to_julian_day(y, m, d) {
-	var n = danetian_month_ordinal(y, m)
-	var H = Math.floor((n - 1) / 850)
-	var HR = mod(n - 1, 850) + 1
-	var K = Math.floor((HR - 1) / 49)
-	var KR = mod(HR - 1, 49) + 1
-	var L = Math.floor((KR - 1) / 17)
-	var LR = mod(KR - 1, 17) + 1
-	var M = Math.floor((LR - 1) / 2)
-	var MR = mod(LR - 1, 2) + 1
-	var offset = 1237193
-	return 25101*H + 1447*K + 502*L + 59*M + 30*(MR-1) + offset + d
-}
-*/
-/*
-function julian_to_julian_day(y, m, d) {
-	offset = 1721423
-	Q = Math.floor((y - 1) / 4)
-	QR = (y - 1) % 4 + 1
-	U = julian_days_in_previous_months_within_year(y, m)
-	n = 1461*Q + 365*(QR-1) + U + d + offset
-	return n
-}
-*/
-function danetian_is_valid(y, m, d) {
-	var d_max = danetian_month_length(y, m)
-	var m_max = danetian_year_length(y)
-
-	return (1 <= d) && (d <= d_max) && (1 <= m) && (m <= m_max)
-}
-
-function gregorian_is_valid(y, m, d) {
-	var d_max = gregorian_month_length(y, m)
-	var m_max = gregorian_year_length(y)
-	return (1 <= d) && (d <= d_max) && (1 <= m) && (m <= m_max)
-}
-
-function julian_is_valid(y, m, d) {
-	var d_max = julian_month_length(y, m)
-	var m_max = julian_year_length(y)
-	return (1 <= d) && (d <= d_max) && (1 <= m) && (m <= m_max)
-}
-
-function danetian_date_shift(y, m, d, n) {
-	if (n == 0) {
-	} else if (0 < n) {
-		d += n
-		while (!danetian_is_valid(y, m, d)) {
-			d -= danetian_month_length(y, m)
-			m += 1
-			if (danetian_year_length(y) < m) {
-				y += 1
-				m = 1
-			}
-		}
-	} else if (n < 0) {
-		d += n
-		while (!danetian_is_valid(y, m, d)) {
-			m -= 1
-			if (m < 1) {
-				y -= 1
-				m = danetian_year_length(y)
-			}
-			d += danetian_month_length(y, m)
-		}
-	}
-	return [y, m, d]
-}
-
-function gregorian_date_shift(y, m, d, n) {
-	if (n == 0) {
-	} else if (0 < n) {
-		d += n
-		while (!gregorian_is_valid(y, m, d)) {
-			d -= gregorian_month_length(y, m)
-			m += 1
-			if (gregorian_year_length(y) < m) {
-				y += 1
-				m = 1
-			}
-		}
-	} else if (n < 0) {
-		d += n
-		while (!gregorian_is_valid(y, m, d)) {
-			m -= 1
-			if (m < 1) {
-				y -= 1
-				m = gregorian_year_length(y)
-			}
-			d += gregorian_month_length(y, m)
-		}
-	}
-	return [y, m, d]
-}
-
-function julian_date_shift(y, m, d, n) {
-	if (n == 0) {
-	} else if (0 < n) {
-		d += n
-		while (!julian_is_valid(y, m, d)) {
-			d -= julian_month_length(y, m)
-			m += 1
-			if (julian_year_length(y) < m) {
-				y += 1
-				m = 1
-			}
-		}
-	} else if (n < 0) {
-		d += n
-		while (!julian_is_valid(y, m, d)) {
-			m -= 1
-			if (m < 1) {
-				y -= 1
-				m = julian_year_length(y)
-			}
-			d += julian_month_length(y, m)
-		}
-	}
-	return [y, m, d]
-}
-
-function compare_dates(y1, m1, d1, y2, m2, d2) {
-	if (y2 - y1 != 0) {
-		return Math.sign(y2 - y1)
-	} else if (m2 - m1 != 0) {
-		return Math.sign(m2 - m1)
-	} else {
-		return Math.sign(d2 - d1)
-	}
-}
-
-function gregorian_to_julian_day(y, m, d) {
-	//var [yi, mi, di] = [-4713, 11, 24]
-	//var [yi, mi, di, ni] = [-4713, 11, 24, 0]
-	var [yi, mi, di, ni] = [2025, 3, 29, 2460764]
-	var [yf, mf, df] = [y, m, d]
-	var s = ni
-	var sign = compare_dates(yi, mi, di, y, m, d)
-	var delta = 1 * sign
-	while (sign != 0) {
-		var new_sign = compare_dates(yi, mi, di, y, m, d)
-		if (new_sign == sign) {
-			delta *= 2
-		} else {
-			delta = new_sign
-		}
-		sign = new_sign
-
-		//var sign = compare_dates(yi, mi, di, yf, mf, df)
-		var [yi, mi, di] = gregorian_date_shift(yi, mi, di, delta)
-		s += delta
-	}
-	return s
-}
-
-function julian_to_julian_day(y, m, d) {
-	//var [yi, mi, di] = [-4712, 1, 1]
-	//var [yi, mi, di, ni] = [-4712, 1, 1, 0]
-	var [yi, mi, di, ni] = [2025, 3, 16, 2460764]
-	var [yf, mf, df] = [y, m, d]
-	var s = ni
-	var sign = compare_dates(yi, mi, di, y, m, d)
-	var delta = 1 * sign
-	while (sign != 0) {
-		var new_sign = compare_dates(yi, mi, di, y, m, d)
-		if (new_sign == sign) {
-			delta *= 2
-		} else {
-			delta = new_sign
-		}
-		sign = new_sign
-
-		//var sign = compare_dates(yi, mi, di, yf, mf, df)
-		var [yi, mi, di] = julian_date_shift(yi, mi, di, delta)
-		s += delta
-	}
-	return s
-}
-
-function danetian_to_julian_day(y, m, d) {
-	//var [yi, mi, di] = [-3387, 9, 21]
-	//var [yi, mi, di, ni] = [-3387, 9, 21, 0]
-	var [yi, mi, di, ni] = [3351, 1, 1, 2460764]
-	var [yf, mf, df] = [y, m, d]
-	var s = ni
-	var sign = compare_dates(yi, mi, di, y, m, d)
-	var delta = 1 * sign
-	while (sign != 0) {
-		var new_sign = compare_dates(yi, mi, di, y, m, d)
-		if (new_sign == sign) {
-			delta *= 2
-		} else {
-			delta = new_sign
-		}
-		sign = new_sign
-
-		//var sign = compare_dates(yi, mi, di, yf, mf, df)
-		var [yi, mi, di] = danetian_date_shift(yi, mi, di, delta)
-		s += delta
-	}
-	return s
-}
-
-/* This function has been verified to work properly. */
-function julian_from_julian_day(n) {
-	//var [yi, mi, di] = [-4712, 1, 1]
-	//var [yi, mi, di, ni] = [-4712, 1, 1, 0]
-	var [yi, mi, di, ni] = [2025, 3, 16, 2460764]
-	return julian_date_shift(yi, mi, di, n - ni)
-}
-
-/* This function has been verified to work properly. */
-function gregorian_from_julian_day(n) {
-	//var [yi, mi, di] = [-4713, 11, 24]
-	//var [yi, mi, di, ni] = [-4713, 11, 24, 0]
-	var [yi, mi, di, ni] = [2025, 3, 29, 2460764]
-	return gregorian_date_shift(yi, mi, di, n - ni)
-}
-
-/* This function has been verified to work properly. */
-function danetian_from_julian_day(n) {
-	//var [yi, mi, di] = [-3387, 9, 21]
-	//var [yi, mi, di, ni] = [-3387, 9, 21, 0]
-	var [yi, mi, di, ni] = [3351, 1, 1, 2460764]
-	return danetian_date_shift(yi, mi, di, n - ni)
-}
-
-function get_current_date() {
-	var today = new Date()
-	//var u = date.toISOString()
-	var y = today.getFullYear() //u.slice(0,4)*1
-	var m = today.getMonth() + 1 //u.slice(5,7)*1
-	var d = today.getDate() //u.slice(8,10)*1
-	return [y, m, d]
-}
-
-function zero_padding(y, n) {
-	sign = Math.sign(y)
-	var ys = "" + Math.abs(y)
-	while ((0 < ys.length) && (ys.length < n)) {
-		ys = "0" + ys
-	}
-
-	if (sign < 0) {
-		ys = '-' + ys
-	}
-	return ys
-}
-
-function iso_format(y, m, d) {
-	var ys = zero_padding(y, 4)
-	var ms = zero_padding(m, 2)
-	var ds = zero_padding(d, 2)
-
-	return ys + "-" + ms + "-" + ds
-}
-
-function verbose_format(y, m, d, month_names) {
-	var ys = zero_padding(y, 4)
-	var ms = month_names[m - 1]
-	var ds = zero_padding(d, 2)
-
-	return ds + " " + ms + " " + ys
-}
-
-function interpret_date_string(s) {
-	var n = s.length
-	var d = s.slice(n-2,n)*1
-	var m = s.slice(n-5,n-3)*1
-	var y = s.slice(0,n-6)*1
-	return [y, m, d]
-}
-
-function danetian_today_string() {
-	var [y, m, d] = get_current_date()
-	var n = gregorian_to_julian_day(y, m, d)
-	var [yn, mn, dn] = danetian_from_julian_day(n)
-	//var s = iso_format(yn, mn, dn)
-	var s = verbose_format(yn, mn, dn, g_danetian_month_names)
-	return s
-}
-
-function gregorian_today_string() {
-	var [y, m, d] = get_current_date()
-	var s = verbose_format(y, m, d, g_gregorian_month_names)
-	return s
-}
-
-function weekday_from_julian_day(jd) {
-  return mod(jd + 1, 7);
-}
-
-function danetian_month_start_weekday(year, month) {
-  const jd = danetian_to_julian_day(year, month, 1);
-  return weekday_from_julian_day(jd);
-}
-
-function get_danetian_month_data(year, month) {
-  if (
-    !Number.isInteger(year) ||
-    !Number.isInteger(month)
-  ) {
-    throw new TypeError(
-      "Year and month must be integers."
-    );
-  }
-
-  const monthCount = danetian_year_length(year);
-
-  if (month < 1 || month > monthCount) {
-    throw new RangeError(
-      `Year ${year} does not contain month ${month}.`
-    );
-  }
-
-  const dayCount = danetian_month_length(year, month);
-  const startWeekday =
-    danetian_month_start_weekday(year, month);
-
-  return {
-    year,
-    month,
-    monthName:
-      g_danetian_month_names[month - 1] ||
-      `Month ${month}`,
-    dayCount,
-    startWeekday
-  };
-}
-
-function previous_danetian_month(year, month) {
-  if (month > 1) {
-    return [year, month - 1];
-  }
-
-  const previousYear = year - 1;
-
-  return [
-    previousYear,
-    danetian_year_length(previousYear)
-  ];
-}
-
-function next_danetian_month(year, month) {
-  const monthCount = danetian_year_length(year);
-
-  if (month < monthCount) {
-    return [year, month + 1];
-  }
-
-  return [year + 1, 1];
-}
-
-function get_current_danetian_date() {
-  const today = new Date();
-
-  const jd = gregorian_to_julian_day(
-    today.getFullYear(),
-    today.getMonth() + 1,
-    today.getDate()
+export function danetian_month_ordinal(year, month) {
+  const cycleYear = mod(year - 1, 334);
+  const previousMonths = METONIC_CYCLE.slice(0, mod(cycleYear, 19)).reduce(
+    (sum, count) => sum + count,
+    0,
   );
-
-  const [year, month, day] =
-    danetian_from_julian_day(jd);
-
-  return {
-    year,
-    month,
-    day
-  };
+  return (
+    4131 * Math.floor((year - 1) / 334) +
+    235 * Math.floor(cycleYear / 19) +
+    previousMonths +
+    month
+  );
 }
 
-export {
-  g_danetian_month_names as DANETIAN_MONTH_NAMES,
-  mod,
-  danetian_year_length,
-  danetian_month_length,
-  danetian_month_ordinal,
-  danetian_to_julian_day,
-  danetian_from_julian_day,
-  gregorian_to_julian_day,
-  gregorian_from_julian_day,
-  weekday_from_julian_day,
-  danetian_month_start_weekday,
-  get_danetian_month_data,
-  previous_danetian_month,
-  next_danetian_month,
-  get_current_danetian_date
+export function danetian_month_length(year, month) {
+  const ordinal = danetian_month_ordinal(year, month);
+  return mod(mod(mod(mod(ordinal - 1, 850), 49), 17), 2) === 0 ? 30 : 29;
+}
+
+function solarMonthLength(year, month, leap) {
+  return month === 2 && leap(year) ? 29 : GREGORIAN_MONTH_LENGTHS[month - 1];
+}
+const calendars = {
+  gregorian: {
+    epoch: [2025, 3, 29],
+    months: () => 12,
+    monthLength: (y, m) =>
+      solarMonthLength(
+        y,
+        m,
+        (year) =>
+          mod(year, 400) === 0 || (mod(year, 4) === 0 && mod(year, 100) !== 0),
+      ),
+  },
+  julian: {
+    epoch: [2025, 3, 16],
+    months: () => 12,
+    monthLength: (y, m) => solarMonthLength(y, m, (year) => mod(year, 4) === 0),
+  },
+  danetian: {
+    epoch: [3351, 1, 1],
+    months: danetian_year_length,
+    monthLength: danetian_month_length,
+  },
 };
 
-/*
-function gregorianToDanetian(date) {
-	// your internal logic using date.getFullYear(), getMonth(), getDate()
-	// should return a string like "01 Aries 3351"
-
-	const jd = gregorianToJD(date.getFullYear(), date.getMonth() + 1, date.getDate());
-	const [dYear, dMonth, dDay] = jdToDanetian(jd); // Your custom function
-	const monthName = danetianMonthNames[dMonth - 1]; // Assuming this exists
-	return `${String(dDay).padStart(2, '0')} ${monthName} ${dYear}`;
+function shiftDate([year, month, day], offset, calendar) {
+  day += offset;
+  while (day < 1) {
+    month -= 1;
+    if (month < 1) {
+      year -= 1;
+      month = calendar.months(year);
+    }
+    day += calendar.monthLength(year, month);
+  }
+  while (day > calendar.monthLength(year, month)) {
+    day -= calendar.monthLength(year, month);
+    month += 1;
+    if (month > calendar.months(year)) {
+      year += 1;
+      month = 1;
+    }
+  }
+  return [year, month, day];
 }
-*/
-//var n = gregorian_to_julian_day(-200000,1,1)
-//var [y,m,d] = danetian_from_julian_day(n)
-//console.log(y,m,d)
+
+function compareDates(a, b) {
+  for (let index = 0; index < 3; index += 1) {
+    if (a[index] !== b[index]) return Math.sign(b[index] - a[index]);
+  }
+  return 0;
+}
+
+function toJulianDay(year, month, day, calendar) {
+  const target = [year, month, day];
+  if (
+    !target.every(Number.isInteger) ||
+    month < 1 ||
+    month > calendar.months(year) ||
+    day < 1 ||
+    day > calendar.monthLength(year, month)
+  ) {
+    throw new RangeError("Enter a valid date in YYYY-MM-DD format.");
+  }
+  let date = calendar.epoch;
+  let julianDay = EPOCH_JULIAN_DAY;
+  let sign = compareDates(date, target);
+  let delta = sign;
+  while (sign !== 0) {
+    const nextSign = compareDates(date, target);
+    delta = nextSign === sign ? delta * 2 : nextSign;
+    sign = nextSign;
+    date = shiftDate(date, delta, calendar);
+    julianDay += delta;
+  }
+  return julianDay;
+}
+function fromJulianDay(julianDay, calendar) {
+  return shiftDate(calendar.epoch, julianDay - EPOCH_JULIAN_DAY, calendar);
+}
+export function gregorian_to_julian_day(y, m, d) {
+  return toJulianDay(y, m, d, calendars.gregorian);
+}
+export function julian_to_julian_day(y, m, d) {
+  return toJulianDay(y, m, d, calendars.julian);
+}
+export function danetian_to_julian_day(y, m, d) {
+  return toJulianDay(y, m, d, calendars.danetian);
+}
+export function gregorian_from_julian_day(jd) {
+  return fromJulianDay(jd, calendars.gregorian);
+}
+export function julian_from_julian_day(jd) {
+  return fromJulianDay(jd, calendars.julian);
+}
+export function danetian_from_julian_day(jd) {
+  return fromJulianDay(jd, calendars.danetian);
+}
+
+function zeroPadding(value, digits) {
+  return (value < 0 ? "-" : "") + String(Math.abs(value)).padStart(digits, "0");
+}
+export function iso_format(year, month, day) {
+  return `${zeroPadding(year, 4)}-${zeroPadding(month, 2)}-${zeroPadding(day, 2)}`;
+}
+export function verbose_format(year, month, day, monthNames) {
+  return `${zeroPadding(day, 2)} ${monthNames[month - 1]} ${zeroPadding(year, 4)}`;
+}
+export function interpret_date_string(text) {
+  const match = /^(-?\d+)-(\d{2})-(\d{2})$/.exec(text.trim());
+  if (!match) throw new RangeError("Enter a date in YYYY-MM-DD format.");
+  return match.slice(1).map(Number);
+}
+function currentGregorianDate() {
+  const today = new Date();
+  return [today.getFullYear(), today.getMonth() + 1, today.getDate()];
+}
+export function get_current_danetian_date() {
+  const [year, month, day] = danetian_from_julian_day(
+    gregorian_to_julian_day(...currentGregorianDate()),
+  );
+  return { year, month, day };
+}
+export function danetian_today_string() {
+  const { year, month, day } = get_current_danetian_date();
+  return verbose_format(year, month, day, DANETIAN_MONTH_NAMES);
+}
+export function gregorian_today_string() {
+  return verbose_format(...currentGregorianDate(), GREGORIAN_MONTH_NAMES);
+}
+export function weekday_from_julian_day(jd) {
+  return mod(jd + 1, 7);
+}
+export function danetian_month_start_weekday(year, month) {
+  return weekday_from_julian_day(danetian_to_julian_day(year, month, 1));
+}
+export function get_danetian_month_data(year, month) {
+  if (!Number.isInteger(year) || !Number.isInteger(month))
+    throw new TypeError("Year and month must be integers.");
+  if (month < 1 || month > danetian_year_length(year))
+    throw new RangeError(`Year ${year} does not contain month ${month}.`);
+  return {
+    year,
+    month,
+    monthName: DANETIAN_MONTH_NAMES[month - 1],
+    dayCount: danetian_month_length(year, month),
+    startWeekday: danetian_month_start_weekday(year, month),
+  };
+}
+export function previous_danetian_month(year, month) {
+  return month > 1
+    ? [year, month - 1]
+    : [year - 1, danetian_year_length(year - 1)];
+}
+export function next_danetian_month(year, month) {
+  return month < danetian_year_length(year) ? [year, month + 1] : [year + 1, 1];
+}

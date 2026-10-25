@@ -5,27 +5,8 @@
   data-start="{{ include.start | default: 0 }}"
   aria-label="{{ include.title | default: 'Calendar month' }}"
 >
-  <header class="month-calendar__header">
-    <button
-      class="month-calendar__arrow month-calendar__previous"
-      type="button"
-      aria-label="Previous month"
-    >
-      ‹
-    </button>
-
-    <button class="month-calendar__title" type="button">
-      {{ include.title | default: "Month" }}
-    </button>
-
-    <button
-      class="month-calendar__arrow month-calendar__next"
-      type="button"
-      aria-label="Next month"
-    >
-      ›
-    </button>
-  </header>
+  {% assign calendar_title = include.title | default: "Month" %}
+  {% include calendar-header.html kind="month" title=calendar_title %}
 
   <div class="month-calendar__weekdays" aria-hidden="true">
     <span class="month-calendar__weekday">Sun</span>

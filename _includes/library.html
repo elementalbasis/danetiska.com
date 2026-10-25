@@ -13,7 +13,7 @@
     {% if include.item.description %}<p class="library-description">{{ include.item.description | escape }}</p>{% endif %}
 
     {% if include.item.type %}
-    <div class="tags"><span class="tag">{{ include.item.type | capitalize | escape }}</span></div>
+    <p class="library-meta">{{ include.item.type | capitalize | escape }}</p>
     {% endif %}
   </a>
 </article>

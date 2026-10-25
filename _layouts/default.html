@@ -1,81 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css">
-	<script src="/assets/scripts/calendar.js" defer></script>
-	<script src="/assets/scripts/today.js" defer></script>
-	<script src="/assets/scripts/nav.js" defer></script>
-	<script src="/assets/scripts/equation-scroll.js" defer></script>
-
-	<script src="https://elementalbasis.com/assets/scripts/mathjax-config.js"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
-
-	<script defer src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
-	<script defer src="/assets/scripts/inflect.js"></script>
-
-	<link rel="icon" type="image/svg+xml" href="/assets/images/danetiska_academia_favicon.svg">
-
-	<script data-goatcounter="https://danetiska.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
-	<!--<title>Danetian Academy</title>-->
-	{% seo %}
-
-	<!-- Tags used for preview of link by many websites, such as Instagram.-->
-	<!--
-	<meta property="og:title" content="{{ page.title | default: site.title }}">
-	<meta property="og:description" content="The Danetian Academy: language, texts, calendar, dictionary, and posts.">
-	<meta property="og:image" content="https://danetiska.com/assets/images/danetiska_academia_logo_square.png">
-	<meta property="og:url" content="https://danetiska.com{{ page.url }}">
-	<meta property="og:type" content="website">
-	-->
-</head>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>{% include head.html %}</head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="page">
-
-{% include site-nav.html %}
-
-<main>
-<!--${CONTENT}-->
-{{ content }}
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-main">
-      <div class="footer-identity">
-        <a class="footer-home" href="{{ '/' | relative_url }}" aria-label="Danetian Academy home">
-          <img src="{{ '/assets/images/danetiska_academia_logo_white.svg' | relative_url }}" alt="Danetiska Academia" width="240" height="63">
-        </a>
-        <p class="footer-description">Preserving and advancing Danetian language, history, and culture.</p>
-      </div>
-
-      <nav class="footer-legal" aria-labelledby="footer-information-title">
-        <h2 id="footer-information-title">Information</h2>
-        <ul>
-          <li><a href="{{ '/editorial-note' | relative_url }}">Editorial note</a></li>
-          <li><a href="{{ '/privacy' | relative_url }}">Privacy</a></li>
-          <li><a href="{{ '/external-resources' | relative_url }}">External resources</a></li>
-        </ul>
-      </nav>
-
-      <section class="footer-follow" aria-labelledby="footer-follow-title">
-        <h2 id="footer-follow-title">Follow us</h2>
-        {% include social-links.html %}
-        <a class="footer-email" href="mailto:academia@danetiska.com">academia@danetiska.com</a>
-      </section>
-    </div>
-
-    <div class="footer-bottom">
-      <small class="footer-copyright">© 2016–2026 Danetian Academy. All rights reserved.</small>
-      <div class="footer-patronage">
-        <span>Under the patronage of</span>
-        <img src="{{ '/assets/images/ministeriom_culturas_educatziones_i_recercas.svg' | relative_url }}" alt="Danetiska Respublica: Ministeriom Culturas, Educatziones, i Recercas" width="216" height="48">
-      </div>
-    </div>
-  </div>
-</footer>
+  {% include site-nav.html %}
+  <main id="main-content" tabindex="-1">{{ content }}</main>
+  {% include site-footer.html %}
 </div>
 </body>
 </html>
