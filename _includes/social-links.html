@@ -1,0 +1,11 @@
+{% if site.data.social.size > 0 %}
+<nav class="social-links" aria-label="Social media">
+  {% for social in site.data.social %}
+  <a href="{{ social.url | escape }}" aria-label="{{ social.name | escape }}" title="{{ social.name | escape }}">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+      <use href="{{ '/assets/images/social-icons.svg' | relative_url }}#{{ social.icon | escape }}"></use>
+    </svg>
+  </a>
+  {% endfor %}
+</nav>
+{% endif %}

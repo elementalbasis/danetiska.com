@@ -1,0 +1,6 @@
+# Active links only. Add another entry to display another platform.
+# Supported icons: reddit, github, mastodon, bluesky, instagram, youtube,
+# facebook, x, threads, discord.
+- name: Reddit
+  icon: reddit
+  url: https://www.reddit.com/user/danetiska/
