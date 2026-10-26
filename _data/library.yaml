@@ -1,19 +1,18 @@
 introduction: Explore the Academy's texts, scholarly editions, reference works, and tools.
 collections:
-  - id: bible
-    label: Featured edition
-    title: Kustendja Polyglot Bible
-    description: A parallel reader for comparing biblical texts across languages and traditions.
-    url: /bible/
-    action: Open reader
+  - &piesca
+    id: piesca
+    label: Featured tool
+    title: PIESCA
+    description: Explore Proto-Indo-European words and inflection tables through your own sound changes. Based on Mark Rosenfelder’s SCA².
+    url: /piesca/
+    action: Open PIESCA
     featured: true
     details:
-      - title: English
-      - title: Latin
-      - title: Greek
-      - title: Slavonic
-      - title: Danetian
-        note: Translation in progress
+      - title: Dictionary
+        note: Search words, meanings, and inflected forms.
+      - title: SCA2
+        note: Apply your own sound changes to the entire dictionary.
   - id: texts
     label: Texts
     title: Danetian texts
@@ -27,6 +26,10 @@ collections:
     url: /library/reference/
     action: Browse catalogue
 tools:
+  - *piesca
+  - title: Kustendja Polyglot Bible
+    description: Compare biblical texts side by side across languages and traditions.
+    url: /bible/
   - title: Danetian Calendar
     description: Explore the calendar and convert dates.
     url: /calendar
@@ -34,7 +37,7 @@ tools:
     description: Prepare and publish dictionaries.
     url: https://github.com/elementalbasis/lexerat
   - title: DanuWiki
-    description: Explore the bilingual corpus.
+    description: Explore a Zettelkasten-style bilingual corpus.
     url: https://wiki.danetiska.com
 filters:
   - title: All

@@ -1,0 +1,40 @@
+/* Tool-specific layout; typography, controls, tabs and table borders are shared. */
+.pie-rules, .pie-help {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  background: var(--color-surface-subtle);
+}
+#pie-tool summary { cursor: pointer; font-weight: 600; }
+#pie-tool summary + * { margin-top: var(--space-4); }
+#applied-rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--space-4); }
+#applied-rules pre { margin: 0 0 var(--space-3); white-space: pre-wrap; overflow-wrap: anywhere; font-size: var(--text-sm); }
+#applied-rules h3 { margin: 0 0 var(--space-2); font-size: var(--text-sm); }
+#pie-tool .search { max-width: none; }
+.pie-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-block: var(--space-5); }
+.pie-import { font-size: var(--text-sm); }
+.pie-import input { max-width: 15rem; }
+#sca-form textarea, #sca-test { font-family: var(--font-mono); }
+#sca-form > .form-field { margin-bottom: var(--space-4); }
+#sca-preview-output { white-space: pre-wrap; }
+#pie-results .entry { max-width: none; margin-block: var(--space-7); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+#pie-results .lemma { margin: 0 0 var(--space-2); }
+.pie-entry-source { font-size: var(--text-sm); }
+.pie-paradigm { margin-top: var(--space-5); }
+.pie-table-scroll { overflow-x: auto; margin-top: var(--space-3); border-radius: var(--radius); }
+#pie-results .infl-table { display: table; width: 100%; margin: 0; font-size: var(--text-base); }
+#pie-results .infl-table caption { text-align: left; padding-bottom: var(--space-2); font-weight: 600; }
+#pie-results .infl-table td { white-space: pre-line; min-width: 7rem; }
+#pie-results .infl-table th { white-space: pre-line; }
+#pie-results .infl-table tr:nth-child(even) td { background: var(--color-surface-subtle); }
+.pie-source { margin-block: var(--space-7); border-top: 1px solid var(--color-border); padding-top: var(--space-5); color: var(--color-text-muted); font-size: var(--text-sm); }
+
+.pie-rules > h2 { margin: 0 0 var(--space-4); font-size: var(--text-base); }
+
+.pie-rules > .pie-actions { margin-block: var(--space-3); }
+.pie-rules > [role="status"] { margin-bottom: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted); }
+.pie-steps { padding-left: var(--space-5); }
+.pie-steps li + li { margin-top: var(--space-3); }
+.pie-help table { margin-inline: 0; }
+.pie-help caption { text-align: left; font-weight: 600; padding-bottom: var(--space-2); }
+.pie-advanced { margin-top: var(--space-5); }

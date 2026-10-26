@@ -38,3 +38,7 @@ assets/lexicon/lexicon.txt
 # Ignore LaTeX byproducts
 *.aux
 *.log
+
+# Cached source pages for the PIE dictionary importer.
+.cache/
+__pycache__/

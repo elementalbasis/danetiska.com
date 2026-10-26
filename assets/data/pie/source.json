@@ -1,0 +1,16 @@
+{
+  "source": "https://kaikki.org/dictionary/Proto-Indo-European/",
+  "download": "https://kaikki.org/dictionary/Proto-Indo-European/kaikki.org-dictionary-ProtoIndoEuropean.jsonl",
+  "retrieved": "2026-10-26",
+  "sha256": "f5181cee2d2cd973c69476827620d1900e55af0277153d0fe169557044b0a3f2",
+  "entries": 1931,
+  "lemmas": 1802,
+  "forms": 39029,
+  "rendered": 695,
+  "missingTables": [
+    "ḱís"
+  ],
+  "license": "CC BY-SA 4.0 and GFDL; Wiktionary contributors",
+  "snapshot": "2026-10-01",
+  "extracted": "2026-10-21"
+}

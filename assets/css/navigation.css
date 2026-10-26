@@ -36,8 +36,18 @@
 
 .nav-toggle {
   display: none;
-  padding: var(--space-2) var(--space-3);
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: var(--space-2);
   background: transparent;
+}
+
+.nav-toggle svg {
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .nav-links {

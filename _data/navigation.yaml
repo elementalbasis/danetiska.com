@@ -7,9 +7,9 @@
 - title: Dictionary
   url: /dictionary
   active_paths: [/dictionary]
-- title: Library
-  url: /library/
-  active_paths: [/library, /texts, /bible, /calendar]
 - title: Articles
   url: /posts/
   active_paths: [/posts, /blog]
+- title: Library
+  url: /library/
+  active_paths: [/library, /texts, /bible, /calendar, /piesca]

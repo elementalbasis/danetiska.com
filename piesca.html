@@ -1,0 +1,107 @@
+---
+layout: default
+title: PIESCA
+description: Proto-Indo-European Sound Change Applier, based on Mark Rosenfelder’s SCA². Explore words and inflection tables through your own sound changes.
+permalink: /piesca/
+---
+{% include page-heading.html title=page.title description=page.description %}
+<link rel="stylesheet" href="{{ '/assets/css/pie.css' | relative_url }}">
+<div id="pie-tool" data-dictionary="{{ '/assets/data/pie/dictionary.json' | relative_url }}" data-source="{{ '/assets/data/pie/source.json' | relative_url }}">
+  <div class="tag-menu" role="tablist" aria-label="Dictionary tools">
+    <button id="dictionary-tab" role="tab" aria-selected="true" aria-pressed="true" aria-controls="dictionary-panel">Dictionary</button>
+    <button id="sca-tab" role="tab" aria-selected="false" aria-pressed="false" aria-controls="sca-panel" tabindex="-1">SCA2</button>
+  </div>
+  <section id="dictionary-panel" role="tabpanel" aria-labelledby="dictionary-tab">
+    <section class="pie-rules" aria-labelledby="pie-rules-heading">
+      <h2 id="pie-rules-heading"><span id="rule-count">Loading sound changes…</span></h2>
+      <div class="pie-actions">
+        <button type="button" id="dictionary-apply" data-pie-apply>Apply sound changes</button>
+        <button type="button" id="edit-rules">Edit in SCA2</button>
+      </div>
+      <p id="pie-apply-status" role="status" aria-live="polite"></p>
+      <details id="pie-rule-details">
+        <summary>View applied rules</summary>
+        <div id="applied-rules"></div>
+      </details>
+    </section>
+    <form class="search" id="pie-search" role="search">
+      <label class="sr-only" for="pie-query">Search headwords, inflected forms, or English meanings</label>
+      <input id="pie-query" type="search" placeholder="Headword, inflected form, or English meaning…" autocomplete="off">
+      <label class="sr-only" for="pie-pos">Part of speech</label>
+      <select id="pie-pos"><option value="">All parts of speech</option></select>
+      <button type="submit">Search</button>
+    </form>
+    <p id="pie-status" role="status" aria-live="polite">Loading dictionary…</p>
+    {% include pie-pagination.html position="top" %}
+    <div id="pie-results" aria-busy="true"></div>
+    {% include pie-pagination.html position="bottom" %}
+  </section>
+  <section id="sca-panel" role="tabpanel" aria-labelledby="sca-tab" hidden>
+    <p>Apply rules in order to every headword and recorded inflection. Only the resulting forms appear in the dictionary. Your applied rules are saved in this browser.</p>
+    <form id="sca-form">
+      <div class="form-grid">
+        <label class="form-field" for="sca-categories">Categories<textarea id="sca-categories" rows="6" spellcheck="false" placeholder="V=aeiouāēīōū&#10;S=ptk&#10;Z=bdg"></textarea></label>
+        <label class="form-field" for="sca-rewrites">Rewrite rules<textarea id="sca-rewrites" rows="6" spellcheck="false" placeholder="kʷ|q&#10;gʷ|ɢ&#10;h₁|H"></textarea></label>
+      </div>
+      <label class="form-field" for="sca-changes">Sound changes<textarea id="sca-changes" rows="12" spellcheck="false" placeholder="* One rule per line&#10;o/a/_&#10;ḱ/s/_&#10;s//_#"></textarea></label>
+      <label><input id="sca-rewrite-output" type="checkbox" checked> Reverse rewrite rules on output</label>
+      <div class="pie-actions">
+        <button type="submit" id="sca-apply" data-pie-apply>Apply sound changes</button>
+        <button type="button" id="sca-example">Load example</button>
+        <button type="button" id="sca-clear">Clear draft</button>
+        <button type="button" id="sca-export">Export rules</button>
+        <label class="pie-import">Import rules <input id="sca-import" type="file" accept=".json,application/json"></label>
+      </div>
+      <p id="sca-status" role="status" aria-live="polite"></p>
+    </form>
+    <details class="pie-help">
+      <summary>New to sound changes? Start here</summary>
+      <ol class="pie-steps">
+        <li><strong>Start with one change.</strong> Type <code>o/a/_</code> in the Sound changes box. This changes every <em>o</em> to <em>a</em>.</li>
+        <li><strong>Try it on a word.</strong> Enter a form in “Try a few forms” below, then choose “Test draft rules”.</li>
+        <li><strong>Explore the dictionary.</strong> Choose “Apply sound changes” to update the headwords and inflection tables. Add more rules, one per line; they run from top to bottom.</li>
+      </ol>
+      <p>Read a rule as <strong>change this / into this / in this position</strong>. The underscore <code>_</code> marks where the change happens.</p>
+      <table>
+        <caption>A few rules to try</caption>
+        <thead><tr><th scope="col">Rule</th><th scope="col">What it does</th></tr></thead>
+        <tbody>
+          <tr><td><code>o/a/_</code></td><td>Change <em>o</em> to <em>a</em> everywhere.</td></tr>
+          <tr><td><code>s//_#</code></td><td>Remove <em>s</em> at the end of a word. The empty middle part means “delete”.</td></tr>
+          <tr><td><code>p/b/V_V</code></td><td>Change <em>p</em> to <em>b</em> between vowels. First add <code>V=aeiou</code> in Categories.</td></tr>
+        </tbody>
+      </table>
+      <p>Accents matter: <code>e</code> and <code>é</code> are different. You can copy PIE characters directly from a word: <code>h₁ h₂ h₃ ḱ ǵ ʰ ʷ r̥ l̥ m̥ n̥</code>.</p>
+      <details class="pie-advanced">
+        <summary>More options: categories, rewrites, and advanced rules</summary>
+        <p><strong>Categories</strong> name a group of sounds. For example, <code>S=ptk</code> and <code>Z=bdg</code> let <code>S/Z/V_V</code> change each voiceless stop to its voiced partner between vowels.</p>
+        <p><strong>Rewrite rules</strong> let a group of characters behave as one sound. For example, <code>kʷ|q</code> represents <em>kʷ</em> as <em>q</em> while the rules run. “Reverse rewrite rules on output” changes it back afterwards.</p>
+        <table>
+          <caption>Advanced notation</caption>
+          <thead><tr><th scope="col">Notation</th><th scope="col">Meaning</th></tr></thead>
+          <tbody>
+            <tr><td><code>[ao]</code></td><td>Either <em>a</em> or <em>o</em>.</td></tr>
+            <tr><td><code>(C)</code></td><td>An optional sound from category C, in an environment.</td></tr>
+            <tr><td><code>…</code></td><td>Any intervening sounds.</td></tr>
+            <tr><td><code>²</code></td><td>Repeat the preceding sound.</td></tr>
+            <tr><td><code>\\</code></td><td>Use as the replacement to reverse the matched sounds.</td></tr>
+            <tr><td><code>k/s/_V/#s_</code></td><td>Change <em>k</em> to <em>s</em> before a vowel, except after word-initial <em>s</em>.</td></tr>
+            <tr><td><code>*</code></td><td>Start a comment line.</td></tr>
+            <tr><td><code>-*</code></td><td>Mark a stage. The dictionary displays the final stage.</td></tr>
+          </tbody>
+        </table>
+        <p><a href="https://zompist.com/scahelp.html" target="_blank" rel="noopener">Read Mark Rosenfelder’s full SCA² guide</a>.</p>
+      </details>
+    </details>
+    <div class="resource-section">
+      <h2>Try a few forms</h2>
+      <label class="form-field" for="sca-test">One input form per line<textarea id="sca-test" rows="4" spellcheck="false">bʰéreti&#10;wódr̥&#10;h₁éḱwos</textarea></label>
+      <button type="button" id="sca-preview">Test draft rules</button><pre id="sca-preview-output" aria-live="polite"></pre>
+    </div>
+  </section>
+  <footer class="pie-source"><p id="pie-source">Wiktionary data via Kaikki / Wiktextract.</p>
+    <p>Adapted from <a href="https://kaikki.org/dictionary/Proto-Indo-European/">Kaikki’s expanded PIE dictionary</a> and <a href="https://en.wiktionary.org/wiki/Category:Proto-Indo-European_lemmas">Wiktionary contributors</a>, under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> and the GFDL. Each entry links to its source and revision history. Output forms are mechanical sound-change results; paradigms preserve the source’s distinctions and gaps.</p>
+  </footer>
+</div>
+<noscript>This dictionary requires JavaScript to apply your sound changes. <a href="https://kaikki.org/dictionary/Proto-Indo-European/">Browse the source dictionary</a>.</noscript>
+<script type="module" src="{{ '/assets/scripts/pie/app.mjs' | relative_url }}"></script>
