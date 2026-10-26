@@ -21,3 +21,6 @@ language and expand one's vocabulary.
 In celebration of the [ten year anniversary](/posts/new-year-3352) of the Danetian
 language, the Academy remains committed to further developing and enriching
 the Danetian language, and its presentation to the public.
+
+
+[Explore the Dictionary →](https://danetiska.com/dictionary)

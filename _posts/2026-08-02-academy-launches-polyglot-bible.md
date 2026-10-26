@@ -32,3 +32,4 @@ The Academy hopes that this resource will serve both scholars and the wider
 public, while making the Scriptures more accessible to readers interested in the
 literary and linguistic heritage of Danetia.
 
+[Explore the Polyglot →](/bible)

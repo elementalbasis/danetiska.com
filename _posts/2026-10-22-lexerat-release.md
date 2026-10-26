@@ -34,5 +34,4 @@ any language. It is has been released as
 under the
 [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
-You may find the source code, documentation, and examples in its
-[GitHub repository](https://github.com/elementalbasis/lexerat).
+[Explore Lexerat →](https://github.com/elementalbasis/lexerat)
