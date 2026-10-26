@@ -1,0 +1,45 @@
+.academician-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-bottom: var(--space-7);
+}
+.academician-profile__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+.academician-profile__image--emblem {
+  aspect-ratio: 1;
+  object-fit: contain;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-subtle);
+}
+.academician-profile__class {
+  margin-top: 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.academician-profile__facts {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+.academician-profile__facts dt {
+  color: var(--color-text-secondary);
+}
+.academician-profile__facts dd {
+  margin: 0;
+}
+@media (max-width: 550px) {
+  .academician-profile {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .academician-profile__image {
+    max-width: 12rem;
+  }
+}

@@ -18,6 +18,8 @@ layout: default
     {% include page-heading.html title=page.title parent_url=section.home parent_title=section.title %}
     <div class="prose">{{ content }}</div>
 
-    {% include section-pagination.html %}
+    {% unless page.section_pagination == false %}
+      {% include section-pagination.html %}
+    {% endunless %}
   </article>
 </div>

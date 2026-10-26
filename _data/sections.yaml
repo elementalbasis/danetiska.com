@@ -4,3 +4,6 @@ language:
 texts:
   title: Texts
   home: /texts
+academy:
+  title: Academy
+  home: /about

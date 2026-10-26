@@ -11,10 +11,26 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 collections:
-  - language
-  - texts
+  language:
+    output: false
+  texts:
+    output: false
+  academicians:
+    output: true
+    permalink: /academy/academicians/:name/
 email: academia@danetiska.com
 exclude:
   - README.md
   - docs
   - tests
+
+defaults:
+  - scope:
+      path: ""
+      type: academicians
+    values:
+      layout: academician
+      section: academy
+      section_pagination: false
+      image: /assets/images/danetiska_academia_logo_square.svg
+      fit: contain

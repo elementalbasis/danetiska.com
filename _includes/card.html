@@ -2,16 +2,21 @@
 {% assign card_image = card.cover | default: card.image %}
 {% assign card_description = card.description | default: card.excerpt %}
 {% assign card_url_start = card.url | slice: 0, 1 %}
-<article class="card{% if include.featured or card.featured %} card--featured{% endif %}{% if card.fit == 'contain' %} card--logo{% endif %}">
+{% assign card_is_logo = false %}
+{% if card.fit == 'contain' %}{% assign card_is_logo = true %}{% endif %}
+{% if include.academician and card_image != '/assets/images/danetiska_academia_logo_square.svg' %}
+  {% assign card_is_logo = false %}
+{% endif %}
+<article class="card{% if include.featured or card.featured %} card--featured{% endif %}{% if card_is_logo %} card--logo{% endif %}">
   <a class="card__link" href="{% if card_url_start == '/' %}{{ card.url | relative_url | escape }}{% else %}{{ card.url | escape }}{% endif %}">
     {% if card_image %}
     <img class="card__media" src="{{ card_image | relative_url | escape }}" alt="{{ card.cover_alt | default: '' | escape }}" {% if include.featured %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
     {% endif %}
     <div class="card__body">
-      {% if card.label %}<p class="card__label">{{ card.label | escape }}</p>{% elsif card.tags.size > 0 %}<p class="card__label">{% include article-tags.html tags=card.tags %}</p>{% endif %}
+      {% if include.label or card.label %}<p class="card__label">{{ include.label | default: card.label | escape }}</p>{% elsif card.tags.size > 0 %}<p class="card__label">{% include article-tags.html tags=card.tags %}</p>{% endif %}
       <h{{ include.heading | default: 2 }} class="card__title">{{ card.title | escape }}</h{{ include.heading | default: 2 }}>
       {% if card_description %}<p class="card__description">{{ card_description | strip_html | truncate: 180 | escape }}</p>{% endif %}
-      {% if card.date %}<time class="card__date" datetime="{{ card.date | date_to_xmlschema }}">{{ card.date | date: "%d %B %Y" }}</time>{% endif %}
+      {% if card.date and include.academician != true %}<time class="card__date" datetime="{{ card.date | date_to_xmlschema }}">{{ card.date | date: "%d %B %Y" }}</time>{% endif %}
       {% if card.action %}<span class="card__action">{{ card.action | escape }} <span aria-hidden="true">→</span></span>{% endif %}
     </div>
     {% if card.details %}

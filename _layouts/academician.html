@@ -1,0 +1,19 @@
+---
+layout: section
+---
+{% assign membership = site.data.academician_classes | where: "id", page.membership | first %}
+<div class="academician-profile">
+  <img class="academician-profile__image{% if page.image == '/assets/images/danetiska_academia_logo_square.svg' %} academician-profile__image--emblem{% endif %}" src="{{ page.image | relative_url | escape }}" alt="{{ page.image_alt | default: '' | escape }}" >
+  <div>
+    <p class="academician-profile__class">{{ membership.singular | escape }}</p>
+    {% if page.description %}<p>{{ page.description | escape }}</p>{% endif %}
+    {% if page.lifespan or page.role %}
+    <dl class="academician-profile__facts">
+      {% if page.lifespan %}<dt>Life</dt><dd>{{ page.lifespan | escape }}</dd>{% endif %}
+      {% if page.role %}<dt>Field or role</dt><dd>{{ page.role | escape }}</dd>{% endif %}
+    </dl>
+    {% endif %}
+  </div>
+</div>
+{{ content }}
+<p><a href="{{ '/academy/academicians/' | relative_url }}">← All academicians</a></p>

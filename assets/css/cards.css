@@ -131,3 +131,22 @@
     padding: 0 0 0 var(--space-5);
   }
 }
+
+/* Biographical cards reuse the shared card, with a compact emblem or portrait. */
+.academician-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  align-items: start;
+}
+.academician-grid .card__media {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+.academician-grid .card--logo .card__media {
+  object-fit: contain;
+}
+.academician-grid .card__title {
+  margin: 0;
+  font-size: var(--text-lg);
+}

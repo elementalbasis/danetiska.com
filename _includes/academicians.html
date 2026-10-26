@@ -1,0 +1,11 @@
+{% assign members = site.academicians | sort_natural: "sort_name" %}
+{% if members.size > 0 %}
+<div class="card-grid academician-grid">
+  {% for member in members %}
+    {% assign membership = site.data.academician_classes | where: "id", member.membership | first %}
+    {% include card.html item=member academician=true label=membership.singular %}
+  {% endfor %}
+</div>
+{% else %}
+<p class="muted">Biographical entries are being prepared.</p>
+{% endif %}

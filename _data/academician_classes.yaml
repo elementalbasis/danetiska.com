@@ -1,0 +1,18 @@
+- id: numerary
+  title: Numerary academicians
+  singular: Numerary academician
+  url: /academy/numerary/
+  description: The Academy’s core members, who sustain its life and guide its work.
+  action: Meet the numerary academicians
+- id: corresponding
+  title: Corresponding academicians
+  singular: Corresponding academician
+  url: /academy/corresponding/
+  description: Scholars and authors who contribute research, writing, and other work to the Academy.
+  action: Meet the corresponding academicians
+- id: honorary
+  title: Honorary academicians
+  singular: Honorary academician
+  url: /academy/honorary/
+  description: People honored for their work or intellectual legacy.
+  action: Meet the honorary academicians

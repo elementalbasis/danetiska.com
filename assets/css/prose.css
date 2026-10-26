@@ -55,3 +55,10 @@ blockquote {
   font-style: italic;
   color: var(--color-text-secondary);
 }
+
+/* Keep the Academy wordmark modest within its section column. */
+.post-cover img[src$="danetiska_academia_logo.svg"] {
+  width: min(100%, 30rem);
+  max-width: 100%;
+  height: auto;
+}
