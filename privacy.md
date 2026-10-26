@@ -27,9 +27,10 @@ identifying individual visitors.
 
 ### Local Preferences
 
-PIESCA saves your applied rules in your
+PIESCA, the Proto-Indo-European sound change applier,
+saves your applied rules in your
 browser’s local storage. Sound changes and dictionary searches are processed
-on your device; they are not sent to Wiktionary or Kaikki. You can remove the
+on your device; they are not sent to any third parties. You can remove the
 saved rules by clearing this website’s browser storage.
 
 ### Third-party Services
