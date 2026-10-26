@@ -8,6 +8,9 @@
 .prose > blockquote {
   max-width: var(--width-reading);
 }
+.prose > .post-cover {
+  max-width: var(--width-reading);
+}
 .prose h2 {
   margin-block: var(--space-7) var(--space-4);
 }
