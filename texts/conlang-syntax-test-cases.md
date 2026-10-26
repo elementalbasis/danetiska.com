@@ -63,3 +63,222 @@ permalink: /texts/conlang-syntax-test-cases
 
     > Happy people often shout.
 
+
+
+
+
+
+
+17. Moia smikra miankisja apobymiostet.
+
+    > My little kitten walked away.
+
+18. Sjadeti embros.
+
+    > It's raining.
+
+19. Embros nidbet.
+
+    > The rain came down.
+
+20. Miankisja igreti en embri.
+
+    > The kitten is playing in the rain.
+
+21. Embros tyrmeioke.
+
+    > The rain has stopped.
+
+22. Embros iti tyrmeionts ana bredjum.
+
+    > Soon the rain will stop.
+
+23. Prospesjo jod tyrmeioit embros ana bredjum.
+
+    > I hope the rain stops soon.
+
+24. Oinam vertim bivont sjodi asjdrioi animales.
+
+    > Once wild animals lived here.
+
+25. Ena lene djystre perispesjostet.
+
+    > Slowly she looked around.
+
+26. Iso apo sjodi!
+
+    > Go away!
+
+27. Ime!
+
+    > Let's go!
+
+28. Tebio esti ini.
+
+    > You should go.
+
+29. Prine djystre imi.
+
+    > I will be happy to go.
+
+30. Enos iti prijonts ana bredjum.
+
+    > He will arrive soon.
+
+
+
+
+
+
+
+
+
+
+
+32. Dvo minoi verdjonti syndje.
+
+    > The two boys are working together.
+
+33. Sja migla probabile djystre iti dissipaiomna.
+
+    > This mist will probably clear away.
+
+34. Krasivoi blomoi buionti visjodi.
+
+    > Lovely flowers are growing everywhere.
+
+35. Nysmos esti edni po lene.
+
+    > We should eat more slowly.
+
+
+
+
+
+
+
+
+37. Delgesi pisjnuni po priske.
+
+    > You must write more neatly.
+
+
+
+
+
+
+
+
+40. Moia mianka esti krysna.
+
+    > My cat is black.
+
+41. Kukla minoisjas rerupe.
+
+    > The little girl's doll is broken.
+
+42. Ordinarie djystre supno dubre.
+
+    > I usually sleep soundly.
+
+43. Kopiles sjersostont posti Djackym.
+
+    > The children ran after Jack.
+
+44. Megmi igreni posti scholas.
+
+    > I can play after school.
+
+45. Byme en naselbam opispesjeni.
+
+    > We went to the village for a visit.
+
+46. Pribyme pri danu.
+
+    > We arrived at the river.
+
+47. Prospesjeka pro tve.
+
+    > I have been waiting for you.
+
+48. Campistai sisdont peri pyvens.
+
+    > The campers sat around the fire.
+
+49. Smikra mina sjom miankisje sisdet pri mene.
+
+    > A little girl with a kitten sat near me.
+
+50. Kopil prospesjet pro svoiom patrym opi duri.
+
+    > The child waited at the door for her father.
+
+51. Djes nai sena mina en naselbi perdostet svoiam miankisjam.
+
+    > Yesterday the oldest girl in the village lost her kitten.
+
+52. Djenosteso en sjasmi naselbi?
+
+    > Were you born in this village?
+
+53. Megti dantzani dybre tvoios brater?
+
+    > Can your brother dance well?
+
+54. Byto viros?
+
+    > Did the man leave?
+
+55. Tvoia svesor priiti pro tve?
+
+    > Is your sister coming for you?
+
+56. Megsi priini usje?
+
+    > Can you come tomorrow?
+
+57. Opisjnikoi apobebyker pro djimam?
+
+    > Have the neighbors gone away for the winter?
+
+58. Gusjarosja kyntieti en embri?
+
+    > Does the robin sing in the rain?
+
+59. Isi sjom nysbi ana concertom?
+
+    > Are you going with us to the concert?
+
+
+
+
+
+
+63. Svitam austram posti solstitziosio prymeiostome ini pro borans.
+
+    > On a Sunny morning after the solstice we started for the mountains.
+
+
+
+
+
+
+
+67. Smikra semyna prospesjont patziente djystre upo snibi pro brynam sulym ustras.
+
+    > The little seeds waited patiently under the snow for the warm spring sun.
+
+
+
+
+
+
+
+73. Poda prijenti tvoioi gosties apo sjahared?
+
+    > When will your guests from the city arrive?
+
+74. Pri oses dynues, enosio pontos vertetor asjtre djystre pro levantym.
+
+    > Near the mouth of the river, its course turns sharply towards the East.
+
