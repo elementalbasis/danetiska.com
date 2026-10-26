@@ -1,6 +1,8 @@
 # TO DO
 
 * Give *ples* an e-stem conjugation: *ples, plens, plesio; plei, plens*, etc.
+* Change os, yses to os, oses. All vowel-initial ablauting words should be
+non-ablauting.
 
 ## Bugs
 

@@ -1,6 +1,6 @@
 ---
 order: 10
-title: Atomic Theory
+title: Atomic theory
 layout: section
 section: texts
 permalink: /texts/atomic-theory

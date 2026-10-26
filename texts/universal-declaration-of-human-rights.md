@@ -1,6 +1,6 @@
 ---
 order: 50
-title: Universal Declaration of Human Rights
+title: Universal declaration of human rights
 layout: section
 section: texts
 permalink: /texts/universal-declaration-of-human-rights

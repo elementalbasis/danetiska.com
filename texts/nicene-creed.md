@@ -1,6 +1,6 @@
 ---
 order: 70
-title: Nicene Creed
+title: Nicene creed
 layout: section
 section: texts
 permalink: /texts/nicene-creed
