@@ -39,6 +39,9 @@ tools:
   - title: DanuWiki
     description: Explore a Zettelkasten-style bilingual corpus.
     url: https://wiki.danetiska.com
+  - title: ftp.danetiska.com
+    description: Browse the Academy's public folder.
+    url: https://ftp.danetiska.com
 filters:
   - title: All
     tag: all
