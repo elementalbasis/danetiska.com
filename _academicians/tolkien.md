@@ -20,8 +20,6 @@ Tolkien is best known for *The Hobbit* (1937) and *The Lord of the Rings*
 (1954–1955). Alongside his scholarship and fiction, he developed invented
 languages, alphabets, and the histories of the peoples who used them.
 
-## Language and imagined history
-
 Language creation occupied a central place in Tolkien’s imaginative work.
 Quenya and Sindarin, his principal Elvish languages, were conceived with
 distinct sounds, grammatical structures, and histories of development.
@@ -32,8 +30,6 @@ For Tolkien, languages and mythology grew together. His imagined languages
 belonged to peoples with memories, traditions, and literary cultures; the
 stories gave those languages a setting, while the languages helped shape
 the stories.
-
-## Honorary recognition
 
 The Danetian Academy honors Tolkien for the care and imagination he brought to
 making languages. He gave them histories, poetry, and people to speak them. For
