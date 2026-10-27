@@ -433,7 +433,7 @@
 @key(promotzion) @ety(\lat{promotio}) @typ(f) @def($promotion)
 @key(proportzion) @ety(\lat{proportio}) @typ(f) @def($proportion)
 @key(propositzion) @ety(\lat{propositio}) @typ(f) @def($proposition)
-@key(proprios) @ety(\lat{proprius}) @typ(adj) @def($own)
+@key(proprios) @ety(\lat{proprius}) @typ(adj) @def(\par{one's} $own) @def($proper, $appropriate)
 @key(prospectos) @ety(\lat{prospectus}) @typ(m) @def($prospect)
 @key(protego) @ety(\lat{protegere}) @typ(v) @def(to $protect)
 @key(protectzion) @ety(\lat{protectio}) @typ(f) @def($protection)

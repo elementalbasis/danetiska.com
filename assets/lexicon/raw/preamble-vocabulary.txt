@@ -1,0 +1,216 @@
+% Vocabulary from the author's revised Preambulom Dictzionariosio
+% Source: preambulom-dictzionariosio.txt and its supplied English parallel.
+% Compared with every active raw/*.txt source in thprfssr/danetiska.com,
+% including chatgpt-audit-2025-10-25.txt, at HEAD on 27 October 2026.
+%
+% A: 59 new headwords and 6 expressions.
+% B: 8 COMPLETE REPLACEMENTS for existing entries. Replace their source lines;
+% do not append duplicate entries for these existing lemmas.
+%
+% Donor assignments are editorial proposals, not established borrowing histories.
+% Citation forms inferred from inflected tokens are identified below.
+% No unattested irregular principal parts or noun genitives are supplied.
+
+
+% A. NEW HEADWORDS
+
+% Attested: Preambulom
+@key(preambulom) @ety(\lat{praeambulum}) @typ(n) @def($preamble, $preface)
+
+% Attested: legatom, legatosio
+@key(legatom) @ety(\lat{legatum}) @typ(n) @def($legacy, $inheritance, $heritage)
+
+% Attested: variastas. Distinct from existing adjective varios.
+@key(vario, -amos) @ety(\lat{variare}) @typ(v) @def(to $vary, to $diversify)
+
+% Attested: sjosteletvas
+@key(sjostelestva) @ety(\dnt{sjostelo}) @typ(f) @def($establishment, \par{act or process of establishing something})
+
+% Attested: trobuiostet
+@key(trobuio) @ety(\dnt{tros} + \dnt{buio}) @typ(v) @def(to $develop, to $evolve)
+
+% Attested: trobumyn
+@key(trobumyn) @ety(\dnt{trobuio}) @typ(n) @def($development, $evolution)
+
+% REVIEW: verbal base inferred from anasisdetvas, not independently attested here.
+@key(anasisdo) @ety(\dnt{ana} + \dnt{sisdo}) @typ(v) @def(to $settle, \par{to establish a place of habitation})
+
+% Attested: anasisdetvas
+@key(anasisdestva) @ety(\dnt{anasisdo}) @typ(f) @def($settlement, \par{act or process of settling in a place})
+
+% Attested: opisjovabi
+@key(opisjovos) @ety(\dnt{opisjos}) @typ(adj) @def($neighboring, $adjacent) @typ(mf) @def($neighbor)
+
+% Attested: heredastom.
+@key(heredito, -amos) @ety(\lat{heredito}) @typ(v) @def(to $inherit)
+
+% Attested: enbogateiostom.
+% The Slavic base is supplied directly rather than inventing a headword bogatos.
+@key(enbogateio) @ety(\dnt{en} + \bg{богат}{bogát}) @typ(v) @def(to $enrich, \par{including the enrichment of a language or cultural inheritance})
+@key(bogatos) @ety(\bg{богат}{bogát}) @typ(adj) @def($rich, $wealthy)
+
+% Attested: realizakto
+@key(realizo, -amos) @ety(\fra{réaliser}) @typ(v) @def(to $realize, to $accomplish, to ${carry out})
+
+% Attested: sjoledjeni
+@key(sjoledjo) @ety(\dnt{sjom} + \dnt{ledjo}) @typ(v) @def(to $collect, to $gather, to $compile, to $assemble)
+
+% Attested: describeni
+@key(describo) @ety(\lat{describere}) @typ(v) @def(to $describe)
+
+% Attested: codificani
+@key(codifico, -amos) @ety(\fra{codifier}) @typ(v) @def(to $codify, \par{to arrange knowledge or usage into an ordered body of rules})
+
+% Attested: lexiskom
+@key(lexiskos) @ety(\dnt{lexicom}) @typ(adj) @def($lexical, \par{relating to words or vocabulary})
+
+% Attested: serveni. Thematic servo is inferred; no -amos class is asserted.
+@key(servo) @ety(\lat{servire}) @typ(v) @def(to $serve, \par{to perform a function or fulfill a purpose}; \ex{serveni jasme record dyndjuas}{to serve as a record of the language})
+
+% Attested: record.
+% REVIEW: masculine gender and English donor are proposals. The unchanged
+% nominative alone does not determine its genitive.
+@key(record) @ety(\eng{record}) @typ(m) @def($record, \par{a written account or documentation of something})
+
+% Attested: farnova
+@key(farnovos) @ety(\dnt{farna}) @typ(adj) @def($authoritative, \par{possessing recognized authority})
+
+% Attested: brugosio. A noun distinct from the existing verb brugo.
+% REVIEW: masculine gender is proposed; this genitive also permits neuter brugom.
+@key(brugos) @ety(\dnt{brugo}) @typ(m) @def($use, $usage)
+
+% Attested: udmemysjvos. REVIEW: citation inferred from perfect active participle.
+@key(udekni, udykmos; udmasjym, udmysjme; udmemosja, udmemysjme) @ety(\dnt{ud} + \dnt{dekmi}) @typ(v) @def(to ${carry out}, to $perform, to $execute, to $accomplish)
+
+% Attested: principalmos
+@key(principal) @ety(\lat{principalis}) @typ(adj) @def($principal, $main, $chief)
+
+% Attested: cultivatzion, cultivatzionei. Only the intellectual sense is asserted.
+@key(cultivatzion) @ety(\fra{cultivation}) @typ(f) @def($cultivation)
+
+% Attested: standardizatzion
+@key(standardizatzion) @ety(\fra{standardisation}) @typ(f) @def($standardization)
+@key(standard) @ety(\fra{standard}) @typ(m) @def($standard)
+
+% Attested: preparatzion
+@key(preparatzion) @ety(\lat{praeparatio}) @typ(f) @def($preparation)
+
+% Attested: enumeratzionym
+@key(enumeratzion) @ety(\lat{enumeratio}) @typ(f) @def($enumeration, $listing)
+
+% Attested: prostistati. REVIEW: lemma follows stistami, without invented parts.
+@key(prostistami) @ety(\dnt{pro} + \dnt{stistami}) @typ(v) @def(to $represent, to ${stand for})
+
+% Attested: grammatiskas
+@key(grammatiskos) @ety(\lat{grammaticus}) @typ(adj) @def($grammatical)
+
+% Attested: etymologias
+@key(etymologia) @ety(\grc{ἐτυμολογία}{etumología}) @typ(f) @def($etymology)
+
+% Attested: consistentzie
+@key(consistentzia) @ety(\lat{consistentia}) @typ(f) @def($consistency)
+
+% Attested: philologiske
+@key(philologiskos) @ety(\grc{φιλολογικός}{philologikós}) @typ(adj) @def($philological)
+
+% Attested: rigore
+@key(rigor) @ety(\lat{rigor}) @typ(m) @def($rigor, \par{strictness and precision in scholarly method})
+
+% Attested: consideratzionym
+@key(consideratzion) @ety(\lat{consideratio}) @typ(f) @def($consideration)
+
+% Attested: historiskom, historiskai
+@key(historiskos) @ety(\lat{historicus}) @typ(adj) @def($historical)
+
+% Attested: literariam
+@key(literarios) @ety(\lat{litterarius}) @typ(adj) @def($literary)
+
+% Attested: requisitons. Accusative plural supports masculine requisitos, not
+% neuter requisitom, although its proposed Latin donor is neuter.
+@key(requisitom) @ety(\lat{requisitum}) @typ(n) @def($requirement, $requisite)
+
+% Attested: sjadinovas
+@key(sjadinovos) @ety(\dnt{sjadina}) @typ(adj) @def($contemporary, $present-day, \par{of the present time})
+
+% Attested: attentzion
+@key(attentzion) @ety(\lat{attentio}) @typ(f) @def($attention)
+
+% Attested: vocabulariosio
+@key(vocabulariom) @ety(\lat{vocabularium}) @typ(n) @def($vocabulary)
+
+% Attested: characteristicans
+@key(characteristica) @ety(\fra{caractéristique}) @typ(f) @def($characteristic, $feature)
+
+% Attested: indoeuropeiskois, indoeuropeiskom, indoeuropeiskosio
+@key(indoeuropeiskos) @ety(\fra{indo-européen}) @typ(adj) @def($Indo-European)
+
+% Attested: numerosomos
+@key(numerosos) @ety(\lat{numerosus}) @typ(adj) @def($numerous)
+
+% Attested: Dalecjne.
+% REVIEW: record the attested adverb without positing a nominative dalecjnos.
+% Bulgarian dalechen is the proposed source of its -cjn- stem.
+@key(dalecjnos) @ety(\bg{далечен}{daléčen}) @typ(adj) @def($far)
+
+% Attested: disminueni.
+% REVIEW: Spanish is proposed because of dis-minu-; Latin lacks the s.
+@key(diminuo) @ety(\lat{diminuere}) @typ(v) @def(to $diminish, to $reduce, to $lessen)
+
+% Attested: inseparabilym
+@key(inseparabil) @ety(\lat{inseparabilis}) @typ(adj) @def($inseparable)
+
+% Attested: linguistiskas
+@key(linguistiskos) @ety(\fra{linguistique}) @typ(adj) @def($linguistic)
+
+% Attested: extensom. Existing extendo and extension do not cover the adjective.
+@key(extensos) @ety(\lat{extensus}) @typ(adj) @def($extensive)
+
+% Attested: scholastiskom. Preserve the distinct adjective and noun spellings.
+@key(scholastiskos) @ety(\lat{scholasticus}) @typ(adj) @def($scholarly, $academic)
+
+% Attested: scholasticomos
+@key(scholasticos) @ety(\lat{scholasticus}) @typ(mf) @def($scholar, \par{a person engaged in learned study})
+
+% Attested: upoikstom.
+% REVIEW: record the adjective. A separate verb upojekmi is not established here.
+@key(upojekmi, upoikmos; upojeksym, upoiksme; upojejoka, upojeiksme) @ety(\dnt{upo} + \dnt{jekmi}) @typ(v) @def(to $subject)
+
+% Attested: augmentatzionei
+@key(augmentatzion) @ety(\lat{augmentatio}) @typ(f) @def($augmentation, $enlargement, $increase)
+
+% Attested: revisionei
+@key(revision) @ety(\fra{révision}) @typ(f) @def($revision)
+
+% Attested: promitioito
+@key(promitio) @ety(\dnt{pro} + \dnt{mitio}) @typ(v) @def(to $advance, to $progress)
+
+% Attested: pisjtormos. No weak-stem genitive is guessed from other -tor nouns.
+@key(pisjtor) @ety(\dnt{pisjnumi}) @typ(mf) @def($writer)
+
+% Attested: studiantmos.
+% REVIEW: studiant is the proposed nominative, supported by older corpus
+% estudiant (3348-11-11d.txt). The revised preamble attests only studiantmos;
+% a nominative studiants would also fit that dative. Confirm the modern lemma.
+@key(studiant) @ety(\fra{étudiant}; \cf \lat{studium}) @typ(mf) @def($student, $learner)
+
+% Attested: interessastomos. REVIEW: interesso is an inferred verbal base.
+@key(interesso, -amos) @ety(\fra{intéresser}) @typ(v) @def(to $interest) @def(\par{passive, with en and the accusative}, to be $interested \par{in something})
+
+% Attested: contribuoit
+@key(contribuo) @ety(\lat{contribuere}) @typ(v) @def(to $contribute)
+
+% Attested: conservatzionei
+@key(conservatzion) @ety(\lat{conservatio}) @typ(f) @def($preservation, $conservation)
+
+% Attested: sjokypietvai
+@key(sjokypiestva) @ety(\dnt{sjokypio}) @typ(f) @def($understanding, $comprehension)
+
+
+% A2. NEW EXPRESSIONS
+
+@expr(kypieni en consideratzionym) @link(kypio, consideratzion) @def(to ${take into consideration}, to ${take into account})
+
+@expr(dekni contactom) @link(dekmi, contactos) @def(to ${make contact}, to ${come into contact})
+
+@expr(en somi tempori jod) @link(somos, tempore) @def($while, ${at the same time as})
+
