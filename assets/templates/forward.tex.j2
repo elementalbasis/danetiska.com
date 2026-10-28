@@ -1,0 +1,12 @@
+{% from "lexerat-macros.tex.j2" import inline, senses with context %}
+{% set forward_alphabet = namespace(letter=none) %}
+{% for entry in entries if entry.kind != 'expression' %}
+{% set letter = entry.lemma.lstrip('-')[:1].upper() %}
+{% if letter != forward_alphabet.letter %}
+{% if forward_alphabet.letter is not none %}\end{multicols}{% endif %}
+\begin{multicols}{2}[\LexeratLetterHeading{{ '{' }}{{ letter | latex_escape }}}][12\baselineskip]
+{% set forward_alphabet.letter = letter %}{% endif %}
+\mykey{{ '{' }}{{ entry.lemma | latex_escape }}}{{ '{' }}{{ entry.forms[1:] | join(', ') | latex_escape }}} {% if entry.ety %}\myety{{ '{' }}{{ inline(entry.ety) }}} {% endif %}{{ senses(entry) }}{% for expression in entry.expressions %}{% if loop.first %}\RaeExpressionDivider{}{% else %}\RaeBetweenExpressions{}{% endif %}
+\LexeratLinkedExpression{{ '{' }}{{ expression.forms | join(', ') | latex_escape }}}{{ '{' }}{% if expression.ety %}\myety{{ '{' }}{{ inline(expression.ety) }}} {% endif %}{{ senses(expression) }}}{% endfor %}
+{% endfor %}
+{% if forward_alphabet.letter is not none %}\end{multicols}{% endif %}

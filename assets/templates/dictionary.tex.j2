@@ -1,0 +1,24 @@
+\documentclass[10pt,oneside,openany]{book}
+\usepackage{danetian-dictionary}
+
+\begin{document}
+\frontmatter
+\DictionaryTitlePage
+  {Dictionary of the Danetian Language}
+  {Dictzionariom Danetiskas Dyndjuas}
+  {assets/dictionary-logo.pdf}
+  {assets/academy-logo.pdf}
+
+
+\DictionaryPreamble{frontmatter/preamble-en.md}
+\DictionaryPreamble{frontmatter/preamble-dnt.md}
+\DictionaryContents
+
+\mainmatter
+\DictionarySection{Danetian--English}
+{% include "forward.tex.j2" %}
+{% if reverse_index %}
+\DictionarySection{English--Danetian}
+{% include "reverse.tex.j2" %}
+{% endif %}
+\end{document}

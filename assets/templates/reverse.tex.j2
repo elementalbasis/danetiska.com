@@ -1,0 +1,12 @@
+{% from "lexerat-macros.tex.j2" import inline, stop, type_label with context %}
+
+{% set reverse_alphabet = namespace(letter=none) %}
+{% for keyword, matches in reverse_index.items() %}
+{% set letter = keyword.lstrip('-')[:1].upper() %}
+{% if letter != reverse_alphabet.letter %}
+{% if reverse_alphabet.letter is not none %}\end{multicols}{% endif %}
+\begin{multicols}{2}[\LexeratLetterHeading{{ '{' }}{{ letter | latex_escape }}}][12\baselineskip]
+{% set reverse_alphabet.letter = letter %}{% endif %}
+\LexeratReverseHead{{ '{' }}{{ keyword | latex_escape }}} {% for match in matches %}{% if not loop.first %}{% if match.definition.typ != matches[loop.index0-1].definition.typ %}\RaeTypeDivider{}{% else %}\RaeSenseDivider{}{% endif %}{% endif %}{% if matches|length > 1 %}\LexeratSenseLabel{{ '{' }}{{ loop.index }}}{% endif %}{% set examples = namespace(items=[]) %}{% set body = inline(match.definition.content, examples) | trim %}{{ body }}{% if body %}{{ stop(body) }} {% endif %}{% if match.definition.typ %}\mytyp{{ '{' }}{{ type_label(match.definition.typ) }}} {% endif %}{\danetianfont\bfseries {{ match.entry.lemma | latex_escape }}{% if not match.entry.lemma.endswith('.') %}.{% endif %}}{% if match.entry.kind == 'expression' %}\nobreakspace{\normalfont expr.}{% endif %}{% for example in examples.items %}\space\myex{{ '{' }}{{ inline(example[0]) }}}{{ '{' }}{{ inline(example[1]) }}}{% endfor %}{% endfor %}
+{% endfor %}
+{% if reverse_alphabet.letter is not none %}\end{multicols}{% endif %}
