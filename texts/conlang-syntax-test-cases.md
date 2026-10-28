@@ -63,11 +63,13 @@ permalink: /texts/conlang-syntax-test-cases
 
     > Happy people often shout.
 
+15. Miankisja udsyltiostet.
 
+    > The kitten jumped up.
 
+16. Miankisja† syltiostet ana mesam.
 
-
-
+    > The kitten jumped onto the table.
 
 17. Moia smikra miankisja apobymiostet.
 
@@ -125,15 +127,9 @@ permalink: /texts/conlang-syntax-test-cases
 
     > He will arrive soon.
 
+31. Mindja bebesio apopleiosteto.
 
-
-
-
-
-
-
-
-
+    > The baby's ball has rolled away.
 
 32. Dvo minoi verdjonti syndje.
 
@@ -151,23 +147,21 @@ permalink: /texts/conlang-syntax-test-cases
 
     > We should eat more slowly.
 
+36. Pribebokta previsje priditie.
 
-
-
-
-
-
+    > You have come too soon.
 
 37. Delgesi pisjnuni po priske.
 
     > You must write more neatly.
 
+38. Directe djystre proti nysom stistati mirabil palatziom.
 
+    > Directly opposite stands a wonderful palace.
 
+39. Sjvon Hendrikes apolelipto.
 
-
-
-
+    > Henry's dog is lost.
 
 40. Moia mianka esti krysna.
 
@@ -249,24 +243,50 @@ permalink: /texts/conlang-syntax-test-cases
 
     > Are you going with us to the concert?
 
+60. Inopoda voiazjekta en djungli?
 
+    > Have you ever travelled in the jungle?
 
+61. Navigastomos nid danu oinans milians.
 
+    > We sailed down the river for several miles.
 
+62. Visjos djahan sjnoieti peri ulkieni.
+
+    > Everybody knows about hunting.
 
 63. Svitam austram posti solstitziosio prymeiostome ini pro borans.
 
     > On a Sunny morning after the solstice we started for the mountains.
 
+64. Tom smirosteto apo trucomos maimunes.
 
+    > Tom laughed at the monkey's tricks.
 
+65. Senos viros sjom bastone stat opi garduri.
 
+    > An old man with a walking stick stood beside the fence.
 
+66. Nisdos ulkines but krudostos spendomnois osdois.
 
+    > The squirrel's nest was hidden by drooping boughs.
 
 67. Smikra semyna prospesjont patziente djystre upo snibi pro brynam sulym ustras.
 
     > The little seeds waited patiently under the snow for the warm spring sun.
+
+68. Plei smikrai minai sjom coronabi blomom ana svoioisu kyptsu dantzant peri engrim prinotas.
+
+    > Many little girls with wreaths of flowers on their heads danced around the bonfire.
+
+69. Krudos kosjes sjadosteto ana patomam.
+
+    > The cover of the basket fell to the floor.
+
+70. Prymos minos en urguni styto opi enbyti.
+
+    > The first boy in the line stopped at the entrance.
+
 
 
 
@@ -281,4 +301,16 @@ permalink: /texts/conlang-syntax-test-cases
 74. Pri oses dynues, enosio pontos vertetor asjtre djystre pro levantym.
 
     > Near the mouth of the river, its course turns sharply towards the East.
+
+
+
+
+
+
+
+
+
+
+
+
 
