@@ -39,7 +39,7 @@
 @key(lukeio) @ety(\dnt{lukos} + \dnt{-eio}) @typ(v) @def(to $shine)
 @key(enlukeio) @ety(\dnt{en} + \dnt{lukeio}) @typ(v) @def(to $shine, to $illuminate)
 @key(medinopts, medinyptes) @ety(\dnt{medi} + \dnt{nopts}) @typ(f) @def($midnight)
-@key(vorozjeni) @ety(\rus{ворожить}{vorožítʹ}) @typ(v) @def(to $guess) @def(to practice $divination)
+@key(vorozjo) @ety(\rus{ворожить}{vorožítʹ}) @typ(v) @def(to $guess) @def(to practice $divination)
 @key(enkypio) @ety(\dnt{en} + \dnt{kypio}) @typ(v) @def(to $learn)
 @key(tykanis) @ety(\bg{тъкан}{tắkan}) @typ(f) @def($fabric, $cloth) @def(\field{biology} $tissue)
 @key(sjablon) @ety(\rus{шаблон}{šablón}) @typ(m) @def($pattern)

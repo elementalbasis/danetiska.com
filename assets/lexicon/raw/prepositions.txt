@@ -10,7 +10,7 @@
 @key(upo) @ety(\pie{upó}) @typ(prep+loc) @def($under, $below)
 @key(ana) @ety(\pie{h₂en-h₂}; \cf \grc{ἀνά}{aná}, \rus{на}{na}, \eng{on}) @typ(prep+loc) @def($on, $upon) @typ(prep+acc) @def($onto) @def(\par{denotes entitlement or a claim} to \par{something}; \ex{rysjta ana bivam}{right to life})
 @key(tros) @ety(\pie{tr̥h₂ós}; \cf \lat{trans}, \eng{through}) @typ(prep+acc) @def($through, $across, $beyond)
-@key(proti) @ety(\pie{pr-ó-ti}; \cf \grc{πρός}{prós}, \rus{против}{prótiv}) @typ(prep+acc) @def($against, $opposite to)
+@key(proti) @ety(\pie{pr-ó-ti}; \cf \grc{πρός}{prós}, \rus{против}{prótiv}) @typ(prep+acc) @def(\par{movement} $against, $opposite to) @typ(prep+gen) @def(\par{location} $opposite to, $across from)
 @key(medi) @ety(\pie{médʰyos}; \cf \rus{между}{méždu}) @typ(prep+gen) @def($between, in the $middle of) @typ(prep+ins) @def($among)
 @key(peri) @ety(\pie{pér-i}; \cf \grc{περί}{perí}) @typ(prep+gen) @def($around, $near) @def($about, $concerning) @typ(prep+acc) @def($around \par{in the circular sense})
 @key(opi) @ety(\pie{h₁opi}; \cf \grc{ἐπί}{epí}, \eng{by}) @typ(prep+gen) @def($at, $by, $near, $beside)

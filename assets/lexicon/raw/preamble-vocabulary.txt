@@ -191,7 +191,7 @@
 % REVIEW: studiant is the proposed nominative, supported by older corpus
 % estudiant (3348-11-11d.txt). The revised preamble attests only studiantmos;
 % a nominative studiants would also fit that dative. Confirm the modern lemma.
-@key(studiant) @ety(\fra{étudiant}; \cf \lat{studium}) @typ(mf) @def($student, $learner)
+@key(studiants) @ety(\fra{étudiant}; \cf \lat{studium}) @typ(mf) @def($student, $learner)
 
 % Attested: interessastomos. REVIEW: interesso is an inferred verbal base.
 @key(interesso, -amos) @ety(\fra{intéresser}) @typ(v) @def(to $interest) @def(\par{passive, with en and the accusative}, to be $interested \par{in something})
