@@ -19,8 +19,8 @@ DICT_LOGO := $(IMAGES_DIR)/dictionary_of_the_danetian_language_logo.svg
 ACADEMY_LOGO := $(IMAGES_DIR)/danetiska_academia_logo.svg
 
 PREAMBLE_DIR ?= $(HOME)/cordan/corpus
-PREAMBLE_EN := $(PREAMBLE_DIR)/preambulom-dictzionariosio.eng
-PREAMBLE_DNT := $(PREAMBLE_DIR)/preambulom-dictzionariosio.txt
+PREAMBLE_EN := $(PREAMBLE_DIR)/dictionary-preamble.eng
+PREAMBLE_DNT := $(PREAMBLE_DIR)/dictionary-preamble.txt
 
 # *.txt.ignore files are deliberately excluded.
 SOURCES := $(sort $(wildcard raw/*.txt))
