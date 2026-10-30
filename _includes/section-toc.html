@@ -26,5 +26,10 @@
         </a>
       </li>
     {% endfor %}
+    {% if page.section == 'language' %}
+    <li>
+      <a href="{{ '/texts' | relative_url }}">Sample texts</a>
+    </li>
+    {% endif %}
   </ul>
 </nav>
