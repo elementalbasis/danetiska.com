@@ -20,6 +20,6 @@
 @expr(engris prinotas) @link(engris, prinota) @def($bonfire)
 @key(krudos) @ety(\dnt{krudo}) @typ(m) @def($cover)
 @key(kosj) @ety(\bg{кош}{koš}) @typ(m) @def($basket, $crate, $hamper, $pannier)
-@key(urgun) @ety(From a Tungusic language; \cf \protung{*xürgü}{tail}) @typ(m) @def($tail) @def($line \par{of people}, $queue)
+@key(urgun) @ety(From a Tungusic language; \cf \protung{xürgü}) @typ(m) @def($tail) @def($line \par{of people}, $queue)
 @key(enbyta) @ety(\dnt{en} + \dnt{imi}) @typ(f) @def($entrance)
 @key(esjbyta) @ety(\dnt{esj} + \dnt{imi}) @typ(f) @def($exit)
