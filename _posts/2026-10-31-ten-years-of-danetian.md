@@ -3,7 +3,7 @@ layout: post
 title: "Ten Years of Danetian: An External Timeline"
 author: Javier Castro
 date: 2026-10-31
-cover: /assets/images/10_jeroi.svg
+cover: /assets/images/danetiska_academia_favicon.svg
 permalink: /articles/ten-years-of-danetian/
 ---
 

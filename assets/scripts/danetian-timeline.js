@@ -19,10 +19,37 @@
   const endMonth = Math.max(...events.map(e => monthIndex(e.dataset.date)));
   function layout() {
     const style = getComputedStyle(timeline);
-    const monthPixels = Number(style.getPropertyValue('--months-px').trim()) || 32;
+    // CSS supplies a minimum density, not the final scale. On narrow screens
+    // text wraps into taller cards, so measure the rendered content before
+    // determining how many pixels a calendar month needs.
+    const minMonthPixels = Number(style.getPropertyValue('--months-px').trim()) || 32;
+    const cardGap = 16;
+    const monthlyGroups = new Map();
+    for (const event of events) {
+      const month = monthIndex(event.dataset.date);
+      if (!monthlyGroups.has(month)) monthlyGroups.set(month, []);
+      monthlyGroups.get(month).push(event.querySelector('.dt-card'));
+    }
+    const measured = [...monthlyGroups].sort((a, b) => a[0] - b[0]).map(([month, cards]) => ({
+      month,
+      height: cards.reduce((sum, card) => sum + card.offsetHeight, 0) +
+              Math.max(0, cards.length - 1) * cardGap
+    }));
+    let monthPixels = minMonthPixels;
+    // Allocate enough room for the previous month's whole stack and half
+    // of the following month's stack, even when their dates are close.
+    // All months retain exactly the same scale once determined.
+    for (let i = 1; i < measured.length; i++) {
+      const previous = measured[i - 1];
+      const current = measured[i];
+      const monthsApart = current.month - previous.month;
+      const needed = (previous.height + current.height / 2 + 2 * cardGap) / monthsApart;
+      monthPixels = Math.max(monthPixels, needed);
+    }
+    monthPixels = Math.ceil(monthPixels);
     const axisX = parseFloat(style.getPropertyValue('--axis-x')) || 26;
     const cardLeft = parseFloat(style.getPropertyValue('--card-left')) || 76;
-    const gap = 16;
+    const gap = cardGap;
     const padTop = 28;
     // Month ticks remain at their real positions. Years float within their year boundaries.
     timeline.querySelectorAll('.dt-month-label, .dt-year-segment').forEach(node => node.remove());
