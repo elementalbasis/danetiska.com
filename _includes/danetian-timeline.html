@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{ "/assets/css/danetian-timeline.css" | relative_url }}">
+<div class="dt-timeline" id="danetian-timeline" aria-label="External history of Danetian">
+  <div class="dt-axis" aria-hidden="true"></div>
+  <div class="dt-period-rail" aria-label="Historical periods">
+    {% for period in include.data.periods %}
+    <div class="dt-period-segment" data-start="{{ period.start }}" data-end="{{ period.end }}" style="--period-color: {{ period.color }};">
+      <div class="dt-period-floating-label">{{ period.name | escape }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  <svg class="dt-connectors" aria-hidden="true" preserveAspectRatio="none"></svg>
+  {% assign items = include.data.events | sort: 'date' %}
+  {% for item in items %}
+    {% assign matched_period = include.data.periods | where: 'id', item.period | first %}
+    <article class="dt-event" data-date="{{ item.date }}" style="--period-color: {{ matched_period.color | default: '#64748b' }}">
+      <span class="dt-point" aria-hidden="true"></span>
+      <div class="dt-card">
+        <time datetime="{{ item.date }}">{{ item.date | date: '%b %Y' }}</time>
+        <h3>{{ item.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h3>
+        <div class="dt-description">{{ item.description | markdownify }}</div>
+        {% if item.url %}<a href="{{ item.url | relative_url }}">Read more</a>{% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
+<script defer src="{{ "/assets/scripts/danetian-timeline.js" | relative_url }}"></script>

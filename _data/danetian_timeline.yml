@@ -1,0 +1,305 @@
+# Danetian external history. Use ISO dates; dates are plotted by month.
+# Descriptions and titles allow Markdown emphasis; use ⟨ ⟩ for graphemes.
+periods:
+- id: formative
+  name: Formative period
+  start: '2015-12-25'
+  end: '2017-06-10'
+  color: '#8c6a43'
+- id: early
+  name: Early Danetian
+  start: '2017-06-11'
+  end: '2019-10-24'
+  color: '#1f6e8c'
+- id: transitional
+  name: Transitional Danetian
+  start: '2019-10-25'
+  end: '2022-08-31'
+  color: '#c46b2d'
+- id: late
+  name: Late Danetian
+  start: '2022-09-01'
+  end: '2024-09-30'
+  color: '#4b8a53'
+- id: standard
+  name: Standard Danetian
+  start: '2024-10-01'
+  end: '2026-10-31'
+  color: '#7057c7'
+events:
+- date: '2015-12-01'
+  title: Latin and the idea of a personal classical language
+  description: >-
+    I was infatuated with Latin, particularly its declensions and the way a few endings could
+    express so much. But I also found things I wanted to change, from the spelling and pronunciation
+    of old Latin forms to particular choices in its morphology. I wanted a personal Latin of my own:
+    a classical language whose sound, grammar, and appearance I could shape without having to conform
+    to centuries of established usage. These experiments supplied the impulse behind Danetian.
+  period: formative
+- date: '2015-12-25'
+  title: First PIE-based experiments
+  description: >-
+    Rather than continuing with Latin, I began looking to Proto-Indo-European itself.
+    The sound-change rules and inherited vocabulary recorded as "CONLANG #1" pointed toward a new
+    solution: derive an independent daughter language, retaining the features I admired while
+    allowing it to develop on its own terms.
+  period: formative
+- date: '2016-04-21'
+  title: Traditional birthday of Danetian
+  description: >-
+    The date 21 Mar 2016, corresponding to 15 Tau 3342 in the Danetian lunar calendar, was later treated as
+    Danetian's birthday. The language is still embryonic, but the project has begun to separate itself
+    from earlier general conlanging and to assume an identity of its own.
+  period: formative
+- date: '2016-10-11'
+  title: PIE-based conlang grammar
+  description: >-
+    A more elaborate grammar appears, with historical derivations and nominal paradigms. The language
+    is becoming less a sketch and more a serious attempt at an independent Indo-European daughter
+    language.
+  period: formative
+- date: '2017-06-11'
+  title: Proto-Indo-European Conlang Grammar
+  description: >-
+    A systematic exploration of sound changes from Proto-Indo-European, using Mark Rosenfelder's
+    SCA2. This is one of the first moments when Danetian begins to feel methodically derived rather
+    than merely imagined.
+  period: early
+- date: '2017-06-30'
+  title: '*Danθwa Danetiska*'
+  description: >-
+    Recognizable Early Danetian emerges, with long vowels and conspicuous aspirates inherited
+    from PIE voiced aspirated stops *bʰ, dʰ, gʰ*. They appear in the old orthography as
+    ⟨φ⟩, ⟨θ⟩, and ⟨x⟩. The result is an archaizing language, closer in appearance
+    to an ancient grammatical reconstruction than to modern Standard Danetian.
+  period: early
+- date: '2017-06-29'
+  title: '*Genesis* 1 in Early Danetian'
+  description: >-
+    An early translation of the opening of Genesis begins *antiterman denot dīwos djuns pe xeθomam*.
+    Its long vowels and ⟨θ⟩ place it unmistakably in Early Danetian.
+  period: early
+- date: '2018-01-28'
+  title: '*Nūom Leksikom*'
+  description: >-
+    A substantial dictionary of Early Danetian, preserving the older vowel lengths and
+    aspirates. Forms such as *dranom* 'grain', later *sjdranom* in Standard Danetian,
+    show how even familiar inherited vocabulary could change its appearance as
+    the treatment of the palatovelars was reconsidered.
+  period: early
+- date: '2018-05-29'
+  title: '*Grammatika*'
+  description: >-
+    Inflection and syntax are worked out more seriously. Danetian is trying to become usable prose,
+    not merely a system of etymologies and declension tables.
+  period: early
+- date: '2019-03-05'
+  title: Danetian Grammar
+  description: >-
+    A later grammatical description of mature Early Danetian. The language still retains
+    its old aspirated series and long vowels. I would eventually become dissatisfied
+    with this antique appearance, especially the treatment of PIE *bʰ, dʰ, gʰ* as ⟨φ⟩, ⟨θ⟩, ⟨x⟩,
+    and begin experimenting with their development.
+  period: early
+- date: '2019-09-15'
+  title: Eastern and Western dialects
+  description: >-
+    Alternative sound changes are used to derive Eastern and Western Danetian dialects from a common
+    Proto-Danetian. The language is increasingly imagined historically, not just statically.
+  period: early
+- date: '2019-10-01'
+  title: From ⟨d⟩ and ⟨t⟩ to ⟨dj⟩ and ⟨sj⟩
+  description: >-
+    The earlier reflexes of the Proto-Indo-European palatovelars are reconsidered during the phonological
+    overhaul. The older spellings ⟨d⟩ and ⟨t⟩ eventually give way to ⟨dj⟩ and ⟨sj⟩, an important
+    step toward the recognizable sound of modern Danetian.
+  period: transitional
+- date: '2019-10-25'
+  title: Phonological reconstruction
+  description: >-
+    A major phonological rethink begins. The PIE voiced aspirates *bʰ, dʰ, gʰ*,
+    formerly represented by ⟨φ⟩, ⟨θ⟩, and ⟨x⟩, become a particular source of
+    dissatisfaction. Transitional experiments explore Latin-like fricative outcomes,
+    including ⟨f⟩ and ⟨v⟩, before the modern treatment settles on ⟨b⟩, ⟨d⟩, and ⟨g⟩.
+    Vowel length is reconsidered as well. These were experiments, not a single reform.
+    Compare also the broader
+    reshaping of familiar words during this transition, such as *donvos* in an older
+    experimental form to modern *djombos* 'number'.
+  period: transitional
+- date: '2019-12-10'
+  title: '*Novom Danetiskom Diccionariom*'
+  description: >-
+    A new dictionary survives from December 2019, following the autumn sound-change experiments.
+    Its forms offer a concrete glimpse of the language in transition, when the older classical appearance
+    was being reconsidered but no settled replacement had emerged.
+  period: transitional
+- date: '2021-11-11'
+  title: A substantial Danetian lexicon and verb paradigms
+  description: >-
+    In November 2021 I began a large lexical notebook and a separate collection of verb conjugations.
+    The verb notes include present, imperfect, aorist, subjunctive, imperative, and active and passive
+    forms. These working materials show that Danetian was being developed in considerable grammatical
+    detail, even during a period that otherwise left relatively few finished texts.
+  period: transitional
+- date: '2021-12-06'
+  title: The Nicene Creed in Danetian
+  description: >-
+    A surviving translation of the Nicene Creed, entitled *Symbolom bisties*, shows Danetian in
+    sustained religious prose. Accent marks and forms such as *Diví*, *Patrí*, and *djumós* reveal
+    a language still far removed from the present standard, yet already capable of handling a demanding
+    inherited text.
+  period: transitional
+- date: '2021-12-20'
+  title: Cosmology and religious worldbuilding
+  description: >-
+    Notes on Danetian cosmology describe the Earth, the elements, and the divine order. The work
+    is primarily cultural, but it begins to give Danetian words and religious ideas a setting beyond
+    a grammar table.
+  period: transitional
+- date: '2021-12-24'
+  title: Danetian surnames
+  description: >-
+    A list of surnames experiments with the linguistic texture of everyday identity. These are naming
+    materials rather than evidence of a permanent grammatical reform, but they make the imagined
+    speech community more tangible.
+  period: transitional
+- date: '2022-04-10'
+  title: CORDATES
+  description: >-
+    CORDATES, a small collection of roughly twenty test sentences, is compiled. It is a convenient
+    testing ground for grammar and vocabulary, not yet a substantial corpus of continuous writing.
+  period: transitional
+- date: '2022-06-22'
+  title: The Danetian calendar
+  description: >-
+    A lunisolar calendar is worked out in detail. This matters to the language as a cultural project:
+    dates, festivals, and chronology begin to be expressed from inside the imagined civilization.
+  period: transitional
+- date: '2022-09-01'
+  title: Writing Danetian spontaneously
+  description: >-
+    Around this time I began writing longer passages without constantly consulting my grammar or
+    dictionary. Where inherited vocabulary was missing, I could draw freely on Greek, Latin, and
+    Romance material and adapt it to Danetian. This was a practical kind of fluency: the language
+    had become something I could think and compose in, not merely analyze. This marks the beginning
+    of Late Danetian, when the language increasingly served as a medium for original prose.
+  period: late
+- date: '2022-10-16'
+  title: Danetian in the Coptic script
+  description: >-
+    A surviving sample writes Danetian using Coptic letters. It belongs to a wider period of orthographic
+    experimentation, when scripts and sound systems were still far from settled.
+  period: late
+- date: '2022-12-30'
+  title: New CORDATES compilation
+  description: >-
+    A revised collection of test sentences documents forms near the emergence of Late Danetian. Like
+    the earlier CORDATES, this remains a modest set of examples rather than a large text corpus.
+  period: late
+- date: '2023-04-05'
+  title: A Cyrillic Danetian
+  description: >-
+    A dated note proposes writing Danetian in the Cyrillic alphabet. It belongs to a broader phase
+    of script experimentation, testing whether another writing tradition might suit the language's
+    sounds and its location in the Balkans. The Latin standard ultimately prevailed.
+  period: late
+- date: '2023-09-03'
+  title: Corpus update
+  description: >-
+    More running Danetian is preserved. The modern phonology is becoming easier to hear on the page,
+    and the language looks less like a reconstruction exercise and more like something livable.
+  period: late
+- date: '2023-10-24'
+  title: Internal history and borrowings
+  description: >-
+    As the Danetians acquire a fuller migration history from the steppe to the Balkans, the lexicon
+    opens up. Borrowings begin to flow in from Turkic, Perso-Arabic, Greco-Latin, and the Balkan
+    world, giving the language a denser and more lived-in texture.
+  period: late
+- date: '2024-01-29'
+  title: '*Lexicom Danetiskas Dyndjuas 2024*'
+  description: >-
+    Work begins on an extensive Late Danetian dictionary. Its spelling and morphology preserve a
+    useful snapshot of the language immediately before the changes that would establish the modern
+    standard.
+  period: late
+- date: '2024-05-18'
+  title: The ⟨a⟩ to ⟨y⟩ change
+  description: >-
+    The schwa-like vowel that had often been written ⟨a⟩ increasingly comes to be written ⟨y⟩. The
+    change reshapes familiar stems and gives Danetian a distinctive modern appearance. I regard it
+    as an important precursor to Standard Danetian.
+  period: late
+- date: '2024-06-06'
+  title: Academy resolutions
+  description: >-
+    Written proposals and resolutions begin formalizing questions of standardization. Danetian is
+    now being treated less as a private experiment and more as a language that can be codified.
+  period: late
+- date: '2024-08-21'
+  title: Orthographic proposal
+  description: >-
+    Alternatives such as ⟨sh⟩ and ⟨zh⟩ are weighed against ⟨sj⟩ and ⟨zj⟩. The question concerns not
+    only phonetic accuracy, but the appearance and consistency of the writing system. The latter
+    digraphs ultimately enter the standard.
+  period: late
+- date: '2024-10-01'
+  title: The ⟨c⟩ to ⟨tz⟩ spelling change
+  description: >-
+    By October 2024, the older spelling ⟨c⟩ in forms such as *diccionariom* had given way to ⟨tz⟩,
+    as in *dictzionariom*. The new spelling is attested in October 2024 and marks the beginning
+    of Standard Danetian.
+  period: standard
+- date: '2024-10-23'
+  title: '*Dictzionariom Concisom*'
+  description: >-
+    Work begins on a concise dictionary of the standard language.
+  period: standard
+- date: '2025-02-14'
+  title: Grammar and dictionary revision
+  description: >-
+    New grammatical and concise dictionary documents are compiled. Standard Danetian is increasingly
+    presented as something worth publishing.
+  period: standard
+- date: '2025-05-01'
+  title: Mapping the lexical strata
+  description: >-
+    A survey of the lexicon brings the language's layers into focus: inherited Indo-European
+    vocabulary, a Tungusic substratum, Turkic military terminology, Iranian and Arabic loans,
+    Syriac religious terms, and later Greek, Latin, and Balkan influences. Danetian's history
+    is now expressed as much in the vocabulary as in the sound laws.
+  period: standard
+- date: '2025-10-01'
+  title: Normative dictionary work
+  description: >-
+    Work on a normative dictionary continues the move from word collecting toward
+    lexicography. The task is no longer just to coin attractive forms, but to decide which
+    forms and senses belong in the written language and how to describe them consistently.
+  period: standard
+- date: '2026-04-01'
+  title: CORDAN, the continuous-text corpus
+  description: >-
+    I brought together my personal Danetian compositions and translations into CORDAN, a corpus
+    of continuous writing containing tens of thousands of tokens. Unlike the small earlier
+    CORDATES exercise, CORDAN preserves substantial texts and makes it possible to study vocabulary,
+    constructions, and usage across the history of the language.
+  period: standard
+- date: '2026-04-05'
+  title: New dictionary project
+  description: >-
+    Further work begins on a structured dictionary and the Academy website. The language is now supported
+    by editorial infrastructure, not just notes and inspiration.
+  period: standard
+- date: '2026-09-10'
+  title: Bilingual translation corpus
+  description: >-
+    Advances in large language models make a new translation workflow practical. By supplying an
+    AI assistant with the existing Danetian corpus, I can obtain a substantial first draft of a long
+    text, then review and correct it.
+  period: standard
+- date: '2026-10-25'
+  title: Syntax test cases
+  description: >-
+    A substantial set of test sentences is assembled for constructions and inflection. The language
+    is now being probed analytically, almost like a subject of philological study.
+  period: standard
