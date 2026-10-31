@@ -1,9 +1,10 @@
-/* Reusable, month-scaled historical timeline. Keep layout metrics here. */
+/* Reusable chronological timeline. Events are content-spaced, not date-scaled. */
 .dt-timeline {
   --axis-x: 100px;
   --card-left: 160px;
-  --months-px: 230;
-  --follow-offset: 190px;
+  --event-gap: 14;
+  --month-gap: 34;
+  --year-gap: 16;
   position: relative;
   isolation: isolate;
   min-height: 200px;
@@ -51,27 +52,17 @@
   height: 1px;
   background: #c3ccd7;
 }
-.dt-year-segment {
+.dt-year-marker {
   position: absolute;
   z-index: 5;
   left: 0;
-  width: 43px;
-  pointer-events: none;
-}
-.dt-year-float {
-  position: absolute;
-  left: 0;
-  width: 44px;
-  display: none;
-  text-align: left;
-  white-space: nowrap;
+  transform: translateY(-50%);
   font-size: 1rem;
   line-height: 1.3;
   font-weight: 800;
   color: #354358;
-  background: rgba(255, 255, 255, .96);
+  white-space: nowrap;
 }
-.dt-year-active .dt-year-float { display: block; }
 .dt-connectors {
   position: absolute;
   inset: 0;
@@ -121,21 +112,23 @@
 .dt-description p { margin: 0; font-size: .96rem; line-height: 1.62; color: #475467; }
 .dt-card a { display: inline-block; margin-top: 8px; font-size: .84rem; }
 
-/* Fixed period extents; the label is positioned by the timeline controller. */
-.dt-period-rail { position: absolute; z-index: 4; top: 0; bottom: 0; right: 7px; width: 47px; pointer-events: none; }
+/* Each opaque incoming period band covers the preceding sticky label. */
+.dt-period-rail { position: absolute; z-index: 4; top: 0; bottom: 0; right: 7px; width: 47px; pointer-events: none; display: flex; flex-direction: column; align-items: center; }
 .dt-period-segment {
   position: absolute;
   left: 0;
   right: 0;
-  overflow: hidden;
+  overflow: visible;
   border-left: 7px solid var(--period-color);
   border-radius: 4px;
-  background: color-mix(in srgb, var(--period-color) 11%, white);
+  background: color-mix(in srgb, var(--period-color) 11%, #fff);
 }
 .dt-period-floating-label {
-  position: absolute;
-  left: 12px;
-  width: 22px;
+  position: sticky;
+  top: 90px;
+  flex: none;
+  box-sizing: border-box;
+  width: 28px;
   padding: 10px 2px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -151,11 +144,10 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
 }
 @media (max-width: 600px) {
-  .dt-timeline { --axis-x: 73px; --card-left: 108px; --months-px: 190; }
+  .dt-timeline { --axis-x: 73px; --card-left: 108px; --event-gap: 12; --month-gap: 26; --year-gap: 14; }
   .dt-month-label { left: 32px; width: calc(var(--axis-x) - 45px); font-size: .72rem; }
   .dt-month-label::after { right: -12px; width: 6px; }
-  .dt-year-segment { width: 30px; }
-  .dt-year-float { width: 30px; font-size: .72rem; letter-spacing: -.03em; }
+  .dt-year-marker { font-size: .72rem; letter-spacing: -.03em; }
   .dt-point { left: calc(var(--axis-x) - 7px); width: 14px; height: 14px; border-radius: 5px; }
   .dt-card { right: 41px; padding: 12px 13px 13px; border-radius: 13px; }
   .dt-card time { font-size: .76rem; }
@@ -163,5 +155,5 @@
   .dt-description p { font-size: .85rem; }
   .dt-period-rail { right: 0; width: 26px; }
   .dt-period-segment { border-left-width: 5px; }
-  .dt-period-floating-label { left: 7px; width: 16px; padding: 7px 0; font-size: .66rem; }
+  .dt-period-floating-label { width: 20px; padding: 7px 0; font-size: .66rem; }
 }
