@@ -9,7 +9,7 @@
 @key(velocitats) @ety(\lat{velocitas}) @typ(f) @def($velocity, $speed)
 @key(cultura) @ety(\lat{cultura}) @typ(f) @def($culture)
 @key(opera) @ety(\lat{opera}) @typ(f) @def(\par{a literary, artistic, \etc} $work)
-@key(aeres) @ety(\grc{ἀήρ}{āḗr}) @typ(m) @def($air)
+@key(aer) @ety(\grc{ἀήρ}{āḗr}) @typ(m) @def($air)
 @key(dialectos) @ety(\grc{διάλεκτος}{diálektos}) @typ(m) @def($dialect)
 @key(particula) @ety(\lat{particula}) @typ(f) @def($particle)
 @key(particular) @ety(\lat{particularis}) @typ(adj) @def($particular)

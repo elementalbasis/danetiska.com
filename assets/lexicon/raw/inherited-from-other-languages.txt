@@ -38,7 +38,7 @@
 @key(dviharf) @ety(\dnt{dvi-} + \dnt{harf}) @typ(m) @def($digraph)
 
 @key(tadjir) @ety(\ara{تاجر}{tājir}) @typ(m) @def($merchant, $trader, $businessman, $dealer, $tradesman)
-@key(asjdaha) @ety(\per{اژدها}{aždahā}) @typ(m) @def($dragon)
+@key(azjdaha) @ety(\per{اژدها}{aždahā}) @typ(m) @def($dragon)
 @key(staia) @ety(\bg{стая}{stája}) @typ(f) @def($room, $chamber)
 @key(devar) @ety(\per{دیوار}{dēwār}) @typ(m) @def($wall)
 @key(plan) @ety(\fra{plan}) @typ(m) @def($plan)

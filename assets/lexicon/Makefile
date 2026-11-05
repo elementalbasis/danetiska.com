@@ -6,7 +6,7 @@ SHELL := /bin/bash
 .SHELLFLAGS := -eu -o pipefail -c
 
 PYTHON ?= python3
-LEXERAT ?= $(HOME)/lexerat/lexerat.py
+LEXERAT ?= $(HOME)/Projects/lexerat/lexerat.py
 XELATEX ?= xelatex
 INKSCAPE ?= inkscape
 
@@ -18,7 +18,7 @@ IMAGES_DIR ?= ../images
 DICT_LOGO := $(IMAGES_DIR)/dictionary_of_the_danetian_language_logo.svg
 ACADEMY_LOGO := $(IMAGES_DIR)/danetiska_academia_logo.svg
 
-PREAMBLE_DIR ?= $(HOME)/cordan/corpus
+PREAMBLE_DIR ?= $(HOME)/Projects/cordan/corpus
 PREAMBLE_EN := $(PREAMBLE_DIR)/dictionary-preamble.eng
 PREAMBLE_DNT := $(PREAMBLE_DIR)/dictionary-preamble.txt
 

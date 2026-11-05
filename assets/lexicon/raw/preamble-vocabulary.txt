@@ -212,5 +212,5 @@
 
 @expr(dekni contactom) @link(dekmi, contactos) @def(to ${make contact}, to ${come into contact})
 
-@expr(en somi tempori jod) @link(somos, tempore) @def($while, ${at the same time as})
+@expr(somom tempore) @link(somos, tempore) @def($while, ${at the same time as})
 
