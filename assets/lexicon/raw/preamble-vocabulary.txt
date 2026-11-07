@@ -80,7 +80,7 @@
 @key(brugos) @ety(\dnt{brugo}) @typ(m) @def($use, $usage)
 
 % Attested: udmemysjvos. REVIEW: citation inferred from perfect active participle.
-@key(udekni, udykmos; udmasjym, udmysjme; udmemosja, udmemysjme) @ety(\dnt{ud} + \dnt{dekmi}) @typ(v) @def(to ${carry out}, to $perform, to $execute, to $accomplish)
+@key(udekmi, udykmos; udmasjym, udmysjme; udmemosja, udmemysjme) @ety(\dnt{ud} + \dnt{dekmi}) @typ(v) @def(to ${carry out}, to $perform, to $execute, to $accomplish)
 
 % Attested: principalmos
 @key(principal) @ety(\lat{principalis}) @typ(adj) @def($principal, $main, $chief)

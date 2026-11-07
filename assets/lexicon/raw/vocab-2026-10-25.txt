@@ -111,7 +111,7 @@
 @key(bivak) @ety(\fra{bivouac}) @typ(m) @def($bivouac, \par{temporary} $encampment \par{with little to no shelter})
 @key(sertis, syrties) @ety(\pie{ser-}; \cf \lat{sors}) @typ(f) @def($fate) @def($chances, $lot)
 @expr(ana syrti) @link(ana, sertis) @def(at $random, by $fate, by $luck)
-@key(dusdekni) @ety(\pie{dus-} + \dnt{dekmi}) @typ(v) @def(to $hurt)
+@key(dusdekmi) @ety(\pie{dus-} + \dnt{dekmi}) @typ(v) @def(to $hurt)
 @key(persnova) @ety(\dnt{persna}) @typ(f) @def($legging)
 @key(djystrova) @ety(\dnt{djesor}) @typ(f) @def($sleeve)
 @key(bandazj) @ety(\fra{bandage}) @typ(m) @def($bandage)

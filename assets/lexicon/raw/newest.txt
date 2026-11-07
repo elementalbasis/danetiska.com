@@ -4,7 +4,7 @@
 @key(prodisjtis, prodisjties) @ety(\dnt{prodisjnumi} + \dnt{-tis}) @typ(f) @def($prophecy)
 @key(vid) @ety(\dnt{vidnumi}) @typ(intj) @def($behold)
 @key(projekmi, proikmos, projeksym, proiksme, projejoika, projeiksme) @ety(\dnt{pro} + \dnt{jekmi}) @typ(v) @def(to $send)
-@key(elcji) @ety(From a Turkic language; \cf \kyr{элчи}{elci}) @typ(mf) @def($messenger) @def($ambassador) @def($angel)
+@key(elcjis) @ety(From a Turkic language; \cf \kyr{элчи}{elci}) @typ(mf) @def($messenger) @def($ambassador) @def($angel)
 @key(pretios) @ety(\pie{próti}; \cf \dnt{proti}) @typ(m) @def($face)
 @key(antidekmi, antidykme; antimasjym, antimysjme, antimemosja, antimemysjme) @ety(\dnt{anti} + \dnt{dekmi}) @typ(v) @def(to $prepare, to make $ready)
 @key(kraugo) @ety(\pie{kraw-g-}; \cf \grc{κραυγή}{kraugḗ}) @typ(v) @def(to $yell, to $shout, to $scream, to $cry out, to $exclaim)
