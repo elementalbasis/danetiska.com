@@ -1,4 +1,5 @@
 ---
+order: 100
 title: J. R. R. Tolkien
 membership: honorary
 ---

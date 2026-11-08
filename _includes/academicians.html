@@ -1,4 +1,7 @@
-{% assign members = site.academicians | sort_natural: "sort_name" %}
+{% assign members = site.academicians | sort_natural: "title" %}
+{% assign ordered_members = members | where_exp: "item", "item.order != nil" | sort: "order" %}
+{% assign unordered_members = members | where_exp: "item", "item.order == nil" %}
+{% assign members = ordered_members | concat: unordered_members %}
 {% if members.size > 0 %}
 <div class="library-list library-list--compact" aria-label="Academicians">
   {% for member in members %}
