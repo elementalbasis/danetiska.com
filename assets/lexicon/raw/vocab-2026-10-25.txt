@@ -86,7 +86,7 @@
 @key(topuz) @ety(From a Turkic language; \cf \tur{topuz}) @typ(m) @def($mace, $club)
 @key(kalkan) @ety(From a Turkic language; \cf \tur{kalkan}, \kyr{калкан}{kalkan}) @typ(m) @def($shield)
 @key(tulga) @ety(From a Turkic language; \cf \tur{tolga}) @typ(f) @def($helmet)
-@key(naiza) @ety(From a Turkic language; \cf \kyr{найза}{nayza}) @typ(f) @def($lance)
+@key(naiza) @ety(From a Turkic language; \cf \kyr{найза}{nayza}) @typ(f) @def($lance, $spear)
 @key(lekstis, lyksties) @ety(\dnt{lekso}) @typ(f) @def($protection)
 @key(liuspa) @ety(\bg{люспа}{ljúspa}) @typ(f) @def($scale \par{of a fish or creature}) @def($peel \par{of a fruit})
 @key(esjvota) @ety(\dnt{esjvos}) @typ(f) @def($cavalry)

@@ -49,3 +49,4 @@
 @key(jarak) @ety(\protrk{yarak}) @typ(m) @def($weapon, $arms, $armament)
 @key(vistis, visties) @ety(\pie{weyd-}; \cf \rus{весть}{vestʹ}) @typ(f) @def($sight; act of $seeing)
 @key(longota) @ety(\dnt{longos} + \dnt{-ota}) @typ(f) @def($length)
+@key(catapulta) @ety(\lat{catapulta}) @typ(f) @def($catapult)
