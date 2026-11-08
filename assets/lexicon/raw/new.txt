@@ -39,8 +39,8 @@
 @key(butis, buties) @ety(\pie{bʰuH-}; \cf aorist and perfective stems of \dnt{esmi}) @typ(f) @def($essence, $nature)
 @key(natura) @ety(\lat{natura}) @typ(f) @def($nature)
 @key(natural) @ety(\lat{naturalis}) @typ(adj) @def($natural)
-@key(jekmi, ikmos; jeksym, iksme; jejoka, jeikme) @ety(\pie{(H)yeh₁-}; \cf \lat{iacio}) @typ(v) @def(to $throw)
-@key(apojekmi, apoikmos; apojeksym, apoiksme; apojejoka, apojeiksme) @ety(\dnt{apo} + \dnt{jekmi}) @typ(v) @def(to $forgive, to $remit, \par{used with the accusative case for the action being forgiven, and the ablative case for the person being forgiven})
+@key(jekmi, ikmos, jeksym, iksme, jejoka, jeikme) @infl(megmi) @ety(\pie{(H)yeh₁-}; \cf \lat{iacio}) @typ(v) @def(to $throw)
+@key(apojekmi) @infl(jekmi) @ety(\dnt{apo} + \dnt{jekmi}) @typ(v) @def(to $forgive, to $remit, \par{used with the accusative case for the action being forgiven, and the ablative case for the person being forgiven})
 @key(jektis, ikties) @ety(\dnt{jekmi}) @typ(f) @def(\par{act of} $throwing)
 @key(apojektis, apoikties) @ety(\dnt{apojekmi}) @typ(f) @def($forgiveness, $remission)
 
@@ -59,7 +59,7 @@
 
 @key(-isjos) @ety(\pie{-ḱos}; \cf \lat{-cus}, \grc{-κός}{-kós}) @typ(suf) @def(\par{diminutive suffix})
 @key(dybroisjos) @ety(\dnt{dybros} + \dnt{-isjos}) @typ(adj) @def($beautiful, $pretty)
-@key(tygnumi; tagym, tygme; tetoga, tetygme) @ety(\pie{teh₂g-}; \cf \lat{tango}, \grc{τεταγών}{tetagṓn}, \eng{take}) @typ(v) @def(to $touch)
+@key(tagmi, tygmos, taksym, tyksme, tetoga, tetygme) @infl(megmi) @ety(\pie{teh₂g-}; \cf \lat{tango}, \grc{τεταγών}{tetagṓn}, \eng{take}) @typ(v) @def(to $touch)
 @key(taktis, tykties) @ety(\dnt{tygnumi}) @typ(f) @def(\par{act of} $touching) @def(sense of $touch)
 @key(po) @ety(\bg{по}{po}) @typ(adv) @def(\par{a particle used to form the comparative degree of adjectives}; \ex{po senos}{older})
 @key(nai) @ety(\bg{най}{naj}) @typ(adv) @def(\par{a particle used to form the superlative degree of adjectives}; \ex{nai senos}{oldest})

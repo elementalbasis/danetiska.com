@@ -216,7 +216,7 @@
 % Attested: providnuni, providnunts, providnuti
 % Source: corpus/atomiska_theoria.txt:156
 % REVIEW: Citation form inferred from providnuti/providnuni. Origin and non-present principal parts are unresolved.
-@key(providnumi) @ety(\dnt{pro} + \dnt{vidnumi}) @typ(v) @def(to $provide)
+@key(providnumi) @infl(vidnumi) @ety(\dnt{pro} + \dnt{vidnumi}) @typ(v) @def(to $provide)
 
 % Attested: perdeti, perdostonto
 % Source: corpus/atomiska_theoria.txt:105
@@ -481,12 +481,12 @@
 % Attested: jotera, joterai, joteram, joteri, joterom, joteros
 % Source: corpus/personal_notes/3348-11-11a.txt:10
 % REVIEW: Definition follows current Academy proforms table (relative, out of two). Older notes also use this family more broadly as a general relative.
-@key(joteros; jotera; joterom) @ety(\pie{yó-teros}) @typ(pron) @def(\par{relative} $which \par{out of two, or out of a selection})
+@key(joteros, jotera, joterom) @ety(\pie{yó-teros}) @typ(pron) @def(\par{relative} $which \par{out of two, or out of a selection})
 
 % Attested: potera, poterons
 % Source: corpus/atomiska_theoria.txt:60
 % REVIEW: Definition follows current Academy proforms table (interrogative, out of two); older usage may be broader.
-@key(poteros; potera; poterom) @ety(\dnt{pos}) @typ(pron) @def(\par{interrogative} $which \par{out of two, or out of a selection})
+@key(poteros, potera, poterom) @ety(\dnt{pos}) @typ(pron) @def(\par{interrogative} $which \par{out of two, or out of a selection})
 
 % Attested: sjmon, sjmones, sjmonyns
 % Source: corpus/atomiska_theoria.txt:3

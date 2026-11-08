@@ -1,3 +1,4 @@
+{% from 'includes/inflections.html.j2' import render_inflections %}
 {# Inline formatting stays inside these two templates; @ arguments remain strings. #}
 {% set languages = {
  'pie':'PIE',
@@ -133,7 +134,9 @@
 {%- endmacro %}
 {% for entry in entries %}
 <article class="entry{% if entry.kind == 'expression' %} expression-entry{% endif %}" id="{{ entry.id | html_escape }}">
-<h1 class="lemma">{{ entry.forms | join(', ') | html_escape }}</h1>
+{% set head = namespace(verb=false) %}
+{% for definition in entry.definitions %}{% if definition.typ in ['v', 'verb'] %}{% set head.verb=true %}{% endif %}{% endfor %}
+<h1 class="lemma">{{ (entry.lemma if head.verb else entry.forms | join(', ')) | html_escape }}</h1>
 {% if entry.kind == 'expression' %}<p class="pos">expression</p>{% endif %}
 {% if entry.ety %}<p class="etymology">{{ inline(entry.ety) }}</p>{% endif %}
 <section class="sense-block"><ol>
@@ -148,5 +151,8 @@
 {% if expression.ety %}<p class="etymology">{{ inline(expression.ety) }}</p>{% endif %}
 </section>
 {% endfor %}
+{% if entry.inflections is defined and entry.inflections %}
+{{ render_inflections(entry) }}
+{% endif %}
 </article>
 {% endfor %}

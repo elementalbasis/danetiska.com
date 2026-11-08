@@ -80,7 +80,7 @@
 @key(brugos) @ety(\dnt{brugo}) @typ(m) @def($use, $usage)
 
 % Attested: udmemysjvos. REVIEW: citation inferred from perfect active participle.
-@key(udekmi, udykmos; udmasjym, udmysjme; udmemosja, udmemysjme) @ety(\dnt{ud} + \dnt{dekmi}) @typ(v) @def(to ${carry out}, to $perform, to $execute, to $accomplish)
+@key(uddekmi) @infl(dekmi) @ety(\dnt{ud} + \dnt{dekmi}) @typ(v) @def(to ${carry out}, to $perform, to $execute, to $accomplish)
 
 % Attested: principalmos
 @key(principal) @ety(\lat{principalis}) @typ(adj) @def($principal, $main, $chief)
@@ -99,7 +99,7 @@
 @key(enumeratzion) @ety(\lat{enumeratio}) @typ(f) @def($enumeration, $listing)
 
 % Attested: prostistati. REVIEW: lemma follows stistami, without invented parts.
-@key(prostistami) @ety(\dnt{pro} + \dnt{stistami}) @typ(v) @def(to $represent, to ${stand for})
+@key(prostistami) @infl(stistami) @ety(\dnt{pro} + \dnt{stistami}) @typ(v) @def(to $represent, to ${stand for})
 
 % Attested: grammatiskas
 @key(grammatiskos) @ety(\lat{grammaticus}) @typ(adj) @def($grammatical)
@@ -173,7 +173,7 @@
 
 % Attested: upoikstom.
 % REVIEW: record the adjective. A separate verb upojekmi is not established here.
-@key(upojekmi, upoikmos; upojeksym, upoiksme; upojejoka, upojeiksme) @ety(\dnt{upo} + \dnt{jekmi}) @typ(v) @def(to $subject)
+@key(upojekmi) @infl(jekmi) @ety(\dnt{upo} + \dnt{jekmi}) @typ(v) @def(to $subject)
 
 % Attested: augmentatzionei
 @key(augmentatzion) @ety(\lat{augmentatio}) @typ(f) @def($augmentation, $enlargement, $increase)

@@ -1,7 +1,7 @@
 ---
 title: Dictionary of the Danetian language
 layout: standalone
-inflections: true
+inflections: false
 wide: true
 ---
 
@@ -44,3 +44,5 @@ wide: true
 </section>
 
 <script src="{{ "/assets/scripts/dictionary.js" | relative_url }}" defer></script>
+
+<script src="{{ "/assets/scripts/dictionary-inflections.js" | relative_url }}" defer></script>

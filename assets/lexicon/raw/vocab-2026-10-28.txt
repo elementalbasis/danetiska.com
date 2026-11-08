@@ -5,7 +5,7 @@
 @key(bebe) @ety(\fra{bébé}) @typ(n) @def($baby, $infant)
 @key(previsje) @ety(From a Slavic language; \cf \srb{previše}) @typ(adv) @def(${too much}, $excessively)
 @key(palatziom) @ety(\lat{palatium}) @typ(n) @def($palace)
-@key(apolipnumi) @ety(\dnt{apo} + \dnt{lipnumi}) @typ(v) @def(to $lose)
+@key(apolipnumi) @infl(lipnumi) @ety(\dnt{apo} + \dnt{lipnumi}) @typ(v) @def(to $lose)
 @key(voiazjo) @ety(\dnt{voiazj}) @typ(v) @def(to $travel)
 @key(djungla) @ety(\cf \ita{giungla}) @typ(f) @def($jungle)
 @key(navigo, -amos) @ety(\lat{navigo}) @typ(v) @def(to $navigate; to $sail)

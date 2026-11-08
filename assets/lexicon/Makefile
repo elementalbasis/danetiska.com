@@ -7,6 +7,10 @@ SHELL := /bin/bash
 
 PYTHON ?= python3
 LEXERAT ?= $(HOME)/Projects/lexerat/lexerat.py
+INFLECTOR_DIR ?= $(HOME)/Projects/inflector
+HTML_BUILDER := ../../scripts/build-dictionary-html.py
+HTML_DATA_HELPER := ../../scripts/dictionary_tables.py
+INFLECTOR_FILES := $(wildcard $(INFLECTOR_DIR)/*.py $(INFLECTOR_DIR)/model-words/*.yaml)
 XELATEX ?= xelatex
 INKSCAPE ?= inkscape
 
@@ -25,7 +29,7 @@ PREAMBLE_DNT := $(PREAMBLE_DIR)/dictionary-preamble.txt
 # *.txt.ignore files are deliberately excluded.
 SOURCES := $(sort $(wildcard raw/*.txt))
 LATEX_HELPERS := $(wildcard $(TEMPLATE_DIR)/*.tex.j2)
-HTML_HELPERS := $(wildcard $(TEMPLATE_DIR)/*.html.j2)
+HTML_HELPERS := $(wildcard $(TEMPLATE_DIR)/*.html.j2 $(TEMPLATE_DIR)/includes/*.html.j2)
 
 .PHONY: all html pdf clean clean-aux check-sources
 all: html pdf
@@ -37,10 +41,11 @@ pdf: dictionary.pdf
 check-sources:
 	@test -n "$(SOURCES)" || { echo 'No raw/*.txt vocabulary files found.' >&2; exit 1; }
 
-lexicon.html: $(SOURCES) $(HTML_TEMPLATE) $(HTML_HELPERS) $(LEXERAT) Makefile | check-sources
+lexicon.html: $(SOURCES) $(HTML_TEMPLATE) $(HTML_HELPERS) $(HTML_BUILDER) $(HTML_DATA_HELPER) $(INFLECTOR_FILES) Makefile | check-sources
 	@temporary=$$(mktemp "$(CURDIR)/.lexicon-html.XXXXXX"); \
 	trap 'rm -f -- "$$temporary"' EXIT; \
-	$(PYTHON) "$(LEXERAT)" $(foreach source,$(SOURCES),"$(source)") \
+	$(PYTHON) "$(HTML_BUILDER)" $(foreach source,$(SOURCES),"$(source)") \
+	  --inflector "$(INFLECTOR_DIR)" \
 	  --template "$(HTML_TEMPLATE)" -o "$$temporary"; \
 	chmod 644 "$$temporary"; \
 	mv -f -- "$$temporary" "$@"; \

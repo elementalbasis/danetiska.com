@@ -1,0 +1,113 @@
+{# Native disclosures: all voice–mood sections start expanded. #}
+{% set cases = [('nom', 'Nominative', 'Nom.'), ('voc', 'Vocative', 'Voc.'), ('acc', 'Accusative', 'Acc.'),
+                ('gen', 'Genitive', 'Gen.'), ('abl', 'Ablative', 'Abl.'), ('dat', 'Dative', 'Dat.'),
+                ('loc', 'Locative', 'Loc.'), ('ins', 'Instrumental', 'Instr.')] %}
+{% set genders = [('m', 'Masculine'), ('f', 'Feminine'), ('n', 'Neuter')] %}
+{% set moods = [('ind', 'Indicative'), ('subj', 'Subjunctive'), ('imp', 'Imperative')] %}
+{% set tenses = [('pres', 'Present', 'prs'), ('impf', 'Imperfect', 'impf'), ('aor', 'Aorist', 'Aor.'),
+                 ('perf', 'Perfect', 'prf'), ('plup', 'Pluperfect', 'plup'),
+                 ('fut', 'Future', 'Fut.'), ('futperf', 'Future perfect', 'fut.prf')] %}
+
+{% macro form(value) -%}
+  {%- if value is string -%}<span lang="dnt" class="infl-form">{{ value | html_escape }}</span>
+  {%- elif value is sequence and value is not mapping -%}
+    {%- for variant in value %}{{ form(variant) }}{% if not loop.last %}<br>{% endif %}{% endfor -%}
+  {%- else -%}<span class="infl-missing" aria-label="Not available">—</span>{%- endif -%}
+{%- endmacro %}
+
+{% macro label(full, short) -%}
+<span class="infl-full-label">{{ full }}</span><abbr class="infl-short-label" title="{{ full }}">{{ short }}</abbr>
+{%- endmacro %}
+
+{% macro case_rows(table) -%}
+{% for key, name, short in cases %}
+<tr><th scope="row">{{ label(name, short) }}</th><td>{{ form(table.get('sg', {}).get(key)) }}</td><td>{{ form(table.get('pl', {}).get(key)) }}</td></tr>
+{% endfor %}
+{%- endmacro %}
+
+{% macro declension_table(entry, adjective) -%}
+<table class="inflection-table infl-declension">
+  <caption class="infl-sr-only">Declension of {{ entry.lemma | html_escape }}</caption>
+  <colgroup><col class="infl-case-col"><col><col></colgroup>
+  <thead><tr><th scope="col">Case</th><th scope="col">Singular</th><th scope="col">Plural</th></tr></thead>
+  {% if adjective %}
+    {% for gender, name in genders %}{% if entry.inflections.get(gender) %}
+    <tbody class="infl-gender-group">
+      <tr class="infl-section-row"><th colspan="3">{{ name }}</th></tr>
+      {{ case_rows(entry.inflections[gender]) }}
+    </tbody>
+    {% endif %}{% endfor %}
+  {% else %}<tbody>{{ case_rows(entry.inflections) }}</tbody>{% endif %}
+</table>
+{%- endmacro %}
+
+{% macro finite_table(entry, forms, title, prefix) -%}
+<table class="inflection-table infl-conjugation">
+  <caption class="infl-sr-only">{{ title }} of {{ entry.lemma | html_escape }}</caption>
+  <colgroup><col class="infl-tense-col"><col class="infl-person-col"><col><col></colgroup>
+  <thead><tr><th scope="col">Tense</th><th scope="col"><span class="infl-sr-only">Person</span></th><th scope="col" id="{{ prefix | html_escape }}-sg">sg</th><th scope="col" id="{{ prefix | html_escape }}-pl">pl</th></tr></thead>
+  {% for tense, name, short in tenses %}{% if forms.get(tense) %}
+  {% set tense_id = prefix ~ '-' ~ tense %}
+  <tbody class="infl-tense-group">
+    {% for person in ['1', '2', '3'] %}
+    <tr>
+    {% if loop.first %}<th scope="rowgroup" rowspan="3" id="{{ tense_id | html_escape }}">{{ label(name, short) }}</th>{% endif %}
+    <th class="infl-person" scope="row" id="{{ tense_id | html_escape }}-{{ person }}">{{ person }}</th>
+    {% for number in ['sg', 'pl'] %}
+      <td headers="{{ tense_id | html_escape }} {{ tense_id | html_escape }}-{{ person }} {{ prefix | html_escape }}-{{ number }}">{{ form(forms[tense].get(person ~ number)) }}</td>
+    {% endfor %}</tr>
+    {% endfor %}
+  </tbody>
+  {% endif %}{% endfor %}
+</table>
+{%- endmacro %}
+
+{% macro compact_table(entry, forms, title, nonfinite=false) -%}
+<table class="inflection-table infl-compact">
+  <caption class="infl-sr-only">{{ title }} of {{ entry.lemma | html_escape }}</caption>
+  <colgroup><col class="infl-case-col"><col><col></colgroup>
+  <thead><tr><th scope="col">Tense</th><th scope="col">{{ 'Infinitive' if nonfinite else 'sg' }}</th><th scope="col">{{ 'Participle' if nonfinite else 'pl' }}</th></tr></thead>
+  <tbody class="infl-compact-grid">
+  {% for tense, name, short in tenses %}{% if tense in ['pres', 'aor', 'perf'] %}
+    <tr><th scope="row">{{ label(name, short) }}</th>
+    {% if nonfinite %}<td>{{ form(forms.get('inf', {}).get(tense)) }}</td><td>{{ form(forms.get('part', {}).get(tense)) }}</td>
+    {% else %}<td>{{ form(forms.get(tense, {}).get('2sg')) }}</td><td>{{ form(forms.get(tense, {}).get('2pl')) }}</td>{% endif %}
+    </tr>
+  {% endif %}{% endfor %}
+  </tbody>
+</table>
+{%- endmacro %}
+
+{% macro conjugation_sections(entry) -%}
+{% for voice, voice_name in [('act', 'Active'), ('pas', 'Passive')] %}{% if entry.inflections.get(voice) %}
+{% set forms = entry.inflections[voice] %}
+{% for mood, mood_name in moods %}{% if forms.get(mood) %}
+{% set title = voice_name ~ ' ' ~ mood_name | lower %}
+{% set prefix = entry.id ~ '-' ~ voice ~ '-' ~ mood %}
+<details class="infl-section" open>
+  <summary>{{ title }}</summary>
+  {% if mood == 'imp' %}{{ compact_table(entry, forms[mood], title) }}
+  {% else %}{{ finite_table(entry, forms[mood], title, prefix) }}{% endif %}
+</details>
+{% endif %}{% endfor %}
+{% if forms.get('inf') or forms.get('part') %}
+<details class="infl-section" open>
+  <summary>{{ voice_name }} non-finite forms</summary>
+  {{ compact_table(entry, forms, voice_name ~ ' non-finite forms', nonfinite=true) }}
+</details>
+{% endif %}
+{% endif %}{% endfor %}
+{%- endmacro %}
+
+{% macro render_inflections(entry) -%}
+{% set table = entry.inflections %}
+{% set verb = table.get('act') or table.get('pas') %}
+{% set adjective = table.get('m') or table.get('f') or table.get('n') %}
+<details class="inflections" id="{{ entry.id | html_escape }}-inflections">
+  <summary>{{ 'Conjugation' if verb else 'Declension' }}</summary>
+  <div class="inflections-content">
+  {% if verb %}{{ conjugation_sections(entry) }}
+  {% else %}{{ declension_table(entry, adjective) }}{% endif %}
+  </div>
+</details>
+{%- endmacro %}

@@ -1,7 +1,7 @@
 @key(terpo) @ety(\pie{terkʷ-}; \cf \lat{torqueo}) @typ(v) @def(to $twist, to $turn)
 @key(secjera) @ety(\rom{seceră}) @typ(f) @def($sickle)
 @key(envopo) @ety(\dnt{en} + \dnt{vopo}) @typ(v) @def(to $invoke, to $call upon) @def(to $invite)
-@key(opidukmi) @ety(\dnt{opi} + \dnt{dukmi}) @typ(v) @def(to $accompany)
+@key(opidukmi) @infl(dukmi) @ety(\dnt{opi} + \dnt{dukmi}) @typ(v) @def(to $accompany)
 @key(smyrvos) @ety(\dnt{smerus}) @typ(adj) @def($dirty)
 @key(sjmonovides) @ety(\dnt{sjmon} + \dnt{vidos}) @typ(adj) @def($humanoid, ${human-like})
 @key(paitu, pitues) @ety(\pie{péyh₂tu}; \cf \rus{питать}{pitátʹ}) @typ(n) @def($food)
