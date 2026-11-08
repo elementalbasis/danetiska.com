@@ -33,5 +33,3 @@ defaults:
       layout: academician
       section: academy
       section_pagination: false
-      image: /assets/images/danetiska_academia_logo_square.svg
-      fit: contain

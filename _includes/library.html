@@ -1,3 +1,4 @@
+{% assign description = include.description | default: include.item.description %}
 <article class="library-item">
   {% assign url_start = include.item.url | slice: 0, 1 %}
   <a href="{% if url_start == '/' %}{{ include.item.url | relative_url | escape }}{% else %}{{ include.item.url | escape }}{% endif %}" class="library-link">
@@ -10,7 +11,7 @@
     </div>
     {% endif %}
 
-    {% if include.item.description %}<p class="library-description">{{ include.item.description | escape }}</p>{% endif %}
+    {% if description %}<p class="library-description">{{ description | escape }}</p>{% endif %}
 
     {% if include.item.type %}
     <p class="library-meta">{{ include.item.type | capitalize | escape }}</p>

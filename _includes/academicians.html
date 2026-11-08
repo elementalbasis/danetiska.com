@@ -1,9 +1,9 @@
 {% assign members = site.academicians | sort_natural: "sort_name" %}
 {% if members.size > 0 %}
-<div class="card-grid academician-grid">
+<div class="library-list library-list--compact" aria-label="Academicians">
   {% for member in members %}
     {% assign membership = site.data.academician_classes | where: "id", member.membership | first %}
-    {% include card.html item=member academician=true label=membership.singular %}
+    {% include library.html item=member heading=2 description=membership.singular %}
   {% endfor %}
 </div>
 {% else %}

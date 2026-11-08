@@ -5,9 +5,6 @@ membership: honorary
 description: English philologist, author, and creator of languages whose work united linguistic invention with literature and imagined history.
 role: Philology, literature, and language creation
 lifespan: "1892–1973"
-image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg"
-image_alt: J. R. R. Tolkien in a studio portrait, circa 1925.
-cover_alt: J. R. R. Tolkien, circa 1925.
 ---
 
 **John Ronald Reuel Tolkien** (3 January 1892 – 2 September 1973) was an
