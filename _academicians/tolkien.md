@@ -1,13 +1,9 @@
 ---
 title: J. R. R. Tolkien
-sort_name: Tolkien, John Ronald Reuel
 membership: honorary
-description: English philologist, author, and creator of languages whose work united linguistic invention with literature and imagined history.
-role: Philology, literature, and language creation
-lifespan: "1892–1973"
 ---
 
-**John Ronald Reuel Tolkien** (3 January 1892 – 2 September 1973) was an
+**John Ronald Reuel Tolkien** was an
 English philologist, writer, and creator of languages. Born in Bloemfontein
 in the Orange Free State, now part of South Africa, he grew up in England
 and pursued an academic career devoted to early English language and
