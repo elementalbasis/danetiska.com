@@ -1,0 +1,4 @@
+{% assign items_by_title = include.items | sort_natural: "title" %}
+{% assign items_with_order = items_by_title | where_exp: "item", "item.order != nil" | sort: "order" %}
+{% assign items_without_order = items_by_title | where_exp: "item", "item.order == nil" %}
+{% assign ordered_items = items_with_order | concat: items_without_order %}

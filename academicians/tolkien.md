@@ -1,7 +1,7 @@
 ---
 order: 100
 title: J. R. R. Tolkien
-membership: honorary
+membership: Honorary academician
 ---
 
 **John Ronald Reuel Tolkien** was an

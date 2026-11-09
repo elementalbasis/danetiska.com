@@ -1,12 +1,9 @@
-{% assign members = site.academicians | sort_natural: "title" %}
-{% assign ordered_members = members | where_exp: "item", "item.order != nil" | sort: "order" %}
-{% assign unordered_members = members | where_exp: "item", "item.order == nil" %}
-{% assign members = ordered_members | concat: unordered_members %}
-{% if members.size > 0 %}
+{% assign members = site.pages | where: "layout", "academician" %}
+{% include ordered-items.html items=members %}
+{% if ordered_items.size > 0 %}
 <div class="library-list library-list--compact" aria-label="Academicians">
-  {% for member in members %}
-    {% assign membership = site.data.academician_classes | where: "id", member.membership | first %}
-    {% include library.html item=member heading=2 description=membership.singular %}
+  {% for member in ordered_items %}
+    {% include library.html item=member heading=2 description=member.membership %}
   {% endfor %}
 </div>
 {% else %}

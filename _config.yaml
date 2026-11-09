@@ -4,20 +4,11 @@ description: >-
   The Danetian Academy is dedicated to the study, development, and documentation
   of Danetian, a constructed Indo-European language with its own history,
   literature, and culture.
-#permalink: /blog/:title
 permalink: /:collection/:title
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-seo-tag
-collections:
-  language:
-    output: false
-  texts:
-    output: false
-  academicians:
-    output: true
-    permalink: /academy/academicians/:name/
 email: academia@danetiska.com
 exclude:
   - README.md
@@ -27,9 +18,11 @@ exclude:
 
 defaults:
   - scope:
-      path: ""
-      type: academicians
+      path: "academicians"
+      type: pages
     values:
       layout: academician
       section: academy
       section_pagination: false
+      nav_exclude: true
+      nav_parent: /academicians/

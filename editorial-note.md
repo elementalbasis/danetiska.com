@@ -12,4 +12,4 @@ institutions are constructed frameworks used to explore
 [epic tradition](https://en.wikipedia.org/wiki/Epic_poetry),
 and institutional history.
 
-Created and maintained by [Javier Castro](/academy/academicians/javier-castro/).
+Created and maintained by [Javier Castro](/academicians/javier-castro).
