@@ -98,7 +98,7 @@ I nuni, i jevi, i en oiva oivom. Amen.
 
 > Both now and ever, and unto the ages of ages. Amen.
 
-Reponte djystre Kritor pri'iti, i visjoinosio masjties aponobeiontor; nu sjom
+Reponte djystre Kritor priiti, i visjoinosio masjties aponobeiontor; nu sjom
 andjese vopomos en medinypti: Sjuntos, Sjuntos, Sjuntos esi, Dive; Divodjenitze,
 mileioste nos.
 
@@ -129,11 +129,11 @@ do Thy will, and hymn Thee in heartfelt confession, and sing praises to Thine
 all-holy name: of the Father, and of the Son, and of the Holy Spirit, now and
 ever, and unto the ages of ages. Amen.
 
-Pri'ite, sjoprosjlinuime i prisjadoime anti Rydjes nosjosio Divosio.
+Priite, sjoprosjlinuime i prisjadoime anti Rydjes nosjosio Divosio.
 
-Pri'ite, sjoprosjlinuime i prisjadoime anti Christosio, Rydjes nosjosio Divosio.
+Priite, sjoprosjlinuime i prisjadoime anti Christosio, Rydjes nosjosio Divosio.
 
-Pri'ite, sjoprosjlinuime i prisjadoime anti somosio Christosio, Rydjes nosjosio
+Priite, sjoprosjlinuime i prisjadoime anti somosio Christosio, Rydjes nosjosio
 Divosio.
 
 > O come let us worship and fall down before God our King.
@@ -159,7 +159,7 @@ ne apokypiois med. Etidido medjo prinotam spysjties Tvoias, ide Prumene Redjonte
 anastele me. Imi endisjnunts derysjtomos pontom Tvoiom, ide desjspitioi Tebio
 jenti sjovertontes. Ludreie me esj krevesed, Dive, Dive spysjties moias; iti
 gaureionts dyndjua moia rysjtotam Tvoiam. Poti, osna moia isi apokrudonts, ide
-os moiom iti pro'uponts farnam Tvoiam. Jasme je veliostois jasnam, toda diem;
+os moiom iti prouponts farnam Tvoiam. Jasme je veliostois jasnam, toda diem;
 sjom visjyngribi ne isi dybrovelionts. Jasna Divoi, prumyn rupstom; sjerd
 rupstom i uponideiostom Divos ne isi nidspesjonts. Dybrodek, Poti, en dybrovelii
 Tvoii Sionei, ide sjostrunuiento devares Jerusalemes. Toda isi dybrovelionts
