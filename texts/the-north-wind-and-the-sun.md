@@ -9,7 +9,7 @@ permalink: /texts/the-north-wind-and-the-sun
 Tramontovos Ventos i Suls sjoprytiostonto, poteros esj dvomos est po kretus,
 joda voiazjonts pribet ustiostos en bryni manti. Somoupsento jod prymos
 redeni masjni voiazjontei apokypieni mantam iti sonts considerastos po kretus
-josmod alios.
+josmad alios.
 
 > The North Wind and the Sun were arguing which of the two was stronger, when
 a traveler came dressed in a warm coat. They agreed that the first to
