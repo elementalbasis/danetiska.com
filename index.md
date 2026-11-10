@@ -34,9 +34,11 @@ layout: default
   </div>
 </section>
 
+<!--
 <section class="resource-section" aria-labelledby="home-projects">
   <h2 class="section-heading" id="home-projects">Affiliated projects</h2>
   <div class="card-grid">
     {% for project in site.data.projects %}{% include card.html item=project %}{% endfor %}
   </div>
 </section>
+-->
