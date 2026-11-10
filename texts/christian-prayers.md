@@ -6,7 +6,7 @@ section: texts
 permalink: /texts/christian-prayers
 ---
 
-En nymeni Pytres, i Sunues, i Sjuntosio Prumenes. Amen.
+En nymeni Pytres, i Sunues, i Sjuntosio Prumens. Amen.
 
 > In the name of the Father, and of the Son, and of the Holy Spirit. Amen.
 
