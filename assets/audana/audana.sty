@@ -1,0 +1,173 @@
+% Audana: Academy cards and bilingual texts. XeLaTeX or LuaLaTeX.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{audana}[2026/11/09 v1.0 Academy social publications]
+\edef\audana@root{\@currpath}
+\RequirePackage{iftex}
+\ifPDFTeX
+  \PackageError{audana}{Use XeLaTeX or LuaLaTeX}{Audana requires OpenType fonts.}
+\fi
+\RequirePackage{geometry}
+\RequirePackage{fontspec}
+\RequirePackage[table]{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{lastpage}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{xparse}
+
+% Coordinates use PDF points. Render at 144 dpi for 1080 x 1350 pixels.
+\geometry{paperwidth=540bp,paperheight=675bp,left=38bp,right=38bp,
+  top=160bp,bottom=90bp,headheight=0pt,headsep=0pt,footskip=0pt}
+\IfFileExists{\audana@root fonts/CharisSIL-Regular.ttf}{%
+  \setmainfont{CharisSIL}[Path=\audana@root fonts/,Extension=.ttf,
+    UprightFont=*-Regular,ItalicFont=*-Italic,
+    BoldFont=*-Bold,BoldItalicFont=*-BoldItalic]
+}{\setmainfont{Charis SIL}}
+\definecolor{DAInk}{HTML}{252822}
+\definecolor{DACream}{HTML}{F6F2E8}
+%\definecolor{DACream}{HTML}{FFFFFF}
+\definecolor{DAGold}{HTML}{AB833C}
+\definecolor{DAMuted}{HTML}{696B61}
+\definecolor{DARule}{HTML}{C9C7BF}
+\definecolor{DAPale}{HTML}{E7E5DF}
+% Older reference-card sources keep their public color names.
+\colorlet{DABlue}{DAInk}
+\colorlet{DAGreen}{DAMuted}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\pagestyle{empty}
+
+\pgfkeys{/audana/.is family,/audana,
+  title/.store in=\audana@title,
+  subtitle/.store in=\audana@subtitle,
+  cover-title/.store in=\audana@covertitle,
+  academy/.store in=\audana@academy,
+  website/.store in=\audana@website,
+  handle/.store in=\audana@handle,
+  logo-black/.store in=\audana@logoblack,
+  logo-white/.store in=\audana@logowhite,
+  theme/.is choice,
+  theme/light/.code={\def\audana@background{DACream}\def\audana@foreground{DAInk}%
+    \def\audana@muted{DAMuted}\def\audana@logo{\audana@logoblack}},
+  theme/dark/.code={\def\audana@background{DAInk}\def\audana@foreground{DACream}%
+    \def\audana@muted{DACream}\def\audana@logo{\audana@logowhite}},
+  text-size/.store in=\audana@textsize,
+  text-leading/.store in=\audana@textleading,
+  translation-size/.store in=\audana@translationsize,
+  translation-leading/.store in=\audana@translationleading,
+  closing/.store in=\audana@closing,
+  cover-title={\audana@title},title={},subtitle={},academy={DANETIAN ACADEMY},website={danetiska.com},
+  handle={@danetiska},logo-black={\audana@root logos/academy-black.pdf},
+  logo-white={\audana@root logos/academy-white.pdf},theme=light,
+  text-size=25,text-leading=32.5,translation-size=16.5,
+  translation-leading=22,closing={Follow for more}}
+\NewDocumentCommand{\audanasetup}{m}{\pgfkeys{/audana,#1}}
+
+% One shared canvas handles all page furniture and contrasting logo variants.
+\newcommand{\audana@node}[4]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,inner sep=0pt,text width=#3bp]
+      at ([xshift=#1bp,yshift=#2bp]current page.south west) {\spaceskip=0pt\xspaceskip=0pt #4};
+  \end{tikzpicture}}
+% The closing card opts out of the shared header and footer.
+\newcommand{\audana@start}[1]{%
+  \thispagestyle{empty}%
+  \AddToShipoutPictureBG*{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[\audana@background] (current page.south west) rectangle (current page.north east);
+      \ifnum#1=1
+        \draw[DAGold,line width=.65bp]
+          ([xshift=38bp,yshift=620bp]current page.south west) --
+          ([xshift=502bp,yshift=620bp]current page.south west);
+      \fi
+    \end{tikzpicture}}%
+  \color{\audana@foreground}\null
+  \ifnum#1=1
+    \audana@node{38}{646}{464}{\fontsize{10bp}{12bp}\selectfont\bfseries\audana@academy}%
+    \audana@node{38}{43}{260}{\fontsize{10bp}{12bp}\selectfont\audana@website}%
+    \audana@node{38}{57}{130}{\color{DAGold}\fontsize{8bp}{10bp}\selectfont
+      \ifnum\value{page}<10 0\fi\thepage\ /\ \pageref{LastPage}}%
+    \audana@node{364}{64}{138}{\includegraphics[width=138bp]{\audana@logo}}%
+  \fi}
+\newcommand{\audana@heading}{%
+  \audana@node{38}{603}{464}{%
+    {\fontsize{27bp}{32bp}\selectfont\itshape\audana@title\par}%
+    \vspace{9bp}%
+    {\color{\audana@muted}\fontsize{16bp}{21bp}\selectfont\audana@subtitle\par}}}
+
+% Title and subtitle are defined once with \audanasetup.
+\NewDocumentCommand{\audanacover}{O{}}{%
+  \begingroup\audanasetup{theme=dark,#1}\audana@start{1}
+  \audana@node{38}{465}{464}{\raggedright
+    {\fontsize{43bp}{52bp}\selectfont\itshape\audana@covertitle\par}%
+    \vspace{24bp}%
+    {\fontsize{23bp}{31bp}\selectfont\audana@subtitle\par}}%
+  \clearpage\endgroup}
+
+\newsavebox{\audana@passage}
+\NewDocumentCommand{\audanabilingual}{O{} +m +m}{%
+  \begingroup\audanasetup{#1}\audana@start{1}\audana@heading
+  \sbox{\audana@passage}{\begin{minipage}{464bp}\raggedright
+    {\fontsize{\audana@textsize bp}{\audana@textleading bp}\selectfont\itshape #2\par}%
+    \vspace{24bp}%
+    {\color{DAGold}\hrule width 62bp height 1bp}%
+    \vspace{24bp}%
+    {\color{\audana@muted}%
+      \fontsize{\audana@translationsize bp}{\audana@translationleading bp}\selectfont #3\par}%
+  \end{minipage}}%
+  \ifdim\dimexpr\ht\audana@passage+\dp\audana@passage\relax>408bp
+    \PackageError{audana}{Bilingual passage is too tall}{Split this passage across slides or reduce the font sizes.}%
+  \fi
+  \audana@node{38}{508}{464}{\usebox{\audana@passage}}%
+  \clearpage\endgroup}
+
+\NewDocumentCommand{\audanaendcard}{O{}}{%
+  \begingroup\audanasetup{#1}\audana@start{0}
+  \audana@node{120}{468}{300}{\includegraphics[width=300bp]{\audana@logo}}%
+  \audana@node{38}{344}{464}{\centering
+    {\fontsize{34bp}{43bp}\selectfont\audana@closing\par}%
+    \vspace{25bp}%
+    {\fontsize{21bp}{28bp}\selectfont\audana@website\par}%
+    \vspace{8bp}%
+    {\color{\audana@muted}\fontsize{17bp}{23bp}\selectfont\audana@handle\par}}%
+  \clearpage\endgroup}
+
+% General reference cards use the same canvas; existing card bodies still work.
+\NewDocumentEnvironment{dacard}{mm}{%
+  \begingroup\audana@start{1}
+  \audana@node{38}{603}{464}{%
+    {\color{\audana@muted}\fontsize{10bp}{13bp}\selectfont #2\par}%
+    \vspace{5bp}{\fontsize{27bp}{32bp}\selectfont\bfseries #1\par}}%
+  \par\noindent\begin{minipage}{\linewidth}\color{\audana@foreground}%
+}{\end{minipage}\par\clearpage\endgroup}
+\NewDocumentCommand{\dadesc}{m}{%
+  {\color{DAMuted}\fontsize{9.8}{11.8}\selectfont #1\par}\vspace{.9mm}}
+\NewDocumentCommand{\dalabel}{m}{%
+  \par\vspace{.5mm}{\color{DAMuted}\fontsize{8.5}{10}\selectfont\bfseries\MakeUppercase{#1}\par}\vspace{.7mm}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{K}{>{\raggedright\arraybackslash\color{DAMuted}}m{26mm}}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\NewDocumentEnvironment{datable}{O{10.9}m+b}{%
+  \par\begingroup\fontsize{#1pt}{\dimexpr#1pt+2pt\relax}\selectfont
+  \renewcommand{\arraystretch}{1.20}\setlength{\tabcolsep}{4pt}%
+  \setlength{\aboverulesep}{.7pt}\setlength{\belowrulesep}{.7pt}%
+  \arrayrulecolor{DARule}%
+  \begin{tabularx}{\linewidth}{@{}#2@{}}\toprule #3\bottomrule\end{tabularx}\endgroup\par
+}{}
+\NewDocumentCommand{\dahead}{m}{{\color{DAMuted}\fontsize{10.3}{12}\selectfont\bfseries #1}}
+\NewDocumentCommand{\daform}{m}{{\color{DAInk}\bfseries #1}}
+\NewDocumentCommand{\dameaning}{m}{{\color{DAInk}\bfseries #1}}
+\NewDocumentCommand{\dagloss}{m}{{\color{DAMuted}\itshape #1}}
+\NewDocumentCommand{\danote}{m}{%
+  \par\vspace{1.7mm}{\color{DAMuted}\fontsize{9.8}{12.5}\selectfont #1\par}}
+\NewDocumentCommand{\dasubhead}{m}{%
+  \par\vspace{1mm}{\color{DAInk}\fontsize{15}{19}\selectfont\bfseries #1\par}\vspace{1mm}}
+\endinput
